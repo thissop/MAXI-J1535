@@ -4,7 +4,7 @@
 ### Miscellaneous Notes
 * Keep a google colab session from disconnecting by either adding this snippet of code in the google console (via inspect element): 
 
-<pre><code> javascript 
+<pre><code> 
 function ConnectButton(){
   console.log("Connect pushed"); 
   document.querySelector("#top-toolbar > colab-connectbutton").shadowRoot.querySelector("#connect").click() 
@@ -12,7 +12,7 @@ function ConnectButton(){
 setInterval(ConnectButton,60000);
 </code></pre> 
 
-or by adding this snippet of code ```python while True:pass``` in a cell after the cell you are currently running and running it in queue. 
+* Or by adding this snippet of code ```python while True:pass``` in a cell after the cell you are currently running and running it in queue. 
 
 ## About this repo
 ![Visualization of this repo](./diagram.svg)
