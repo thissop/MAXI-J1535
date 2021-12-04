@@ -12,5 +12,5 @@
      * From the article: "if a multioutput regression problem required the prediction of three values y1, y2 and y3 given an input X, then this could be partitioned             into three dependent single-output regression problems as follows: 1. Given X, predict y1; 2. Given X and yhat1, predict y2; 3. Given X, yhat1, and yhat2, predict y3 
          
 * Not sure if this article is helpful, but here's the arXiv link: [link](https://arxiv.org/pdf/1901.00248.pdf). 
-* sklearn also has this interesting feature called [sklearn.multioutput.MultiOutputRegressor¶
+* sklearn also has this interesting feature called [sklearn.multioutput.MultiOutputRegressor
 ](https://scikit-learn.org/stable/modules/generated/sklearn.multioutput.MultiOutputRegressor.html) which "consists of fitting one regressor per target...a simple strategy for extending regressors that do not natively support multi-target regression." 
