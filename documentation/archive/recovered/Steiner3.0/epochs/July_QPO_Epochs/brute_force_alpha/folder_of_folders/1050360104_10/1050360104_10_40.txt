@@ -1,0 +1,31 @@
+#XSPEC version: 12.11.0m
+#Build Date/Time: Sun Oct 25 08:05:27 2020
+#
+!XSPEC12> show parame
+#
+#Parameters defined:
+#========================================================================
+#Model lorentz<1> + lorentz<2> + lorentz<3> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   lorentz    LineE      keV      1.62898      frozen
+#   2    1   lorentz    Width      keV      2.09818      +/-  1.61776      
+#   3    1   lorentz    norm                7.30365E-04  +/-  2.97512E-04  
+#   4    2   lorentz    LineE      keV      0.0          frozen
+#   5    2   lorentz    Width      keV      4.79250E-08  frozen
+#   6    2   lorentz    norm                1.21251E-09  frozen
+#   7    3   lorentz    LineE      keV      0.0          frozen
+#   8    3   lorentz    Width      keV      6.32377      frozen
+#   9    3   lorentz    norm                9.79527E-03  frozen
+#________________________________________________________________________
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : Chi-Squared                  745.30     using 206 bins.
+#
+#Test statistic : Chi-Squared                  745.30     using 206 bins.
+# Null hypothesis probability of 1.06e-62 with 204 degrees of freedom
+#
+!XSPEC12> log none
+#
