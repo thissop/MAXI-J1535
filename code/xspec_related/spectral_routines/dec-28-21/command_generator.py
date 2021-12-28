@@ -1,8 +1,12 @@
-def write_commands(key, data_dir, log_dir, commands_file): 
+from os import error
+
+
+def write_commands(key, data_dir, params_dict, log_dir, commands_file): 
     '''
     key: .csv file with column of observation ids, e.g. 101010201_13 
          values.
     data_dir: directory of data files
+    params_dict: dictionary of parameter values to use
     log_dir: directory for log files
     commands_file: path to file into which commands should be deposited.
     '''
@@ -54,18 +58,21 @@ def write_commands(key, data_dir, log_dir, commands_file):
             commands.append('ignore **-0.5 1.5-2.3 10.0-**') #Often modified, e.g. sometimes 1.5-2.3 as well
             
             commands.append('ignore bad')
-            
+            tcl_path = '/home/thaddaeus/GitHub/MAXI-J1535/code/xspec_related/common.tcl'
+            commands.append('source '+tcl_path)
             commands.append('statistic pgstat')
             commands.append('setp back on')
             commands.append('model tbabs(diskbb+nthcomp)')
             
-            commands.append('3.21 , 2 2 5 5') # tbabs nH 
-
-            commands.append(', , 0.2 0.2 1 1') # diskbb Tin 
+            commands.append('3.2107 , 2 2 5 5') # tbabs nH 
+            
+            tin_init = [str(i) for i in params_dict['diskbb_tin']]
+            commands.append(' '.join(tin_init)) # diskbb Tin 
             commands.append(', , 0.1 0.1 '+str(10**9)+' '+str(10**9)) # diskbb norm 
             
-            commands.append(', , 1.1 1.1 3.5 4.5') # nthcomp gamma
-            commands.append('100') # nthcomp high energy rollover 
+            gamma_init = [str(i) for i in params_dict['nthcomp_gamma']]
+            commands.append(' '.join(gamma_init)) # nthcomp gamma
+            commands.append('50') # nthcomp high energy rollover 
             commands.append('=p2') # nthcomp seed temp
             commands.append('1') # nthcomp input_type
             commands.append('0') # nthcomp redshift
@@ -74,13 +81,14 @@ def write_commands(key, data_dir, log_dir, commands_file):
             commands.append('freeze 1 5')
             commands.append('chatter 5 10')
             
-            cores = '2'
+            cores = '4'
             commands.append('parallel leven '+ cores)
-            commands.append('fit 100')
+            commands.append('fit 250')
             commands.append('n')
             commands.append('')
             
-            # Error routine 
+            # Error routine
+            log_file = log_dir+'/'+seg_id+'.txt' 
             errorlog_file = log_dir + '/'+seg_id+'_errorlog.txt' 
             
             commands.append('tclout stat')
@@ -88,6 +96,24 @@ def write_commands(key, data_dir, log_dir, commands_file):
             commands.append('tclout dof')
             commands.append('scan $xspec_tclout "%f" dof')
             commands.append('set redpgstat [expr $pgstat / $dof]')
+            
+            # See if red. pgstat < 3, if so do error routine
+            commands.append("if {$redpgstat < 3} {")
+            commands.append('log '+errorlog_file)
+            commands.append('_pct_get_error_list {2 3 4 9} 2.706')
+            commands.append('log none')
+            commands.append("}")
+            commands.append('log '+log_file)
+            commands.append('show data')
+            commands.append('show param')
+            commands.append('show fit')
+            commands.append('log none')
+
+            ### IMPORTANT: OLD TCL ERROR ROUTINE (NO COMMON.TCL) ###
+            
+            # Used: when just using native xspec error, when red chistat < 2
+
+            '''
             commands.append('set errorfile [open "'+errorlog_file+'" a+]')
             commands.append('puts $errorfile "param_num,lower_bound,upper_bound,error_string"')
             # See if red. pgstat < 2, if so do error routine
@@ -109,13 +135,10 @@ def write_commands(key, data_dir, log_dir, commands_file):
             commands.append("}")
             
             commands.append('close $errorfile')
+            ''' 
+
+            ### END OF OLD TCL ROUTINE ###
                         
-            log_file = log_dir+'/'+seg_id+'.txt'
-            commands.append('log '+log_file)
-            commands.append('show data')
-            commands.append('show param')
-            commands.append('show fit')
-            commands.append('log none')
             
             commands.append('quit')
             commands.append('y')
@@ -125,10 +148,16 @@ def write_commands(key, data_dir, log_dir, commands_file):
         for command in commands: 
             f.write(command+'\n')
     
-key = '/home/thaddaeus/FMU/Steiner3.0/epochs/machine_learning/second_attempt/misc/all_seg_ids.csv'
-data_dir = '/home/thaddaeus/FMU/Steiner2.0/permanent/data/thaddaeus'
+key = '/home/thaddaeus/GitHub/MAXI-J1535/code/all_seg_ids.csv'
+data_dir = '/home/thaddaeus/FMU/Steiner/thaddaeus'
 
-work_dir = '/home/thaddaeus/FMU/Steiner3.0/epochs/machine_learning/second_attempt/mk2_spectral_fits/1.5_2.3_ignored'
+work_dir = '/home/thaddaeus/GitHub/MAXI-J1535/code/xspec_related/spectral_routines/dec-28-21'
 log_dir = work_dir+'/logs'
 commands_file = work_dir+'/commands.txt'
-write_commands(key, data_dir, log_dir, commands_file)
+
+# value, step, hard lower, soft lower, soft upper, hard upper 
+params_dict = {'diskbb_tin':[',', ',', 0.2, 0.2, 2, 3],
+               'nthcomp_gamma':[',',',',1.1, 1.2, 3.5, 4], 
+              }
+
+write_commands(key, data_dir, params_dict, log_dir, commands_file)
