@@ -88,21 +88,37 @@ def write_commands(key, data_dir, params_dict, log_dir, commands_file):
             commands.append('')
             
             # Error routine
-            log_file = log_dir+'/'+seg_id+'.txt' 
+            log_file = log_dir+'/'+seg_id+'_after_error.txt' 
             errorlog_file = log_dir + '/'+seg_id+'_errorlog.txt' 
-            
+            first_log_file = log_dir+'/'+seg_id+'_before_error.txt' 
+
             commands.append('tclout stat')
             commands.append('scan $xspec_tclout "%f" pgstat')
             commands.append('tclout dof')
             commands.append('scan $xspec_tclout "%f" dof')
             commands.append('set redpgstat [expr $pgstat / $dof]')
             
-            # See if red. pgstat < 3, if so do error routine
-            commands.append("if {$redpgstat < 3} {")
-            commands.append('log '+errorlog_file)
-            commands.append('_pct_get_error_list {2 3 4 9} 2.706')
+            # do initial log because of the issue discussed in jupyter notebook
+
+            commands.append('log '+first_log_file)
+            commands.append('show data')
+            commands.append('show param')
+            commands.append('show fit')
             commands.append('log none')
-            commands.append("}")
+
+            # See if red. pgstat < 3, if so do error routine
+            commands.append('if {$redpgstat < 3} {')
+            commands.append('set error_array [_pct_get_error_list {2 3 4 9} 2.706]')
+            commands.append('set error_log_file [open ' + errorlog_file + ' w]')
+            commands.append('set header_string "value,lower_err,upper_err,err_str" ')
+            commands.append('puts $error_log_file $header_string')
+            commands.append('foreach item $error_array {')
+            commands.append('set item [join $item ,]')
+            commands.append('puts $error_log_file $item')
+            commands.append('}')
+            commands.append('close $error_log_file')
+
+            commands.append('}')
             commands.append('log '+log_file)
             commands.append('show data')
             commands.append('show param')
