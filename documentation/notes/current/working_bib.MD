@@ -5,6 +5,7 @@
 ### Priority: 
 * SN20
 * P21
+* QPO2020
 
 ### Other: 
 * [Evaluating the Impact of Missing Data Imputation
@@ -20,6 +21,7 @@ through the use of the Random Forest Algorithm](https://arxiv.org/ftp/arxiv/pape
 Black hole binaries*
 * [Pattnaik et al. 2021](https://pure.rug.nl/ws/portalfiles/portal/157958141/staa3899.pdf): hereafter I'll refer to this paper as P21. Title: *A machine-learning approach for classifying low-mass X-ray binaries based on their compact
 object nature*
+* [Ingram and Motta 2020](https://arxiv.org/pdf/2001.08758.pdf): hereafter I'll refer to this paper as QPO2020. Title: *A review of quasi-periodic oscillations from black hole X-ray binaries: observation and theory*
 
 ## Notes
 
