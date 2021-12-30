@@ -3,9 +3,9 @@
 ## Reading List
 
 ### Priority: 
-* SN20
-* P21
-* QPO2020
+- [ ] SN20
+- [ ] P21
+- [ ] QPO2020
 
 ### Other: 
 * [Evaluating the Impact of Missing Data Imputation
@@ -17,11 +17,12 @@ through the use of the Random Forest Algorithm](https://arxiv.org/ftp/arxiv/pape
 ](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-021-00516-9)
 
 ## Best Papers
-* [Sreehari and Nandi 2020](https://arxiv.org/pdf/2101.06218.pdf): hereafter I'll refer to it as SN20. Title: *A Machine Learning approach for classification of accretion states of
+- [ ] [Sreehari and Nandi 2020](https://arxiv.org/pdf/2101.06218.pdf): hereafter I'll refer to it as SN20. Title: *A Machine Learning approach for classification of accretion states of
 Black hole binaries*
-* [Pattnaik et al. 2021](https://pure.rug.nl/ws/portalfiles/portal/157958141/staa3899.pdf): hereafter I'll refer to this paper as P21. Title: *A machine-learning approach for classifying low-mass X-ray binaries based on their compact
+- [ ] [Pattnaik et al. 2021](https://pure.rug.nl/ws/portalfiles/portal/157958141/staa3899.pdf): hereafter I'll refer to this paper as P21. Title: *A machine-learning approach for classifying low-mass X-ray binaries based on their compact
 object nature*
-* [Ingram and Motta 2020](https://arxiv.org/pdf/2001.08758.pdf): hereafter I'll refer to this paper as QPO2020. Title: *A review of quasi-periodic oscillations from black hole X-ray binaries: observation and theory*
+- [ ] [Ingram and Motta 2020](https://arxiv.org/pdf/2001.08758.pdf): hereafter I'll refer to this paper as QPO2020. Title: *A review of quasi-periodic oscillations from black hole X-ray binaries: observation and theory*
+- [x] [Cuneo et al. 2020](https://arxiv.org/pdf/2006.03074.pdf): hereafter I'll refer to this paper as Cuneo2020. Title: *A NICER look at the state transitions of the black hole candidate MAXI J1535-571 during its reflares* 
 
 ## Notes
 
