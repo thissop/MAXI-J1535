@@ -77,7 +77,7 @@ def qpo_hunter_mk3(key, working_dir, pds_temp, fak_temp, clean_file):
             cap(', , '+ lower_width + ' ' + lower_width+ ' '+ upper_width + ' ' + upper_width)
             cap('fit')
             
-            log_file = logs_dir+'/'+id+'_'+str(counter)+'.txt'
+            log_file = logs_dir+'/'+id+':'+str(counter)+'.txt'
             cap('chatter 10')
             cap('log '+log_file)
             cap('show parame')
@@ -106,7 +106,7 @@ def qpo_hunter_mk3(key, working_dir, pds_temp, fak_temp, clean_file):
         cap(', , '+ lower_width + ' ' + lower_width+ ' '+ upper_width + ' ' + upper_width)
         cap('fit')
         
-        log_file = logs_dir+'/'+id+'_'+str(counter)+'.txt'
+        log_file = logs_dir+'/'+id+':'+str(counter)+'.txt'
         cap('chatter 10')
         cap('log '+log_file)
         cap('show parame')
