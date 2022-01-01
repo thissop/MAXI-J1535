@@ -134,4 +134,8 @@ key = '/home/thaddaeus/GitHub/MAXI-J1535/code/all_seg_ids.csv'
 working_dir = '/home/thaddaeus/GitHub/MAXI-J1535/code/xspec_related/qpo_routines/dec-31'
 pds_temp = ''
 fak_temp = ''
+
+# pds_temp = '/home/thaddaeus/FMU/Steiner2.0/permanent/data/thaddaeus/+++/jspipe/js_ni+++_0mpu7_silver_GTI***-bin.pds'
+# fak_temp = '/home/thaddaeus/FMU/Steiner2.0/permanent/data/thaddaeus/+++/jspipe/js_ni+++_0mpu7_silver_GTI***-fak.rsp'    
+
 clean_file = 'routine_cleaner.py'
