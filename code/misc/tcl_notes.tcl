@@ -87,3 +87,9 @@ commands.append('puts $errorfile ",,,"')
 commands.append("}")
 
 commands.append('close $errorfile')
+
+### run python file from tcl ###
+
+exec python3 file_path args
+
+
