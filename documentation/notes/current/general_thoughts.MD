@@ -2,6 +2,9 @@
 
 ## Dated Thoughts
 
+* 1/1/2022
+    * Machine learning mastery article on Histogram Gradient Boosting: [link](https://machinelearningmastery.com/histogram-based-gradient-boosting-ensembles/)
+
 * 12/29/2021 
     * Note how the SN20 paper doesn't have error bars on their time vs gamma/tin/etc. plot 
     * I am allowed to submit work from published papers to Regeron STS! 
