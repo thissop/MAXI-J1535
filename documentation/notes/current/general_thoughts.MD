@@ -4,6 +4,10 @@
 
 * 1/21/2022
     * I wonder what the accuracy of the model will be like based on the dates of the time values associated with the train/test observations...it seems like this source would be an interesting exploration because our data is coming from multiple outbursts...like could the QPO properties change (for states of similiar hardness) between outbursts? 
+    * it seems like we have a reason why our experamentation with data points of varying quality (as determined by XSPEC) ... a lot of the brightest observations (with good qpos, etc.) have very poor reduced chi square values...is the model I used in xspec not good for these high luminosity cases? because it seems to provide data that is accurate enough for good classification capabilities. 
+        * if I discuss this in the paper, probably discuss after showing how the missing value methods didn't really make a difference (at least for RandomForest and XGBoost)...*suspense*
+         
+
 
 * 1/16/2022
     * Should probably read this before writing about the machine learning (general classes of machine learning): [link](https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/)
