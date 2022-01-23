@@ -15,6 +15,13 @@ through the use of the Random Forest Algorithm](https://arxiv.org/ftp/arxiv/pape
 * [When do random forests fail?](https://proceedings.neurips.cc/paper/2018/file/204da255aea2cd4a75ace6018fad6b4d-Paper.pdf)
 * [A survey on missing data in machine learning
 ](https://journalofbigdata.springeropen.com/articles/10.1186/s40537-021-00516-9)
+* [XGBoost: A Scalable Tree Boosting System](https://arxiv.org/pdf/1603.02754.pdf)
+    * Section 3.4 discusses how XGBOOST natively deals with missing values
+* [The Smallest Sample Size for the Desired Diagnosis Accuracy](https://www.iaras.org/iaras/filedownloads/ijoct/2017/028-0004(2017).pdf)
+    * Cancer data...talks about XGBoost performance on small datasets (even down to n=50)
+
+* [Feature Engineering and Selection, 2019](https://machinelearningmastery.com/handle-missing-data-python/)
+* [Applied Predictive Modeling, 2013](http://appliedpredictivemodeling.com/)
 
 ## Best Papers
 - [ ] [Sreehari and Nandi 2020](https://arxiv.org/pdf/2101.06218.pdf): hereafter I'll refer to it as SN20. Title: *A Machine Learning approach for classification of accretion states of
@@ -29,3 +36,13 @@ object nature*
 ### Astrophysics
 
 ### Machine Learning
+
+* [Applied Predictive Modeling, 2013](http://appliedpredictivemodeling.com/)
+    * "… missing data can be imputed. In this case, we can use information in the training set predictors to, in essence, estimate the values of other predictors."
+        * JBL says you can use "A constant value that has meaning within the domain, such as 0, distinct from all other values, a value from another randomly selected record; a mean, median or mode value for the column; a value estimated by another predictive model."
+        
+* [Feature Engineering and Selection, 2019](https://machinelearningmastery.com/handle-missing-data-python/)
+    * "Many popular predictive models such as support vector machines, the glmnet, and neural networks, cannot tolerate any amount of missing values."
+    * "Missing values are common occurrences in data. Unfortunately, most predictive modeling techniques cannot handle any missing values. Therefore, this problem must be addressed prior to modeling."
+    * "When a predictor is discrete in nature, missingness can be directly encoded into the predictor as if it were a naturally occurring category."
+    * "The simplest approach for dealing with missing values is to remove entire predictor(s) and/or sample(s) that contain missing values."

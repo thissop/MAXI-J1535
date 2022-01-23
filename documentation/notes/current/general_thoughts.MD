@@ -2,6 +2,15 @@
 
 ## Dated Thoughts
 
+* 1/16/2022
+    * Should probably read this before writing about the machine learning (general classes of machine learning): [link](https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/)
+        * Remember the difference between discriminative and generative models
+    * Extremely helpful article about three different ways to calculate feature importances with XGBOOST (and can be applied to Random Forest as well): [link](https://mljar.com/blog/feature-importance-xgboost/)
+        * Should probably read this sklearn article about F-test vs permutation based importances (as explored with a random forest model) as well: [link](https://scikit-learn.org/stable/auto_examples/ensemble/plot_forest_importances.html)
+
+* 1/15/2022
+    * Typing ```"\\wsl$``` in the address bar of 
+
 * 1/1/2022
     * Machine learning mastery article on Histogram Gradient Boosting: [link](https://machinelearningmastery.com/histogram-based-gradient-boosting-ensembles/)
 
