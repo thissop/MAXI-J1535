@@ -2,6 +2,9 @@
 
 ## Dated Thoughts
 
+* 1/21/2022
+    * I wonder what the accuracy of the model will be like based on the dates of the time values associated with the train/test observations...it seems like this source would be an interesting exploration because our data is coming from multiple outbursts...like could the QPO properties change (for states of similiar hardness) between outbursts? 
+
 * 1/16/2022
     * Should probably read this before writing about the machine learning (general classes of machine learning): [link](https://machinelearningmastery.com/a-tour-of-machine-learning-algorithms/)
         * Remember the difference between discriminative and generative models
