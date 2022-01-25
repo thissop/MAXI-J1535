@@ -2,7 +2,10 @@
 
 ## Dated Thoughts
 
-* 1/23/3022
+* 1/24/2022
+    * Yes, I think I should definitely used Shapley or SHAP values with regards to feature importance...see this really useful article: [link](https://christophm.github.io/interpretable-ml-book/shapley.html)
+        * It would be really cool to mention "a method from coalitional game theory" in the paper. 
+* 1/23/2022
     * I wonder if after seeing how poor data fixes doesn't help we then show the 2d hist of log(red chi) vs log(brightness) or something
     * we can also use random forest / xgboost importances with binary flag inputs or additional input of just the normalized red chis to see how important those are
     * can models be informative even though the red chi ^2 is bad? what do these look like? 
