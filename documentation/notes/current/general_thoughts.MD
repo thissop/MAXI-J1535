@@ -10,6 +10,8 @@
         * it may be bad if some were dropped because this would possibly affect classification 
     * exposure times in pds files are `1` placeholders...the actual values are stored in their corresponding spectral `.jsgrp` files. 
     * "the correlation between intensity and QPO frequency is a known one"
+    * should probably read these three articles on permutation testing // feature importance: [first](https://scikit-learn.org/stable/modules/permutation_importance.html), [second](https://explained.ai/rf-importance/), and [third](https://christophm.github.io/interpretable-ml-book/feature-importance.html). 
+        * that third link seems to have a bunch of other links worth reading too...like about Shapley Values vs SHAP values...speaking of which, I think I should measure feature importances with permutation *and* Shapley/SHAP values ... for robust reasons, as well as for the reason that it would be cool to incorporate a little game theory into the paper :smiling_imp:
 
 * 1/21/2022
     * I wonder what the accuracy of the model will be like based on the dates of the time values associated with the train/test observations...it seems like this source would be an interesting exploration because our data is coming from multiple outbursts...like could the QPO properties change (for states of similiar hardness) between outbursts? 
