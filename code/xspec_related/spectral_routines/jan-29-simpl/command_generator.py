@@ -129,8 +129,8 @@ key = r'C:\Users\Research\Documents\GitHub\MAXI-J1535\code\xspec_related\good_id
 data_dir = '/mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus'
 
 work_dir = './code/xspec_related/spectral_routines/jan-29-simpl'
-log_dir = '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/code/spectral_routines/jan-29-simpl/logs'
-commands_file ='./code/xspec_related/spectral_routines/jan-29-simpl/commands.txt'
+log_dir = '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/code/xspec_related/spectral_routines/jan-29-simpl/logs'
+commands_file =r'C:\Users\Research\Documents\GitHub\MAXI-J1535\code\xspec_related\spectral_routines\jan-29-simpl\commands.txt'
 
 # value, step, hard lower, soft lower, soft upper, hard upper 
 params_dict = {'diskbb_tin':[',', ',', 0.2, 0.2, 2, 3],

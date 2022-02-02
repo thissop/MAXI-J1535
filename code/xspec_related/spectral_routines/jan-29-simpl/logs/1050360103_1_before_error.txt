@@ -1,0 +1,44 @@
+#XSPEC version: 12.12.0
+#Build Date/Time: Mon Jan 31 20:12:49 2022
+#
+!XSPEC12> show data
+#
+#1 file 1 spectrum 
+#Spectrum 1  Spectral Data File: /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360103/jspipe/js_ni1050360103_0mpu7_silver_GTI1.jsgrp
+#Net count rate (cts/s) for Spectrum:1  2.005e+03 +/- 3.472e+00 (99.9 % total)
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  22-54,83-254
+#  Telescope: NICER Instrument: XTI  Channel Type: PI
+#  Exposure Time: 166.5 sec
+# Using fit statistic: pgstat
+# Using Background File                /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360103/jspipe/js_ni1050360103_0mpu7_silver_GTI1.bg
+#  Background Exposure Time: 166.5 sec
+# Using Response (RMF) File            /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/nicer_d49_55575341.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/nicer_d49_55575341.arf
+#
+#
+!XSPEC12> show param
+#
+#Parameters defined:
+#========================================================================
+#Model TBabs<1>(simpl<2>*diskbb<3>) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBabs      nH         10^22    3.21070      frozen
+#   2    2   simpl      Gamma               1.78834      +/-  6.32756E-03  
+#   3    2   simpl      FracSctr            4.98474E-02  +/-  2.87842E-03  
+#   4    2   simpl      UpScOnly            1.00000      frozen
+#   5    3   diskbb     Tin        keV      0.200000     +/-  6.23325E-03  
+#   6    3   diskbb     norm                8.68178E+06  +/-  1.04521E+06  
+#________________________________________________________________________
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : PG-Statistic                 705.58     using 205 bins.
+#
+#Test statistic : Chi-Squared                  655.94     using 205 bins.
+# Null hypothesis probability of 1.19e-49 with 201 degrees of freedom
+#
+!XSPEC12> log none
+#
