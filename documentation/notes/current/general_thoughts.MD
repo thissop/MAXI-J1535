@@ -1,7 +1,8 @@
 # General Thoughts
 
 ## Dated Thoughts
-
+* 2/1/2022
+    * "When MAXI J1535-571 is dim and Cir X-1 is bright, there is a contamination from Cir X-1. We limit the source region for MAXI J1535 to avoid contamination by Cir X-1. Thus the count-rate of MAXI J1535 is about the half of the real one in the plots and data." - MAXI Website .... ??????
 * 1/24/2022
     * Yes, I think I should definitely used Shapley or SHAP values with regards to feature importance...see this really useful article: [link](https://christophm.github.io/interpretable-ml-book/shapley.html)
         * It would be really cool to mention "a method from coalitional game theory" in the paper. 
