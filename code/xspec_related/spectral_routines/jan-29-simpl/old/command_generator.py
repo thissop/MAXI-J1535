@@ -98,7 +98,7 @@ def write_commands(key, data_dir, params_dict, log_dir, commands_file):
             commands.append('log none')
 
             # See if red. pgstat < 3, if so do error routine
-            '''
+            
             commands.append('tclout stat')
             commands.append('scan $xspec_tclout "%f" pgstat')
             commands.append('tclout dof')
@@ -119,7 +119,7 @@ def write_commands(key, data_dir, params_dict, log_dir, commands_file):
             commands.append('quit')
             commands.append('y')
             commands.append('sleep 0.5') # sleep for 0.5 seconds between iterations
-            '''
+            
             commands.append('model clear')
             commands.append('data none')
 
