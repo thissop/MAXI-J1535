@@ -88,12 +88,6 @@ def write_commands(key, data_dir, params_dict, log_dir, commands_file):
             # Error routine
             log_file = log_dir+'/'+seg_id+'_before_error.txt' 
             errorlog_file = log_dir + '/'+seg_id+'_errorlog.txt' 
-
-            commands.append('tclout stat')
-            commands.append('scan $xspec_tclout "%f" pgstat')
-            commands.append('tclout dof')
-            commands.append('scan $xspec_tclout "%f" dof')
-            commands.append('set redpgstat [expr $pgstat / $dof]')
             
             # do initial log because of the issue discussed in jupyter notebook
 
@@ -104,6 +98,12 @@ def write_commands(key, data_dir, params_dict, log_dir, commands_file):
             commands.append('log none')
 
             # See if red. pgstat < 3, if so do error routine
+            '''
+            commands.append('tclout stat')
+            commands.append('scan $xspec_tclout "%f" pgstat')
+            commands.append('tclout dof')
+            commands.append('scan $xspec_tclout "%f" dof')
+            commands.append('set redpgstat [expr $pgstat / $dof]')
             commands.append('if {$redpgstat < 3} {')
             commands.append('set error_array [_pct_get_error_list {2 3 4 5} 2.706]')
             commands.append('set error_log_file [open ' + errorlog_file + ' w]')
@@ -115,11 +115,14 @@ def write_commands(key, data_dir, params_dict, log_dir, commands_file):
             commands.append('}')
             commands.append('close $error_log_file')
             commands.append('}')
-
+            
             commands.append('quit')
             commands.append('y')
             commands.append('sleep 0.5') # sleep for 0.5 seconds between iterations
-    
+            '''
+            commands.append('model clear')
+            commands.append('data none')
+
     with open(commands_file, 'w') as f:
         for command in commands: 
             f.write(command+'\n')
