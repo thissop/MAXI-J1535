@@ -1,0 +1,33 @@
+Spectrum 1  Spectral Data File: /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360113/jspipe/js_ni1050360113_0mpu7_silver_GTI7.jsgrp
+Net count rate (cts/s) for Spectrum:1  1.072e+04 +/- 3.498e+00 (100.0 % total)
+ Assigned to Data Group 1 and Plot Group 1
+  Noticed Channels:  22-54,83-254
+  Telescope: NICER Instrument: XTI  Channel Type: PI
+  Exposure Time: 876.3 sec
+ Using fit statistic: pgstat
+ Using Background File                /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360113/jspipe/js_ni1050360113_0mpu7_silver_GTI7.bg
+  Background Exposure Time: 876.3 sec
+ Using Response (RMF) File            /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/nicer_d49_55575341.rmf for Source 1
+ Using Auxiliary Response (ARF) File  /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/nicer_d49_55575341.arf
+
+ Spectral data counts: 9.39544e+06
+ Model predicted rate: 1.06656E+04
+
+
+========================================================================
+Model TBabs<1>(simpl<2>*diskbb<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    3.21070      frozen
+   2    2   simpl      Gamma               2.80473      +/-  1.50563E-03  
+   3    2   simpl      FracSctr            0.906345     +/-  0.177862     
+   4    2   simpl      UpScOnly            1.00000      frozen
+   5    3   diskbb     Tin        keV      0.208023     +/-  2.87899E-02  
+   6    3   diskbb     norm                8.94603E+06  +/-  4.21087E+06  
+________________________________________________________________________
+
+
+Fit statistic  : PG-Statistic               93184.90     using 205 bins.
+
+Test statistic : Chi-Squared                112960.0     using 205 bins.
+ Null hypothesis probability of 0.0e+00 with 201 degrees of freedom

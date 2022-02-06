@@ -10,7 +10,7 @@ spectral_temp = '/mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/++
 log_temp = '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/code/xspec_related/spectral_routines/jan-29-simpl/logs'
 
 
-Xset.chatter = 10
+Xset.chatter = 0
 Xset.logChatter = 10
 Fit.query = "no"
 
@@ -42,14 +42,12 @@ for full_id in tqdm(all_ids):
     m1.simpl.UpScOnly = 1
     m1.simpl.UpScOnly.frozen = True
 
-    m1.diskbb.Tin.values = [',', ',', 0.2, 0.2, 2, 3]
+    m1.diskbb.Tin.values = ',, 0.2 0.2 2 3'
 
     Fit.nIterations = 250
     Fit.statMethod = "pgstat"
 
     Fit.perform()
-
-    quit()
 
     logFile = Xset.openLog(log_temp+'/'+full_id+'.txt')
     s1.show()
