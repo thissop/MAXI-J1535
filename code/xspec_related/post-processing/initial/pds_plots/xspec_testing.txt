@@ -1,0 +1,15 @@
+heainit
+xspec
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360104/jspipe/js_ni1050360104_0mpu7_silver_GTI5-bin.pds
+ignore **-0.2
+ignore 100.-**
+model loren+loren
+0
+
+
+0
+
+
+freeze 1 4
+query no 
+fit
