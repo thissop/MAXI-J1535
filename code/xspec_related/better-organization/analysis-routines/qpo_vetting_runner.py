@@ -9,9 +9,13 @@ def vetting_with_comments_run():
     full_ids = np.array(pd.read_csv('./code/xspec_related/good_ids.csv'))
 
     for full_id in full_ids: 
-        canidate_dict, labels_dict = hunter()
+        canidates_dict, labels_dict = hunter('1050360106_6')
 
-        
+        annot = {'algo_labels':labels_dict}
+
+        make_vetting_plot('1050360106_6', canidates_dict=canidates_dict)
+
+
 
         break 
 

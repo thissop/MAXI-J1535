@@ -4,16 +4,17 @@
 
 def hunter(
     full_id:str,
-    image_df, 
+    image_df_dir:str='./code/xspec_related/post-processing/initial/pds_plots/plot_dir/plot_data_raw', 
     data_dir:str='./code/xspec_related/qpo_routines/jan-1-2022/final_logs/'): 
     
     import numpy as np
     import pandas as pd
     from scipy.signal import find_peaks
     
+    image_df = image_df_dir + '/' + full_id + '.csv'
     (x,y) = (np.array(image_df[i]) for i in ['x', 'y'])
 
-    df = pd.read_csv(data_dir+full_id+'.csv')
+    df = pd.read_csv(data_dir+'/'+full_id+'.csv')
 
     freqs = np.array(df['freq'])
     norms = np.array(df['norm'])
@@ -127,19 +128,6 @@ def make_vetting_plot(
     (freqs, norms, widths, fit_stats) = (np.array(qpo_df[i]) for i in fitted_labels)
 
     min_freq, max_freq = np.min(freqs), np.max(freqs)
-
-    ()
-
-
-    """
-    'canidate_indices':canidate_peak_indices, 
-    'canidate_freqs':canidate_freqs, 
-    'canidate_chis':canidate_chis,
-    'canidate_widths':canidate_widths, 
-    'canidate_norms':canidate_norms, 
-    'canidate_rms_powers':canidate_rms_powers,
-    'fundamental_index':fundamental_index
-    """
 
     canidate_labels = ['canidate_indices', 'canidate_chis', 'canidate_widths', 'canidate_norms']
     (peak_freqs, peak_chis, peak_widths, peak_norms) = (np.array(canidates_dict[i]) for i in canidate_labels)
