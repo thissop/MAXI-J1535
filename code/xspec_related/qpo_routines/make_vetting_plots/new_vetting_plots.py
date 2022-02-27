@@ -1,4 +1,5 @@
-from matplotlib import markers
+#cSpell: disable
+
 import matplotlib.pyplot as plt
 import pandas as pd
 import numpy as np
@@ -16,7 +17,6 @@ all_ids = list(pd.read_csv('./code/xspec_related/good_ids.csv')['full_id'])
 
 def loren(E, EL, σ, K):
     return K*(σ/(2*3.1415659265))/((E-EL)**2+(σ/2)**2)
-
 
 for full_id in tqdm(all_ids): # when no printing do tqdm  
     #full_id = '1050360104_5' # fix this LOL 
@@ -39,43 +39,51 @@ for full_id in tqdm(all_ids): # when no printing do tqdm
     norms = np.array(df['norm'])
     redchis = np.array(df['redchi'])
     widths = np.array(df['fwhm'])
-    fitstats = np.array(df['fit_stat'])
+    fit_stats = np.array(df['fit_stat'])
     min_freq, max_freq = np.min(freqs), np.max(freqs)
 
     # Rec chi. "peaks" aka valleys
-    neg_fitstats = -1*fitstats
-    min_height = np.min(neg_fitstats)+14
-    chiPeakIndices, _ = find_peaks(neg_fitstats, height=min_height)
-    chiPeakFreqs = freqs[chiPeakIndices]
-    chiPeakIndices = chiPeakIndices[np.logical_or(chiPeakFreqs<0.8, chiPeakFreqs>1.2)] # was originally ignored betweeen 0.9-1.1 
+    neg_fit_stats = -1*fit_stats
+    min_height = np.min(neg_fit_stats)+14
+    initial_peak_indices, _ = find_peaks(neg_fit_stats, height=min_height)
+    canidate_peaks_mask = np.logical_or(freqs[initial_peak_indices]>1.2, freqs[initial_peak_indices]<0.8) # originally 0.9-1.1 ? 
 
-    canidate_freqs = chiPeakFreqs
-    canidate_widths = widths[chiPeakIndices]
-    canidate_norms = norms[chiPeakIndices]
+    canidate_peak_indices = initial_peak_indices[canidate_peaks_mask]
+    canidate_freqs = freqs[canidate_peak_indices]
+    canidate_chis = fit_stats[canidate_peak_indices]
+    canidate_widths = widths[canidate_peak_indices]
+    canidate_norms = norms[canidate_peak_indices]
 
-    print(len(canidate_freqs), len(canidate_widths), len(canidate_norms))
+    canidate_rms_powers = [y[np.argmin(np.abs(x - freq))] for freq in canidate_freqs] # fundamental is chosen as maximum rms power peak 
 
-    fundamental_index = np.argmax(neg_fitstats[chiPeakIndices])
-    
+    fundamental_index = np.argmax(canidate_rms_powers)
     fundamental_freq = canidate_freqs[fundamental_index]
 
-    harmonic_status = np.empty(shape=len(canidate_freqs), dtype=np.str_)
+    harmonic_statuses = []
 
-    harmonic_status[fundamental_index] = 'f'
+    # Evaluate harmonic statuses 
+    for canidate_index, canidate in enumerate(canidate_freqs): # within 2% !! 
+        if canidate_index!=fundamental_index: 
+            not_harmonic = True 
+            for n in range(2,5): 
+                harmonic = n*fundamental_freq
+                subharmonic = fundamental_freq/n
 
-    for canidate in np.delete(canidate_freqs, fundamental_index): # within 1% !! 
+                if canidate/harmonic < 1.02 and canidate/harmonic > 0.98: 
+                    harmonic_statuses.append('h') # for harmonic (isn't this technicall the "second harmonic")
+                    is_harmonic = False
+                    break
+
+                elif canidate/subharmonic < 1.02 and canidate/subharmonic > 0.98:
+                    harmonic_statuses.append('s') # for sub-harmonic
+                    is_harmonic = False
+                    break
+
+            if not_harmonic: 
+                harmonic_statuses.append('n') # for "N"-ot harmonic
         
-        canidate_index = np.where(canidate_freqs==canidate)
-        
-        for n in range(2,4): 
-            harmonic = n*fundamental_freq
-            subharmonic = fundamental_freq/n
-
-            if canidate/harmonic < 1.01 and canidate/harmonic > 0.99: 
-                harmonic_status[canidate_index] = 'h'
-
-            elif canidate/subharmonic < 1.01 and canidate/subharmonic > 0.99:
-                harmonic_status[canidate_index] = 's'
+        else: 
+            harmonic_statuses.append('f') # for fundamental, of course 
 
     ### MAKE PLOT ###
     fig = plt.figure(constrained_layout=True, figsize=(7,4))
@@ -102,10 +110,10 @@ for full_id in tqdm(all_ids): # when no printing do tqdm
     
     ax = ax_dict['A']
     
-    ax.scatter(freqs, fitstats, color='#408ee0', s=6, linewidths=0.3, edgecolors='black')
-    ax.hlines(y=np.max(fitstats)-14, xmin=min_freq, xmax=max_freq, label='Max'+r'$-\Delta\mathrm{AIC}10$', color='black', ls='--')
-    ax.hlines(y=np.max(fitstats)-24, xmin=min_freq, xmax=max_freq, label='Max'+r'$-\Delta\mathrm{AIC}20$', color='black', ls='--')
-    ax.scatter(freqs[chiPeakIndices], fitstats[chiPeakIndices], color='C1', marker='x', s=20)
+    ax.scatter(freqs, fit_stats, color='#408ee0', s=6, linewidths=0.3, edgecolors='black')
+    ax.hlines(y=np.max(fit_stats)-14, xmin=min_freq, xmax=max_freq, label='Max'+r'$-\Delta\mathrm{AIC}10$', color='black', ls='--')
+    ax.hlines(y=np.max(fit_stats)-24, xmin=min_freq, xmax=max_freq, label='Max'+r'$-\Delta\mathrm{AIC}20$', color='black', ls='--')
+    ax.scatter(freqs[canidate_peak_indices], fit_stats[canidate_peak_indices], color='C1', marker='x', s=20)
     
     ax.set_ylabel('Fit Statistic')
 
@@ -144,10 +152,11 @@ for full_id in tqdm(all_ids): # when no printing do tqdm
             harmonic = n*fundamental_freq
             subharmonic = fundamental_freq/n
 
-            ax.axvline(x=harmonic, ymin=0.95, ymax=1, color='green')
-            ax.axvline(x=subharmonic, ymin=0.95, ymax=1, color='green')
+            ax.axvline(x=harmonic, ymin=0.9, ymax=1, color='green')
+            ax.axvline(x=subharmonic, ymin=0.9, ymax=1, color='green')
         
     # Annotations Info
+
 
     ax = ax_dict['E']
     ax.axis('off')
@@ -156,14 +165,18 @@ for full_id in tqdm(all_ids): # when no printing do tqdm
     str_freqs = ['Freq: '+str(round(i,3)) for i in canidate_freqs]
 
     for counter, str_freq in enumerate(str_freqs): 
-        if harmonic_status[counter] == 's': 
+        harmonic_status = harmonic_statuses[counter]
+        if harmonic_status == 's': 
             str_freqs[counter] = str_freq+'; subharmonic'
 
-        elif harmonic_status[counter] == 'h': 
+        elif harmonic_status == 'h': 
             str_freqs[counter] = str_freq+'; harmonic'
 
-        else: 
+        elif harmonic_status == 'f': 
             str_freqs[counter] = str_freq+'; fundamental'
+
+        else: 
+            str_freqs[counter] = str_freq+'; not harmonic or fundamental'
 
     freqs_str = '\n'.join(str_freqs)
 
@@ -172,14 +185,12 @@ for full_id in tqdm(all_ids): # when no printing do tqdm
     ax = ax_dict['F']
     ax.axis('off')
   
-    #plt.show()
+    plt.show()
     plot_path = plot_dir + '/'+full_id+'.png'
-    plt.savefig(plot_path,bbox_inches='tight', dpi=150)
+    #plt.savefig(plot_path,bbox_inches='tight', dpi=150)
 
-    #plt.savefig('example-(work in progress).png', bbox_inches='tight', dpi=150)
     plt.clf()
     plt.close()
-    
     
     #break
 
