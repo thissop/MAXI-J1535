@@ -1,6 +1,10 @@
 # General Thoughts
 
 ## Dated Thoughts
+
+* 2/27/2022
+    * I think I am going to take a break from reading papers related to this project / writing the paper (at least take a break from writing the astro aspect of it) for the time being, perhaps until after AP exams because my RAM won't be able to handle all the information I'll need to read and know to be able to write for this until after APs I think. 
+
 * 2/1/2022
     * "When MAXI J1535-571 is dim and Cir X-1 is bright, there is a contamination from Cir X-1. We limit the source region for MAXI J1535 to avoid contamination by Cir X-1. Thus the count-rate of MAXI J1535 is about the half of the real one in the plots and data." - MAXI Website .... ??????
 * 1/24/2022
