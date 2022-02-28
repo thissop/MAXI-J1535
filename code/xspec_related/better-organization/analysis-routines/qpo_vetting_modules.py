@@ -5,13 +5,13 @@
 def hunter(
     full_id:str,
     image_df_dir:str='./code/xspec_related/post-processing/initial/pds_plots/plot_dir/plot_data_raw', 
-    data_dir:str='./code/xspec_related/qpo_routines/jan-1-2022/final_logs/'): 
+    data_dir:str='./code/xspec_related/qpo_routines/jan-1-2022/final_logs'): 
     
     import numpy as np
     import pandas as pd
     from scipy.signal import find_peaks
     
-    image_df = image_df_dir + '/' + full_id + '.csv'
+    image_df = pd.read_csv(image_df_dir + '/' + full_id + '_plot-data.csv') 
     (x,y) = (np.array(image_df[i]) for i in ['x', 'y'])
 
     df = pd.read_csv(data_dir+'/'+full_id+'.csv')
@@ -90,7 +90,7 @@ def hunter(
                         'fundamental_index':fundamental_index}
 
     labels_dict = {'harmonic_status':harmonic_statuses, 
-                    'canidate_labels':str_freqs}
+                   'canidate_labels':str_freqs}
 
     return canidate_dict, labels_dict
 
@@ -120,22 +120,25 @@ def make_vetting_plot(
 
     # get arrays
 
-    image_df = image_df_dir + '/' + full_id + '.csv'
-    (x,y,xerr,yerr) = (np.array(image_df[i])for i in ['x', 'y', 'xerr', 'yerr'])
+    plt.style.use(r"C:\Users\Research\Documents\GitHub\sunnyhills\other\aesthetics\science.mplstyle")
+    plt.rcParams.update({'font.size': 8})
+
+    image_df = pd.read_csv(image_df_dir + '/' + full_id + '_plot-data.csv')
+    (x,y,xerr,yerr) = (np.array(image_df[i]) for i in ['x', 'y', 'xerr', 'yerr'])
 
     fitted_labels = ['freq', 'norm', 'fwhm', 'fit_stat']
-    qpo_df = qpo_df_dir +'/'+full_id+'.csv'
+    qpo_df = pd.read_csv(qpo_df_dir +'/'+full_id+'.csv')
     (freqs, norms, widths, fit_stats) = (np.array(qpo_df[i]) for i in fitted_labels)
 
     min_freq, max_freq = np.min(freqs), np.max(freqs)
 
-    canidate_labels = ['canidate_indices', 'canidate_chis', 'canidate_widths', 'canidate_norms']
+    canidate_labels = ['canidate_freqs', 'canidate_chis', 'canidate_widths', 'canidate_norms']
     (peak_freqs, peak_chis, peak_widths, peak_norms) = (np.array(canidates_dict[i]) for i in canidate_labels)
     fundamental_index = canidates_dict['fundamental_index']
 
     if len(annotations_dict)>0: 
 
-        fig = plt.figure(constrained_layout=True, figsize=(7,4), sharex=True)
+        fig = plt.figure(constrained_layout=True, figsize=(7,4))
         mosaic = """
             AB
             CD
@@ -143,7 +146,7 @@ def make_vetting_plot(
             """
 
     else: 
-        fig = plt.figure(constrained_layout=True, figsize=(7,2.6), sharex=True)
+        fig = plt.figure(constrained_layout=True, figsize=(7,4))
         mosaic = """
             AB
             CD
@@ -153,7 +156,7 @@ def make_vetting_plot(
 
     colors = plt.rcParams['axes.prop_cycle'].by_key()['color']
 
-    for ax_str in ax_dict: 
+    for ax_str in ['A', 'B', 'C', 'D']: 
         ax = ax_dict[ax_str]
         ax.set(xlim=(0.1,20), xscale='log', yscale='log', xlabel='Frequency [Hz]')
         ax.axvspan(ignore_range[0],ignore_range[1], color='red', alpha=0.15, zorder=1)
@@ -228,13 +231,15 @@ def make_vetting_plot(
 
         ax.text(0., 0.25, freqs_str)
 
-    if len(annotations_dict>1): 
-
-        thoughts_str = '\n'.join(annotations_dict[annotations_key[1]])
-        ax.text(0., 0.25, thoughts_str)
-
         ax = ax_dict['F']
         ax.axis('off')
+
+        if len(annotations_dict)>1: 
+
+            thoughts_str = annotations_dict[annotations_key[1]]
+            ax.text(0., 0.25, thoughts_str)
+
+            
   
     if plot_dir != 'none': 
         plot_path = plot_dir + '/'+full_id+'.png'
