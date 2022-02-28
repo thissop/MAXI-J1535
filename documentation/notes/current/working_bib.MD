@@ -35,6 +35,11 @@ object nature*
 
 ### Astrophysics
 
+* [Phil et al. 2019](https://ui.adsabs.harvard.edu/abs/2019HEAD...1711122U/abstract)
+    * September-October 2017 NICER observed the source as it transitioned through its intermediate state
+    * During this transition, the source showed a "strong low-frequency (LF) QPO which varied in frequency between 1.7 and 9.5 Hz"
+    > currently favored model for the LF QPO is that it is associated with general relativistic precession of the innermost hot-flow or corona, and therefore probes the emission and dynamics in the strongest-gravity region of the accretion flow. Spectral-timing with NICER's soft X-ray response and CCD-quality spectral resolution provides a powerful approach to test this and other models for the QPO and study the evolution of the inner disk as the QPO frequency changes. Furthermore, due to its powerful bright-source capabilities, NICER was able to sample the QPOs in MAXI J1535-571 with photon count rates more than 40 times greater than the previous best QPO spectral-timing measurements by XMM-Newton. We use these remakable data to show how the spectral-timing properties of the QPO evolve with changing frequency and use these to test the origin of the QPO and how it is connected to changes in the innermost accretion flow.
+
 ### Machine Learning
 
 * [Applied Predictive Modeling, 2013](http://appliedpredictivemodeling.com/)
