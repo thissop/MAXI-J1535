@@ -28,60 +28,83 @@ def hunter(
     canidate_peaks_mask = np.logical_or(freqs[initial_peak_indices]>1.2, freqs[initial_peak_indices]<0.8) # originally 0.9-1.1 ? 
 
     canidate_peak_indices = initial_peak_indices[canidate_peaks_mask]
-    canidate_freqs = freqs[canidate_peak_indices]
-    canidate_chis = fit_stats[canidate_peak_indices]
-    canidate_widths = widths[canidate_peak_indices]
-    canidate_norms = norms[canidate_peak_indices]
 
-    canidate_rms_powers = [y[np.argmin(np.abs(x - freq))] for freq in canidate_freqs] # fundamental is chosen as maximum rms power peak 
+    num_qpos = len(canidate_peak_indices)
 
-    fundamental_index = np.argmax(canidate_rms_powers)
-    fundamental_freq = canidate_freqs[fundamental_index]
+    if num_qpos > 0: 
 
-    harmonic_statuses = []
+        canidate_freqs = freqs[canidate_peak_indices]
+        canidate_chis = fit_stats[canidate_peak_indices]
+        canidate_widths = widths[canidate_peak_indices]
+        canidate_norms = norms[canidate_peak_indices]
 
-    # Evaluate harmonic statuses 
-    for canidate_index, canidate in enumerate(canidate_freqs): # within 2% !! 
-        if canidate_index!=fundamental_index: 
-            not_harmonic = True 
-            for n in range(2,5): 
-                harmonic = n*fundamental_freq
-                subharmonic = fundamental_freq/n
+        canidate_rms_powers = [y[np.argmin(np.abs(x - freq))] for freq in canidate_freqs] # fundamental is chosen as maximum rms power peak 
 
-                if canidate/harmonic < 1.02 and canidate/harmonic > 0.98: 
-                    harmonic_statuses.append('h') # for harmonic (isn't this technicall the "second harmonic")
-                    not_harmonic = False
-                    break
+        fundamental_index = np.argmax(canidate_rms_powers)
+        fundamental_freq = canidate_freqs[fundamental_index]
 
-                elif canidate/subharmonic < 1.02 and canidate/subharmonic > 0.98:
-                    harmonic_statuses.append('s') # for sub-harmonic
-                    not_harmonic = False
-                    break
+        harmonic_statuses = []
 
-            if not_harmonic: 
-                harmonic_statuses.append('n') # for "N"-ot harmonic
-        
-        else: 
-            harmonic_statuses.append('f') # for fundamental, of course 
+        # Evaluate harmonic statuses 
+        for canidate_index, canidate in enumerate(canidate_freqs): # within 2% !! 
+            if canidate_index!=fundamental_index: 
+                not_harmonic = True 
+                for n in range(2,5): 
+                    harmonic = n*fundamental_freq
+                    subharmonic = fundamental_freq/n
 
-    str_freqs = ['Freq: '+str(round(i,3)) for i in canidate_freqs]
+                    if canidate/harmonic < 1.02 and canidate/harmonic > 0.98: 
+                        harmonic_statuses.append('h') # for harmonic (isn't this technicall the "second harmonic")
+                        not_harmonic = False
+                        break
 
-    for counter, str_freq in enumerate(str_freqs): 
-        harmonic_status = harmonic_statuses[counter]
-        if harmonic_status == 's': 
-            str_freqs[counter] = str_freq+'; subharmonic'
+                    elif canidate/subharmonic < 1.02 and canidate/subharmonic > 0.98:
+                        harmonic_statuses.append('s') # for sub-harmonic
+                        not_harmonic = False
+                        break
 
-        elif harmonic_status == 'h': 
-            str_freqs[counter] = str_freq+'; harmonic'
+                if not_harmonic: 
+                    harmonic_statuses.append('n') # for "N"-ot harmonic
+            
+            else: 
+                harmonic_statuses.append('f') # for fundamental, of course 
 
-        elif harmonic_status == 'f': 
-            str_freqs[counter] = str_freq+'; fundamental'
+        str_freqs = ['Freq: '+str(round(i,3)) for i in canidate_freqs]
 
-        else: 
-            str_freqs[counter] = str_freq+'; not harmonic or fundamental'
+        for counter, str_freq in enumerate(str_freqs): 
+            harmonic_status = harmonic_statuses[counter]
+            if harmonic_status == 's': 
+                str_freqs[counter] = str_freq+'; subharmonic'
+
+            elif harmonic_status == 'h': 
+                str_freqs[counter] = str_freq+'; harmonic'
+
+            elif harmonic_status == 'f': 
+                str_freqs[counter] = str_freq+'; fundamental'
+
+            else: 
+                str_freqs[counter] = str_freq+'; not harmonic or fundamental'
+
+    else: 
+        fundamental_index = -1
+        harmonic_statuses = [-1]
+        str_freqs = [-1]
+
+        canidate_peak_indices = [-1]
+        canidate_freqs = [-1]
+        canidate_chis = [-1]
+        canidate_widths = [-1]
+        canidate_norms = [-1]
+
+        canidate_rms_powers = [-1] 
+
+        fundamental_index = -1
+        fundamental_freq = -1
 
 
-    canidate_dict = {'canidate_indices':canidate_peak_indices, # indices correspond to the ~268 logarithmically spaced frequencies array used in xspec  
+    canidate_dict = {
+                        'num_qpos':num_qpos, 
+                        'canidate_indices':canidate_peak_indices, # indices correspond to the ~268 logarithmically spaced frequencies array used in xspec  
                         'canidate_freqs':canidate_freqs, 
                         'canidate_chis':canidate_chis,
                         'canidate_widths':canidate_widths, 
@@ -132,8 +155,8 @@ def make_vetting_plot(
 
     min_freq, max_freq = np.min(freqs), np.max(freqs)
 
-    canidate_labels = ['canidate_freqs', 'canidate_chis', 'canidate_widths', 'canidate_norms']
-    (peak_freqs, peak_chis, peak_widths, peak_norms) = (np.array(canidates_dict[i]) for i in canidate_labels)
+    canidate_labels = ['num_qpos', 'canidate_freqs', 'canidate_chis', 'canidate_widths', 'canidate_norms']
+    (num_qpos, peak_freqs, peak_chis, peak_widths, peak_norms) = (np.array(canidates_dict[i]) for i in canidate_labels)
     fundamental_index = canidates_dict['fundamental_index']
 
     if len(annotations_dict)>0: 
@@ -145,6 +168,11 @@ def make_vetting_plot(
             EF
             """
 
+        ax_dict = fig.subplot_mosaic(mosaic)
+
+        for ax_str in ["E", "F"]: 
+            ax_dict[ax_str].axis('off')
+
     else: 
         fig = plt.figure(constrained_layout=True, figsize=(7,4))
         mosaic = """
@@ -152,7 +180,7 @@ def make_vetting_plot(
             CD
             """
 
-    ax_dict = fig.subplot_mosaic(mosaic)
+        ax_dict = fig.subplot_mosaic(mosaic)
 
     colors = plt.rcParams['axes.prop_cycle'].by_key()['color']
 
@@ -200,43 +228,43 @@ def make_vetting_plot(
     def loren(E, EL, σ, K):
         return K*(σ/(2*3.1415659265))/((E-EL)**2+(σ/2)**2)
 
-    for canidate_index in range(len(peak_widths)): 
-        canidate_freq = peak_freqs[canidate_index]
-        canidate_width = peak_widths[canidate_index]
-        canidate_norm = peak_norms[canidate_index]
-        x_range = np.linspace(0.85*canidate_freq, 1.15*canidate_freq, 50)
+    if num_qpos>0: 
+        for canidate_index in range(len(peak_widths)): 
+            canidate_freq = peak_freqs[canidate_index]
+            canidate_width = peak_widths[canidate_index]
+            canidate_norm = peak_norms[canidate_index]
+            x_range = np.linspace(0.85*canidate_freq, 1.15*canidate_freq, 50)
 
-        y_loren = loren(x_range, canidate_freq, canidate_width, canidate_norm)
+            y_loren = loren(x_range, canidate_freq, canidate_width, canidate_norm)
 
-        ax.plot(x_range, y_loren, color='orange', lw=1)
+            ax.plot(x_range, y_loren, color='orange', lw=1)
 
-    fundamental_freq = peak_freqs[fundamental_index]
-    for n in range(2,5): 
-        harmonic = n*fundamental_freq
-        subharmonic = fundamental_freq/n
+        fundamental_freq = peak_freqs[fundamental_index]
+        for n in range(2,5): 
+            harmonic = n*fundamental_freq
+            subharmonic = fundamental_freq/n
 
-        ax.axvline(x=harmonic, ymin=0.9, ymax=1, color='green')
-        ax.axvline(x=subharmonic, ymin=0.9, ymax=1, color='green')
+            ax.axvline(x=harmonic, ymin=0.9, ymax=1, color='green')
+            ax.axvline(x=subharmonic, ymin=0.9, ymax=1, color='green')
         
     # Annotations Info
     if len(annotations_dict)>0: 
 
         annotations_key = list(annotations_dict.keys())
+        annotations_values = list(annotations_dict.values())
 
         ax = ax_dict['E']
-        ax.axis('off')
         ax.set(title='Detected QPO Frequencies')
 
-        freqs_str = '\n'.join(annotations_dict[annotations_key[0]])
+        if annotations_values[0] != [-1]: 
+            freqs_str = '\n'.join(annotations_dict[annotations_key[0]])
 
-        ax.text(0., 0.25, freqs_str)
+            ax.text(0., 0.25, freqs_str)
 
         ax = ax_dict['F']
-        ax.axis('off')
 
         if len(annotations_dict)>1: 
-
-            thoughts_str = annotations_dict[annotations_key[1]]
+            thoughts_str = '\n'.join(annotations_dict[annotations_key[1]])
             ax.text(0., 0.25, thoughts_str)
 
             
@@ -250,3 +278,12 @@ def make_vetting_plot(
 
     plt.clf()
     plt.close()
+
+## MISC. ##
+
+def print_classes(): 
+    dict = {'g':'\'G\'ood, as in stick to default', 
+            'n':'no qpos in PDS',
+            '?':'if ? in class, go over it with Dr. Steiner'}
+
+    print(dict)

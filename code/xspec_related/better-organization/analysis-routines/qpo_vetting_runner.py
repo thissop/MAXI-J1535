@@ -13,27 +13,43 @@ def vetting_with_comments_run():
 
     plot_dir = './code/xspec_related/qpo_routines/make_vetting_plots/plots'
 
-    for full_id in full_ids: 
-        canidates_dict, labels_dict = hunter(full_id)
+    out_file = 'prelim_vetting_classes.csv'
 
-        annot = {'algo_labels':labels_dict['canidate_labels']}
+    already_labled = [i.replace('.png', '') for i in os.listdir(plot_dir) if i!='.gitkeep']
+    full_ids = [i for i in full_ids if i not in already_labled]
 
-        make_vetting_plot(full_id, canidates_dict=canidates_dict, annotations_dict=annot) 
+    if not os.path.exists(out_file): 
+        with open(out_file, 'w') as f: 
+            f.write('full_id,comment'+'\n')
+    
+    for number, full_id in enumerate(full_ids):
+        with open(out_file, 'a') as f:  
+            canidates_dict, labels_dict = hunter(full_id)
 
-        user_input = input(full_id+" THOUGHTS: ")
+            annot = {'algo_labels':labels_dict['canidate_labels']}
 
-        annot = {'algo_labels':labels_dict['canidate_labels'], 
-                 'my_thoughts':user_input}
+            try: 
+                        
+                    make_vetting_plot(full_id, canidates_dict=canidates_dict, annotations_dict=annot) 
 
-        
-        make_vetting_plot(full_id, canidates_dict=canidates_dict, annotations_dict=annot, plot_dir=plot_dir) 
+                    user_input = input(full_id+" THOUGHTS ("+str(len(full_ids)-number)+' left): ')
 
-        # get user input, remake plot adding user input to the ax_dict['F'], and save without showing 
+                    annot = {'algo_labels':labels_dict['canidate_labels'], 
+                        'my_thoughts':user_input}
 
-    zipped = list(zip(full_ids, comments))
-    df = pd.DataFrame(zipped, columns=['full_id', 'comment'])
+                    make_vetting_plot(full_id, canidates_dict=canidates_dict, annotations_dict=annot, plot_dir=plot_dir) 
 
-    df.to_csv('prelim_vetting_classes.csv', index=False)
+                    f.write(full_id+','+user_input+'\n')
+
+            except: 
+                print('ERROR WITH: '+full_id)
+                continue 
+
+            finally: 
+                continue 
+
+            # get user input, remake plot adding user input to the ax_dict['F'], and save without showing 
+
 
 vetting_with_comments_run()
 
