@@ -117,6 +117,13 @@ def hunter(
 
     return canidate_dict, labels_dict
 
+
+
+
+
+
+
+
 ## Plotting functions
 
 def make_vetting_plot(
@@ -264,7 +271,8 @@ def make_vetting_plot(
         ax = ax_dict['F']
 
         if len(annotations_dict)>1: 
-            thoughts_str = '\n'.join(annotations_dict[annotations_key[1]])
+            #thoughts_str = '\n'.join(annotations_dict[annotations_key[1]])
+            thoughts_str = '' # fix for later 
             ax.text(0., 0.25, thoughts_str)
 
             
@@ -278,6 +286,167 @@ def make_vetting_plot(
 
     plt.clf()
     plt.close()
+
+
+### not really long term functions 
+
+def initial_pass(
+    #key_df:str=r'code\xspec_related\good_ids.csv',
+    outfile:str=r'code\xspec_related\better-organization\analysis-routines\qpo_data_aggregation\results\pre-steiner-compiled.csv',
+    prelim_results:str=r'code\xspec_related\better-organization\analysis-routines\qpo_data_aggregation\results\prelim_vetting_classes.csv',
+    image_df_dir:str='./code/xspec_related/post-processing/initial/pds_plots/plot_dir/plot_data_raw', 
+    data_dir:str='./code/xspec_related/qpo_routines/jan-1-2022/final_logs'): 
+
+    import pandas as pd
+    import numpy as np
+
+    out_cols = ['full_id', 'num_qpos']
+
+    for qpo_order in ['first', 'second', 'third']: 
+        for val in ['freq', 'width', 'norm', 'rms_power']: 
+            out_cols.append(qpo_order+'_'+val)
+
+    col_str = ','.join(out_cols)+',fundamental_index'
+
+    with open(outfile, 'w') as f: 
+        f.write(col_str+'\n')
+
+    #full_ids = pd.read_csv(key_df)['full_id']
+
+    prelim_df = pd.read_csv(prelim_results)
+
+    full_ids = prelim_df['full_id']
+    prelim_classes = prelim_df['comment']
+
+    index_counter = 0
+    for full_id, comment in zip(full_ids, prelim_classes):
+        canidates_dict, annotations_dict = hunter(full_id)
+        
+        freqs = canidates_dict['canidate_freqs']
+        widths = canidates_dict['canidate_widths']
+        norms = canidates_dict['canidate_norms']
+        rms_powers = canidates_dict['canidate_rms_powers']
+
+        num_qpos = canidates_dict['num_qpos']
+        
+        if comment == 'g': 
+            # algo was able to detect the value 
+            
+            out_str = full_id + ',' + str(num_qpos)
+
+            filler_str = ''
+            for i in range(3-num_qpos): 
+                filler_str += ',,,,' # starts with comma, doesn't end with comma
+            
+            for i in range(num_qpos): 
+                temp_list = [freqs[i], widths[i], norms[i], rms_powers[i]]
+                out_str += ','+','.join([str(item) for item in temp_list]) 
+                 
+            out_str += filler_str 
+
+            out_str += ','+str(canidates_dict['fundamental_index'])
+
+        elif comment == 'n': 
+            num_qpos = 0
+            out_str = full_id + ',' + str(num_qpos)
+
+            filler_str = ''
+            for i in range(3-num_qpos): 
+                filler_str += ',,,,' # starts with comma, doesn't end with comma
+            
+            for i in range(num_qpos): 
+                temp_list = [freqs[i], widths[i], norms[i], rms_powers[i]]
+                out_str += ','+','.join([str(item) for item in temp_list]) 
+                 
+            out_str += filler_str 
+
+            out_str += ',-1'
+
+        elif '?' in comment:
+            
+            out_str = full_id + ',' +','.join(14*['flagged'])
+
+        else: 
+            
+            print(full_id + ' prelim comment: '+comment)
+            make_vetting_plot(full_id, canidates_dict=canidates_dict, annotations_dict=annotations_dict)
+            
+            qpos_to_keep_input = input('Enter QPO indices to keep: ')
+            
+            if qpos_to_keep_input!='skip':
+
+                qpos_to_keep = [int(qpo_index) for qpo_index in qpos_to_keep_input.split(' ')] 
+            
+                fundamental_index = input(full_id + " fundamental_index: ")
+
+                freqs,widths,norms,rms_powers = [np.array(prelim_list)[qpos_to_keep] for prelim_list in [freqs,widths,norms,rms_powers]] 
+
+                adjusted_num_qpos = len(freqs)
+
+                out_str = full_id + ',' + str(adjusted_num_qpos)
+
+                filler_str = ''
+                for i in range(3-adjusted_num_qpos): 
+                    filler_str += ',,,,' # starts with comma, doesn't end with comma
+                
+                for i in range(adjusted_num_qpos): 
+                    temp_list = [freqs[i], widths[i], norms[i], rms_powers[i]]
+                    out_str += ','+','.join([str(item) for item in temp_list]) 
+                    
+                out_str += filler_str 
+
+                out_str += ',' + fundamental_index
+
+            else: # in case I have second thoughts and want to change it lol 
+                out_str = full_id + ',' +','.join(14*['flagged'])
+                
+                new_comment = input(full_id+' new commment: ')
+                
+                prelim_classes[index_counter] = new_comment + '?'
+
+
+
+        index_counter += 1
+        with open(outfile, 'a') as f: 
+                f.write(out_str+'\n')
+
+    df = pd.DataFrame(list(zip(full_ids, prelim_classes)), columns=['full_id', 'comment'])
+    df.to_csv(prelim_results, index=False) 
+    
+def reviewing_with_steiner(
+    outfile:str=r'code\xspec_related\better-organization\analysis-routines\qpo_data_aggregation\results\discussion_with_steiner.csv',
+    prelim_results:str=r'code\xspec_related\better-organization\analysis-routines\qpo_data_aggregation\results\prelim_vetting_classes.csv',
+    image_df_dir:str='./code/xspec_related/post-processing/initial/pds_plots/plot_dir/plot_data_raw', 
+    data_dir:str='./code/xspec_related/qpo_routines/jan-1-2022/final_logs'):
+
+    import pandas as pd
+    import numpy as np
+
+    with open(outfile, 'w') as f: 
+        f.write('full_id,updated_comment'+'\n')
+
+    prelim_df = pd.read_csv(prelim_results)
+
+    review_ids = prelim_df['full_id']
+    prelim_classes = prelim_df['comment']
+
+
+    index_counter = 0
+    for full_id, comment in zip(review_ids, prelim_classes):
+        if '?' in comment: 
+            canidates_dict, annotations_dict = hunter(full_id)
+
+            print(f'{full_id}; initial comment: {comment}')
+            make_vetting_plot(full_id, canidates_dict=canidates_dict, annotations_dict=annotations_dict)
+            new_comment = input(f'{full_id}; new comment: ').replace(',',' ')
+            with open(outfile, 'a') as f: 
+                f.write(f'{full_id},{new_comment}\n')
+
+
+
+
+
+
 
 ## MISC. ##
 

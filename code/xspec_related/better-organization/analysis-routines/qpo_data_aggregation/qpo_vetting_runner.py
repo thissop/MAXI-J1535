@@ -50,6 +50,17 @@ def vetting_with_comments_run():
 
             # get user input, remake plot adding user input to the ax_dict['F'], and save without showing 
 
+def initial_pass_runner(): 
+    from qpo_vetting_modules import hunter, make_vetting_plot, initial_pass
 
-vetting_with_comments_run()
+    initial_pass() 
 
+
+def review(): 
+    from qpo_vetting_modules import reviewing_with_steiner
+
+    reviewing_with_steiner()
+
+#vetting_with_comments_run()
+#initial_pass_runner() 
+review()
