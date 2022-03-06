@@ -1,6 +1,7 @@
 # cSpell: disable
 # this file's wsl path: /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/code/misc/count_rates_initial_exploration/get_count_rates.py
 
+wsl_base = '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535'
 
 def make_count_rates_file(): 
     
@@ -14,7 +15,6 @@ def make_count_rates_file():
 
     key = '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/code/xspec_related/good_ids.csv'
     data_dir = "/mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus"
-    wsl_base = '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535'
 
     full_ids = np.array(pd.read_csv(key)['full_id'])
     for full_id in tqdm(full_ids): 
@@ -67,7 +67,26 @@ def make_count_rates_file():
         # do rebinning in google collab 
         out_df[full_id] = net_counts
 
-    out_df.transpose()
     out_df.to_csv(wsl_base+'/code/misc/count_rates_initial_exploration/count_rates.csv', index=False)
 
-make_count_rates_file()
+#make_count_rates_file()
+
+def fix_count_rates_file(): 
+    import pandas as pd
+    import numpy as np
+
+    df = pd.read_csv('./code/misc/count_rates_initial_exploration/count_rates.csv')
+    df = df.transpose()
+
+    
+    full_ids = np.array(pd.read_csv('./code/xspec_related/good_ids.csv')['full_id'])
+    df['full_id'] = full_ids
+    
+    cols = list(df.columns)
+    cols = [cols[-1]] + cols[:-1]
+    df = df[cols]
+    
+    df.to_csv('./code/misc/count_rates_initial_exploration/count_rates_transposed.csv', index=False)
+    print(df)
+
+fix_count_rates_file()
