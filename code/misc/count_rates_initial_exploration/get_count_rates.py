@@ -67,6 +67,7 @@ def make_count_rates_file():
         # do rebinning in google collab 
         out_df[full_id] = net_counts
 
+    out_df.transpose()
     out_df.to_csv(wsl_base+'/code/misc/count_rates_initial_exploration/count_rates.csv', index=False)
 
 make_count_rates_file()
