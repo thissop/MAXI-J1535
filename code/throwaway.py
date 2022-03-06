@@ -41,3 +41,17 @@ def num_qpos_initial():
     plt.savefig('very initial dist.png')
 
 #num_qpos_initial()
+
+def re_count(): 
+    import pandas as pd
+    import numpy as np
+
+    import matplotlib.pyplot as plt
+
+    num_qpos = np.array(pd.read_csv(r'code\xspec_related\better-organization\analysis-routines\qpo_data_aggregation\results\pre-steiner-compiled.csv')['num_qpos'])
+
+    num_qpos = np.array([i for i in num_qpos if i!='flagged']).astype(float)
+
+    print(len(np.where(num_qpos>0)[0]))
+    
+re_count()
