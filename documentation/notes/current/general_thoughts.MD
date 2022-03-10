@@ -2,6 +2,15 @@
 
 ## Dated Thoughts
 
+* 3/10/2022
+    * For a bit I was nervous about the justificaiton for ML in this paper, but now I realize that including data from the wider QPOs is gonna require ML because it will mess up linear regression. 
+    * Also, something I was thinking about is should I plot normal (i.e. not normalized) frequencies against their predictions and calculate mae/mse on them? 
+    * List of things to email: 
+        * Fit parameters for simple doubles cliffs; examples: [1050360113_1, 1050360113_4, 1130360110_3]
+            * Similiar doubles but slightly different shapes: [1130360105_3,1130360106_1]
+        * Ask about rare case of triple with cliff: [1130360106_0, 1130360108_2, 1130360110_1, ]
+    * Plan for 3/10/2022 Night Work: 
+    
 * 3/6/2022
     * I wonder if we should critique the ML approach for state classification by Sreehari and Nandi because they discuss including normalized MJD in their clustering models...some different sources online suggest how you shouldn't use it in this context because you couldn't then use the predictive model in the future as future dates wouldn't be included in the training data set (paraphrased from [this article](https://towardsdatascience.com/machine-learning-with-datetime-feature-engineering-predicting-healthcare-appointment-no-shows-5e4ca3a85f96))...we could say something like "In contrast to the approach of Sreehardi and Nandi (2021), we specifically do not use observation times as input features in any of our models as we are specifically designing the models so that they can be used as valid predictors of QPO properties in future observations..."
     * From a different [article](https://towardsdatascience.com/avoid-these-deadly-modeling-mistakes-that-may-cost-you-a-career-b9b686d89f2c), since Sreehardi and Nandi are doing the normalization of the MJD data time values for each source individually, I think this is a big issue, because these values then become psuedo-"ID" values. See the following excerpt: 
