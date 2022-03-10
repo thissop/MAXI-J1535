@@ -4,12 +4,15 @@
 
 * 3/10/2022
     * For a bit I was nervous about the justificaiton for ML in this paper, but now I realize that including data from the wider QPOs is gonna require ML because it will mess up linear regression. 
+    * Something I should do is add a "confidence stage" classification column so I can back track which inclusions introduce errors into the model (mention this to Dr. Steiner)...I wish I did this earlier. So far I think I'll only have two confidence stages by the end of tonight: the original classes I explored on sunday in collab, as well as the new classes I'll add that are broader. 
+        * make sure at least two of the broader classes are in the test set? --> imbalenced class problem is still in the paper, let's go!  
     * Also, something I was thinking about is should I plot normal (i.e. not normalized) frequencies against their predictions and calculate mae/mse on them? 
     * List of things to email: 
         * Fit parameters for simple doubles cliffs; examples: [1050360113_1, 1050360113_4, 1130360110_3]
             * Similiar doubles but slightly different shapes: [1130360105_3,1130360106_1]
-        * Ask about rare case of triple with cliff: [1130360106_0, 1130360108_2, 1130360110_1, ]
+        * Ask about rare case of triple with cliff: [1130360106_0, 1130360108_2, 1130360110_1]
     * Plan for 3/10/2022 Night Work: 
+
 
 * 3/10/2022
     * For a bit I was nervous about the justificaiton for ML in this paper, but now I realize that including data from the wider QPOs is gonna require ML because it will mess up linear regression. 
