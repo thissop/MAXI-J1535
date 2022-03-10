@@ -2,6 +2,7 @@
 
 ## Dated Thoughts
 
+<<<<<<< HEAD
 * 3/10/2022
     * For a bit I was nervous about the justificaiton for ML in this paper, but now I realize that including data from the wider QPOs is gonna require ML because it will mess up linear regression. 
     * Also, something I was thinking about is should I plot normal (i.e. not normalized) frequencies against their predictions and calculate mae/mse on them? 
@@ -11,6 +12,12 @@
         * Ask about rare case of triple with cliff: [1130360106_0, 1130360108_2, 1130360110_1, ]
     * Plan for 3/10/2022 Night Work: 
     
+=======
+* 3/7/2022
+    * Read an interesting, very short article just now ([link](https://astroautomata.com/blog/ml-overuse-astrophysics/)). The author talked about the use/abuse of machine learning in astronomy, and said that it's overused as: "Many ML applications in astrophysics aren’t necessary. When applied to the wrong problem, modern ML can be overinterpreted and overextrapolated. E.g., when deep NNs are applied to low-data low-dimensional problems. A simpler algorithm will often do just as well and be far more interpretable. Interpretation is the essence of science!" He futher went on to list some cool sounding situations where it should be used more, such as symbolic learning. 
+    * Something that I think would be interesting to explore would be KNN-Ridge Regression on hardness ratio and net source count rate versus Random Forest on bin counts...additionally, I wonder if I should title the paper "Evaluating the use of Machine Learning for predicting the Quasi-Periodic Oscillations of MAXI J1535-571" and include commentary on whether or not ML is appropriately justified in its use on predicting the properties of QPOs...I wonder if this paper can be framed around investigating whether it is appropriate to apply ML to single sources and to develop a framework for testing this, and then once conflusions have been made to then test the approaches on a data set composed of multiple sources. We can say that although we are seemingly moving into the artificial intelligence era, some caution is warrented in the adoption of the methods when they may not be justifie, especially when these methods are black box. --> Ask Dr. Steiner what he thinks about this, and if its's still publishable...think of the random forest method as the "naive" method ... it would also be interesting to discuss the brightness vs data quality thing that came up earlier. 
+   
+>>>>>>> 3cf758bca0f4fab8cdd1f0624b424934ad01678d
 * 3/6/2022
     * I wonder if we should critique the ML approach for state classification by Sreehari and Nandi because they discuss including normalized MJD in their clustering models...some different sources online suggest how you shouldn't use it in this context because you couldn't then use the predictive model in the future as future dates wouldn't be included in the training data set (paraphrased from [this article](https://towardsdatascience.com/machine-learning-with-datetime-feature-engineering-predicting-healthcare-appointment-no-shows-5e4ca3a85f96))...we could say something like "In contrast to the approach of Sreehardi and Nandi (2021), we specifically do not use observation times as input features in any of our models as we are specifically designing the models so that they can be used as valid predictors of QPO properties in future observations..."
     * From a different [article](https://towardsdatascience.com/avoid-these-deadly-modeling-mistakes-that-may-cost-you-a-career-b9b686d89f2c), since Sreehardi and Nandi are doing the normalization of the MJD data time values for each source individually, I think this is a big issue, because these values then become psuedo-"ID" values. See the following excerpt: 
