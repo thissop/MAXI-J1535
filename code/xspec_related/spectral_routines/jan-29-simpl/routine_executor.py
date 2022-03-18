@@ -9,7 +9,6 @@ all_ids = list(pd.read_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/co
 spectral_temp = '/mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/+++/jspipe/js_ni+++_0mpu7_silver_GTI***.jsgrp'
 log_temp = '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/code/xspec_related/spectral_routines/jan-29-simpl/logs'
 
-
 Xset.chatter = 0
 Xset.logChatter = 10
 Fit.query = "no"
