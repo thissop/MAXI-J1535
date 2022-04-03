@@ -2,6 +2,9 @@
 
 ## Dated Thoughts
 
+* 4/3/2022
+    * Found a paper that compared random forest and a simplier linear regression in cancer data, sample size was similiar to ours (n=440 ish): [link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4610387/)    
+
 * 3/10/2022
     * In addition to how I have been plotting QPOs from the same PDS in unique colors compared to their peers on the color scale (gotta check if this is continuous), I think I should also use different markers for the different confidence classes they come from (so e.g. I can see how well the broad one is fit). 
     * For a bit I was nervous about the justification for ML in this paper, but now I realize that including data from the wider QPOs is gonna require ML because it will mess up linear regression. 
