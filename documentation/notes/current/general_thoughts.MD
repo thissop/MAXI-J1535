@@ -4,6 +4,10 @@
 
 * 4/3/2022
     * Found a paper that compared random forest and a simplier linear regression in cancer data, sample size was similiar to ours (n=440 ish): [link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4610387/)    
+    * **Things to read on SHAP/Tree SHAP/Shapley:**
+      1. https://christophm.github.io/interpretable-ml-book/shapley.html
+      2. https://christophm.github.io/interpretable-ml-book/shap.html#fn69
+      3. https://www.datatrigger.org/post/interpretable_machine_learning_shap/
 
 * 3/10/2022
     * In addition to how I have been plotting QPOs from the same PDS in unique colors compared to their peers on the color scale (gotta check if this is continuous), I think I should also use different markers for the different confidence classes they come from (so e.g. I can see how well the broad one is fit). 
