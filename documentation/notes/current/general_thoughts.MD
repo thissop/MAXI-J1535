@@ -2,6 +2,11 @@
 
 ## Dated Thoughts
 
+* 4/5/2022: 
+   * two thoughts for today: 
+       1. [this](https://scikit-learn.org/stable/modules/cross_validation.html) may be an issue?
+       2. I wonder if we should style the paper as both a proof of concept/methodological test to develop methods for a future paper predicing QPO properties based on spectral data for numerous sources, as well as an interesting investigation in MAXI-J1535-571 in itself. Mention this throughout paper, maybe also talk about a future thing to work on is more automated QPO detection/characterization vetting procedure.    
+
 * 4/3/2022
     * Found a paper that compared random forest and a simplier linear regression in cancer data, sample size was similiar to ours (n=440 ish): [link](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4610387/)    
     * **Things to read on SHAP/Tree SHAP/Shapley:**
