@@ -4,6 +4,7 @@
 
 * 4/9/2022
    * it's interesting how the shapley importances show that the models leverage a hard and soft channel first most importantly, and then two more hards and then a soft. 
+   * I wonder that if we don't ignore the messed up region if that region will be useful in determining things (it shouldn't)...shoot I gotta check if I already ignored it. 
    *  [force plots](https://miro.medium.com/max/1400/1*F40hOH_QlubjQuaiqzOPig.png) and [shap decision plots](https://shap-lrjball.readthedocs.io/en/docs_update/example_notebooks/plots/decision_plot.html) could be useful 
         * show true vs predicted in results, then show shap feature importances, a force plot, and a shap decision plot in discussion?  
 
