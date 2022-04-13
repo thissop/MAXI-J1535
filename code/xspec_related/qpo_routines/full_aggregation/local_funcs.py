@@ -62,7 +62,8 @@ def quick_plot(full_id: str,
     ax.hlines(y=np.max(fit_stats)-24, xmin=min_freq, xmax=max_freq, label='Max'+r'$-\Delta\mathrm{AIC}20$', color='black', ls='--')
     
     if len(canidates_dict.keys())>0: 
-        ax.vlines(peak_freqs, ymin=0.9, ymax=1, color='C1')
+        for frq in peak_freqs: 
+            ax.axvline(frq, ymin=0.9, ymax=1, color='C7')
     
     ax.set_ylabel('Fit Statistic')
 
