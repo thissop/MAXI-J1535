@@ -2,6 +2,9 @@
 
 ## Dated Thoughts
 
+* 4/17/2022
+    * Two good papers for structure: [protostars ML](https://arxiv.org/pdf/1808.08371.pdf) and [weighing BHs with DL](https://arxiv.org/pdf/2108.07749.pdf)...the second is very nice. I would like to base our papers structure off it more (e.g. concise). 
+
 * 4/9/2022
    * it's interesting how the shapley importances show that the models leverage a hard and soft channel first most importantly, and then two more hards and then a soft. 
    * I wonder that if we don't ignore the messed up region if that region will be useful in determining things (it shouldn't)...shoot I gotta check if I already ignored it. 
