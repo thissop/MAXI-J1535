@@ -3,6 +3,12 @@
 ## Dated Thoughts
 
 * 4/17/2022
+    * **TODO**
+        1. run more developed test of new data
+        2. test the 4th class objects
+        3. Implement grid search for random forest
+        4. get scaling for rebinned spectral channels
+        - Could this be the beginning of the end?  
     * Two good papers for structure: [protostars ML](https://arxiv.org/pdf/1808.08371.pdf) and [weighing BHs with DL](https://arxiv.org/pdf/2108.07749.pdf)...the second is very nice. I would like to base our papers structure off it more (e.g. concise). 
 
 * 4/9/2022
