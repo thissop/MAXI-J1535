@@ -2,6 +2,12 @@
 
 ## Dated Thoughts
 
+* 4/23/2022
+    * **TODO**
+      1. fix regr / data for all classes, including 3/4
+      2. non knn classification method for svr? or svr alone? 
+      3. get final results 
+
 * 4/17/2022
     * **TODO**
         1. run more developed test of new data
