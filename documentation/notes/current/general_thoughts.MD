@@ -2,6 +2,10 @@
 
 ## Dated Thoughts
 
+* 4/30/2022: 
+   * thoughts on meta analysis of qpos: 
+      * restricting to Motta is probably best course of action...my general plan is that we'd extract the corresponding spectral files for each qpo observation from hearsarc, then get the counts array things out // any xspec stuff (e.g. diskbb tin, gamma, etc.). We would treat this as an evaluation grounds/methodology builder for a future study we would conduct where we would use *A LOT* of archival rxte files (maybe all?) and find the qpos ourselves, and then include qpo/non qpo data files in that paper (that's the difference between the motta data and ours, motta doesn't have any non-qpo detection files labeled, so both the motta and our maxi j1535 sets serve their own purpose). 
+
 * 4/23/2022
     * **TODO**
       1. fix regr / data for all classes, including 3/4
