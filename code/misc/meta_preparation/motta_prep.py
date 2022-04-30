@@ -105,4 +105,58 @@ def check_motta(clean_file:str='./data/processed/2022/meta_qpo/motta_cleaned.csv
 
     assert correct_order # true
 
-check_motta()
+#check_motta()
+
+def add_classes(clean_file:str='./data/processed/2022/meta_qpo/motta_cleaned.csv'):
+    import pandas as pd
+
+    df = pd.read_csv(clean_file)
+    
+    sources = list(df['source'])
+    types = list(df['type'])
+    inclinations = list(df['inclination'])
+
+    combined = [sources[i]+':'+types[i]+':'+inclinations[i] for i in range(len(sources))]
+
+    class_options = list(set(combined))
+
+    class_nums = [str(i) for i in list(range(len(class_options)))]
+
+    class_dict = dict(zip(class_options, class_nums))
+
+    classes = []
+
+    for i in range(len(sources)): 
+        test_str = sources[i]+':'+types[i]+':'+inclinations[i]
+        classes.append(class_dict[test_str])
+    
+    df['class'] = classes 
+
+    df.to_csv(clean_file, index=False)
+
+#add_classes()
+
+def classes_plot(clean_file:str='./data/processed/2022/meta_qpo/motta_cleaned.csv'):
+    import pandas as pd
+    import numpy as np
+    import matplotlib.pyplot as plt
+
+    df = pd.read_csv(clean_file)
+    
+    classes = np.array(df['class'])
+
+    set_classes = list(set(classes))
+
+    print(set_classes)
+    counts = [len(np.where(classes==qpo_class)[0]) for qpo_class in set_classes]
+
+    plt.style.use('https://raw.githubusercontent.com/thissop/MAXI-J1535/main/code/misc/stolen_science.mplstyle?token=GHSAT0AAAAAABP54PQO2X2VXMNS256IWOBOYRNCFBA')
+
+    plt.bar(set_classes, counts)
+
+    plt.gca().set(xlabel='Motta et al. Class', ylabel='Frequency')
+
+    #plt.show()
+    plt.savefig('code/misc/meta_preparation/motta_classes_hist.png', bbox_inches='tight', dpi=150)
+
+classes_plot()
