@@ -85,8 +85,6 @@ def add_segment(name, type, inclination,
         with open(clean_file, 'a') as f: 
             out_str =','.join([str(i) for i in df.loc[index].tolist()])+'\n'
             f.write(out_str)
-
-
             
 #add_segment('MAXI J1659-15', 'B', 'high')
 
