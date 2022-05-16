@@ -2,6 +2,9 @@
 
 ## Dated Thoughts
 
+* 5/16/2022: 
+  * should replace re-binned spectral channels with 0.5-10.0 evenly spaced for NICER, we can justify including 1.5-2.3 keV here due to RF being able to recognize which channels are not helpful/should be ignored (e.g. residuals) 
+
 * 4/30/2022: 
    * thoughts on meta analysis of qpos: 
       * restricting to Motta is probably best course of action...my general plan is that we'd extract the corresponding spectral files for each qpo observation from hearsarc, then get the counts array things out // any xspec stuff (e.g. diskbb tin, gamma, etc.). We would treat this as an evaluation grounds/methodology builder for a future study we would conduct where we would use *A LOT* of archival rxte files (maybe all?) and find the qpos ourselves, and then include qpo/non qpo data files in that paper (that's the difference between the motta data and ours, motta doesn't have any non-qpo detection files labeled, so both the motta and our maxi j1535 sets serve their own purpose). 
