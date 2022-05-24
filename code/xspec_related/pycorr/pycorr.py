@@ -84,9 +84,9 @@ def read_lines(infile):
 #
 #
 #
-version='0.1d'
-date='- Tue Sep  2 10:28:58 CEST 2014 -'
-author='Javier Garcia <javier@head.cfa.harvard.edu>\n(Updated to Python3 by Thaddaeus Kiker)'
+version='0.2'
+date='- Mon 5-23-2022'
+author='Updated by Thaddaeus Kiker from Javier Garcia\'s Python 2 Original)'
 #
 ul=[]
 ul.append("usage: %prog [options] PREFIX")
@@ -199,11 +199,8 @@ for specfile in args:
         backcts.append(cts)
     else:
       backcts=[0]*len(specdata.field('counts'))
-    
-    # Read response file
-    resplin=pyfits.getdata(respfile,2)
-    #resplin=pyfits.getdata(respfile,1)  # Needs to read extension EBOUNDS!!!
-    
+
+
     # Find the correction factor in the energy grid of the observation
     oldmesh=[]  # Energy in the correction curve
     olddata=[]  # Correction factors
@@ -213,8 +210,11 @@ for specfile in args:
     oldmesh=list(map(float,B[:,0].tolist()))     # Energy
     olddata=list(map(float,B[:,1].tolist()))     # Correction factors
     
+    # Read response file
+    resp_table=Table.read(fits.open(respfile),hdu=1)
+
     # Get the energies from response
-    for chan in resplin:
+    for chan in resp_table:
       newmesh.append(float(chan[2]+chan[1])/2.)
 
     # Map to the reference grid
@@ -250,5 +250,7 @@ for specfile in args:
       header['HISTORY'] = 'Creation date: '+currtime+' UTC'
       header['HISTORY'] = 'Correction file '+corfile
       hdulist.writeto(outfile)
+
+
 sys.exit()
 # ------------------------------------------------------------------------------

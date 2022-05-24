@@ -48,11 +48,16 @@ def gather_information(top_dir: str='./code/misc/meta_preparation/rxte_motta/dow
     obs_dates = []
     obs_times = []
     time_starts = []
-    net_source_counts = []
     source_percents = []
-    exposure_times = []
+    
     spectral_files = []
     bg_files = []
+
+    background_count_rates = [] # reject >= 5
+    bg_source_ratios = [] # reject < 10, equals (bg counts+source counts)/bg counts
+    exposure_times = [] # reject < 60 s
+    net_source_counts = [] # reject < 5000
+
 
     for dir in tqdm(os.listdir(top_dir)): 
         if dir!='.gitkeep': 
@@ -79,18 +84,70 @@ def gather_information(top_dir: str='./code/misc/meta_preparation/rxte_motta/dow
                         bg_sum = sum(Table.read(bg_hdul, hdu=1)['COUNTS'])
                         bg_exposure = float(bg_hdul[1].header['EXPOSURE'])
 
-                        net_source = source_sum - (bg_sum*(exposure/bg_exposure))
+                        background_count_rates.append(bg_sum/bg_exposure)
+
+                        scaled_bg_counts = (bg_sum*(exposure/bg_exposure))
+                        bg_source_ratio = (scaled_bg_counts+source_sum)/scaled_bg_counts
+
+                        bg_source_ratios.append(bg_source_ratio)
+
+                        net_source = source_sum - scaled_bg_counts
                         net_source_counts.append(net_source)
 
-                        source_percent = 100*(source_sum / ((bg_sum*(exposure/bg_exposure))+source_sum))
+                        source_percent = 100*(source_sum / (scaled_bg_counts+source_sum))
                         source_percents.append(source_percent)
 
                         spectral_files.append(file)
                         bg_files.append(file.replace('s2.pha', 'b2.pha'))
 
-    zipped = list(zip(obsids,objects,instruments,resp_files,obs_dates,obs_times,time_starts,net_source_counts,source_percents,exposure_times, spectral_files, bg_files))
-    cols = ['obsid','object','instrument','resp_file','obs_date','obs_time','time_start','net_source_count','source_percent','exposure_time', 'spectral_file', 'bg_file']
+    zipped = list(zip(obsids,objects,instruments,resp_files,obs_dates,obs_times,time_starts,source_percents,spectral_files,bg_files,background_count_rates,bg_source_ratios,exposure_times,net_source_counts))
+    cols = ['obsid','object','instrument','resp_file','obs_date','obs_time','time_start','source_percent','spectral_file','bg_file','background_count_rate','bg_source_ratio','exposure_time','net_source_count']
     out_df = pd.DataFrame(zipped, columns=cols)
     out_df.to_csv(out_file, index=False)
 
-gather_information()
+#gather_information()
+
+def evaluate_cuts(info: str='./code/misc/meta_preparation/rxte_motta/fits_key.csv'): 
+    import pandas as pd
+    import numpy as np
+
+    df = pd.read_csv(info)
+
+    # reject >= 5
+    # reject < 10, equals (bg counts+source counts)/bg counts
+    # reject < 60 s
+    # reject < 5000
+
+    print('SAMPLE REDUCTION RESULTS')
+    print('0. Initial Size:', len(df.index))
+    df = df.iloc[np.where(df['bg_source_ratio']>10)]
+    print('1. (bg counts+source counts)/(bg counts) > 10:', len(df.index))
+    df = df.iloc[np.where(df['exposure_time']>60)]
+    print('2. exposure time > 60 s:', len(df.index))
+    df = df.iloc[np.where(df['net_source_count']>5000)]
+    print('3. Net Source Counts > 5000:', len(df.index))
+    bad_df = df.iloc[np.where(df['background_count_rate']<5)]
+    print('4. bg cts/s < 5:', len(bad_df.index))
+
+    import matplotlib.pyplot as plt
+
+    plt.style.use('https://raw.githubusercontent.com/thissop/MAXI-J1535/main/code/misc/stolen_science.mplstyle?token=GHSAT0AAAAAABP54PQO2X2VXMNS256IWOBOYRNCFBA')
+    fig, ax = plt.subplots(figsize=(6,7))
+
+    objects = list(set(df['object']))
+    counts = [len(np.where(df['object']==i)[0]) for i in objects]
+
+    mask = np.argsort(counts)[::-1]
+
+    objects, counts = (np.array(objects)[mask], np.array(counts)[mask])
+
+    ax.bar(objects, counts)
+
+    ax.set_xticklabels([i.replace('_',' ') for i in objects], rotation=90)
+
+    ax.set(ylabel='Observation Count')
+    
+    plt.tight_layout()
+    plt.savefig('sources.png', dpi=150)
+        
+evaluate_cuts()
