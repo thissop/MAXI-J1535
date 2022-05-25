@@ -37,6 +37,7 @@ def change_resp_paths(data_dir:str='./data/processed/2022/meta_qpo/motta_spectra
     obsids = np.array(key_df['obsid'])
     resp_files = np.array(key_df['resp_file'])
     key_objects = np.array(key_df['object'])
+    background_files = np.array(key_df['bg_file'])
 
     for dir in tqdm(os.listdir(data_dir)): 
     #for dir in os.listdir(data_dir): 
@@ -54,6 +55,12 @@ def change_resp_paths(data_dir:str='./data/processed/2022/meta_qpo/motta_spectra
                         #print(new_resp_path)
 
                         fits.setval(file_path, 'RESPFILE', value=new_resp_path, ext=1)
+
+                        if end=='s2.pha': 
+                           new_bg_path = wsl_data_dir+dir+'/'+background_files[match_index][0]
+                           fits.setval(file_path, 'BACKFILE', value=new_bg_path, ext=1)
+                           
+
 
                         # RESPFILE in hdul[1].header
 
