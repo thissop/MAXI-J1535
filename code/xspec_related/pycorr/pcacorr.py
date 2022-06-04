@@ -55,7 +55,7 @@ def regrid_dat(mesh,dat,pmesh):
 # return - interpolated y point
 def interpolate(x0,x1,y1,x2,y2):
   if (x1 == x2):
-    print("cannot interpolate given indentical x1 and x2")
+    print("cannot interpolate given identical x1 and x2")
     raise
   slope=(y2-y1)/(x2-x1)
   return y1+slope*(x0-x1)
