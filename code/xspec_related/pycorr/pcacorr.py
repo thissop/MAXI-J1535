@@ -242,15 +242,16 @@ for specfile in args:
       sys.exit()
     else:
       if options.back:
-        print('Corrected spectra written in: ',outfile,'\n   with background:',backfile)
+        pass 
+        #print('Corrected spectra written in: ',outfile,'\n   with background:',backfile)
       else:
-        print('Corrected spectra written in: ',outfile)
+        pass 
+        #print('Corrected spectra written in: ',outfile)
       # Include HISTORY comments
       header['HISTORY'] = 'Original file corrected by phacorr.py version '+version
       header['HISTORY'] = 'Creation date: '+currtime+' UTC'
       header['HISTORY'] = 'Correction file '+corfile
       hdulist.writeto(outfile)
-
 
 sys.exit()
 # ------------------------------------------------------------------------------

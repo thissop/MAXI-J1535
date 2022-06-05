@@ -1,0 +1,4 @@
+/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/
+
+/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/data/processed/2022/meta_qpo/motta_spectral_files/10255-01-06-00/xp10255010600_s2.pha
+/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/data/processed/2022/meta_qpo/motta_spectral_files/10255-01-06-00/xp10255010600_s2.pha
