@@ -1,112 +1,0 @@
-SIMPLE  =                    T / file does conform to FITS standard             BITPIX  =                  -32 / number of bits per data pixel                  NAXIS   =                    0 / number of data axes                            EXTEND  =                    T / FITS dataset may contain extensions            COMMENT   FITS (Flexible Image Transport System) format is defined in 'AstronomyCOMMENT   and Astrophysics', volume 376, page 359; bibcode: 2001A&A...376..359H DATE    = '2012-01-25T06:36:13' / file creation date (YYYY-MM-DDThh:mm:ss UT)   CREATOR = 'mathpha '           / s/w task which wrote this dataset              CONTENT = 'PHA SPECTRUM'       / SPECTRUM xtens (at least) present              TSTART  = 3.69744947378430E+08 / Observation start time                         TELESCOP= 'XTE     '           / Telescope (mission) name                       INSTRUME= 'HEXTE   '           / Instrument used for observation                OBJECT  = 'GRO_J1655-40'       / OBJECT from the FIRST input file               TSTOP   = 3.69760723378430E+08 / Observation stop time                          CHECKSUM= 'GGQVJFPVGFPVGFPV'   / HDU checksum updated 2012-01-25T06:36:16       DATASUM = '         0'         / data unit checksum updated 2012-01-25T06:36:16 END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional binary table                     NAXIS1  =                   14 / width of table in bytes                        NAXIS2  =                   64 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group (required keyword)              TFIELDS =                    4 / number of fields in each row                   TTYPE1  = 'CHANNEL '           / Pulse Height Analyser (PHA) Channel            TFORM1  = 'J       '           / data format of field: 4-byte INTEGER           TTYPE2  = 'COUNTS  '           / Counts per channel                             TFORM2  = 'J       '           / data format of field: 4-byte INTEGER           TUNIT2  = 'count   '           / physical unit of field                         TTYPE3  = 'STAT_ERR'           / Statistical error on COUNTS                    TFORM3  = 'E       '           / data format of field: 4-byte REAL              TUNIT3  = 'count   '           / physical unit of field                         TTYPE4  = 'QUALITY '           / Quality flag of this channel (0=good)          TFORM4  = 'I       '           / data format of field: 2-byte INTEGER           EXTNAME = 'SPECTRUM'           / name of this binary table extension            HDUCLASS= 'OGIP    '           / format conforms to OGIP standard               HDUCLAS1= 'SPECTRUM'           / PHA dataset (OGIP memo OGIP-92-007)            HDUVERS1= '1.2.0   '           / Obsolete - included for backwards compatibilityHDUVERS = '1.2.0   '           / Version of format (OGIP memo OGIP-92-007)      HDUCLAS2= 'DERIVED '           / WARNING This is NOT an OGIP-approved value     HDUCLAS3= 'COUNT   '           / PHA data stored as Counts (not count/s)        TLMIN1  =                    0 / Lowest legal channel number                    TLMAX1  =                   63 / Highest legal channel number                   TELESCOP= 'XTE     '           / mission/satellite name                         INSTRUME= 'HEXTE   '           / instrument/detector name                       DETNAM  = 'PWA     '           / specific detector name in use                  FILTER  = 'NONE    '           / filter in use                                  EXPOSURE=         3.090034E+03 / exposure (in seconds)                          AREASCAL=         1.000000E+00 / area scaling factor                            BACKFILE= 'xh91702018001_b0.pha' / associated background filename               BACKSCAL=         1.000000E+00 / background file scaling factor                 CORRFILE= 'NONE    '           / associated correction filename                 CORRSCAL=         0.000000E+00 / correction file scaling factor                 RESPFILE= 'xh97mar20c_pwa.rmf' / associated redistrib matrix filename           ANCRFILE= 'hexte_00may26_pwa.arf' / associated ancillary response filename      PHAVERSN= '1992a   '           / obsolete                                       DETCHANS=                   64 / total number possible channels                 CHANTYPE= 'PHA     '           / channel type (PHA, PI etc)                     POISSERR=                    F / Poissonian errors not applicable               SYS_ERR =                    0 / no systematic error specified                  GROUPING=                    0 / no grouping of the data has been defined       HISTORY  Dataset had mathematical operations performed bydo_mathpha 5.1.3       HISTORY  FITS SPECTRUM extension written by WTPHA2 1.0.1                        COMMENT do_mathpha 5.1.3  Summary:                                              COMMENT  ... I/p parameters                                                     COMMENT   Expression (read from terminal):                                      COMMENT    tmppha_101+tmppha_102+tmppha_103+tmppha_104+tmppha_105               COMMENT   Units   : C                                                           COMMENT     (algebra to be performed in COUNTS)                                 COMMENT   Errors to be calculated & propagated                                  COMMENT   Error Prescription: Gauss                                             COMMENT   Exposure: CALC                                                        COMMENT   AreaScal: 1.0                                                         COMMENT   Divzero :   -99.000000                                                COMMENT   Source of Aux Info keyword values:                                    COMMENT   BACKFILE: NONE                                                        COMMENT   BACKSCAL: 1.0                                                         COMMENT   CORRFILE: NONE                                                        COMMENT   CORRSCAL: 0.0                                                         COMMENT   ANCRFILE: NONE                                                        COMMENT   RESPFILE: NONE                                                        COMMENT   User-defined comments:                                                COMMENT   MATHPHA called by SUMPHA, files summed:                               COMMENT   /local/mtripicc/CPU3/FS52_1609dc06-1609e280_src.pha                   COMMENT   /local/mtripicc/CPU3/FS52_1609e280-1609f280_src.pha                   COMMENT   /local/mtripicc/CPU3/FS52_1609f280-160a0280_src.pha                   COMMENT   /local/mtripicc/CPU3/FS52_160a0280-160a1280_src.pha                   COMMENT   /local/mtripicc/CPU3/FS52_160a1280-160a19b3_src.pha                   CPIX1   = '0~63;2,64~127;4,128~255;8' / Channel binning of CHANNEL column       OBJECT  = 'GRO_J1655-40'       / OBJECT from the FIRST input file               ROWID1  = 'SpecDet0'           / Column Name processed                          ROWID2  = 'SpecDet1'           / Column Name processed                          ROWID3  = 'SpecDet2'           / Column Name processed                          ROWID4  = 'SpecDet3'           / Column Name processed                          ORIGIN  = 'NASA/GSFC'          / origin of fits file                            RA_OBJ  =       2.53501007E+02 / RA of First input object                       DEC_OBJ =      -3.98460007E+01 / DEC of First input object                      EQUINOX =              2000.00 / Equinox of the FIRST object                    RADECSYS= 'FK5     '           / Co-ordinate frame used for equinox             DATE-OBS= '2005-09-19T10:56:16' / EARLIEST observation date of files            TIME-OBS= '10:56:16'           / EARLIEST time of all input files               TIMESYS = 'TT      '           / The time system is MJD                         GAINAPP =                    T / Gain all ready subracted                       TIMEUNIT= 's       '           / unit for TSTARTI/F and TSTOPI/F, TIMEZERO      MJDREFI =                49353 / Integer part of MJDREF                         MJDREFF = 6.965740740000000E-04 / Fractional part of MJDREF                     TSTART  = 3.69744947378430E+08 / Observation start time                         TIMEDEL = 1.60000000000000E+01 / integration time                               DEADAPP =                    T / DeadTime Correction Factor Applied             DATE-END= '2005-09-19T15:19:44' / LATEST observation date of files              TIME-END= '15:19:44'           / LATEST time of all input files                 TSTOP   = 3.69760723378430E+08 / fractional observation stop time               CHECKSUM= 'VIaHXGREVGXEVGXE'   / HDU checksum updated 2012-01-25T06:37:04       DATASUM = '1881205791'         / data unit checksum updated 2012-01-25T06:36:16 RXTESP  = 'Version 6.7 product file created 2012-01-25T06:37:01 UTC'            END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    ‘A@Є_        @wЮц                                 ЗB&ќ       :BBф>м       :†BфНN       5«BкmM       -iBЧЈ{     	  %dBГ¬W     
-   ѕB·E       мB±сћ       ЩBґ–‚       &&BЕҐk       -UBЧsщ       /‹BЬ¤ю       '‘BЙI.       љBЁw       /BЏГ‚       уBѓЅя       чBw”Ћ       «BcК       ЪB\Sё       ЏBY–7       ‹BYpЌ       9B_їц       	Bg-       –Bcш       TB`¶‘       >B_н¶       ЦBn        BЂ          )WBНїW     !  +хBФ)     "  $|BБIђ     #  ъB©AШ     $  ШBсЖ     %  yBЌ5†     &  фBџо     '  \B`яn     (  	ЬBHх,     )  hB9Џ     *  )B+A     +  вB'зќ     ,  ДB&x     -  ‰B#›ы     .  UB!н     /  hB!ьЧ     0  Bfяs     1  жBwЖ     2  рBwZџ     3  7BqKз     4  шBo2Ы     5   B|ыq     6  qB‰kH     7  яB‡їс     8  ТBvaї     9  эB]      :  §BZw§     ;  lBXKН     <  B^Gs     =  {Bbл     >  иBeлц     ?  {AоМ                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  XTENSION= 'BINTABLE'           / binary table extension                         BITPIX  =                    8 / 8-bit bytes                                    NAXIS   =                    2 / 2-dimensional binary table                     NAXIS1  =                   16 / width of table in bytes                        NAXIS2  =                  153 / number of rows in table                        PCOUNT  =                    0 / size of special data area                      GCOUNT  =                    1 / one data group (required keyword)              TFIELDS =                    2 / number of fields in each row                   TTYPE1  = 'START   '           / label for field   1                            TFORM1  = '1D      '           / data format of field: 8-byte DOUBLE            TUNIT1  = 's       '           / physical unit of field                         TTYPE2  = 'STOP    '           / label for field   2                            TFORM2  = '1D      '           / data format of field: 8-byte DOUBLE            TUNIT2  = 's       '           / physical unit of field                         EXTNAME = 'STDGTI  '           / name of this binary table extension            MJDREF  = 4.935300069657408E+04 / Reference date                                TIMEZERO=                  0.0 / offset to be applied to times given in the dataHDUCLASS= 'OGIP    '           / format conforms to OGIP/GSFC standards         HDUCLAS1= 'GTI     '           / Extension contains Good Time Intervals         HDUCLAS2= 'ALL     '                                                            CHECKSUM= 'Tfa4WZX1Tda1TZU1'   / HDU checksum updated 2012-01-25T06:36:16       DATASUM = '2506400814'         / data unit checksum updated 2012-01-25T06:36:14 HISTORY TASK: FSORT on FILENAME: merged.gti                                     HISTORY fsort3.1d at 2012-01-25T06:36:14                                        TSTARTI =            369744947 / Integer observation start time                 TSTARTF = 3.784303700000000E-01 / Fractional observation start time             INSTRUME= 'HEXTE   '           / Instrument used for observation                OBJECT  = 'GRO_J1655-40'       / OBJECT from the FIRST input file               TSTOPI  =            369760723 / Integer observation stop time                  TSTOPF  = 3.784303700000000E-01 / Fractional observation stop time              END                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             A¶	ЬC`аРA¶	ЬS`аРA¶	Ьs`аРA¶	Ь“`аРA¶	Ьі`аРA¶	ЬУ`аРA¶	Ьу`аРA¶	Э`аРA¶	Э3`аРA¶	ЭS`аРA¶	Эs`аРA¶	Э“`аРA¶	Эі`аРA¶	ЭУ`аРA¶	Эу`аРA¶	Ю`аРA¶	Ю3`аРA¶	ЮS`аРA¶	Юs`аРA¶	Ю“`аРA¶	Юі`аРA¶	ЮУ`аРA¶	Юу`аРA¶	Я`аРA¶	Я3`аРA¶	ЯS`аРA¶	Яs`аРA¶	Я“`аРA¶	Яі`аРA¶	ЯУ`аРA¶	Яу`аРA¶	а`аРA¶	а3`аРA¶	аS`аРA¶	аs`аРA¶	а“`аРA¶	аі`аРA¶	аУ`аРA¶	ау`аРA¶	б`аРA¶	б3`аРA¶	бS`аРA¶	бs`аРA¶	б“`аРA¶	бі`аРA¶	бУ`аРA¶	бу`аРA¶	в`аРA¶	в3`аРA¶	вS`аРA¶	вs`аРA¶	в“`аРA¶	ві`аРA¶	вУ`аРA¶	ву`аРA¶	г`аРA¶	г3`аРA¶	гS`аРA¶	гs`аРA¶	г“`аРA¶	гі`аРA¶	гУ`аРA¶	гу`аРA¶	д`аРA¶	д3`аРA¶	дS`аРA¶	дs`аРA¶	д“`аРA¶	ді`аРA¶	дУ`аРA¶	ду`аРA¶	е`аРA¶	е3`аРA¶	еS`аРA¶	еs`аРA¶	е“`аРA¶	еі`аРA¶	еУ`аРA¶	еу`аРA¶	ж`аРA¶	ж3`аРA¶	жS`аРA¶	жs`аРA¶	ж“`аРA¶	жі`аРA¶	жУ`аРA¶	жу`аРA¶	з`аРA¶	з3`аРA¶	зS`аРA¶	зs`аРA¶	з“`аРA¶	зі`аРA¶	зУ`аРA¶	зу`аРA¶	и`аРA¶	и3`аРA¶	иS`аРA¶	иs`аРA¶	и“`аРA¶	иі`аРA¶	иУ`аРA¶	тs`аРA¶	т“`аРA¶	ті`аРA¶	тУ`аРA¶	ту`аРA¶	у`аРA¶	у3`аРA¶	уS`аРA¶	уs`аРA¶	у“`аРA¶	уі`аРA¶	уУ`аРA¶	уу`аРA¶	ф`аРA¶	ф3`аРA¶	фS`аРA¶	фs`аРA¶	ф“`аРA¶	фі`аРA¶	фУ`аРA¶	фу`аРA¶	х`аРA¶	х3`аРA¶	хS`аРA¶	хs`аРA¶	х“`аРA¶	хі`аРA¶	хУ`аРA¶	ху`аРA¶	ц`аРA¶	ц3`аРA¶	цS`аРA¶	цs`аРA¶	ц“`аРA¶	ці`аРA¶	цУ`аРA¶	цу`аРA¶	ч`аРA¶	ч3`аРA¶	чS`аРA¶	чs`аРA¶	ч“`аРA¶	чі`аРA¶	чУ`аРA¶	чу`аРA¶	ш`аРA¶	ш3`аРA¶	шS`аРA¶	шs`аРA¶	ш“`аРA¶	ші`аРA¶	шУ`аРA¶	шу`аРA¶	щ`аРA¶	щ3`аРA¶	щS`аРA¶	щs`аРA¶	щ“`аРA¶	щі`аРA¶	щУ`аРA¶	щу`аРA¶	ъ`аРA¶	ъ3`аРA¶	ъS`аРA¶	ъs`аРA¶	ъ“`аРA¶	ъі`аРA¶	ъУ`аРA¶	ъу`аРA¶	ы`аРA¶	ы3`аРA¶	ыS`аРA¶	ыs`аРA¶	ы“`аРA¶	ыі`аРA¶	ыУ`аРA¶	ыу`аРA¶	ь`аРA¶	ь3`аРA¶	ьS`аРA¶	ьs`аРA¶	ь“`аРA¶	ьі`аРA¶	ьУ`аРA¶	ьу`аРA¶	э`аРA¶	э3`аРA¶	эS`аРA¶	эs`аРA¶	э“`аРA¶	эі`аРA¶	эУ`аРA¶	эу`аРA¶	ю`аРA¶	ю3`аРA¶	юS`аРA¶	юs`аРA¶	ю“`аРA¶	юі`аРA¶	юУ`аРA¶	юу`аРA¶	я`аРA¶
-s`аРA¶
-“`аРA¶
-і`аРA¶
-У`аРA¶
-у`аРA¶
-	`аРA¶
-	3`аРA¶
-	S`аРA¶
-	s`аРA¶
-	“`аРA¶
-	і`аРA¶
-	У`аРA¶
-	у`аРA¶
-
-`аРA¶
-
-3`аРA¶
-
-S`аРA¶
-
-s`аРA¶
-
-“`аРA¶
-
-і`аРA¶
-
-У`аРA¶
-
-у`аРA¶
-`аРA¶
-3`аРA¶
-S`аРA¶
-s`аРA¶
-“`аРA¶
-і`аРA¶
-У`аРA¶
-у`аРA¶
-`аРA¶
-3`аРA¶
-S`аРA¶
-s`аРA¶
-“`аРA¶
-і`аРA¶
-У`аРA¶
-у`аРA¶
-`аРA¶
-3`аРA¶
-S`аРA¶
-s`аРA¶
-“`аРA¶
-і`аРA¶
-У`аРA¶
-у`аРA¶
-`аРA¶
-3`аРA¶
-S`аРA¶
-s`аРA¶
-“`аРA¶
-і`аРA¶
-У`аРA¶
-у`аРA¶
-`аРA¶
-3`аРA¶
-S`аРA¶
-s`аРA¶
-“`аРA¶
-і`аРA¶
-У`аРA¶
-у`аРA¶
-`аРA¶
-3`аРA¶
-S`аРA¶
-s`аРA¶
-“`аРA¶
-і`аРA¶
-У`аРA¶
-у`аРA¶
-`аРA¶
-3`аРA¶
-S`аРA¶
-s`аРA¶
-“`аРA¶
-і`аРA¶
-У`аРA¶
-у`аРA¶
-`аРA¶
-3`аРA¶
-S`аРA¶
-s`аРA¶
-“`аРA¶
-і`аРA¶
-У`аРA¶
-у`аРA¶
-`аРA¶
-3`аРA¶
-S`аРA¶
-s`аРA¶
-“`аРA¶
-і`аРA¶
-У`аРA¶
-у`аРA¶
-`аРA¶
-3`аРA¶
-S`аРA¶
-s`аРA¶
-“`аРA¶
-і`аРA¶
-У`аРA¶
-у`аРA¶
-`аР                                                                                                                                                                                                                                                                                                                                                                                                                                                
