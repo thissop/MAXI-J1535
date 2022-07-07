@@ -1,0 +1,10 @@
+statistic chi
+data 1:1 power_0_249.pha
+
+method leven 10000 0.01
+abund angr
+xsect bcmc
+cosmo 70 0 0.73
+xset delta 0.01
+systematic 0
+

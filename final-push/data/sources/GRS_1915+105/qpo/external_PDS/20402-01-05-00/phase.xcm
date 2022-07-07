@@ -1,0 +1,11 @@
+statistic chi
+data phalag_0.pha
+response  phalag_0.rmf
+
+method leven 10000 0.01
+abund angr
+xsect bcmc
+cosmo 70 0 0.73
+xset delta 0.01
+systematic 0
+

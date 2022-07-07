@@ -1,0 +1,23 @@
+statistic chi
+data 1:1 power_0_249.pha
+response 1:1 power_0_249.rmf
+
+method leven 10000 0.01
+abund angr
+xsect bcmc
+cosmo 70 0 0.73
+xset delta 0.01
+systematic 0
+model  lorentz + lorentz + lorentz + lorentz
+        2.77703       0.05          0          0      1e+06      1e+06
+       0.371625       0.05          0          0         10         20
+        135.735       0.01          0          0      1e+20      1e+24
+       0.166676       0.05          0          0      1e+06      1e+06
+       0.818517       0.05          0          0         10         20
+          28.81       0.01          0          0      1e+20      1e+24
+        1.25619       0.05          0          0      1e+06      1e+06
+        1.12738       0.05          0          0         10         20
+        29.7556       0.01          0          0      1e+20      1e+24
+        4.59616       0.05          0          0      1e+06      1e+06
+        3.41959       0.05          0          0         10         20
+        30.3927       0.01          0          0      1e+20      1e+24

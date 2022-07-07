@@ -1,0 +1,19 @@
+statistic chi
+data 1:1 power_0_249.pha
+
+method leven 10000 0.01
+abund angr
+xsect bcmc
+cosmo 70 0 0.73
+xset delta 0.01
+systematic 0
+model  lorentz + lorentz + lorentz
+         2.5437       0.05          0          0      1e+06      1e+06
+       0.386104       0.05          0          0         10         20
+        92.6329       0.01          0          0      1e+20      1e+24
+        5.04461       0.05          0          0      1e+06      1e+06
+        1.11197       0.05          0          0         10         20
+        23.0719       0.01          0          0      1e+20      1e+24
+      0.0512176       0.05          0          0      1e+06      1e+06
+        4.54972       0.05          0          0         10         20
+        199.227       0.01          0          0      1e+20      1e+24
