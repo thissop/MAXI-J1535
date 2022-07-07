@@ -1,0 +1,63 @@
+Spectrum 28  Spectral Data File: src_pcu2.pha
+Net count rate (cts/s) for Spectrum:28  3.863e+03 +/- 5.283e+00 (99.7 % total)
+ Assigned to Data Group 1 and Plot Group 28
+  Noticed Channels:  4-57
+  Telescope: XTE Instrument: PCA  Channel Type: PHA
+  Exposure Time: 6179 sec
+ Using fit statistic: chi
+ Using Background File                bkg_pcu2.pha
+  Background Exposure Time: 6592 sec
+ Using Response (RMF) File            p2_xe_1997-09-29.rsp for Source 1
+
+ Spectral data counts: 2.39512e+07
+ Model predicted rate: 1015.79
+
+
+========================================================================
+Model TBabs<1>(diskbb<2> + nthComp<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    6.00000      frozen
+   2    2   diskbb     Tin        keV      0.739878     +/-  2.88345E-03  
+   3    2   diskbb     norm                1409.99      +/-  23.6010      
+   4    3   nthComp    Gamma               2.23000      +/-  2.95368E-03  
+   5    3   nthComp    kT_e       keV      1000.00      +/-  3310.73      
+   6    3   nthComp    kT_bb      keV      0.739878     = p2
+   7    3   nthComp    inp_type   0/1      1.00000      frozen
+   8    3   nthComp    Redshift            0.0          frozen
+   9    3   nthComp    norm                2.36179      +/-  1.74904E-02  
+________________________________________________________________________
+
+
+Fit statistic  : Chi-Squared                186564.1     using 53 bins.
+                 Chi-Squared                417616.9     using 54 bins.
+                 Chi-Squared                144277.9     using 54 bins.
+                 Chi-Squared                218714.7     using 54 bins.
+                 Chi-Squared                365346.2     using 54 bins.
+                 Chi-Squared                210808.6     using 54 bins.
+                 Chi-Squared                223951.5     using 54 bins.
+                 Chi-Squared                75214.54     using 54 bins.
+                 Chi-Squared                43565.47     using 54 bins.
+                 Chi-Squared                32637.24     using 54 bins.
+                 Chi-Squared                18345.46     using 54 bins.
+                 Chi-Squared                 5464.75     using 54 bins.
+                 Chi-Squared                 2858.84     using 54 bins.
+                 Chi-Squared                15316.55     using 54 bins.
+                 Chi-Squared                20647.63     using 54 bins.
+                 Chi-Squared                26288.65     using 54 bins.
+                 Chi-Squared                33686.56     using 54 bins.
+                 Chi-Squared                48908.18     using 54 bins.
+                 Chi-Squared                64860.88     using 54 bins.
+                 Chi-Squared                36658.62     using 54 bins.
+                 Chi-Squared                84211.13     using 54 bins.
+                 Chi-Squared                71581.22     using 54 bins.
+                 Chi-Squared                78271.41     using 54 bins.
+                 Chi-Squared                73920.11     using 54 bins.
+                 Chi-Squared                 4728.69     using 54 bins.
+                 Chi-Squared                19694.47     using 54 bins.
+                 Chi-Squared                222873.7     using 54 bins.
+                 Chi-Squared                430837.2     using 54 bins.
+Total fit statistic                       3.177851e+06     with 1506 d.o.f.
+
+Test statistic : Chi-Squared              3.177851e+06     using 1511 bins.
+ Null hypothesis probability of 0.000000e+00 with 1506 degrees of freedom

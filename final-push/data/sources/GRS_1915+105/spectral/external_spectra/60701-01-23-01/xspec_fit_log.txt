@@ -1,0 +1,40 @@
+Spectrum 5  Spectral Data File: src_pcu2.pha
+Net count rate (cts/s) for Spectrum:5  1.939e+03 +/- 2.810e+00 (99.4 % total)
+ Assigned to Data Group 1 and Plot Group 5
+  Noticed Channels:  4-52
+  Telescope: XTE Instrument: PCA  Channel Type: PHA
+  Exposure Time: 2655 sec
+ Using fit statistic: chi
+ Using Background File                bkg_pcu2.pha
+  Background Exposure Time: 2768 sec
+ Using Response (RMF) File            p2_xe_2002-01-22.rsp for Source 1
+
+ Spectral data counts: 5.17593e+06
+ Model predicted rate: 2199.93
+
+
+========================================================================
+Model TBabs<1>(diskbb<2> + nthComp<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    6.00000      frozen
+   2    2   diskbb     Tin        keV      0.766432     +/-  4.95470E-02  
+   3    2   diskbb     norm                6.47932E-05  +/-  415.627      
+   4    3   nthComp    Gamma               2.70322      +/-  1.06376E-02  
+   5    3   nthComp    kT_e       keV      13.8591      +/-  0.695130     
+   6    3   nthComp    kT_bb      keV      0.766432     = p2
+   7    3   nthComp    inp_type   0/1      1.00000      frozen
+   8    3   nthComp    Redshift            0.0          frozen
+   9    3   nthComp    norm                9.12377      +/-  1.06272      
+________________________________________________________________________
+
+
+Fit statistic  : Chi-Squared                46808.16     using 49 bins.
+                 Chi-Squared                18461.23     using 49 bins.
+                 Chi-Squared                20078.67     using 49 bins.
+                 Chi-Squared                 8442.80     using 49 bins.
+                 Chi-Squared                 9621.58     using 49 bins.
+Total fit statistic                         103412.4     with 240 d.o.f.
+
+Test statistic : Chi-Squared                103412.4     using 245 bins.
+ Null hypothesis probability of 0.0e+00 with 240 degrees of freedom

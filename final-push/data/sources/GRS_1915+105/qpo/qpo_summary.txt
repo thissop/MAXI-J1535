@@ -1,4 +1,4 @@
-OBSID,date,frequency,frequency_err,width,width_err,rms,rms_err
+observation_ID,date,frequency,frequency_err,width,width_err,rms,rms_err
 10258-01-02-00,50293.76,0.696,0.002,0.091,0.005,10.590,0.260
 10408-01-22-00,50275.08,3.479,0.005,0.363,0.016,10.202,0.134
 10408-01-22-01,50275.22,2.777,0.005,0.371,0.011,11.799,0.120

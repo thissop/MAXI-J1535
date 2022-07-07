@@ -1,0 +1,41 @@
+Spectrum 6  Spectral Data File: src_pcu2.pha
+Net count rate (cts/s) for Spectrum:6  1.561e+03 +/- 2.293e+00 (99.3 % total)
+ Assigned to Data Group 1 and Plot Group 6
+  Noticed Channels:  3-52
+  Telescope: XTE Instrument: PCA  Channel Type: PHA
+  Exposure Time: 1429 sec
+ Using fit statistic: chi
+ Using Background File                bkg_pcu2.pha
+  Background Exposure Time: 1472 sec
+ Using Response (RMF) File            p2_xe_2001-02-07.rsp for Source 1
+
+ Spectral data counts: 2.24708e+06
+ Model predicted rate: 1464.20
+
+
+========================================================================
+Model TBabs<1>(diskbb<2> + nthComp<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    6.00000      frozen
+   2    2   diskbb     Tin        keV      0.200000     +/-  5.95825E-03  
+   3    2   diskbb     norm                3.33482E+08  +/-  7.64197E+07  
+   4    3   nthComp    Gamma               2.28083      +/-  2.77906E-03  
+   5    3   nthComp    kT_e       keV      12.8261      +/-  0.285929     
+   6    3   nthComp    kT_bb      keV      0.200000     = p2
+   7    3   nthComp    inp_type   0/1      1.00000      frozen
+   8    3   nthComp    Redshift            0.0          frozen
+   9    3   nthComp    norm                10.9569      +/-  8.13647E-02  
+________________________________________________________________________
+
+
+Fit statistic  : Chi-Squared                16174.89     using 50 bins.
+                 Chi-Squared                14153.56     using 50 bins.
+                 Chi-Squared                 4960.77     using 50 bins.
+                 Chi-Squared                39627.64     using 50 bins.
+                 Chi-Squared                66184.95     using 50 bins.
+                 Chi-Squared                 2500.75     using 50 bins.
+Total fit statistic                         143602.6     with 295 d.o.f.
+
+Test statistic : Chi-Squared                143602.6     using 300 bins.
+ Null hypothesis probability of 0.0e+00 with 295 degrees of freedom

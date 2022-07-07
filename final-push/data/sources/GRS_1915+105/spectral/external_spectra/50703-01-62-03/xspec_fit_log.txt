@@ -1,0 +1,68 @@
+Spectrum 33  Spectral Data File: src_pcu2.pha
+Net count rate (cts/s) for Spectrum:33  2.195e+03 +/- 3.136e+00 (99.5 % total)
+ Assigned to Data Group 1 and Plot Group 33
+  Noticed Channels:  3-52
+  Telescope: XTE Instrument: PCA  Channel Type: PHA
+  Exposure Time: 2393 sec
+ Using fit statistic: chi
+ Using Background File                bkg_pcu2.pha
+  Background Exposure Time: 2496 sec
+ Using Response (RMF) File            p2_xe_2001-06-06.rsp for Source 1
+
+ Spectral data counts: 5.27993e+06
+ Model predicted rate: 1443.45
+
+
+========================================================================
+Model TBabs<1>(diskbb<2> + nthComp<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    6.00000      frozen
+   2    2   diskbb     Tin        keV      0.200000     +/-  2.52298E-03  
+   3    2   diskbb     norm                3.28067E+08  +/-  3.18287E+07  
+   4    3   nthComp    Gamma               2.26805      +/-  1.20413E-03  
+   5    3   nthComp    kT_e       keV      15.5079      +/-  0.194008     
+   6    3   nthComp    kT_bb      keV      0.200000     = p2
+   7    3   nthComp    inp_type   0/1      1.00000      frozen
+   8    3   nthComp    Redshift            0.0          frozen
+   9    3   nthComp    norm                10.4687      +/-  3.29622E-02  
+________________________________________________________________________
+
+
+Fit statistic  : Chi-Squared                13543.19     using 50 bins.
+                 Chi-Squared                11765.95     using 50 bins.
+                 Chi-Squared                 5914.84     using 50 bins.
+                 Chi-Squared                41870.72     using 50 bins.
+                 Chi-Squared                68280.91     using 50 bins.
+                 Chi-Squared                 3543.47     using 50 bins.
+                 Chi-Squared                14925.18     using 50 bins.
+                 Chi-Squared                50607.18     using 50 bins.
+                 Chi-Squared                223236.4     using 50 bins.
+                 Chi-Squared                 5820.48     using 50 bins.
+                 Chi-Squared                25443.97     using 50 bins.
+                 Chi-Squared                26101.27     using 50 bins.
+                 Chi-Squared                15623.25     using 50 bins.
+                 Chi-Squared                 1145.26     using 50 bins.
+                 Chi-Squared                 1190.08     using 50 bins.
+                 Chi-Squared                 5063.75     using 50 bins.
+                 Chi-Squared                 4386.38     using 50 bins.
+                 Chi-Squared                 5148.03     using 50 bins.
+                 Chi-Squared                 1220.47     using 50 bins.
+                 Chi-Squared                 1049.47     using 50 bins.
+                 Chi-Squared                  962.21     using 50 bins.
+                 Chi-Squared                11609.88     using 50 bins.
+                 Chi-Squared                12123.77     using 50 bins.
+                 Chi-Squared                10501.71     using 50 bins.
+                 Chi-Squared                 1769.56     using 50 bins.
+                 Chi-Squared                 6463.65     using 50 bins.
+                 Chi-Squared                 9475.47     using 50 bins.
+                 Chi-Squared                11641.04     using 50 bins.
+                 Chi-Squared                11402.71     using 50 bins.
+                 Chi-Squared                72367.76     using 50 bins.
+                 Chi-Squared                63020.70     using 50 bins.
+                 Chi-Squared                78033.99     using 50 bins.
+                 Chi-Squared                63210.93     using 50 bins.
+Total fit statistic                         878463.7     with 1645 d.o.f.
+
+Test statistic : Chi-Squared                878463.7     using 1650 bins.
+ Null hypothesis probability of 0.0e+00 with 1645 degrees of freedom

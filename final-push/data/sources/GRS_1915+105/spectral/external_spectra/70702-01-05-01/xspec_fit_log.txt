@@ -1,0 +1,69 @@
+Spectrum 34  Spectral Data File: src_pcu2.pha
+Net count rate (cts/s) for Spectrum:34  1.390e+03 +/- 2.098e+00 (99.2 % total)
+ Assigned to Data Group 1 and Plot Group 34
+  Noticed Channels:  4-52
+  Telescope: XTE Instrument: PCA  Channel Type: PHA
+  Exposure Time: 1525 sec
+ Using fit statistic: chi
+ Using Background File                bkg_pcu2.pha
+  Background Exposure Time: 1568 sec
+ Using Response (RMF) File            p2_xe_2002-05-28.rsp for Source 1
+
+ Spectral data counts: 2.13701e+06
+ Model predicted rate: 1801.36
+
+
+========================================================================
+Model TBabs<1>(diskbb<2> + nthComp<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    6.00000      frozen
+   2    2   diskbb     Tin        keV      0.955123     +/-  1.89385E-02  
+   3    2   diskbb     norm                8.12800E-08  +/-  33.1032      
+   4    3   nthComp    Gamma               2.46358      +/-  4.83659E-03  
+   5    3   nthComp    kT_e       keV      12.7881      +/-  0.270760     
+   6    3   nthComp    kT_bb      keV      0.955123     = p2
+   7    3   nthComp    inp_type   0/1      1.00000      frozen
+   8    3   nthComp    Redshift            0.0          frozen
+   9    3   nthComp    norm                4.55775      +/-  0.158771     
+________________________________________________________________________
+
+
+Fit statistic  : Chi-Squared                75503.03     using 49 bins.
+                 Chi-Squared                37397.12     using 49 bins.
+                 Chi-Squared                57292.16     using 49 bins.
+                 Chi-Squared                10794.00     using 49 bins.
+                 Chi-Squared                10227.22     using 49 bins.
+                 Chi-Squared                 5135.73     using 49 bins.
+                 Chi-Squared                 3534.84     using 49 bins.
+                 Chi-Squared                 3322.77     using 49 bins.
+                 Chi-Squared                 4812.39     using 49 bins.
+                 Chi-Squared                 4708.28     using 49 bins.
+                 Chi-Squared                 2606.32     using 49 bins.
+                 Chi-Squared                 2283.92     using 49 bins.
+                 Chi-Squared                 1614.53     using 49 bins.
+                 Chi-Squared                 1567.20     using 49 bins.
+                 Chi-Squared                 9807.73     using 49 bins.
+                 Chi-Squared                 7347.02     using 49 bins.
+                 Chi-Squared                 2776.73     using 49 bins.
+                 Chi-Squared                 2228.07     using 49 bins.
+                 Chi-Squared                 3405.43     using 49 bins.
+                 Chi-Squared                44443.43     using 49 bins.
+                 Chi-Squared                46646.23     using 49 bins.
+                 Chi-Squared                44233.02     using 49 bins.
+                 Chi-Squared                77825.05     using 50 bins.
+                 Chi-Squared                24790.23     using 50 bins.
+                 Chi-Squared                53910.92     using 50 bins.
+                 Chi-Squared                72302.96     using 50 bins.
+                 Chi-Squared                69221.04     using 49 bins.
+                 Chi-Squared                27400.02     using 49 bins.
+                 Chi-Squared                24869.81     using 49 bins.
+                 Chi-Squared                131457.7     using 49 bins.
+                 Chi-Squared                108863.4     using 49 bins.
+                 Chi-Squared                176624.9     using 49 bins.
+                 Chi-Squared                33874.86     using 49 bins.
+                 Chi-Squared                57390.66     using 49 bins.
+Total fit statistic                       1.240219e+06     with 1665 d.o.f.
+
+Test statistic : Chi-Squared              1.240219e+06     using 1670 bins.
+ Null hypothesis probability of 0.000000e+00 with 1665 degrees of freedom

@@ -1,0 +1,38 @@
+Spectrum 3  Spectral Data File: src_pcu2.pha
+Net count rate (cts/s) for Spectrum:3  2.397e+03 +/- 3.766e+00 (99.6 % total)
+ Assigned to Data Group 1 and Plot Group 3
+  Noticed Channels:  4-52
+  Telescope: XTE Instrument: PCA  Channel Type: PHA
+  Exposure Time: 2044 sec
+ Using fit statistic: chi
+ Using Background File                bkg_pcu2.pha
+  Background Exposure Time: 2128 sec
+ Using Response (RMF) File            p2_xe_2002-01-02.rsp for Source 1
+
+ Spectral data counts: 4.9191e+06
+ Model predicted rate: 2504.04
+
+
+========================================================================
+Model TBabs<1>(diskbb<2> + nthComp<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    6.00000      frozen
+   2    2   diskbb     Tin        keV      0.722263     +/-  5.08046E-02  
+   3    2   diskbb     norm                2.94230E-10  +/-  788.561      
+   4    3   nthComp    Gamma               2.88975      +/-  1.70217E-02  
+   5    3   nthComp    kT_e       keV      109.766      +/-  74.4376      
+   6    3   nthComp    kT_bb      keV      0.722263     = p2
+   7    3   nthComp    inp_type   0/1      1.00000      frozen
+   8    3   nthComp    Redshift            0.0          frozen
+   9    3   nthComp    norm                12.6221      +/-  1.69980      
+________________________________________________________________________
+
+
+Fit statistic  : Chi-Squared                27094.00     using 49 bins.
+                 Chi-Squared                12315.82     using 49 bins.
+                 Chi-Squared                26101.13     using 49 bins.
+Total fit statistic                         65510.95     with 142 d.o.f.
+
+Test statistic : Chi-Squared                65510.95     using 147 bins.
+ Null hypothesis probability of 0.00e+00 with 142 degrees of freedom

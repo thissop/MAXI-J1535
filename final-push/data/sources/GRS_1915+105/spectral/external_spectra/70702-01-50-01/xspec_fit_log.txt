@@ -1,0 +1,108 @@
+Spectrum 73  Spectral Data File: src_pcu2.pha
+Net count rate (cts/s) for Spectrum:73  1.804e+03 +/- 2.528e+00 (99.4 % total)
+ Assigned to Data Group 1 and Plot Group 73
+  Noticed Channels:  4-52
+  Telescope: XTE Instrument: PCA  Channel Type: PHA
+  Exposure Time: 1980 sec
+ Using fit statistic: chi
+ Using Background File                bkg_pcu2.pha
+  Background Exposure Time: 2048 sec
+ Using Response (RMF) File            p2_xe_2003-04-16.rsp for Source 1
+
+ Spectral data counts: 3.5915e+06
+ Model predicted rate: 1603.34
+
+
+========================================================================
+Model TBabs<1>(diskbb<2> + nthComp<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    6.00000      frozen
+   2    2   diskbb     Tin        keV      0.763716     +/-  6.73213E-03  
+   3    2   diskbb     norm                8.12188E-13  +/-  20.2691      
+   4    3   nthComp    Gamma               2.36877      +/-  1.47340E-03  
+   5    3   nthComp    kT_e       keV      11.4130      +/-  8.48957E-02  
+   6    3   nthComp    kT_bb      keV      0.763716     = p2
+   7    3   nthComp    inp_type   0/1      1.00000      frozen
+   8    3   nthComp    Redshift            0.0          frozen
+   9    3   nthComp    norm                5.03862      +/-  6.18524E-02  
+________________________________________________________________________
+
+
+Fit statistic  : Chi-Squared                106578.9     using 49 bins.
+                 Chi-Squared                63510.04     using 49 bins.
+                 Chi-Squared                64101.13     using 49 bins.
+                 Chi-Squared                18839.96     using 49 bins.
+                 Chi-Squared                17445.74     using 49 bins.
+                 Chi-Squared                17116.13     using 49 bins.
+                 Chi-Squared                13119.45     using 49 bins.
+                 Chi-Squared                12128.02     using 49 bins.
+                 Chi-Squared                16937.64     using 49 bins.
+                 Chi-Squared                16292.04     using 49 bins.
+                 Chi-Squared                11489.52     using 49 bins.
+                 Chi-Squared                11194.31     using 49 bins.
+                 Chi-Squared                 9379.97     using 49 bins.
+                 Chi-Squared                 9592.04     using 49 bins.
+                 Chi-Squared                19962.38     using 49 bins.
+                 Chi-Squared                 9488.86     using 49 bins.
+                 Chi-Squared                 3730.83     using 49 bins.
+                 Chi-Squared                 3501.90     using 49 bins.
+                 Chi-Squared                 3684.76     using 49 bins.
+                 Chi-Squared                59521.79     using 49 bins.
+                 Chi-Squared                13415.58     using 49 bins.
+                 Chi-Squared                12915.39     using 49 bins.
+                 Chi-Squared                113234.0     using 50 bins.
+                 Chi-Squared                43978.04     using 50 bins.
+                 Chi-Squared                80652.90     using 50 bins.
+                 Chi-Squared                101058.4     using 50 bins.
+                 Chi-Squared                24988.25     using 49 bins.
+                 Chi-Squared                 7299.45     using 49 bins.
+                 Chi-Squared                 6364.10     using 49 bins.
+                 Chi-Squared                166995.6     using 49 bins.
+                 Chi-Squared                141813.6     using 49 bins.
+                 Chi-Squared                210751.9     using 49 bins.
+                 Chi-Squared                10016.85     using 49 bins.
+                 Chi-Squared                20311.39     using 49 bins.
+                 Chi-Squared                17461.18     using 49 bins.
+                 Chi-Squared                18741.50     using 49 bins.
+                 Chi-Squared                80028.33     using 49 bins.
+                 Chi-Squared                76586.58     using 49 bins.
+                 Chi-Squared                92917.18     using 49 bins.
+                 Chi-Squared                 3263.99     using 49 bins.
+                 Chi-Squared                 2554.49     using 49 bins.
+                 Chi-Squared                66493.83     using 49 bins.
+                 Chi-Squared                29986.27     using 49 bins.
+                 Chi-Squared                74618.42     using 49 bins.
+                 Chi-Squared                78447.00     using 49 bins.
+                 Chi-Squared                35787.60     using 49 bins.
+                 Chi-Squared                37465.88     using 49 bins.
+                 Chi-Squared                58031.53     using 49 bins.
+                 Chi-Squared                19305.91     using 49 bins.
+                 Chi-Squared                13344.29     using 49 bins.
+                 Chi-Squared                 7182.64     using 49 bins.
+                 Chi-Squared                15658.17     using 49 bins.
+                 Chi-Squared                16030.28     using 49 bins.
+                 Chi-Squared                13220.99     using 49 bins.
+                 Chi-Squared                 3431.45     using 49 bins.
+                 Chi-Squared                80154.45     using 49 bins.
+                 Chi-Squared                17488.15     using 49 bins.
+                 Chi-Squared                50953.24     using 49 bins.
+                 Chi-Squared                40772.60     using 49 bins.
+                 Chi-Squared                66998.37     using 49 bins.
+                 Chi-Squared                10444.17     using 49 bins.
+                 Chi-Squared                 8047.34     using 49 bins.
+                 Chi-Squared                 6326.41     using 49 bins.
+                 Chi-Squared                30427.03     using 49 bins.
+                 Chi-Squared                41781.57     using 49 bins.
+                 Chi-Squared                74721.35     using 49 bins.
+                 Chi-Squared                43153.51     using 49 bins.
+                 Chi-Squared                19206.61     using 49 bins.
+                 Chi-Squared                21552.26     using 49 bins.
+                 Chi-Squared                15506.44     using 49 bins.
+                 Chi-Squared                15369.75     using 49 bins.
+                 Chi-Squared                15059.14     using 49 bins.
+                 Chi-Squared                11725.52     using 49 bins.
+Total fit statistic                       2.771656e+06     with 3576 d.o.f.
+
+Test statistic : Chi-Squared              2.771656e+06     using 3581 bins.
+ Null hypothesis probability of 0.000000e+00 with 3576 degrees of freedom

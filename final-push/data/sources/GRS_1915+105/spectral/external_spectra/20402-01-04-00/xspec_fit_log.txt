@@ -1,0 +1,42 @@
+Spectrum 7  Spectral Data File: src_pcu2.pha
+Net count rate (cts/s) for Spectrum:7  2.184e+03 +/- 2.872e+00 (99.4 % total)
+ Assigned to Data Group 1 and Plot Group 7
+  Noticed Channels:  4-57
+  Telescope: XTE Instrument: PCA  Channel Type: PHA
+  Exposure Time: 6288 sec
+ Using fit statistic: chi
+ Using Background File                bkg_pcu2.pha
+  Background Exposure Time: 6560 sec
+ Using Response (RMF) File            p2_xe_1996-11-28.rsp for Source 1
+
+ Spectral data counts: 1.38141e+07
+ Model predicted rate: 2136.18
+
+
+========================================================================
+Model TBabs<1>(diskbb<2> + nthComp<3>) Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   TBabs      nH         10^22    6.00000      frozen
+   2    2   diskbb     Tin        keV      0.828082     +/-  1.09173E-02  
+   3    2   diskbb     norm                671.119      +/-  23.0684      
+   4    3   nthComp    Gamma               2.60496      +/-  8.63288E-03  
+   5    3   nthComp    kT_e       keV      998.365      +/-  5428.67      
+   6    3   nthComp    kT_bb      keV      0.828082     = p2
+   7    3   nthComp    inp_type   0/1      1.00000      frozen
+   8    3   nthComp    Redshift            0.0          frozen
+   9    3   nthComp    norm                6.32076      +/-  0.172754     
+________________________________________________________________________
+
+
+Fit statistic  : Chi-Squared                44829.22     using 53 bins.
+                 Chi-Squared                93932.04     using 54 bins.
+                 Chi-Squared                46369.42     using 54 bins.
+                 Chi-Squared                31178.34     using 54 bins.
+                 Chi-Squared                55531.32     using 54 bins.
+                 Chi-Squared                 3302.16     using 54 bins.
+                 Chi-Squared                 3145.83     using 54 bins.
+Total fit statistic                         278288.3     with 372 d.o.f.
+
+Test statistic : Chi-Squared                278288.3     using 377 bins.
+ Null hypothesis probability of 0.0e+00 with 372 degrees of freedom
