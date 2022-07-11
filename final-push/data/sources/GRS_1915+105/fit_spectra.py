@@ -14,7 +14,7 @@ def first_routine(data_dir:str='final-push/data/sources/GRS_1915+105/spectral/ex
     full_path_for_change = '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/'
     
     with open(output_file, 'w') as f: 
-        f.write('obs_id,gamma,kTe,nthcomp_norm,diskbb_tin,diskbb_norm,red_stat'+'\n')
+        f.write('obs_id,net_count_rate,gamma,kTe,nthcomp_norm,diskbb_tin,diskbb_norm,red_stat'+'\n')
     
     with open(output_file, 'a') as f1: 
         for dir in tqdm([i for i in os.listdir(data_dir) if i != '.gitkeep']): 
@@ -69,7 +69,10 @@ def first_routine(data_dir:str='final-push/data/sources/GRS_1915+105/spectral/ex
                 found_fit_stat = False
                 for line in f2: 
                     line_list = re.sub(' +', ',', line.strip()).split(',')
-                    if 'nthComp    Gamma' in line: 
+                    if 'Net count rate (cts/s)' in line: 
+                        net_count_rate = line_list[6]
+                        output_list.append(net_count_rate)
+                    elif 'nthComp    Gamma' in line: 
                         gamma = line_list[4]
                         output_list.append(gamma)
                     elif 'nthComp    kT_e' in line: 
@@ -93,6 +96,5 @@ def first_routine(data_dir:str='final-push/data/sources/GRS_1915+105/spectral/ex
                         output_list.append(red_stat)
 
             f1.write(','.join([str(i) for i in output_list])+'\n')  
-
 
 first_routine()
