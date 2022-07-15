@@ -126,4 +126,26 @@ def grid_search_plot():
 
     print(best_params)
 
-grid_search_plot()
+def feature_importances_test(): 
+
+    collection_one = collection()
+    context_preprocess = {'net_count_rate':'normalize','gamma':'normalize','kTe':'normalize','nthcomp_norm':'normalize','diskbb_tin':'normalize','diskbb_norm':'normalize'}
+    collection_one.load(qpo_csv=qpo_csv, context_csv=spectrum_csv, context_type='scalar',
+                        context_preprocess=context_preprocess,
+                        qpo_preprocess={'frequency':'normalize', 'width':'normalize', 'rms':'normalize'})
+
+    regr = ExtraTreesRegressor()
+    collection_one.evaluate(model=regr, model_name='ExtraTreesRegressor', evaluation_approach='k-fold', folds=2)
+
+    fig, axs = plt.subplots(2,2, figsize=(7,7))
+
+    collection_one.plot_feature_importances(model=regr, kind='default', style='bar', ax=axs[0,0])
+    collection_one.plot_feature_importances(model=regr, kind='permutation', style='errorbar', ax=axs[0,1])
+    collection_one.plot_feature_importances(model=regr, kind='permutation', style='violin', ax=axs[1,0])
+    collection_one.plot_feature_importances(model=regr, kind='permutation', style='box', ax=axs[1,1])
+
+    plt.tight_layout()
+
+    plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/organize/with count rate/feature_importances_gallery.png', dpi=150)
+
+feature_importances_test()
