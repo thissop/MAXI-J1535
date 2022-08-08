@@ -1,0 +1,494 @@
+key,value
+XTENSION,BINTABLE
+BITPIX,8
+NAXIS,2
+NAXIS1,10
+NAXIS2,1607040
+PCOUNT,0
+GCOUNT,1
+TFIELDS,2
+TIMEPIXR,0
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+EXTNAME,XTE_SE
+EXTVER,1
+EXTLEVEL,1
+ORIGIN,XTE-SOC
+CREATOR,XFF - Revision: 7.0.0
+HDUDOC,"XFF/95-004: Rots, Hilldrup, Barnette: XFF Design Document"
+HDUVERS,1.0.0
+HDUCLASS,OGIP
+HDUCLAS1,EVENTS
+HDUCLAS2,ALL
+LONGSTRN,OGIP 1.0
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+COMMENT,"                                          +--------------------------+
+                                          |        XTE - PCA         |
+                                          |       Science Data       |
+                                          |         E_125us_64M_0_1s |
+                                          | !!!!!   WARNING   !!!!!  |
+                                          | This event list contains |
+                                          | pseudo events that are   |
+                                          | really time markers.     |
+                                          | Process the data only    |
+                                          | after REMOVING all       |
+                                          | events with a msb (most  |
+                                          | significant bit) that is |
+                                          | zero.                    |
+                                          | !!!!!!!!!!!!!!!!!!!!!!!  |
+                                          +--------------------------+
+  This FITS file may contain long string keyword values that are
+  continued over multiple keywords.  This convention uses the  '&'
+  character at the end of a string which is then continued
+  on subsequent keywords whose name = 'CONTINUE'."
+CHECKSUM,6E5999486E486948
+DATASUM,0000003246846807
+DATE,2007-01-06
+DATE-OBS,2006-12-27T06:58:13
+TIME-OBS,06:58:13
+DATE-END,2006-12-27T07:26:10
+TIME-END,07:26:10
+TIMESYS,TT
+MJDREFI,49353
+MJDREFF,0.000696574074
+,"                       / MJD = JD - 2400000.5
+
+
+
+"
+TIMEZERO,3.37842941
+TIMEUNIT,s
+TIMEREF,LOCAL
+TASSIGN,SATELLITE
+CLOCKAPP,True
+TIERRELA,1e-09
+TIERABSO,0.0001
+TIMVERSN,XFF/95-004
+TSTART,409820229.0
+TSTOP,409821906.0
+OBJECT,4U_1636-53
+RA_PNT,250.229202
+DEC_PNT,-53.7514
+EQUINOX,2000.0
+RADECSYS,FK5
+OBSERVER,TOMASO M BELLONI
+OBS_ID,92023-01-52-10
+TELESCOP,XTE
+INSTRUME,PCA
+OBS_MODE,POINTING
+APPID,79
+DATAMODE,E_125us_64M_0_1s
+TIMEDEL,0.0001220703125
+DELTAT,1.0
+GAINAPP,True
+,"                       / MJD = JD - 2400000.5
+
+
+
+"
+TDDES,O[XTE] & I[PCA]
+,"                       / MJD = JD - 2400000.5
+
+
+
+"
+TTYPE1,Time
+TUNIT1,s
+TDDES1,Time
+TFORM1,D
+,"                       / MJD = JD - 2400000.5
+
+
+
+"
+TTYPE2,Event
+TDISP2,Z8.4
+TDDES2,D[0~4] & E[X1L^X1R^X2L^X2R^X3L^X3R] & C[0~249]
+TPACK2,16
+TEVTB2,"(M[1]{1},D[0:4]{3},C[0~4,5~6,7,8,9,10,11,12,13,14,15,16~17,18~19,20~21,22~23,24~25,26~27,28~29,30~31,32~33,34~35,36~37,38~39,40~41,42~43,44~46,47~49,50~52,53~55,56~58,59~61,62~64,65~67,68~71,72~75,76~79,80~83,84~87,88~91,92~96,97~101,102~106,107~111,112~116,117~121,122~126,127~131,132~137,138~143,144~149,150~155,156~161,162~167,168~174,175~181,182~188,189~195,196~202,203~209,210~217,218~225,226~233,234~243,244~249]{6},T[0.0:0.0078125;0.0001220703125]{6})^(M[127]{8},S[One5]{5},S[FirstFlag]{1},S[SpillFlag]{1},S[Zero1]{1})^(M[1]{8},S[LostEvents0]{8})^(M[2]{8},S[LostEvents1]{8})^(M[4]{8},S[Zero]{7},S[Spillage]{1})^(M[8]{8},S[Zero]{5},S[ModeSpecific]{3})"
+TFORM2,16X
+,"                       / MJD = JD - 2400000.5
+
+
+
+"
+DDESC,O[XTE] & I[EDS] & D[1] & E[EA3]
+DDES1,S[ConfigId]
+DPACK1,32
+DFORM1,J
+DVAL1,16777292
+DDES2,S[EARunStart]
+DPACK2,32
+DFORM2,J
+DVAL2,409820192
+DDES3,S[PartCount]
+DPACK3,32
+DFORM3,J
+DVAL3,1714
+DDES4,S[TyperErrCount]
+DPACK4,32
+DFORM4,J
+DVAL4,0
+DDES5,S[TyperErrOffset]
+DPACK5,32
+DFORM5,J
+DVAL5,65535
+DDES6,S[TyperErrValue]
+DPACK6,32
+DFORM6,J
+DVAL6,65535
+DDES7,S[RecodErrCount]
+DPACK7,32
+DFORM7,J
+DVAL7,0
+DDES8,S[RecodErrOffset]
+DPACK8,32
+DFORM8,J
+DVAL8,65535
+DDES9,S[RecodErrValue]
+DPACK9,32
+DFORM9,J
+DVAL9,65535
+DDES10,S[EARunFlags]
+DPACK10,8
+DFORM10,B
+DVAL10,0
