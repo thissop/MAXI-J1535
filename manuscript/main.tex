@@ -1,0 +1,361 @@
+\documentclass[fleqn,usenatbib]{mnras}
+\usepackage{newtxtext,newtxmath}
+\usepackage[T1]{fontenc}
+\usepackage{ae,aecompl}
+\usepackage[normalem]{ulem}
+\usepackage{graphicx}	% Including figure files
+\usepackage{amsmath}	% Advanced maths commands
+\usepackage{amssymb}	% Extra maths symbols
+\usepackage{array, booktabs} %table
+\usepackage{lipsum}
+\usepackage{minted}
+\usepackage{url}
+
+\title[QPOML]{QPOML: Leveraging Machine Learning to Detect and Characterize Quasi-Periodic Oscillations in X-Ray Binaries}
+
+\author[Kiker et al.]{Thaddaeus J. Kiker,$^{1}$\thanks{E-mail: thaddaeus@emailforpublicto.see}, James F. Steiner$^{2}$,
+Cecilia Garraffo$^{2}$\\
+$^{1}$ Sunny Hills High School, Fullerton, CA 92833, USA\\
+$^{2}$ Center for Astrophysics | Harvard \& Smithsonian, 60 Garden St. Cambridge, MA 02138, USA\\
+} 
+ 
+\date{Accepted XXX. Received YYY; in original form ZZZ}
+
+\pubyear{2022}
+
+\begin{document}
+\label{firstpage}  
+\pagerange{\pageref{firstpage}--\pageref{lastpage}}
+\maketitle
+
+\begin{abstract}
+Astronomy is presently experiencing radical growth with the deployment of machine learning in the field to reap the benefits provided by ever-growing massive datasets. However, although the phenomena of Quasi-Periodic Oscillations characteristic to X-ray binaries has been extensively investigated over the last twenty (?) years, to date its origins retain a aura of mystery. Furthermore, this phenomena represents a vast wealth of data heretofore unexplored with machine learning, despite thorough documentation by tens (?) of thousands of detections from numerous space telescopes) (how machine learning could help shed some light on the subject?). In light of this, we have developed a Python library, dubbed \texttt{QPOML}, to empower the community to make machine learning enabled discoveries about QPOs. In doing so, we propose and synthesize various best-practices and methods while demonstrating \texttt{QPOML}'s capabilities in the first ever detection and characterization of QPOs with machine learning. 
+
+Emphasize focus on interpretable Machine Learning
+
+\end{abstract}
+
+% Select between one and six entries from the list of approved keywords.
+\begin{keywords}
+accretion, accretion disks --- black hole physics --- stars: individual (MAXI\, J1535+571) --- X-rays: binaries
+\end{keywords}
+
+\clearpage
+
+\section{Introduction}
+
+At the ends of their lives, massive stars ``do not go gentle into that good night'' \citep{thomas1952country}. Instead, if their initial mass exceeds that of $\sim8$ M$_\odot$, core collapse leads to spectacular Type II supernovae \citep{shull1995}. Depending on this initial mass, such a conflagration event can result in a Neutron Star or Black Hole remnant \citep{gilmore2004}. In special cases, this object maintains a non-degenerate partner, and together these may form an X-Ray Binary (XRB) system, in which the non-degenerate star engages in mass-exchange with its compact partner \citep{tauris2006}. Such systems are characterized by accretion from the donor star, which leads to features like accretion disks \citep{SS73}, jets \citep{gallo2005,neutronstarjet}, and winds \citep{bhwinds,neutronStarWind} associated with the compact component. Additional exotic phenomena like thermonuclear surface burning  \citep{thermonuclear} have also been observed with neutron stars, and although black holes are not physically capable of manifesting this latter process, many similarities still exist between XRBs of black hole and neutron star nature \citep{VanDerKlis1994}, despite differences regarding predominant transience of black holes XRBs \citep{belloni_motta2016} versus widespread persistence of NS XRBs \citep{done_afraid}. For example, these systems are both observed to emit thermal X-Ray radiation with temperatures $\sim1$ keV that is understood to arise from the conversion of gravitational potential to radiative energy in an optically thick, geometrically thin accretion disk \citep{SS73}. Black hole and neutron star XRBs both also show hard X-Ray flux coming from compton up-scattering of thermal disk flux by a cloud of electrons around the compact source known as the corona \citep{corona_1979,coronae_1982}, and this component commonly modeled by a power law relationship $N(E)\propto E^{-\Gamma}$, where $\Gamma$ is the photon index \citep{McClintockRemillard2006}. Additionally, spectra from both neutron stars and black holes exhibit reflection features like a fluorescent, relativistically broadened 6.4 keV Fe K$\alpha$ line \citep{iron_lines_1989} and $\sim30$ keV compton hump \citep{x-ray_reflection_models_2005}. Furthermore, systems from both of these classes characteristically evolve through analogous spectral states \citep{gardenier2018}, ranging from hard, to intermediate, and to soft \citep{McClintockRemillard2006}. These states are parameterized by changes in accretion rate and thus luminosity \citep{terrabyte_done}, spectral hardness or thermal dominance, and thereby position on a Hardness-Intensity or Color-Color Diagram track \citep{ingram2019}, and the presence/absence of mysterious  Quasi-Periodic Oscillations (QPO) of the observed X-Ray radiation \citep{McClintockRemillard2006}, which are detected as narrow ($Q=v/2\Delta\geq X$) peaks in power-density spectra \citep{homanBelloniQPOstates}.
+
+Over the past thirty years, numerous theories, including but not limited to relativistic precession \citep{lense-thirring-original}, precesssing inner flow \citep{precessionandlense}, corrugation modes \citep{corrugation}, accretion ejection instability \citep{accretion-ejection}, and propagating oscillatory shock \citep{propagatingoscillatoryshock} have been advanced to explain the occurrence of QPOs in NS and BH XRB systems, yet providing a conclusive and let alone universal explanation for low frequency QPOs (LFQPO) and QPOs in general has proven to be a very challenging endeavor. For context, in black hole systems QPOs are most frequently observed as LFQPOs with centroid frequencies ranging from 0.1-30 Hz \citep{belloni2020typeB}, yet some BH-XRBs have exhibited high-frequency QPOs (HFQPO). The former is further subdivided canonically into three classes of alphabetic flavor \citep{casellaABC}: Type-A QPOs are the rarest, sometimes appearing in the soft state as broad, low amplitude features centered between 6-9 Hz and usually lacking harmonic companions \citep{ingram2019}. Type-B QPOs are more common, and can be seen during the short Soft Intermediate State and have shown some connection with Jet behavior \citep{globaltypeB}. Finally, type C QPOs are the most common, and can be detected with harmonic companions as narrow (Q>8) features in nearly all states \citep{typeCmodel2016}. Their centroid frequencies range from 0.1-30 Hz depending on state, and almost always correlate strongly with spectral features like $\Gamma$ \citep{motta2015LotsofQPOs}. As for the rare latter HFQPO phenomena, HFQPOs exhibit centroid frequencies $v\geq$ 100 Hz \citep{motta2011}, often in resonant pairs, and are of additional particular interest given the fact that their timescales show similarity to Keplerian orbital periods near/at the Innermost Stable Circular Orbit in accretion disks \citep{stellaVietriISCO} and that they can be used to calculate black hole spin \citep{Abramowicz2001}.  
+
+QPOs are also observed as low- and high-frequency signals in neutron star systems \citep{wang2016QPOreview}. Neutron star LFQPOs are further sub-classified as horizontal branch oscillations, normal branch oscillations and flaring branch oscillations, which together correlate with spectral states while ranging in frequency from 1-70 Hz, broadly corresponding to the different classes of LFQPOs in black hole systems \citep{homan2015}. On the other hand, HFQPOs in neutron stars, known as kilohertz or kHz QPOs, range in frequency from 200 - 1300 Hz and represent the fastest variability components in XRBs \citep{wang2016QPOreview}. When kHz QPOs are detected in pairs, the features are distinguished as the lower or higher kHz QPO based on frequency \citep{belloniMendez2005}. Notably, the similarities between black hole HFQPOs and neutron star kHz QPOs are suggestive of common origin \citep{Psaltis1999,Bhargava2021}. For further discussion of QPOs in XRBs, including discussion of 1 Hz and hectohertz QPOs in Neutron Stars, as well as mHz QPOs, we recommend readers to \cite{ingram2019}, \cite{oneHZqpo}, \cite{hectohertzKato2005}, and \cite{Revnivtsev2001}, respectively. 
+
+Though difficult at times, studying QPOs and their host XRB systems with instruments like RXTE \citep{rxte1996}, Chandra \citep{Weisskopf2000}, and others has proven to be a very fruitful endeavor, for beyond answering numerous important questions about these systems themselves (and raising or re-contextualizing yet many more), such studies have also provided deep insights into our understanding of the universe on a fundamental level, particularly through investigations of general relativity in strong gravity \citep{strong_gravity_2004,strong_gravity_2017}. Furthermore, among other insights, the study of XRBs has lead to a deeper understanding of accretion physics relevant to its varied manifestation from young stellar objects to white dwarfs \citep{done_afraid,accretion_connection}. 
+
+All in all, hundreds of XRBs have been observed since the discovery of Cygnus X-1 \citep{bolton1972,lmxbCatalog,blackcat}. Although machine learning has been used to classify accretion states \citep{Sreehari2021}, predict compact object identity \citep{Pattnaik2021}, and study gravitational waves \citep{MLgravWave}, this represents tens of thousands of observations that have heretofore not been explored with machine learning to the ends of detecting QPOs. Therefore, in this work we seek to develop a methodology for using machine learning to detect QPO for two reasons: first, we believe that within the context of astrophysics, our theoretical understanding of QPOs and their exotic progenitor systems could benefit from insights derived from this non-traditional approach \citep{ml_and_theory}. Perhaps machine learning may contribute to a conclusive understanding of this decades old mystery, and in contributing to the potential solution to this mystery, we anticipate the fields of astrophysics and physics in their entirety to benefit \citep{physics_informed_ML_nature,physics_and_ml_again}. Second, we believe that as a field, computer science itself can benefit greatly from the utilization of such a rich data treasure-trove for further technical development  \citep{zhu2016we,big_data_collection_ml}. In doing this, we strive to adhere to the standards of interpretable machine learning \citep{interpretableML,belleInterpretableML,molnar2022}, and we also employ techniques from other fields like game theory to frame our work in an interdisciplinary context. 
+
+We structure the remainder of this paper as follows: in Section \ref{sec:obs} we describe the observations and data analysis upon which we base our work. Following this, in Section \ref{sec:methods} we introduce our methods and models, after which we present their results in Section \ref{sec:results}. We discuss these results contextually in Section \ref{sec:discussion}, and finally, we conclude in Section \ref{sec:conclusion}. Additional work is presented in following appendices. 
+
+\section{Observations and Data Analysis}\label{sec:obs}
+
+\begin{table}
+    \centering\label{tab:sources}
+    \caption{Description of Sources Included in this Study}
+    \begin{tabular}{l c c c}
+    \hline 
+    \hline
+    Source & Class & Instrument & Number of Observations  \\
+    \hline
+    MAXI J1535-571 & BH & NICER & 658 \\
+    GRS 1915+105 & BH & RXTE & 620 \\
+    \hline
+    Total & & & 1278 \\
+    \hline 
+    \end{tabular}
+    
+\end{table}
+
+The energy spectra were fit with \texttt{XSPEC} version $12.12.0$ using the model \texttt{tbabs*(diskbb+nthcomp)}, which represents an absorbed multi-temperature blackbody and thermally Comptonized continuum \citep{cuneo2020,Mitsuda1984,Kubota1998,Zdziarski1996,Zycki1999}. We fixed the equivalent hydrogen column densities to canonical values from the literature, tied seed photon temperature to $\mathrm{T}_{\mathrm{in}}$ (of \texttt{diskbb}), and computed hardness values as the ratio of the background-subtracted count rates in 4-10 keV / 2-4 keV bands, after subtracting the sum of the temporally scaled background counts in these ranges. Unfortunately, as in \cite{miller2018}, we noticed severe instrumental residuals in the $1.7-2.1$ keV range, likely related to NICER's Au mirror coating and residual in the Si K $\alpha$ fluorescence peak, and similarly, we excluded the $1.5-2.3$ keV energy band from the spectral fitting process.
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/placeholder-image.png}
+    \caption{Example light curve...include a cool NICER heatmap looking plot too?..include an additional ``cartoon'' XRB for STS version?}
+    \label{fig:lightcurve}
+\end{figure}
+
+The Lorentzians are parameterized as in Equation \ref{eq:lorentz}, where $\nu$ is frequency in Hertz, $\sigma$ is full width at half maximum (FWHM), and $K$ is normalization 
+\citep{xspec12}.    
+
+We test both raw spectrum input as well as feature vector inputs, as we are interested in seeing ... 
+
+\begin{equation}
+    A(\nu)=\frac{K(\frac{\sigma}{2\pi})}{(\nu-\nu_L)^2+(\frac{\sigma}{2})^2}
+    \label{eq:lorentz}
+\end{equation}
+
+
+\subsection{Neutron Star Sources}
+discuss atoll vs z sources 
+
+\subsection{Black Hole Sources}
+
+Low Mass XRBs (LMXRBs) are defined 
+
+\section{Methods}\label{sec:methods}
+
+\subsection{Model Selection}
+
+In machine learning, models can be broadly classified by two categories: whether they are built for classification or regression, and whether they operate in a supervised or unsupervised manner \citep{bruce2017practical}. Since we are providing our models with explicit targets for loss minimization, our approach falls under the umbrella of supervised learning \citep{supervised_review}, and as we are attempting to connect spectral information about XRBs with real-valued output vectors that describe QPOs in their power-density spectra, we also fall under multi-output regression \citep{multioutput_review}. In selecting our machine learning models for regression, we sought those that natively supported multi-output regression, incorporated capabilities for mitigating overfitting, had precedents of working successfully with medium to small sized data sets, and natively communicated feature importances. Additionally, we sought to evaluate a collection of models against each other in light of the No-Free-Lunch-Theorem \citep{NoFreeLunch,avoidMLpitfalls} 
+    
+Based on these criteria, we settled on a set of tree-based regression models and their descendants, specifically Decision Trees \citep{breiman1984original}, Random Forests \citep{breiman2001random}, Extremely Randomized Trees \citep{extratrees}, and XGBoost \citep{xgboost}. Decision Trees are the original tree-based regression model and they operate by inferring discriminative splits in data and making predictions via a series of if-then-else decisions \citep{breiman1984original}. Random Forests are more powerful derivatives of Decision Trees, and are based on an ensemble of Decision Trees trained via bootstrap aggregation \citep{breiman1996bagging,breiman2001random}. By incorporating predictions from such an ensemble, Random Forests reduce prediction variance while increasing overall accuracy when compared to a single Decision Tree \citep{lakshminarayanan2016decision}. Extremely Randomized Trees (also known as Extra Trees) are similar to Random Forests in this respect but operate with more randomization during the training process, as instead of employing the most discriminative thresholds within feature spaces for splits, Extremely Randomized Trees select the best performing randomly drawn thresholds for splitting rules \citep{extratrees,scikit-learn}. Finally, XGBoost builds upon stochastic gradient boosting for improved performance in terms of speed and efficiency compared to its predecessors like AdaBoost \citep{xgboost,xgboost_vs_ada}. One important distinction between XGBoost and Random Forests/Extremely Randomized Trees is that only the former employs boosting, which is the practice of successively fitting models to training cases with large errors \citep{Stochasticgradientboosting}, and consequently, in the absence of proper hyperparameter optimization, stands at a greater risk of overfitting, hence Section \ref{subsec:train_validate_tune} \citep{bruce2017practical}.
+
+Together, these represent some of the most powerful yet lightweight machine learning models available, and meet our criteria for multi-output regression \citep{multioutput_review}, robustness to overfitting \citep{metarandomforests,evalTree-BasedEnsembles}, success with small/medium sized datasets \citep{floares2017smallest}, and feature importances \citep{feature_importances_trees}. An additional benefit of these models is that they are natively supported by the \texttt{TreeExplainer} method in the \texttt{SHAP} Python package \citep{SHAP_2017}, which frees us from common pitfalls related to impurity and permutation based feature importances, which we discuss in more detail in Section \ref{sec:discussion}. 
+
+\subsection{Feature Selection}
+
+During feature selection, it is generally important to deal with potential multicollinearity by calculating Variance Inflation Factors (VIF) and removing features with VIF values $\gtrsim5$ \citep{kline1998principles, Sheather2008-mc}. However, we have chosen not to remove potentially collinear features prior to regression for the following reasons. First, a tree based model like Random Forest (on which we focus) is by design robust from the effects of multicollinearity \citep{Strobl2008,2021arXiv211102513C}. Second, since multicollinearity only affects the estimated coefficients of linear models, but not their predictive ability, applying a linear model to potentially collinear data is perfectly reasonable in our case, as we are using the linear model solely as a baseline against which we will compare the predictive capabilities of the more complicated Random Forest model; i.e. as we are applying the linear model, we are not interested in its components \citep{multicollinearity_class,multicollinearity_regression}. We will, however, revisit multicollinearity when we interpret feature importances in Section \ref{sec:ResDis}. 
+
+\subsection{Feature Engineering}
+
+As \cite{casari2018feature} detail, feature engineering refers to the crucial process of transforming raw data to maximize predictive performance. After experimenting with different formats, we settled on the following for using fitted \texttt{XSPEC} and raw spectral data as predictors and timing features as outcomes. 
+
+When using scalar values for inputs, we format our input data as a two dimensional tensor (i.e. matrix) composed of vectors containing the hardness ratio, $\mathrm{T}_{\mathrm{in}}$, $\Gamma$, \texttt{nthcomp} normalization, \texttt{diskbb} normalization, and net count rate values for every observation. This input structure is visualized in Equation \ref{mat:context_matrix} (where \textit{h} is hardness, \textit{nn} is \texttt{nthcomp} normalization, \textit{dn} is \texttt{diskbb} normalization, and \textit{ncr} is net count rate): 
+
+\begin{equation}\label{mat:context_matrix}
+    \mathrm{IN}_{n\times6} =
+    \begin{bmatrix}
+    \mathrm{T}_{\mathrm{in}_1} & \Gamma_{1} & h_1 & nn_1 & dn_1 & ncr_1 \\
+    \vdots & \vdots & \vdots & \vdots & \vdots & \vdots\\
+    \mathrm{T}_{\mathrm{in}_n} & \Gamma_{n} & h_n & nn_n & dn_n & ncr_n \\
+    \end{bmatrix}
+\end{equation}
+
+Similarly, when working with raw spectral data, we re-bin the energy spectra into $25$ equal-width channels in the energy range \textbf{update}, similar to \cite{Pattnaik2020}, and use the $25$ derived count rate values directly as the input vectors within the input tensor. 
+
+The QPO output tensor is similarly formatted as a two dimensional tensor composed of vectors that match by index to vectors in the input tensor, but with a twist. A significant challenge related to the prediction of not only the presence of QPOs in a given PDS, but also the number of QPOs, as well as the physical parameters of each QPO present, is that over the course of an outburst (or multiple), the number of detectable QPOs is known to change (cite two). We account for this challenge of variable output cardinality by first identifying all QPO occurrences associated with an observation. Then, we order these occurrences and their features in a vector of length $L=N_f\times \mathrm{max}(N_s)$, where $N_f$ is the number of features describing every QPO (e.g. $N_f=2$ for frequency and width), and $N_s$ is the maximum number of simultaneous QPOs observed in a PDS in the dataset. 
+
+We then structure each output vector as a repeating subset of features for every QPO contained, and order these internal QPO parameterizations with the sub-harmonic features first, followed by the fundamental features, which are finally followed by the first harmonic features. If one or more of these occurrences are not detected in a PDS, their feature spaces in the vector are populated with zeros. This allows us to circumvent the aforementioned issue with variable output cardinality, because as our models will learn during training to associate indices populated with zeros as being QPO non-detections \citep{deepLearningPython}, Hence the prepossessing results in a feature space spanning $[0.1,1.0]$, rather than $[0.0,1.0]$.  
+
+As in the case of input features, Equation \ref{mat:qpo_matrix} provides a visualization of a potential output matrix returned by our model, where each row corresponds to one observation matched with a row in the input matrix (both out of $n$ total observations). 
+
+\begin{equation}\label{mat:qpo_matrix}
+    \mathrm{OUT}_{n\times9} =
+    \begin{bmatrix}
+    v_{1,1} & \Delta_{1,1} &  a_{1,1} &  \cdots & v_{1,3} & \Delta_{1,3} &  a_{1,3}\\
+    \vdots & \vdots & \vdots & \ddots & \vdots & \vdots & \vdots \\
+    v_{n,1} & \Delta_{n,1} & a_{n,1} & \cdots & v_{n,3} & \Delta_{n,3} & a_{n,3} \\
+    \end{bmatrix}
+\end{equation}
+
+In this example, the maximum number of QPOs simultaneously observed in a PDS is three, and each QPO is described in terms of its frequency, width, and amplitude, so the output matrix takes the shape $\mathrm{OUT}=n\times9$. Prior to reformatting the data in this manner, we applied a min-max standardization to the \texttt{XSPEC}, and hardness input features, as well as the QPO lorentzian output features, which linearly transformed each distribution into a $[0.1,1]$ range while preserving their shapes, according to Equation \ref{eq:minMax} \citep{Kandanaarachchi2019}.
+
+\begin{equation}
+    x' = \frac{x-\mathrm{min}(x)}{\mathrm{max}(x)-\mathrm{min}(x)}\label{eq:minMax}
+\end{equation}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/placeholder-image.png}
+    \includegraphics[width=0.4\textwidth]{figures/placeholder-image.png}
+    \caption{A flowchart visualization of our QPOML routine method.}
+    \label{fig:flowchart}
+\end{figure}
+
+This step is necessary to prevent features with larger ranges receiving greater weight than they necessarily deserve, and it also frees the models from dependency on measurement units \citep{Akanbi2015, Han2012}. We did not apply this standardization step to channel count and net count rate input features, however, as the imposition of \textit{a priori} theoretical limits to these features is not as readily justifiable \citep{Pattnaik2020}.  \footnote{Standardization prior to splitting data into train and test sets does not impair our model's predictive validity because its pre-adjusted inputs will always be constrained within the theoretical bounds applied during standardization for each feature (e.g. $\Gamma$ will always initially range between $x-y$).}
+
+\subsection{Training, Validation, and Hyperparameter Tuning}\label{subsec:train_validate_tune}
+
+To better understand our models in different data combinations and minimize statistical noise, while guaranteeing every observation gets included in a training, as well as at a separate time, test instance, we employ a repeated $k$-fold cross-validation strategy \citep{repeated_k_fold} for model evaluation (as opposed to a default proportion-based train-test split). According to this procedure, our data is first randomly split into $k=10$ folds. Then, every model is evaluated on each unique fold thus generated after being trained on the remaining folds, with the individual k-fold performance taken as the mean of these evaluations across the ten folds. We repeat this process ten times (randomly shuffling the data between each iteration), and the final performance for each model is calculated as the mean performance across the ten k-fold instances \citep{kuhn2019applied}. To ensure fair comparison between these algorithms, each underwent automatic and individualized hyperparameter tuning via grid search prior to this evaluation \citep{dangeti2017statisticsML}. In the case of XGBoost, for example, this included modulation of learning rate $\eta$, $\ell_{1}$ and $\ell_{2}$ regularization, the number of boosting iterations, and maximum tree depth to minimize overfitting and maximize predictive performance (see Appendix B. for complete discussion). 
+
+\section{Results} \label{sec:results}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/placeholder-image.png}
+    \caption{Violin plot of predictive performance for the source ******* across $k=10$ validation folds repeated $10$ times.}
+    \label{fig:average_performances}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/placeholder-image.png}
+    \caption{Example detector spectrum and PDS for the source ***** with predicted QPOs overplotted.}
+    \label{fig:example_pds}
+\end{figure}
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/placeholder-image.png}
+    \caption{A results regression plot for all QPOs from a given fold for the source *****, as predicted by ordinary linear regression (left) and ***** (right). As this demonstrates, linear regression ...}
+    \label{fig:results_regression}
+\end{figure}
+
+
+
+\section{Discussion}\label{sec:discussion}
+
+\subsection{Feature Importances and Interpretation} 
+
+Although it is common to discuss default impurity-based feature importances, this approach is flawed as these are both biased towards high-cardinality numerical input features, as well as computed on training set statistics, which means they may not accurately generalize to held-out data \citep{scikit-learn}. Additionally, although permutation importances are often forwarded as a superior alternative, these suffer from multicollinearity, as in the process of permutating single features a feature can be erroneously calculated as having little to no effect on model performance because its information can be inferred from a different, correlated feature \citep{Strobl2007,Nicodemus2010,hooker2019}. Therefore, we chose to to determine feature importances for our XXXXX with the state of the art
+TreeSHAP algorithm as implemented in the Python package \texttt{shap} by \cite{SHAP_2017}. This extends game theoretic coalitional Shapley values to calculate SHapley Additive exPlanations (SHAP) in the presence of multicollinearity by incorporating conditional expected predictions \citep{shapley_values_original,SHAP_2017,molnar2022}. As hinted earlier and detailed in \cite{SHAP_2017} and \cite{molnar2022}, an additional benefit of using Tree based models in this context is that through tree traversal and dynamic programming the computational cost for computing SHAP values is brought down from exponential $\mathcal{O}(2^n)$ time inherent to the brute force approach (defined in Equation \ref{eq:shapley}) to polynomial time $\mathcal{O}(n^2)$. 
+
+\begin{figure}
+    \centering
+    \includegraphics[width=0.4\textwidth]{figures/placeholder-image.png}
+    \caption{Feature importances for the ***** model predicting for the source ********* derived from the absolute value of the tree-shape calculated SHAP values.}
+    \label{fig:feature_importances}
+\end{figure}
+
+To determine global feature importances, we take the average of the absolute values per feature throughout the data, according to Equation \ref{eq:absolute_shap},
+
+\begin{equation}\label{eq:absolute_shap}
+    I_j=\frac{1}{n}\sum_{i=1}^n{}|\phi_j^{(i)}|
+\end{equation}
+
+\noindent where TreeSHAP estimates $\phi_i(f,x)$ from Equation \ref{eq:shapley}.
+
+\begin{equation}\label{eq:shapley}
+    \phi_i(f,x) = \sum_{z' \subseteq x'} \frac{|z'|!(M - |z'| -1)!}{M!} \left [ f_x(z') - f_x(z' \setminus i) \right ],
+\end{equation}
+
+\noindent which represents the weighted average of differences in model performance when a feature is present and absent for all subsets $z'\subseteq x'$.
+\textit{discuss feature importances, but note distinction between correlation and causation and caution in this context...maybe in conclusion}
+\subsection{Statistical Model Comparison}
+
+As mentioned in Section \ref{sec:methods}, we included an ordinary least squares model in addition to the others to serve as a justification for their utilization. As Figure \ref{fig:average_performances} and Figure \ref{fig:results_regression} demonstrate, every model vastly outperforms linear regression, suggesting their use is justified. However, this is not adequate grounds for conclusion, and we therefore turn to more sophisticated  methods to determine whether or not these differences in performance are significant. To do so, we first employ the \cite{nadeau_and_bengio} formulation of the frequentist Diebold-Mariano corrected paired t-test \citep{diebold_and_mariano}, which is shown in Equation \ref{eq:freq}: 
+
+% Nadeu and Bengio: https://papers.nips.cc/paper/1661-inference-for-the-generalization-error.pdf
+
+% Diebold-Mariano: http://www.est.uc3m.es/esp/nueva_docencia/comp_col_get/lade/tecnicas_prediccion/Practicas0708/Comparing%20Predictive%20Accuracy%20(Dielbold).pdf
+
+\begin{equation}\label{eq:freq}
+    t=\frac{\frac{1}{k \cdot r}\sum_{i=1}^{k}\sum_{j=1}^{r}x_{ij}}
+{\sqrt{(\frac{1}{k \cdot r}+\frac{n_{\mathrm{test}}}{n_{\mathrm{train}}})\hat{\sigma}^2}}
+\end{equation}
+
+\noindent where $k=10$ and represents the number of folds in our aforementioned k-fold validation, $r=10$ and equals the number of times we repeated the k-fold procedure, $x$ is the performance difference between two models, and $\hat{\sigma}^2$
+represents the variance of these differences \citep{scikit-learn}. It is necessary to correct the $t-$values in this manner because the performance of the models are correlated with each fold upon which they are tested, as some folds may make it harder for one of or all of the models to generalize, whereas others make it easier, and thus the collective performance of the models co-vary. Based on this test, we are able to calculate whether or not a model is significantly better than another. The results of these pairwise tests for all permutations of two model combinations on XXX sources is shown in Table \ref{tab:pairwise}. 
+
+Following this, we implement the Bayesian \cite{benavoli} approach, which allows us to calculate the \textit{probability} that a given model is better than another, using the distribution formulated in Equation (\ref{eq:bay}): 
+
+% Benavoli et al: http://www.jmlr.org/papers/volume18/16-305/16-305.pdf
+
+\begin{equation}\label{eq:bay}
+    \mathrm{St}(\mu;n-1,\overline{x},(\frac{1}{n}+\frac{n_{\mathrm{test}}}{n_{\mathrm{train}}}) %St = standard part function
+\hat{\sigma}^2)
+\end{equation}
+
+\noindent where $n$ is the total number of samples, $\Bar{x}$ is the mean score difference, and $\hat{\sigma}^2$ is the \cite{nadeau_and_bengio} corrected variance in differences \citep{scikit-learn}. These results of these pairwise tests are also shown in Table \ref{tab:pairwise}. 
+
+\begin{table}
+    \caption{Pairwise ... \textit{p} is the ...  A full, machine-readable, version of this table is available electronically.}
+    \label{tab:pairwise}
+    \centering
+    \begin{tabular}{l c c c c}
+    \hline
+    \hline 
+    Source & M$_1$ & M$_2$ & p & \% M$_1$ Better  \\
+    \hline 
+    nan & nan & nan & nan & nan \\ 
+    nan & nan & nan & nan & nan \\ 
+    \hline 
+    \end{tabular}
+    
+\end{table}
+
+\section{Conclusion} \label{sec:conclusion}
+
+Although we focused our validation on black hole LFQPOs and neutron star kHz QPOs in low mass X-Ray binary systems ... \textit{generalize}
+
+We note that in \texttt{QPOML} our entire methodological process, from input and output tensor construction and prepossessing, to hyperparameter tuning, model evaluation, and plot generation, is conveniently both 1. executed internally ``under the hood'' (the user can implement all these steps in less than five lines of code, as shown in the Appendix A.), and 2. extendable to any number of QPOs and any number of scalar observation features for any number of observations.
+
+ML (read augment physics papers) should clearly not be a replacement for traditionally modeling...we hope it augments creative 
+
+\textbf{Future applications/extensions:}
+
+\begin{itemize}
+    \item QPO phase lags
+    \item HMXRBs?
+    \item spin/mass info (our models are easily extensible from )
+    \item 
+\end{itemize}
+
+We are currently working on a follow up piece to this paper in which we are training a hopefully inter-source and inter-class ... welcome collaborators ... assembling a large standardized database of QPO and spectral data ... 
+
+\section{Acknowledgements}
+
+We thank V.A. Cuneo for helpful conversation early in this work. We thank (two guys at XSPEC who helped me) for assistence with XSPEC issues. We thank Travis Austen with help recovering lost ... from damaged virtual machine disk, and Brandon Barrios for thereafter recommending the Windows Subsystem for Linux (WSL) alternative. 
+
+\noindent \textit{Facilities:}
+
+\noindent \textit{Software:}
+
+%\bibliographystyle{plainnat}
+\bibliographystyle{mnras}
+\bibliography{bibliography}
+
+\section*{Appendix}
+
+\subsection*{A. \texttt{QPOML} Demonstration}\label{appendix:demo}
+
+Contents: one figure (code), about one page long (in text discuss all the capabilities QPOML has and the things it handles under the hood)
+
+\begin{figure}[H]
+    \centering
+    \begin{minted}[mathescape,gobble=2]{python}
+    from qpoml import qpo, context 
+    
+    context = None
+    
+    qpo_csv_url = "https://www.overleaf.com/"
+    
+    context_csv_url = "https://www.overleaf.com/"
+    
+    context.load(qpo_csv)
+    context.evaluate(context_csv, model="random-forest")
+    
+    context.plot_correlation_matrix(dendrogram=True)
+    context.plot_results_regression()
+    context.plot_feature_importances()
+    
+    \end{minted}
+    \caption{A demonstration of \texttt{QPOML} which replicates three of the figures from the main paper.}
+    \label{fig:qpoml_demo}
+\end{figure}
+
+\subsection*{B. Methodological Experimentation}
+
+\subsubsection{Hyperparameter Tuning and Grid Search}
+
+Content: eight figures, eighteen pages 
+
+\subsubsection{\texttt{eurostep} Architecture}
+
+During the process of model and configuration exploration, we also envisioned a completely different ensemble architecture, which we dubbed \texttt{eurostep} after the (in)famous two-step move in Basketball, and we conclude this subsection with a brief summary. In contrast to the one model approach we used elsewhere (which handled the amount of QPOs to predict via zero padding), the eurostep approach operates across two phases: a primary classification step followed by a secondary regression step. For any given train-test split, the classification model is trained on all available training data; however, individual regressors are trained for each potential outcome; i.e. if the observations in a dataset only have two or three QPO occurrences per PDS, one regressor would be trained on the training instances with one QPO occurrence, and the other regressor would be trained on the training instances with two QPO occurrences. In practice, during the first step the classifier would predict how many QPO occurrences are present for a observation, and then based on this prediction, the algorithm would select which regressor to use. Although this architecture provides an alternative to zero-padding as a solution to the variability in the cardinality of the multiple-output feature space, we concluded that this benefit is outweighed by \texttt{eurostep}'s much more complicated nature. 
+
+\subsection*{C. Injected QPO Recovery}
+
+Content: one figure (two part: left is simulated qpo example, right is something CNN related) and one page total (text is about CNN, etc.) 
+
+Luckily, one advantage allotted to recovery of QPOs from power density spectra is that PDS are (or can be) identically structured in frequency space between observations, in contrast to time series, which are often sparsely and non-uniformly sampled. Thus, an entirely different approach can be taken to detect QPOs from PDS if PDS are treated as images, and a model is trained to detect these features from raw PDS unaided. An appropriate model for this case would be a convolutional neural network, which **DESCRIBE** . One draw back of using a CNN for this purpose is that CNNs require **NUMBER** of data for training, and there are not enough QPO observations for any singular source to adequately meet this requirement. However, in this appendix we take a page from exoplanet science and ``inject'' QPOs into XXXX PDS as an initial proof-of-concept exploration to see if the approach is tenable, and if so, open the door to a future exploration which would investigate the merits of training a CNN on Monte-Carlo generated PDS and QPOs tailored to a configurations of a particular detector, and then attempt to recover real QPOs.  
+
+\subsection*{NOTES}
+
+We account for X-Ray absorption on the part of the Interstellar Medium with the Tuebingen-Boulder ISM absorption model ... %https://iopscience.iop.org/article/10.1086/317016/pdf
+
+
+
+\begin{equation}
+    N_\mathrm{H}=\frac{\tau_{\mathrm{grains}}}{\sigma_{\mathrm{grains}}}
+\end{equation}
+
+Where 
+
+\begin{equation}
+    \sigma_{\mathrm{grains}}=\xi_g\int_0^{\infty}\frac{dn_{\mathrm{gr}}(a)}{da}\sigma_{\mathrm{geom}}\times[1-\mathrm{exp}()-\langle \sigma\rangle \langle N \rangle)]da
+\end{equation}
+
+% https://articles.adsabs.harvard.edu/pdf/2000PASJ...52..133W
+
+\end{document}
