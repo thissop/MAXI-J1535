@@ -1,20 +1,32 @@
-def pipeline(sources:list, 
+def pipeline(sources:list, models:list, model_names:list, source_classes:list, source_instruments:list,
+             qpo_preprocess_dictionaries:dict, context_preprocess_dictionaries:list,
+             model_hyperparameter_dictionaries:list,
              input_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline', 
              output_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/output/pipeline',
-             figure_output_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures'):
+             manuscript_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/',
+             model_comparison_statistic:str='mae', k:int=10, repetitions:int=2):
+
+    r'''
+    model_comparison_statistic : str
+        either 'mae' or 'mse' 
+
+    '''
 
     import os
-    import pandas as pd
+    import matplotlib.pyplot as plt
     import numpy as np
-    import matplotlib.pyplot as plt 
+    import pandas as pd
     from qpoml import collection
-    from sklearn.ensemble import RandomForestRegressor as RF
+    from qpoml.plotting import plot_model_comparison
+    from qpoml.utilities import compare_models
 
     plt.style.use('https://gist.githubusercontent.com/thissop/44b6f15f8f65533e3908c2d2cdf1c362/raw/fab353d758a3f7b8ed11891e27ae4492a3c1b559/science.mplstyle')
 
-    # STEP ZERO: PRE-PIPELINE CHECKS # 
+    # 1: Preparation for Pipeline # 
 
     n = len(sources)
+    source_n = len(sources)
+    model_n = len(models)
 
     if input_directory[-1]!='/':
         input_directory+='/'
@@ -22,32 +34,169 @@ def pipeline(sources:list,
     if output_directory[-1]!='/':
         output_directory+='/'
 
-    if figure_output_directory[-1]!='/': 
-        figure_output_directory+='/'
+    if manuscript_directory[-1]!='/':
+        manuscript_directory+='/'
 
-    source_directories = [figure_output_directory+source+'/' for source in sources]
-    for source_directory in source_directories:
-        if not os.path.exists(source_directory):
-            os.mkdir(source_directory)
+    figures_directory = manuscript_directory+'figures/'
+    tables_directory = manuscript_directory+'tables/'
 
-    # STEP 1: MAKE COMBINED NET COUNTS FIGURE # 
+    source_figure_directories = [figures_directory+source+'/' for source in sources]
+    source_output_directories = [output_directory+source+'/' for source in sources]
+    for directory in [figures_directory, tables_directory]+source_figure_directories+source_output_directories:
+        if not os.path.exists(directory):
+            os.mkdir(directory)
+
+    all_gridsearch_scores = []
+    source_observation_counts = []
+
+    # 2: Source-wise Machine Learning #
+
+    for source_index, source in enumerate(sources): 
+
+        source_figure_directory = source_figure_directories[source_index]
+
+        scalar_context_path = f'{input_directory}{source}_Scalar-Input.csv'
+        qpo_path = f'{input_directory}{source}_QPO-Input.csv'
+
+        n_total_qpos = len(pd.read_csv(qpo_path).index)
+        n_test = int(n_total_qpos/k)
+        n_train = n_total_qpos-n_test
+
+        qpo_preprocess_dict = qpo_preprocess_dictionaries[source_index]
+        context_preprocess_dict = context_preprocess_dictionaries[source_index]
+
+        fold_performances = []
+        gridsearch_scores = []
+
+        source_observation_counts.append(len(pd.read_csv(scalar_context_path).index))
+
+        # 2.1: Machine Learning for Each Model # 
+
+        for model_index, model in enumerate(models):
+
+            model_name = model_names[model_index]
+
+            collec= collection()
+            collec.load(qpo_csv=qpo_path, context_csv=scalar_context_path, context_type='scalar',  
+                        context_preprocess=context_preprocess_dict, qpo_preprocess=qpo_preprocess_dict) # fix qpo_approach='single' since no more eurostep?? 
+
+            # 2.1.1: GridSearch # 
+
+            scores, _, _, best_params = collec.gridsearch(model=model, parameters=model_hyperparameter_dictionaries[model_index])
+
+            column_names = list(best_params.keys())
+            columns = [[i] for i in list(best_params.values())]
+
+            best_configuration_df = pd.DataFrame()
+
+            for temp_index in range(len(column_names)):
+                best_configuration_df[column_names[temp_index]] = columns[temp_index]
+
+            best_configuration_df.to_csv(f'{output_directory}{source}/{model_name}_BestParams.csv', index=False)
+
+            gridsearch_scores.append(scores)
+
+            # 2.1.2: k-fold on Best Configuration # 
+
+            collec.evaluate(model=model, evaluation_approach='k-fold', folds=k, repetitions=repetitions, hyperparameter_dictionary=best_params) # evaluate-approach???
+
+            # 2.1.3: Save and Plot Performance Across Folds # 
+
+            statistics = collec.get_performance_statistics()
+
+            fold_performance_df = pd.DataFrame.from_dict(statistics)
+            fold_performance_df['fold']=[i for i in range(len(fold_performance_df.index))]
+            temp_path = f'{output_directory}{source}/{model_name}_k-fold.csv'
+            fold_performance_df.to_csv(temp_path, index=False)
+
+            fold_performances.append(list(fold_performance_df[model_comparison_statistic]))
+
+            # 2.1.4: Plot Results Regression from 10th Fold # 
+            fig, ax = plt.subplots(figsize=(4,4))
+            collec.plot_results_regression(feature_name='frequency', which=[0], ax = ax, fold=9)
+            temp_path = f'{source_figure_directory}results-regression_fold={9}_model={model_name}'
+            plt.savefig(f'{temp_path}.pdf')
+            plt.savefig(f'{temp_path}.png', dpi=200)
+            plt.clf()
+            plt.close()
+
+            # 2.1.5: Plot Feature Importances from 10th Fold # 
+            fig, ax = plt.subplots(figsize=(6,6))
+            collec.plot_feature_importances(model=model, fold=9, kind='tree-shap', style='box', ax=ax)
+            temp_path = f'{source_figure_directory}feature-importances_fold={9}_model={model_name}'
+            plt.savefig(f'{temp_path}.pdf')
+            plt.savefig(f'{temp_path}.png', dpi=200)
+            plt.clf()
+            plt.close()
+
+        # 2.2: All-Models One Source Results # 
+
+        # 2.2.1: Plot Performances for all Models #
+        fig, ax = plt.subplots()
+        plot_model_comparison(model_names=model_names, performance_lists=fold_performances, metric=model_comparison_statistic, style='violin', ax=ax)
+        temp_path = f'{source_figure_directory}{source}_model-comparison'
+        plt.savefig(f'{temp_path}.pdf') 
+        plt.savefig(f'{temp_path}.png', dpi=200) 
+        plt.clf()
+        plt.close()
+
+        # 2.2.2: Pairwise Statistical Model Comparison # 
+        first_model_names, second_model_names = ([], []) 
+        t_values, p_values = ([], []) 
+        first_better_probabilities, second_better_probabilities = ([], []) 
+
+        for i, first_score_list in enumerate(fold_performances):
+            for j in range(i+1, model_n):
+                first_model_names.append(model_names[i])
+                second_model_names.append(model_names[j])
+                second_score_list = fold_performances[j]
+                t, p = compare_models(first_score_list, second_score_list, n_train=n_train, n_test=n_test, approach='frequentist')
+                first_better, second_better, _, _ = compare_models(first_score_list, second_score_list, n_train=n_train, n_test=n_test, approach='bayesian')
+            
+                t_values.append(t)
+                p_values.append(p)
+                first_better_probabilities.append(first_better)
+                second_better_probabilities.append(second_better)
+
+        temp_columns = [first_model_names, second_model_names, t_values, p_values, first_better_probabilities, second_better_probabilities]
+        temp_names = ['first_model_name', 'second_model_name', 't_value', 'p_value', 'first_better_probability', 'second_better_probability']
+        
+        pairwise_results_df = pd.DataFrame()
+        for i in range(len(temp_columns)): 
+            pairwise_results_df[temp_names[i]] = temp_columns[i]
+        
+        temp_path = f'{tables_directory}{source}_pairwise-comparison'
+        
+        pairwise_results_df.to_csv(f'{temp_path}.csv', index=False)
+        pairwise_results_df.to_latex(f'{temp_path}.tex', index=False, float_format="%.2f")
+
+        # 2.3: Prepare for Step 3 # 
+
+        all_gridsearch_scores.append(gridsearch_scores)
+
+    # 3: Collective Post-Routine Analysis #
+    
+    # 3.1: Plot Combined Net Counts # 
 
     temp_MJDs = []
     temp_NCRs = [] # NetCountRates
 
     for source in sources: 
-        context_df = pd.read_csv(input_directory+source+'_context.txt')
-        spectral_df = pd.read_csv(input_directory+source+'_spectral_for_qpoml.txt')
+        
+        scalar_context_path = f'{input_directory}{source}_Scalar-Input.csv'
+        context_df = pd.read_csv(scalar_context_path)
 
-        temp_df = context_df.merge(spectral_df, on='observation_ID')
+        dates_df = pd.read_csv(f'{input_directory}{source}_dates.csv')
+
+        temp_df = context_df.merge(dates_df, on='observation_ID')
         temp_MJDs.append(np.array(temp_df['MJD']))
         NCRs = np.array(temp_df['net_count_rate'])/np.median(temp_df['net_count_rate'])
         temp_NCRs.append(NCRs)
     
-    if n>1: 
-        fig, axs = plt.subplots(n, 1, figsize=(6,2*n))
+    if source_n>1: 
+        fig, axs = plt.subplots(source_n, 1, figsize=(6,2*source_n))
 
-        for i in range(n):
+        for i in range(source_n):
             ax = axs[i] 
             ax.scatter(temp_MJDs[i], temp_NCRs[i], s=2)
             
@@ -62,83 +211,55 @@ def pipeline(sources:list,
 
     plt.subplots_adjust(hspace=0)
     plt.tight_layout()
-    plt.savefig(figure_output_directory+'stacked_NCRs.pdf')
-    plt.savefig(figure_output_directory+'stacked_NCRs.png', dpi=150)
+    plt.savefig(f'{figures_directory}stacked_NCRs.pdf')
+    plt.savefig(f'{figures_directory}stacked_NCRs.png', dpi=200)
     plt.clf()
     plt.close()
 
-    # STEP 2: DO MACHINE LEARNING FOR EACH #
+    # 3.2: Plot GridSearch Results Plot # 
+    
+    if source_n>1: 
+    
+        fig, axs = plt.subplots(figsize=(3,1*source_n)) # fix! 
 
-    for source_idx, source in sources: 
-        source_directory = source_directories[source_idx]
-
-        spectrum_context = './research and development/example_spectrum.csv'
-        scalar_context = './research and development/example_scalar.csv'
-        qpo = './research and development/example_qpo.csv'
-        order_qpo = './research and development/example_qpo_order.csv'
-
-        qpo_preprocess = {'frequency':[0.01,20], 'width':[0.001,4], 'amplitude':[0.001, 5]}
-
-        qpo_csv = './qpoml/tests/references/fake_generated_qpos.csv'
-        scalar_collection_csv = './qpoml/tests/references/fake_generated_scalar_context_with_categorical.csv'
-
-        for regr, regr_name in zip([RF], ['RandomForest']):
+        for temp_index, source in enumerate(sources): # fix!
+            ax = axs[temp_index]
             
-            collec= collection()
-            context_dict = {'gamma':[1.0,3.5],'T_in':[0.1,2.5],'qpo_class':'categorical'}
-            collec.load(qpo_csv=qpo_csv, context_csv=scalar_collection_csv, context_type='scalar', context_preprocess=context_dict, 
-                                qpo_preprocess={'frequency':[1,16], 'width':[0.1,1.6], 'amplitude':[1,6]}, qpo_approach='single')
+            x = np.arange(0, len(score_arr))
+            
+            ax.plot(x, score_arr, label=model_names[temp_index])
+            
+            ax.set(xlabel=source, xticks=[], yticks=[])
+            ax.legend(loc='upper right', fontsize='small')
 
-            #collec.evaluate(model=regr, model_name='RandomForestRegressor', evaluation_approach='k-fold', folds=5, repetitions=4)
+    else: 
 
-            random_forest_params = {'n_estimators':[100,200], 'min_samples_split':[2,3,4]}
-            best_configuration, _, _ = collec.grid_search(model=regr, parameters=random_forest_params)
+        fig, ax = plt.subplots(figsize=(3,1))
 
-            with open('./qpoml/tests/outputs/grid_search_best_model.txt', 'w') as f: 
-                f.write(','.join(best_configuration.keys())+'\n')
-                f.write(','.join(best_configuration.values())+'\n')
+        for temp_index, score_arr in enumerate(all_gridsearch_scores[0]):
+            x = np.arange(0, len(score_arr))
+            
+            ax.plot(x, score_arr, label=model_names[temp_index])
+            
+            ax.set(xlabel=source, xticks=[], yticks=[])
+            ax.legend(loc='upper right', fontsize='small')
+                
+    fig.supxlabel('Model Permutation')
+    fig.supylabel('Score')
 
-            # FIX ^^^ so it actually saves and so you can use the best parameters below! 
+    plt.tight_layout()
+    plt.subplots_adjust(hspace=0)
 
-            # Run model on best configuration from Grid Search # 
-            collec.evaluate(model=regr, model_name='RandomForest', evaluation_approach='k-fold', folds=10)
+    temp_path = f'{figures_directory}GridSearchSummary'
+    plt.savefig(f'{temp_path}.pdf')
+    plt.savefig(f'{temp_path}.png', dpi=150)
 
-            # FIX ^^^ so it takes into account reps as arg, as well as model kwargs! 
+    # 3.3: Source Observations Table # 
 
-            # Save repeated k-fold mae/mse values for latter statistical test 
+    observation_summary_df = pd.DataFrame()
+    observation_summary_df['Source Name'] = sources
+    observation_summary_df['Class'] = source_classes
+    observation_summary_df['Instrument'] = source_instruments
+    observation_summary_df['Number of Observations'] = source_observation_counts
 
-            statistics = collec.get_performance_statistics()
-
-            fold_performance_df = pd.DataFrame.from_dict(statistics)
-            fold_performance_df['fold']=[i for i in range(len(fold_performance_df.index))]
-            temp_path = f'{output_directory}' # FIX THIS SO THAT IT saves all to same output dir, but calls source plot dirs differently!
-            # maybe save different logs to csvs together in purpuse-unique folder
-            fold_performance_df.to_csv(temp_path, index=False)
-
-            # 2.1.1: Results Regression from 10th Fold # 
-            fig, ax = plt.subplots(figsize=(4,4))
-            collec.plot_results_regression(feature_name='frequency', which=[0], ax = ax, fold=9)
-            temp_path = f'{source_directory}results-regression_fold={9}_model={regr_name}'
-            plt.savefig(f'{temp_path}.pdf')
-            plt.savefig(f'{temp_path}.png', dpi=200)
-            plt.clf()
-            plt.close()
-
-            # 2.1.2: Feature Importances from 10th Fold # 
-            fig, ax = plt.subplots(figsize=(6,6))
-            collec.plot_feature_importances(model=regr, fold=9, kind='tree-shap', style='errorbar', ax=ax)
-            temp_path = f'{source_directory}feature-importances_fold={9}_model={regr_name}'
-            plt.savefig(f'{temp_path}.pdf')
-            plt.savefig(f'{temp_path}.png', dpi=200)
-            plt.clf()
-            plt.close()
-
-
-
-        # STEP 2.1: RUN GRID-SEARCH #   
-        # for regressor in regressor: 
-            # save grid search results
-
-        # run k-fold with best 
-
-pipeline(sources=['GRS_1915+105'])
+    observation_summary_df.to_latex(f'{output_directory}ObservationsTable.tex', index=False)
