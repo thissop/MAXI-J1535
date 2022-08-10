@@ -1,0 +1,20 @@
+
+!XSPEC12> parallel error 4
+#
+!XSPEC12> error 1. 3
+#***Warning: New best fit found, fit parameters will be set to new values.
+#
+#***Warning: Number of trials exceeded before convergence.
+#Current trial values 0.0174795, 0.0174821
+#and delta statistic 0.72807, 4.65969
+#
+#     3  0.000146388    0.0174797    (-0.00202066,0.0153127)
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

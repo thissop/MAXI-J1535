@@ -1,0 +1,24 @@
+
+!XSPEC12> parallel error 4
+#
+!XSPEC12> error 1. 3
+#
+#***Warning: Number of trials exceeded before convergence.
+#Current trial values 0.00145878, -1859.76
+#and delta statistic 0, 6.99508
+#
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.0117528, 0.0123958
+#and delta stat 0.648483, 2.64106
+#but latest trial 0.0120743 gives 2.64146
+#Suggest that you check this result using the steppar command.
+#     3  1.00815e-05    0.0120743    (-0.00138662,0.0106776)
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

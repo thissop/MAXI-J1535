@@ -1,0 +1,18 @@
+
+!XSPEC12> parallel error 4
+#
+!XSPEC12> error 1. 3
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 1
+#     3     0.818711            0    (-0.181288,-1)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

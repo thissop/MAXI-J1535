@@ -1,0 +1,4241 @@
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360101/jspipe/js_ni1130360101_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360101/jspipe/js_ni1130360101_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.6 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 ,,,,,
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+=p7
+
+
+60,40,,,
+
+
+
+=p2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.5,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill)+gau)
+1.75
+0.01
+
+editmod tbfeo(simpl(diskbb+relxill)+gau*edge)
+1.8
+0.002 0.0001 -1 -1 1 1
+
+
+freeze 24 25 27
+fit
+chatter 10
+show fit
+show param
+
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360101.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360101.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360101.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360206/jspipe/js_ni1130360206_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360206/jspipe/js_ni1130360206_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360206.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360206.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360206.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360212/jspipe/js_ni1130360212_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360212/jspipe/js_ni1130360212_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360212.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360212.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360212.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360187/jspipe/js_ni1130360187_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360187/jspipe/js_ni1130360187_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360187.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360187.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360187.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360232/jspipe/js_ni1130360232_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360232/jspipe/js_ni1130360232_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360232.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360232.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360232.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360207/jspipe/js_ni1130360207_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360207/jspipe/js_ni1130360207_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360207.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360207.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360207.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360185/jspipe/js_ni1130360185_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360185/jspipe/js_ni1130360185_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360185.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360185.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360185.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360227/jspipe/js_ni1130360227_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360227/jspipe/js_ni1130360227_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360227.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360227.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360227.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360183.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360183.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360183.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360192/jspipe/js_ni1130360192_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360192/jspipe/js_ni1130360192_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360192.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360192.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360192.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360201/jspipe/js_ni1130360201_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360201/jspipe/js_ni1130360201_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360201.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360201.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360201.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360184.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360184.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360184.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360222/jspipe/js_ni1130360222_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360222/jspipe/js_ni1130360222_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360222.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360222.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360222.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360272/jspipe/js_ni1130360272_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360272/jspipe/js_ni1130360272_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360272.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360272.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360272.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360226.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360226.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360226.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360202/jspipe/js_ni1130360202_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360202/jspipe/js_ni1130360202_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360202.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360202.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360202.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360245/jspipe/js_ni1130360245_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360245/jspipe/js_ni1130360245_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360245.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360245.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360245.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360229/jspipe/js_ni1130360229_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360229/jspipe/js_ni1130360229_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360229.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360229.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360229.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360264/jspipe/js_ni1130360264_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360264/jspipe/js_ni1130360264_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360264.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360264.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360264.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360190/jspipe/js_ni1130360190_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360190/jspipe/js_ni1130360190_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360190.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360190.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360190.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360214/jspipe/js_ni1130360214_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360214/jspipe/js_ni1130360214_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360214.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360214.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360214.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360189/jspipe/js_ni1130360189_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360189/jspipe/js_ni1130360189_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360189.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360189.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360189.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360218/jspipe/js_ni1130360218_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360218/jspipe/js_ni1130360218_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360218.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360218.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360218.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360275/jspipe/js_ni1130360275_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360275/jspipe/js_ni1130360275_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360275.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360275.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360275.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360185/jspipe/js_ni1130360185_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360185/jspipe/js_ni1130360185_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360185.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360185.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360185.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360192/jspipe/js_ni1130360192_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360192/jspipe/js_ni1130360192_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360192.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360192.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360192.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360214/jspipe/js_ni1130360214_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360214/jspipe/js_ni1130360214_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360214.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360214.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360214.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360201/jspipe/js_ni1130360201_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360201/jspipe/js_ni1130360201_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360201.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360201.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360201.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360190/jspipe/js_ni1130360190_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360190/jspipe/js_ni1130360190_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360190.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360190.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360190.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360202/jspipe/js_ni1130360202_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360202/jspipe/js_ni1130360202_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360202.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360202.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360202.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360189/jspipe/js_ni1130360189_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360189/jspipe/js_ni1130360189_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360189.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360189.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360189.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360184.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360184.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360184.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360245/jspipe/js_ni1130360245_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360245/jspipe/js_ni1130360245_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360245.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360245.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360245.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360101/jspipe/js_ni1130360101_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360101/jspipe/js_ni1130360101_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360101.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360101.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360101.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360232/jspipe/js_ni1130360232_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360232/jspipe/js_ni1130360232_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360232.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360232.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360232.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360206/jspipe/js_ni1130360206_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360206/jspipe/js_ni1130360206_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360206.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360206.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360206.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360207/jspipe/js_ni1130360207_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360207/jspipe/js_ni1130360207_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360207.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360207.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360207.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360218/jspipe/js_ni1130360218_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360218/jspipe/js_ni1130360218_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360218.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360218.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360218.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360264/jspipe/js_ni1130360264_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360264/jspipe/js_ni1130360264_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360264.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360264.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360264.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360187/jspipe/js_ni1130360187_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360187/jspipe/js_ni1130360187_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360187.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360187.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360187.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360226.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360226.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360226.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360227/jspipe/js_ni1130360227_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360227/jspipe/js_ni1130360227_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360227.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360227.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360227.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360275/jspipe/js_ni1130360275_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360275/jspipe/js_ni1130360275_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360275.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360275.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360275.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360183.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360183.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360183.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360229/jspipe/js_ni1130360229_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360229/jspipe/js_ni1130360229_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360229.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360229.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360229.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360272/jspipe/js_ni1130360272_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360272/jspipe/js_ni1130360272_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360272.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360272.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360272.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360212/jspipe/js_ni1130360212_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360212/jspipe/js_ni1130360212_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360212.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360212.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360212.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360222/jspipe/js_ni1130360222_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360222/jspipe/js_ni1130360222_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.4 3.2 4.5
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.0 0.01 1.5 1.501 4.5 4.8
+0.6,0.001 0.05 2 3
+1,0.1 0.3 3 4
+
+parallel leven 2
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/1130360222.log
+chatter 10
+show data
+show fit
+show param
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/err1130360222.log
+freeze 1-3 13 14 19 20 23
+chatter 5 5
+fit
+err 5 6 8
+log none
+log /home/thaddaeus/FMU/Steiner/vietnam/relxill(tbfeo)/error_work/cflux1130360222.log
+chatter 10 10
+show data
+show fit
+show param
+chatter 5 5
+editmod cflux*tbfeo(simpl(diskbb+relxill))
+
+
+
+freeze 4-26
+thaw 8
+fit
+err 3
+log none
+quit
+y

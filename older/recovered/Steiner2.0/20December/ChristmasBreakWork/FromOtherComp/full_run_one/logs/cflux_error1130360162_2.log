@@ -1,0 +1,24 @@
+
+!XSPEC12> error 1. 4 7 12
+#     4     -9.20231     -9.17462    (-0.0139249,0.0137622)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the high end of the confidence range.
+#     7      -7.6101     -13.6101    (4,-2)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the high end of the confidence range.
+#    12     -11.3978     -16.3978    (1,-4)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

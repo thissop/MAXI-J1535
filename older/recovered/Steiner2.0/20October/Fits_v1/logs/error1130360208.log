@@ -1,0 +1,65 @@
+#XSPEC version: 12.11.0m
+#Build Date/Time: Sun Oct 25 08:05:27 2020
+#
+!XSPEC12> chatter 5 5
+#
+!XSPEC12> parallel error 2
+#
+!XSPEC12> error 1. 5 6 8
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 3.32129, 3.32084
+#and delta stat 0.948416, 1.12743
+#but latest trial 3.32111 gives 12.1814
+#Suggest that you check this result using the steppar command.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 3.4, 3.36359
+#and delta stat 0, 2.45467
+#but latest trial 3.38273 gives 17.0184
+#Suggest that you check this result using the steppar command.
+#***Warning: Parameter pegged at hard limit: 3.4
+#     5      3.38179            0    (-0.018205,-3.4)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 3.4
+#     5      3.38693            0    (-0.0130652,-3.4)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.806907, 0.670337
+#and delta stat 0, 1.26976
+#but latest trial 0.688199 gives 2.90159
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 1.10618, 1.9185
+#and delta stat 0.135319, 2.98376
+#but latest trial 1.48128 gives 0.0408555
+#Suggest that you check this result using the steppar command.
+#     6     0.738622     0.992758    (-0.0682853,0.18585)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 3, with delta statistic: 0
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 3, with delta statistic: 0
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter lower  bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 3, with delta statistic: 0
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 3, with delta statistic: 0
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter upper  bound is INVALID.
+#
+#     8            0            0    (-3,-3)
+#
+!XSPEC12> log none
+#

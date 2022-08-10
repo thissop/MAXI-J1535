@@ -1,0 +1,35 @@
+
+!XSPEC12> error 1. 2 3 4 9
+#     2    0.0136921    0.0307265    (-0.00260423,0.0144302)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 1e+24, with delta statistic: 0
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     3  2.50041e+19            0    (-9.99975e+23,-1e+24)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 1.64825, 1.64295
+#and delta stat 0.175946, 1.20699
+#but latest trial 1.64345 gives 1.21134
+#Suggest that you check this result using the steppar command.
+#
+#***Warning: Number of trials exceeded before convergence.
+#Current trial values 1.85641, 1.85647
+#and delta statistic 0.129146, 1.14025
+#
+#     4       1.6456      1.85647    (-0.112891,0.0979783)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.00368187, 0.0033952
+#and delta stat 0.121903, 1.12883
+#but latest trial 0.00345913 gives 0.0836396
+#Suggest that you check this result using the steppar command.
+#     9   0.00353853   0.00420546    (-0.000274831,0.000392095)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

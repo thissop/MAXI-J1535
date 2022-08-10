@@ -1,0 +1,26 @@
+#XSPEC version: 12.11.0
+#Build Date/Time: Thu Jul  2 16:22:45 2020
+#
+!XSPEC12> error 1. 5 6 8
+# Parameter   Confidence Range (1)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 3.57036, 3.57082
+#and delta stat 0.586561, 1.15655
+#but latest trial 3.57081 gives 1.16115
+#Suggest that you check this result using the steppar command.
+#     5      3.28275      3.49371    (-0.0973154,0.113651)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.0308474, 0.0446454
+#and delta stat 0, 1.25247
+#but latest trial 0.0441436 gives 1.34486
+#Suggest that you check this result using the steppar command.
+#     6    0.0187216    0.0377464    (-0.0121258,0.006899)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.448913, 0.441065
+#and delta stat 0, 1.03695
+#but latest trial 0.44122 gives 1.49902
+#Suggest that you check this result using the steppar command.
+#     8     0.444989     0.459804    (-0.00392411,0.0108908)
+#
+!XSPEC12> log none
+#

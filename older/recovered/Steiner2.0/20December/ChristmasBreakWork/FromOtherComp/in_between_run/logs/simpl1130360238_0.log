@@ -1,0 +1,54 @@
+#XSPEC version: 12.11.0m
+#Build Date/Time: Sat Nov 21 22:38:27 2020
+#
+!XSPEC12> show data
+#
+#1 file 1 spectrum 
+#Spectrum 1  Spectral Data File: /home/thaddaeus/FMU/Steiner/thaddaeus/1130360238/jspipe/js_ni1130360238_0mpu7_silver_GTI0.jsgrp
+#Net count rate (cts/s) for Spectrum:1  -7.793e-01 +/- 5.878e-02 (-25.6 % total)
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  22-54,83-252
+#  Telescope: NICER Instrument: XTI  Channel Type: PI
+#  Exposure Time: 1138 sec
+# Using fit statistic: pgstat
+# Using Background File                /home/thaddaeus/FMU/Steiner/thaddaeus/1130360238/jspipe/js_ni1130360238_0mpu7_silver_GTI0.bg
+#  Background Exposure Time: 1138 sec
+# Using Response (RMF) File            /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+#
+#
+!XSPEC12> show model
+#
+#Current model list:
+#
+#Model TBabs<1>(simpl<2>*diskbb<3>) Source No.: 1   Active/On
+#      For Data Group(s): 1 
+#
+#   Using energies from responses.
+#
+#
+!XSPEC12> show param
+#
+#Parameters defined:
+#========================================================================
+#Model TBabs<1>(simpl<2>*diskbb<3>) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBabs      nH         10^22    3.20000      frozen
+#   2    2   simpl      Gamma               3.40000      +/-  54.1478      
+#   3    2   simpl      FracSctr            1.000000     +/-  2763.52      
+#   4    2   simpl      UpScOnly            1.00000      frozen
+#   5    3   diskbb     Tin        keV      0.995943     +/-  824.223      
+#   6    3   diskbb     norm                0.412682     +/-  717.390      
+#________________________________________________________________________
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : PG-Statistic                1868.64     using 203 bins.
+#
+#Test statistic : Chi-Squared                 2237.69     using 203 bins.
+# Null hypothesis probability of 0.00e+00 with 199 degrees of freedom
+#
+!XSPEC12> log none
+#

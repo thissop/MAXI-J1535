@@ -1,0 +1,215 @@
+
+!XSPEC12> error 1. 4 7 12
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: -9.0938, with delta statistic: 0
+#
+#
+#*** Parameter lower bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: -9.0938, with delta statistic: 0
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     4            0            0    (9.0938,9.0938)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: -8.89819, with delta statistic: 0
+#
+#
+#*** Parameter lower bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: -8.89819, with delta statistic: 0
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     4            0            0    (8.89819,8.89819)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 91.9248, with delta statistic: 0
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 91.9248, with delta statistic: 0
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter lower  bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 91.9248, with delta statistic: 0
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     7            0            0    (-91.9248,-91.9248)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     4     -9.44254     -9.32229    (-0.0630084,0.057242)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the high end of the confidence range.
+#     7      -55.788      -65.788    (2,-8)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the high end of the confidence range.
+#    12     -49.7077     -59.7077    (8,-2)
+#
+!XSPEC12> none
+#
+!XSPEC12> backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI4.bg
+#
+!XSPEC12> response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u12p5_25_55575341.rmf
+#
+!XSPEC12> arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+#
+!XSPEC12> ignore **-0.5 1.5-2.3 10.0-**
+#
+!XSPEC12> ignore bad
+#
+!XSPEC12> statistic pgstat
+#
+!XSPEC12> setp back on
+#
+!XSPEC12> model tbabs(diskbb+nthcomp)
+#
+!XSPEC12> freeze 1
+#
+!XSPEC12> freeze 5
+#
+!XSPEC12> freeze 7
+#
+!XSPEC12> freeze 8
+#
+!XSPEC12> chatter 5 10
+#
+!XSPEC12> parallel leven 4
+#
+!XSPEC12> fit 900
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl         2:Tin        3:norm       4:Gamma        9:norm
+#38192.2      58908.7      -3      0.250219      0.187867       1.41156      0.175716
+#3244.99      41082.6      -3      0.114264       2347.16       1.79668     0.0853657
+#780.858      14064.8      -4     0.0555554   3.22807e+06       1.28651     0.0295340
+#204.409      14339.4      -1     0.0190329   8.28340e+09       1.48711     0.0278336
+#197.667      371.835      -2     0.0122206   2.23757e+09       1.56255     0.0304504
+#196.856      637.682       0     0.0498158   2.07819e+08       1.56146     0.0306106
+#194.526      396.59        0     0.0612601   2.43591e+09       1.56104     0.0306402
+#193.044      264.439       0     0.0609031   1.96304e+09       1.56019     0.0307079
+#192.61       90.6608      -1     0.0624262   7.55972e+08       1.56272     0.0308712
+#191.8        88.4038      -1     0.0657858   3.83055e+08       1.56436     0.0309460
+#189.537      65.5868      -2     0.0829147   1.50232e+07       1.55884     0.0306866
+#189.328      62.8288      -2     0.0958312   2.10454e+06       1.54570     0.0300792
+#189.135      108.107      -2      0.106035       655925.       1.53665     0.0296718
+#187.696      132.145      -2      0.112181       615011.       1.53092     0.0294184
+#187.669      36.0269      -3      0.114689       430148.       1.52641     0.0292279
+#187.632      28.6191      -4      0.114427       468022.       1.52641     0.0292311
+#187.632      0.692046     -5      0.114566       463059.       1.52634     0.0292276
+#==================================================
+# Variances and Principal Axes
+#                 2        3        4        9  
+# 1.9478E-07| -0.0301  -0.0000   0.0381  -0.9988  
+# 1.0856E-05| -0.9984  -0.0000  -0.0487   0.0282  
+# 1.6968E-03|  0.0476   0.0000  -0.9981  -0.0395  
+# 2.9953E+12| -0.0000   1.0000   0.0000   0.0000  
+#--------------------------------------------------
+#
+#================================================
+#  Covariance Matrix
+#        1           2           3           4   
+#   1.440e-03  -6.391e+04  -6.576e-04  -2.954e-05
+#  -6.391e+04   2.865e+12   2.589e+04   1.168e+03
+#  -6.576e-04   2.589e+04   1.924e-03   7.745e-05
+#  -2.954e-05   1.168e+03   7.745e-05   3.328e-06
+#------------------------------------------------
+#
+#========================================================================
+#Model TBabs<1>(diskbb<2> + nthComp<3>) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBabs      nH         10^22    3.20000      frozen
+#   2    2   diskbb     Tin        keV      0.114566     +/-  3.79501E-02  
+#   3    2   diskbb     norm                4.63059E+05  +/-  1.69265E+06  
+#   4    3   nthComp    Gamma               1.52634      +/-  4.38669E-02  
+#   5    3   nthComp    kT_e       keV      100.000      frozen
+#   6    3   nthComp    kT_bb      keV      0.114566     = p2
+#   7    3   nthComp    inp_type   0/1      1.00000      frozen
+#   8    3   nthComp    Redshift            0.0          frozen
+#   9    3   nthComp    norm                2.92276E-02  +/-  1.82438E-03  
+#________________________________________________________________________
+#
+#
+#Fit statistic  : PG-Statistic                 187.63     using 183 bins.
+#
+#Test statistic : Chi-Squared                  193.13     using 183 bins.
+# Null hypothesis probability of 2.23e-01 with 179 degrees of freedom
+#
+!XSPEC12> n
+#
+!XSPEC12> chatter 5 10
+#
+!XSPEC12> log /home/thaddaeus/FMU/Steiner/ChristmasBreak/full_run_one/logs/1130360226_4.log
+#
+!XSPEC12> show data
+#
+#1 file 1 spectrum 
+#Spectrum 1  Spectral Data File: /home/thaddaeus/FMU/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI3.jsgrp
+#Net count rate (cts/s) for Spectrum:1  1.008e+01 +/- 1.522e-01 (95.0 % total)
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  20-48,77-230
+#  Telescope: NICER Instrument: XTI  Channel Type: PI
+#  Exposure Time: 459.7 sec
+# Using fit statistic: pgstat
+# Using Background File                /home/thaddaeus/FMU/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI4.bg
+#  Background Exposure Time: 469.7 sec
+# Using Response (RMF) File            /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u12p5_25_55575341.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+#
+#
+!XSPEC12> show model
+#
+#Current model list:
+#
+#Model TBabs<1>(diskbb<2> + nthComp<3>) Source No.: 1   Active/On
+#      For Data Group(s): 1 
+#
+#   Using energies from responses.
+#
+#
+!XSPEC12> show param
+#
+#Parameters defined:
+#========================================================================
+#Model TBabs<1>(diskbb<2> + nthComp<3>) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBabs      nH         10^22    3.20000      frozen
+#   2    2   diskbb     Tin        keV      0.114566     +/-  3.79501E-02  
+#   3    2   diskbb     norm                4.63059E+05  +/-  1.69265E+06  
+#   4    3   nthComp    Gamma               1.52634      +/-  4.38669E-02  
+#   5    3   nthComp    kT_e       keV      100.000      frozen
+#   6    3   nthComp    kT_bb      keV      0.114566     = p2
+#   7    3   nthComp    inp_type   0/1      1.00000      frozen
+#   8    3   nthComp    Redshift            0.0          frozen
+#   9    3   nthComp    norm                2.92276E-02  +/-  1.82438E-03  
+#________________________________________________________________________
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : PG-Statistic                 187.63     using 183 bins.
+#
+#Test statistic : Chi-Squared                  193.13     using 183 bins.
+# Null hypothesis probability of 2.23e-01 with 179 degrees of freedom
+#
+!XSPEC12> log none
+#

@@ -1,0 +1,25 @@
+#XSPEC version: 12.11.0m
+#Build Date/Time: Sun Oct 25 08:05:27 2020
+#
+!XSPEC12> chatter 5 5
+#
+!XSPEC12> parallel error 2
+#
+!XSPEC12> error 1. 5 6 8
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     5      2.61513      2.99619    (-0.282141,0.0989222)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.168315, 0.168114
+#and delta stat 0.931339, 1.02444
+#but latest trial 0.168177 gives 0.915226
+#Suggest that you check this result using the steppar command.
+#     6     0.168215     0.185863    (-0.009784,0.00786429)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.276177, 0.280313
+#and delta stat 0.290693, 1.01869
+#but latest trial 0.280228 gives 1.76672
+#Suggest that you check this result using the steppar command.
+#     8     0.258586     0.278245    (-0.00812571,0.0115337)
+#
+!XSPEC12> log none
+#

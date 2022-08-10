@@ -1,0 +1,37 @@
+
+!XSPEC12> error 1. 2 3 4 9
+#     2    0.0155882    0.0162338    (-0.000391455,0.000254105)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 1.00016e+20, 9.99969e+19
+#and delta stat 0, 2.38626
+#but latest trial 9.99992e+19 gives 2.38626
+#Suggest that you check this result using the steppar command.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 1e+24, with delta statistic: 0
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     3        1e+24            0    (0,-1e+24)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 1.20041, 1.2
+#and delta stat 0.370771, 4.13224
+#but latest trial 1.20021 gives 4.36837
+#Suggest that you check this result using the steppar command.
+#     4      1.20021      1.61777    (-0.155737,0.261826)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.00301878, 0.00406941
+#and delta stat 0.0543555, 1.13148
+#but latest trial 0.00398858 gives 4.79546
+#Suggest that you check this result using the steppar command.
+#     9   0.00207212    0.0035441    (-0.000700879,0.000771093)
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

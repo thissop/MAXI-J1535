@@ -1,0 +1,16 @@
+
+!XSPEC12> parallel error 4
+#
+!XSPEC12> error 1. 3
+#     3     0.386857     0.507432    (-0.0690368,0.0515382)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

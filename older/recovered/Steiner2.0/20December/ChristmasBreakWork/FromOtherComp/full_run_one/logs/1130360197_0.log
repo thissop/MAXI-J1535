@@ -1,0 +1,57 @@
+#XSPEC version: 12.11.0m
+#Build Date/Time: Sat Nov 21 22:38:27 2020
+#
+!XSPEC12> show data
+#
+#1 file 1 spectrum 
+#Spectrum 1  Spectral Data File: /home/thaddaeus/FMU/Steiner/thaddaeus/1130360197/jspipe/js_ni1130360197_0mpu7_silver_GTI0.jsgrp
+#Net count rate (cts/s) for Spectrum:1  1.579e+00 +/- 7.528e-02 (79.4 % total)
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  18-41,69-152
+#  Telescope: NICER Instrument: XTI  Channel Type: PI
+#  Exposure Time: 353.9 sec
+# Using fit statistic: pgstat
+# Using Background File                /home/thaddaeus/FMU/Steiner/thaddaeus/1130360197/jspipe/js_ni1130360197_0mpu7_silver_GTI0.bg
+#  Background Exposure Time: 353.9 sec
+# Using Response (RMF) File            /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+#
+#
+!XSPEC12> show model
+#
+#Current model list:
+#
+#Model TBabs<1>(diskbb<2> + nthComp<3>) Source No.: 1   Active/On
+#      For Data Group(s): 1 
+#
+#   Using energies from responses.
+#
+#
+!XSPEC12> show param
+#
+#Parameters defined:
+#========================================================================
+#Model TBabs<1>(diskbb<2> + nthComp<3>) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBabs      nH         10^22    3.20000      frozen
+#   2    2   diskbb     Tin        keV      1.78786E-02  +/-  21.7152      
+#   3    2   diskbb     norm                4.40351E+11  +/-  1.63677E+12  
+#   4    3   nthComp    Gamma               2.06855      +/-  0.108462     
+#   5    3   nthComp    kT_e       keV      100.000      frozen
+#   6    3   nthComp    kT_bb      keV      1.78786E-02  = p2
+#   7    3   nthComp    inp_type   0/1      1.00000      frozen
+#   8    3   nthComp    Redshift            0.0          frozen
+#   9    3   nthComp    norm                8.70894E-03  +/-  2.59159E-03  
+#________________________________________________________________________
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : PG-Statistic                  77.88     using 108 bins.
+#
+#Test statistic : Chi-Squared                   78.59     using 108 bins.
+# Null hypothesis probability of 9.70e-01 with 104 degrees of freedom
+#
+!XSPEC12> log none
+#

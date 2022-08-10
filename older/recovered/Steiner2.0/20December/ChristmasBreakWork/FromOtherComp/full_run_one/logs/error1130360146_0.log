@@ -1,0 +1,61 @@
+
+!XSPEC12> error 1. 2 3 4 9
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.595989, 0.593153
+#and delta stat 0, 2.7541
+#but latest trial 0.59428 gives 2.84422
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.5969, 0.596908
+#and delta stat 0.0663447, 1.76174
+#but latest trial 0.596904 gives 4.67689
+#Suggest that you check this result using the steppar command.
+#     2     0.594571     0.596904    (-0.00142877,0.000904275)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 3658.06, 3657.96
+#and delta stat 0.073703, 1.78955
+#but latest trial 3658 gives 4.87248
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 3737.32, 3737.43
+#and delta stat 0.788726, 1.34252
+#but latest trial 3737.37 gives 9.78394
+#Suggest that you check this result using the steppar command.
+#     3      3658.01      3737.37    (-32.493,46.8707)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.596394, 0.593558
+#and delta stat 0, 2.23492
+#but latest trial 0.594497 gives 3.50639
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.597463, 0.597467
+#and delta stat 0.352415, 2.57653
+#but latest trial 0.597464 gives 6.64227
+#Suggest that you check this result using the steppar command.
+#     2     0.594976     0.597465    (-0.00141826,0.00107057)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 3641.68, 3638.93
+#and delta stat 0.32335, 2.44259
+#but latest trial 3640.3 gives 6.20463
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 3719.53, 3736.48
+#and delta stat 0.433314, 1.37238
+#but latest trial 3728.62 gives 10.6958
+#Suggest that you check this result using the steppar command.
+#     3       3640.3      3728.01    (-36.7648,50.9385)
+#***Warning: Parameter pegged at hard limit: 1.2
+#     4            0      1.68114    (-1.2,0.481143)
+#     9   0.00185999    0.0052592    (-0.000604651,0.00279456)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

@@ -1,0 +1,813 @@
+#XSPEC version: 12.11.0
+#Build Date/Time: Thu Jul  2 16:22:45 2020
+#
+!XSPEC12> error 1. 5 6 8
+# Parameter   Confidence Range (1)
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#     5      3.33121      3.34138    (-0.00481153,0.00535952)
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.367667, 0.36775
+#and delta stat 0.987579, 1.03494
+#but latest trial 0.36769 gives 1.04579
+#Suggest that you check this result using the steppar command.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 8
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 8 is pegged at 0.14841 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+# Parameter 9 is pegged at 1.7031e-12 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#     6     0.353887     0.367709    (-0.00880257,0.00501897)
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl       5:Gamma    6:FracSctr         8:Tin        9:norm          13:a       14:Incl        20:Afe
+#252.06       12.2019       0       3.39856      0.392360       2.10863      0.190744      0.997624       49.0031       10.0000
+#250.57       30.5989      -1       3.40084      0.393193       2.17241      0.177711      0.993900       48.8486       10.0000
+#249.182      45.8127      -1       3.40333      0.394376       2.23139      0.166160      0.991490       49.0979       10.0000
+#247.739      62.3499      -1       3.40587      0.395702       2.29147      0.156159      0.989906       48.7019       10.0000
+#242.088      70.5508      -2       3.42428      0.406429       2.73747     0.0894374      0.977186       48.5563       10.0000
+#236.6        89.2665      -1       3.42627      0.406481       2.80455     0.0921597      0.980731       48.6398       10.0000
+#236.425      20.4018       0       3.42645      0.406367       2.80614     0.0927353      0.981202       48.6590       10.0000
+#236.297      21.0141       0       3.42664      0.406327       2.80758     0.0932037      0.981545       48.6545       10.0000
+#236.198      19.353        0       3.42683      0.406326       2.80890     0.0935831      0.981819       48.6431       10.0000
+#236.116      18.8242       0       3.42702      0.406362       2.81013     0.0938965      0.982026       48.6285       10.0000
+#236.044      18.6388       0       3.42721      0.406427       2.81129     0.0941595      0.982180       48.6139       10.0000
+#235.983      15.7577       0       3.42741      0.406497       2.81240     0.0943783      0.982324       48.6029       10.0000
+#235.927      16.3398       0       3.42761      0.406588       2.81346     0.0945699      0.982428       48.5917       10.0000
+#235.871      15.3501       0       3.42781      0.406685       2.81449     0.0947371      0.982518       48.5814       10.0000
+#235.824      13.1341       0       3.42801      0.406777       2.81549     0.0948840      0.982615       48.5752       10.0000
+#235.78       13.5681       0       3.42821      0.406879       2.81648     0.0950206      0.982689       48.5694       10.0000
+#235.729      15.1285       0       3.42841      0.406996       2.81745     0.0951502      0.982734       48.5618       10.0000
+#235.686      12.7323       0       3.42862      0.407100       2.81840     0.0952662      0.982798       48.5565       10.0000
+#235.642      13.8179       0       3.42882      0.407214       2.81935     0.0953798      0.982842       48.5504       10.0000
+#235.596      15.075        0       3.42901      0.407341       2.82028     0.0954908      0.982860       48.5452       10.0000
+#235.555      13.0265       0       3.42921      0.407456       2.82120     0.0955920      0.982893       48.5420       10.0000
+#235.514      12.6532       0       3.42941      0.407570       2.82212     0.0956900      0.982928       48.5393       10.0000
+#235.472      13.3709       0       3.42961      0.407688       2.82303     0.0957877      0.982950       48.5359       10.0000
+#235.427      14.7184       0       3.42980      0.407816       2.82393     0.0958853      0.982953       48.5314       10.0000
+#235.387      12.9442       0       3.43000      0.407934       2.82483     0.0959763      0.982972       48.5292       10.0000
+#235.366      12.9423       0       3.43019      0.408051       2.82505     0.0960666      0.982988       48.5271       10.0000
+#235.341      16.0024       0       3.43038      0.408180       2.82511     0.0961777      0.982978       48.5238       10.0000
+#235.317      16.9293       0       3.43056      0.408308       2.82512     0.0963027      0.982967       48.5211       10.0000
+#235.292      17.3122       0       3.43073      0.408434       2.82513     0.0964378      0.982952       48.5198       10.0000
+#235.267      17.3995       0       3.43091      0.408556       2.82513     0.0965795      0.982941       48.5191       10.0000
+#235.24       17.9757       0       3.43108      0.408678       2.82513     0.0967274      0.982926       48.5186       10.0000
+#235.222      15.4399       0       3.43126      0.408783       2.82513     0.0968744      0.982939       48.5205       10.0000
+#235.195      18.8237       0       3.43143      0.408904       2.82513     0.0970316      0.982920       48.5200       10.0000
+#235.17       18.4921       0       3.43160      0.409022       2.82513     0.0971886      0.982904       48.5200       10.0000
+#235.146      18.1724       0       3.43177      0.409137       2.82513     0.0973454      0.982890       48.5204       10.0000
+#235.122      18.1478       0       3.43194      0.409251       2.82513     0.0975027      0.982876       48.5209       10.0000
+#235.099      17.7788       0       3.43211      0.409362       2.82513     0.0976597      0.982868       48.5219       10.0000
+#235.076      17.5611       0       3.43227      0.409470       2.82513     0.0978166      0.982861       48.5231       10.0000
+#235.053      18.0609       0       3.43244      0.409579       2.82513     0.0979744      0.982852       48.5234       10.0000
+#235.029      18.4173       0       3.43261      0.409690       2.82513     0.0981325      0.982839       48.5235       10.0000
+#235.004      18.167        0       3.43277      0.409798       2.82513     0.0982895      0.982827       48.5238       10.0000
+#234.981      17.9874       0       3.43293      0.409904       2.82513     0.0984456      0.982815       48.5244       10.0000
+#234.958      17.9114       0       3.43310      0.410010       2.82513     0.0986014      0.982803       48.5251       10.0000
+#234.935      17.7656       0       3.43326      0.410113       2.82513     0.0987565      0.982791       48.5260       10.0000
+#234.913      17.6818       0       3.43342      0.410216       2.82513     0.0989111      0.982780       48.5271       10.0000
+#234.891      17.5319       0       3.43359      0.410316       2.82513     0.0990649      0.982771       48.5280       10.0000
+#234.869      17.5416       0       3.43375      0.410415       2.82513     0.0992186      0.982760       48.5289       10.0000
+#234.851      17.4888       0       3.43391      0.410513       2.82513     0.0993720      0.982750       48.5299       10.0000
+#234.825      19.5065       0       3.43406      0.410622       2.82513     0.0995280      0.982719       48.5293       10.0000
+#234.805      18.1702       0       3.43422      0.410724       2.82513     0.0996797      0.982700       48.5296       10.0000
+#234.781      18.7027       0       3.43438      0.410828       2.82513     0.0998315      0.982675       48.5296       10.0000
+#234.759      18.2869       0       3.43454      0.410930       2.82513     0.0999815      0.982653       48.5300       10.0000
+#234.738      17.9379       0       3.43469      0.411030       2.82513      0.100130      0.982633       48.5307       10.0000
+#234.719      17.682        0       3.43485      0.411127       2.82513      0.100278      0.982616       48.5317       10.0000
+#234.699      17.804        0       3.43500      0.411224       2.82513      0.100426      0.982597       48.5323       10.0000
+#234.679      17.6571       0       3.43516      0.411318       2.82513      0.100572      0.982581       48.5329       10.0000
+#234.659      17.6851       0       3.43531      0.411412       2.82513      0.100719      0.982563       48.5334       10.0000
+#234.639      18.046        0       3.43547      0.411507       2.82513      0.100866      0.982541       48.5337       10.0000
+#234.621      17.89         0       3.43562      0.411601       2.82513      0.101012      0.982520       48.5342       10.0000
+#234.596      19.754        0       3.43577      0.411705       2.82513      0.101160      0.982479       48.5330       10.0000
+#234.58       17.0707       0       3.43592      0.411794       2.82513      0.101302      0.982464       48.5342       10.0000
+#234.559      19.1064       0       3.43607      0.411894       2.82513      0.101447      0.982427       48.5336       10.0000
+#234.538      18.6177       0       3.43622      0.411991       2.82513      0.101590      0.982395       48.5334       10.0000
+#234.518      18.2103       0       3.43637      0.412085       2.82513      0.101732      0.982367       48.5336       10.0000
+#234.5        18.0726       0       3.43652      0.412179       2.82513      0.101872      0.982338       48.5341       10.0000
+#234.482      17.7898       0       3.43666      0.412270       2.82513      0.102012      0.982311       48.5348       10.0000
+#234.464      17.6226       0       3.43681      0.412359       2.82513      0.102151      0.982286       48.5356       10.0000
+#234.445      17.7776       0       3.43696      0.412448       2.82513      0.102290      0.982259       48.5364       10.0000
+#234.428      17.4929       0       3.43711      0.412535       2.82513      0.102429      0.982234       48.5373       10.0000
+#234.411      17.597        0       3.43725      0.412622       2.82513      0.102567      0.982207       48.5383       10.0000
+#234.392      18.3256       0       3.43740      0.412712       2.82513      0.102706      0.982173       48.5387       10.0000
+#234.375      18.0457       0       3.43754      0.412801       2.82513      0.102844      0.982140       48.5392       10.0000
+#234.356      18.7244       0       3.43768      0.412893       2.82513      0.102981      0.982102       48.5391       10.0000
+#234.339      18.2232       0       3.43783      0.412982       2.82513      0.103117      0.982067       48.5395       10.0000
+#234.322      18.5753       0       3.43797      0.413073       2.82513      0.103253      0.982030       48.5395       10.0000
+#234.305      18.0458       0       3.43811      0.413161       2.82513      0.103387      0.981996       48.5400       10.0000
+#234.288      17.7236       0       3.43825      0.413247       2.82513      0.103519      0.981965       48.5409       10.0000
+#234.271      17.8053       0       3.43839      0.413332       2.82513      0.103652      0.981931       48.5417       10.0000
+#234.254      17.4826       0       3.43853      0.413415       2.82513      0.103784      0.981904       48.5427       10.0000
+#234.238      17.4374       0       3.43867      0.413497       2.82513      0.103916      0.981876       48.5438       10.0000
+#234.225      17.3363       0       3.43881      0.413577       2.82513      0.104047      0.981848       48.5450       10.0000
+#234.207      19.8463       0       3.43895      0.413671       2.82513      0.104182      0.981797       48.5440       10.0000
+#234.189      18.89         0       3.43908      0.413761       2.82513      0.104313      0.981754       48.5437       10.0000
+#234.173      18.2287       0       3.43922      0.413847       2.82513      0.104442      0.981718       48.5439       10.0000
+#234.159      17.8539       0       3.43936      0.413930       2.82513      0.104570      0.981685       48.5445       10.0000
+#234.142      18.2914       0       3.43949      0.414016       2.82513      0.104698      0.981649       48.5446       10.0000
+#234.126      17.9103       0       3.43963      0.414098       2.82513      0.104825      0.981617       48.5450       10.0000
+#234.111      17.6901       0       3.43976      0.414179       2.82513      0.104951      0.981587       48.5455       10.0000
+#234.096      17.6325       0       3.43990      0.414258       2.82513      0.105077      0.981557       48.5463       10.0000
+#234.081      18.0301       0       3.44003      0.414339       2.82513      0.105204      0.981521       48.5467       10.0000
+#234.066      18.1079       0       3.44016      0.414421       2.82513      0.105330      0.981484       48.5471       10.0000
+#234.052      17.6914       0       3.44030      0.414499       2.82513      0.105455      0.981451       48.5479       10.0000
+#234.039      17.435        0       3.44043      0.414576       2.82513      0.105579      0.981421       48.5490       10.0000
+#234.026      17.2047       0       3.44056      0.414651       2.82513      0.105703      0.981393       48.5503       10.0000
+#234.013      17.0533       0       3.44070      0.414723       2.82513      0.105826      0.981370       48.5512       10.0000
+#234          17.3672       0       3.44083      0.414795       2.82513      0.105950      0.981346       48.5514       10.0000
+#233.986      17.5979       0       3.44096      0.414868       2.82513      0.106074      0.981319       48.5513       10.0000
+#233.972      17.8107       0       3.44109      0.414941       2.82513      0.106198      0.981290       48.5512       10.0000
+#233.958      17.8938       0       3.44122      0.415015       2.82513      0.106322      0.981258       48.5512       10.0000
+#233.944      17.8856       0       3.44135      0.415088       2.82513      0.106444      0.981226       48.5510       10.0000
+#233.93       17.8971       0       3.44147      0.415161       2.82513      0.106567      0.981194       48.5510       10.0000
+#233.918      17.8615       0       3.44160      0.415234       2.82513      0.106688      0.981160       48.5510       10.0000
+#233.905      17.8099       0       3.44173      0.415306       2.82513      0.106809      0.981128       48.5510       10.0000
+#233.893      17.8515       0       3.44185      0.415378       2.82513      0.106929      0.981095       48.5511       10.0000
+#233.881      17.7768       0       3.44198      0.415449       2.82513      0.107049      0.981062       48.5513       10.0000
+#233.865      19.0963       0       3.44210      0.415528       2.82513      0.107170      0.981017       48.5503       10.0000
+#233.854      17.3637       0       3.44223      0.415597       2.82513      0.107287      0.980987       48.5510       10.0000
+#233.839      18.7326       0       3.44235      0.415674       2.82513      0.107406      0.980944       48.5504       10.0000
+#233.828      16.9332       0       3.44248      0.415740       2.82513      0.107520      0.980918       48.5513       10.0000
+#233.815      18.496        0       3.44260      0.415813       2.82513      0.107638      0.980878       48.5504       10.0000
+#233.803      18.3455       0       3.44272      0.415887       2.82513      0.107755      0.980838       48.5503       10.0000
+#233.791      18.0882       0       3.44284      0.415959       2.82513      0.107870      0.980800       48.5504       10.0000
+#233.779      17.77         0       3.44296      0.416029       2.82513      0.107984      0.980765       48.5509       10.0000
+#233.767      17.7807       0       3.44308      0.416097       2.82513      0.108098      0.980731       48.5508       10.0000
+#233.755      17.8289       0       3.44320      0.416167       2.82513      0.108212      0.980695       48.5512       10.0000
+#233.743      17.6457       0       3.44333      0.416234       2.82513      0.108324      0.980662       48.5512       10.0000
+#233.731      17.7088       0       3.44345      0.416300       2.82513      0.108437      0.980630       48.5513       10.0000
+#233.72       17.7716       0       3.44356      0.416367       2.82513      0.108550      0.980595       48.5515       10.0000
+#233.709      18.0754       0       3.44368      0.416436       2.82513      0.108663      0.980557       48.5515       10.0000
+#233.699      17.9216       0       3.44380      0.416503       2.82513      0.108774      0.980521       48.5517       10.0000
+#233.674      15.7699       0       3.44390      0.416621       2.82513      0.108906      0.980397       48.5441       10.0000
+#233.657      10.845        0       3.44400      0.416716       2.82513      0.109022      0.980312       48.5422       10.0000
+#233.656      10.6307       0       3.44414      0.416749       2.82513      0.109107      0.980336       48.5494       10.0000
+#233.639      11.92         0       3.44424      0.416847       2.82513      0.109228      0.980246       48.5456       10.0000
+#233.627      8.97646       0       3.44435      0.416929       2.82513      0.109339      0.980181       48.5454       10.0000
+#233.623      9.31374       0       3.44435      0.416936       2.82513      0.109386      0.980172       48.5459       10.0000
+#233.612      7.02065       0       3.44447      0.417010       2.82513      0.109481      0.980126       48.5470       10.0000
+#233.602      7.67991       0       3.44458      0.417087       2.82513      0.109579      0.980074       48.5470       10.0000
+#233.598      8.51681       0       3.44459      0.417093       2.82513      0.109624      0.980068       48.5477       10.0000
+#233.588      6.55016       0       3.44470      0.417163       2.82513      0.109712      0.980026       48.5484       10.0000
+#================================================================================
+# Variances and Principal Axes
+#                 5        6        8        9       13       14       20  
+# 2.2140E-06| -0.7057   0.5366   0.0427   0.3478  -0.3016  -0.0034  -0.0163  
+# 2.5212E-05| -0.2421  -0.6223   0.0966   0.6883   0.2661   0.0047   0.0157  
+# 1.1579E-03| -0.5645  -0.5313  -0.0567  -0.5624  -0.2817   0.0039   0.0147  
+# 8.5422E-03| -0.3481   0.1967  -0.2216  -0.2431   0.8547  -0.0225  -0.0292  
+# 3.0014E-01| -0.0587   0.0583   0.9469  -0.1703   0.1679   0.0671   0.1868  
+# 6.5631E+00|  0.0028  -0.0098   0.0897  -0.0093  -0.0055  -0.9910  -0.0982  
+# 8.0658E+01|  0.0017   0.0207  -0.1787   0.0276  -0.0122  -0.1134   0.9767  
+#--------------------------------------------------------------------------------
+#
+#====================================================================================
+#  Covariance Matrix
+#        1           2           3           4           5           6           7   
+#   2.713e-03   1.316e-03  -3.815e-02   7.586e-03  -7.039e-03  -3.449e-02   1.251e-01
+#   1.316e-03   3.687e-02  -2.879e-01   4.354e-02  -1.543e-02  -1.247e-01   1.640e+00
+#  -3.815e-02  -2.879e-01   2.899e+00  -4.506e-01   2.184e-01   1.070e+00  -1.408e+01
+#   7.586e-03   4.354e-02  -4.506e-01   7.139e-02  -3.689e-02  -1.945e-01   2.167e+00
+#  -7.039e-03  -1.543e-02   2.184e-01  -3.689e-02   2.694e-02   1.502e-01  -9.464e-01
+#  -3.449e-02  -1.247e-01   1.070e+00  -1.945e-01   1.502e-01   7.483e+00  -8.287e+00
+#   1.251e-01   1.640e+00  -1.408e+01   2.167e+00  -9.464e-01  -8.287e+00   7.701e+01
+#------------------------------------------------------------------------------------
+#
+#========================================================================
+#Model TBfeo<1>(simpl<2>(diskbb<3> + relxill<4>)) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.68341      frozen
+#   2    1   TBfeo      O                   0.718572     frozen
+#   3    1   TBfeo      Fe                  0.977861     frozen
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               3.44470      +/-  5.20834E-02  
+#   6    2   simpl      FracSctr            0.417163     +/-  0.192028     
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      2.82513      +/-  1.70267      
+#   9    3   diskbb     norm                0.109712     +/-  0.267194     
+#  10    4   relxill    Index1              3.00000      frozen
+#  11    4   relxill    Index2              3.00000      frozen
+#  12    4   relxill    Rbr                 15.0000      frozen
+#  13    4   relxill    a                   0.980026     +/-  0.164149     
+#  14    4   relxill    Incl       deg      48.5484      +/-  2.73558      
+#  15    4   relxill    Rin                 -1.00000     frozen
+#  16    4   relxill    Rout                400.000      frozen
+#  17    4   relxill    z                   0.0          frozen
+#  18    4   relxill    gamma               3.44470      = p5
+#  19    4   relxill    logxi               1.50538      frozen
+#  20    4   relxill    Afe                 10.0000      +/-  8.77558      
+#  21    4   relxill    Ecut       keV      100.000      frozen
+#  22    4   relxill    refl_frac           -1.00000     frozen
+#  23    4   relxill    norm                0.154619     frozen
+#________________________________________________________________________
+#
+#
+#Fit statistic  : PG-Statistic                 233.59     using 209 bins.
+#
+#Test statistic : Chi-Squared                  228.53     using 209 bins.
+# Null hypothesis probability of 9.70e-02 with 202 degrees of freedom
+#***Warning: New best fit found, fit parameters will be set to new values.
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl       5:Gamma    6:FracSctr         8:Tin        9:norm          13:a       14:Incl        20:Afe
+#231.961      11.2537       0       3.48373      0.423499       2.82513      0.145566      0.925922       48.3830       10.0000
+#231.958      9.36814       0       3.48369      0.423523       2.82513      0.145560      0.925845       48.3913       10.0000
+#================================================================================
+# Variances and Principal Axes
+#                 5        6        8        9       13       14       20  
+# 2.3932E-06| -0.7404   0.5357   0.0597   0.3656  -0.1653  -0.0057  -0.0162  
+# 2.6637E-05| -0.1796  -0.6703   0.1279   0.6832   0.1870   0.0080   0.0177  
+# 1.0574E-03| -0.6245  -0.4860  -0.0743  -0.5944  -0.1212   0.0062   0.0152  
+# 2.9475E-02|  0.1621  -0.1351   0.4366   0.0646  -0.8698   0.0418   0.0484  
+# 1.3623E-01|  0.0574  -0.0917  -0.8761   0.2040  -0.4077  -0.0452  -0.1046  
+# 1.0215E+01|  0.0032  -0.0156   0.0702  -0.0091  -0.0157  -0.9922  -0.1005  
+# 6.2279E+01| -0.0008   0.0236  -0.1072   0.0204  -0.0063  -0.1081   0.9878  
+#--------------------------------------------------------------------------------
+#
+#====================================================================================
+#  Covariance Matrix
+#        1           2           3           4           5           6           7   
+#   1.790e-03  -2.789e-03   3.190e-03   9.299e-04  -7.456e-03  -2.740e-02  -5.539e-02
+#  -2.789e-03   3.923e-02  -1.597e-01   2.894e-02   1.804e-03  -1.153e-04   1.471e+00
+#   3.190e-03  -1.597e-01   8.756e-01  -1.660e-01   6.846e-02   1.567e-02  -6.651e+00
+#   9.299e-04   2.894e-02  -1.660e-01   3.290e-02  -1.948e-02  -4.615e-02   1.260e+00
+#  -7.456e-03   1.804e-03   6.846e-02  -1.948e-02   4.996e-02   2.028e-01  -3.686e-01
+#  -2.740e-02  -1.153e-04   1.567e-02  -4.615e-02   2.028e-01   1.078e+01  -5.632e+00
+#  -5.539e-02   1.471e+00  -6.651e+00   1.260e+00  -3.686e-01  -5.632e+00   6.088e+01
+#------------------------------------------------------------------------------------
+#
+#========================================================================
+#Model TBfeo<1>(simpl<2>(diskbb<3> + relxill<4>)) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.68341      frozen
+#   2    1   TBfeo      O                   0.718572     frozen
+#   3    1   TBfeo      Fe                  0.977861     frozen
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               3.48369      +/-  4.23045E-02  
+#   6    2   simpl      FracSctr            0.423523     +/-  0.198068     
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      2.82513      +/-  0.935753     
+#   9    3   diskbb     norm                0.145560     +/-  0.181388     
+#  10    4   relxill    Index1              3.00000      frozen
+#  11    4   relxill    Index2              3.00000      frozen
+#  12    4   relxill    Rbr                 15.0000      frozen
+#  13    4   relxill    a                   0.925845     +/-  0.223515     
+#  14    4   relxill    Incl       deg      48.3913      +/-  3.28393      
+#  15    4   relxill    Rin                 -1.00000     frozen
+#  16    4   relxill    Rout                400.000      frozen
+#  17    4   relxill    z                   0.0          frozen
+#  18    4   relxill    gamma               3.48369      = p5
+#  19    4   relxill    logxi               1.50538      frozen
+#  20    4   relxill    Afe                 10.0000      +/-  7.80243      
+#  21    4   relxill    Ecut       keV      100.000      frozen
+#  22    4   relxill    refl_frac           -1.00000     frozen
+#  23    4   relxill    norm                0.154619     frozen
+#________________________________________________________________________
+#
+#
+#Fit statistic  : PG-Statistic                 231.96     using 209 bins.
+#
+#Test statistic : Chi-Squared                  229.85     using 209 bins.
+# Null hypothesis probability of 8.70e-02 with 202 degrees of freedom
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 3.55677, 3.5878
+#and delta stat 0, 1.05204
+#but latest trial 3.58694 gives 1.1918
+#Suggest that you check this result using the steppar command.
+#     5      3.45231      3.49495    (-0.0313041,0.0113343)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.393913, 0.393325
+#and delta stat 0.921856, 1.01665
+#but latest trial 0.393445 gives 1.01754
+#Suggest that you check this result using the steppar command.
+#     6     0.393619      0.45123    (-0.0299356,0.0276754)
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl       5:Gamma    6:FracSctr         8:Tin        9:norm          13:a       14:Incl        20:Afe
+#================================================================================
+# Variances and Principal Axes
+#                 5        6        8        9       13       14       20  
+# 2.3304E-06| -0.7312   0.5220   0.0573   0.3984  -0.1748  -0.0040  -0.0160  
+# 2.4161E-05| -0.1294  -0.6614   0.1153   0.7013   0.2006   0.0057   0.0178  
+# 1.0476E-03| -0.6440  -0.5087  -0.0613  -0.5562  -0.1146   0.0047   0.0154  
+# 2.7305E-02|  0.1733  -0.1491   0.4159   0.0719  -0.8752   0.0347   0.0484  
+# 1.6612E-01|  0.0619  -0.0909  -0.8883   0.1857  -0.3870  -0.0414  -0.1135  
+# 1.0689E+01|  0.0027  -0.0119   0.0623  -0.0072  -0.0125  -0.9944  -0.0831  
+# 6.4101E+01| -0.0006   0.0241  -0.1173   0.0197  -0.0072  -0.0903   0.9885  
+#--------------------------------------------------------------------------------
+#
+#====================================================================================
+#  Covariance Matrix
+#        1           2           3           4           5           6           7   
+#   1.992e-03  -2.556e-03  -8.684e-04   1.664e-03  -8.125e-03  -2.513e-02  -4.111e-02
+#  -2.556e-03   4.105e-02  -1.775e-01   2.854e-02  -1.431e-04  -1.307e-02   1.540e+00
+#  -8.684e-04  -1.775e-01   1.060e+00  -1.794e-01   9.331e-02   2.391e-02  -7.473e+00
+#   1.664e-03   2.854e-02  -1.794e-01   3.161e-02  -2.176e-02  -3.839e-02   1.250e+00
+#  -8.125e-03  -1.431e-04   9.331e-02  -2.176e-02   5.084e-02   1.766e-01  -4.415e-01
+#  -2.513e-02  -1.307e-02   2.391e-02  -3.839e-02   1.766e-01   1.109e+01  -4.839e+00
+#  -4.111e-02   1.540e+00  -7.473e+00   1.250e+00  -4.415e-01  -4.839e+00   6.271e+01
+#------------------------------------------------------------------------------------
+#
+#========================================================================
+#Model TBfeo<1>(simpl<2>(diskbb<3> + relxill<4>)) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.68341      frozen
+#   2    1   TBfeo      O                   0.718572     frozen
+#   3    1   TBfeo      Fe                  0.977861     frozen
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               3.48362      +/-  4.46309E-02  
+#   6    2   simpl      FracSctr            0.426540     +/-  0.202608     
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      2.90808      +/-  1.02948      
+#   9    3   diskbb     norm                0.132498     +/-  0.177791     
+#  10    4   relxill    Index1              3.00000      frozen
+#  11    4   relxill    Index2              3.00000      frozen
+#  12    4   relxill    Rbr                 15.0000      frozen
+#  13    4   relxill    a                   0.932479     +/-  0.225487     
+#  14    4   relxill    Incl       deg      48.4880      +/-  3.33060      
+#  15    4   relxill    Rin                 -1.00000     frozen
+#  16    4   relxill    Rout                400.000      frozen
+#  17    4   relxill    z                   0.0          frozen
+#  18    4   relxill    gamma               3.48362      = p5
+#  19    4   relxill    logxi               1.50538      frozen
+#  20    4   relxill    Afe                 10.0000      +/-  7.91869      
+#  21    4   relxill    Ecut       keV      100.000      frozen
+#  22    4   relxill    refl_frac           -1.00000     frozen
+#  23    4   relxill    norm                0.154619     frozen
+#________________________________________________________________________
+#
+#
+#Fit statistic  : PG-Statistic                 230.54     using 209 bins.
+#
+#Test statistic : Chi-Squared                  229.92     using 209 bins.
+# Null hypothesis probability of 8.65e-02 with 202 degrees of freedom
+#***Warning: New best fit found, fit parameters will be set to new values.
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl       5:Gamma    6:FracSctr         8:Tin        9:norm          13:a       14:Incl        20:Afe
+#230.456      5.07057       0       3.45469      0.429675       3.00000     0.0981356      0.986758       48.5687       10.0000
+#230.447      5.67526       0       3.45480      0.429697       3.00000     0.0981287      0.986668       48.5653       10.0000
+#================================================================================
+# Variances and Principal Axes
+#                 5        6        8        9       13       14       20  
+# 2.1465E-06| -0.6992   0.5030   0.0215   0.4237  -0.2790  -0.0031  -0.0157  
+# 2.1175E-05| -0.1126  -0.6240   0.0420   0.7261   0.2620   0.0044   0.0167  
+# 1.2102E-03| -0.6486  -0.5420  -0.0256  -0.5156  -0.1375   0.0026   0.0135  
+# 1.1261E-02| -0.2778   0.2491  -0.0945  -0.1513   0.9100  -0.0158  -0.0269  
+# 8.5602E-01| -0.0249   0.0363   0.9134  -0.0635   0.0802   0.1798   0.3478  
+# 8.4026E+00| -0.0002  -0.0044   0.1880  -0.0098   0.0023  -0.9820   0.0119  
+# 1.0440E+02| -0.0009  -0.0211   0.3443  -0.0210   0.0110   0.0549  -0.9367  
+#--------------------------------------------------------------------------------
+#
+#====================================================================================
+#  Covariance Matrix
+#        1           2           3           4           5           6           7   
+#   1.988e-03   8.101e-04  -5.083e-02   4.154e-03  -5.454e-03  -7.214e-03   7.812e-02
+#   8.101e-04   4.895e-02  -7.382e-01   4.452e-02  -1.929e-02  -7.927e-02   2.076e+00
+#  -5.083e-02  -7.382e-01   1.338e+01  -8.181e-01   4.618e-01   5.622e-01  -3.338e+01
+#   4.154e-03   4.452e-02  -8.181e-01   5.070e-02  -3.014e-02  -4.910e-02   2.030e+00
+#  -5.454e-03  -1.929e-02   4.618e-01  -3.014e-02   2.760e-02   5.644e-02  -1.055e+00
+#  -7.214e-03  -7.927e-02   5.622e-01  -4.910e-02   5.644e-02   8.446e+00  -5.413e+00
+#   7.812e-02   2.076e+00  -3.338e+01   2.030e+00  -1.055e+00  -5.413e+00   9.171e+01
+#------------------------------------------------------------------------------------
+#
+#========================================================================
+#Model TBfeo<1>(simpl<2>(diskbb<3> + relxill<4>)) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.68341      frozen
+#   2    1   TBfeo      O                   0.718572     frozen
+#   3    1   TBfeo      Fe                  0.977861     frozen
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               3.45480      +/-  4.45865E-02  
+#   6    2   simpl      FracSctr            0.429697     +/-  0.221254     
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      3.00000      +/-  3.65853      
+#   9    3   diskbb     norm                9.81287E-02  +/-  0.225157     
+#  10    4   relxill    Index1              3.00000      frozen
+#  11    4   relxill    Index2              3.00000      frozen
+#  12    4   relxill    Rbr                 15.0000      frozen
+#  13    4   relxill    a                   0.986668     +/-  0.166131     
+#  14    4   relxill    Incl       deg      48.5653      +/-  2.90614      
+#  15    4   relxill    Rin                 -1.00000     frozen
+#  16    4   relxill    Rout                400.000      frozen
+#  17    4   relxill    z                   0.0          frozen
+#  18    4   relxill    gamma               3.45480      = p5
+#  19    4   relxill    logxi               1.50538      frozen
+#  20    4   relxill    Afe                 10.0000      +/-  9.57663      
+#  21    4   relxill    Ecut       keV      100.000      frozen
+#  22    4   relxill    refl_frac           -1.00000     frozen
+#  23    4   relxill    norm                0.154619     frozen
+#________________________________________________________________________
+#
+#
+#Fit statistic  : PG-Statistic                 230.45     using 209 bins.
+#
+#Test statistic : Chi-Squared                  228.37     using 209 bins.
+# Null hypothesis probability of 9.83e-02 with 202 degrees of freedom
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 3.51799, 3.4734
+#and delta stat 0, 4.43351
+#but latest trial 3.49682 gives 58.7801
+#Suggest that you check this result using the steppar command.
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl       5:Gamma    6:FracSctr         8:Tin        9:norm          13:a       14:Incl        20:Afe
+#229.314      1.26793       3       3.48807      0.431020       3.00000      0.122813      0.935256       48.4065       10.0000
+#229.314      1.26787       4       3.48807      0.431020       3.00000      0.122813      0.935256       48.4065       10.0000
+#================================================================================
+# Variances and Principal Axes
+#                 5        6        8        9       13       14       20  
+# 2.2622E-06| -0.7228   0.5044   0.0279   0.4376  -0.1747  -0.0051  -0.0155  
+# 2.1921E-05| -0.0708  -0.6566   0.0522   0.7198   0.2067   0.0073   0.0179  
+# 1.0471E-03| -0.6635  -0.5291  -0.0256  -0.5202  -0.0912   0.0059   0.0157  
+# 3.1934E-02|  0.1772  -0.1765   0.1964   0.1105  -0.9398   0.0363   0.0467  
+# 6.5862E-01|  0.0302  -0.0522  -0.9364   0.0846  -0.1874  -0.1206  -0.2503  
+# 1.1893E+01|  0.0021  -0.0127   0.1427  -0.0079  -0.0090  -0.9883  -0.0507  
+# 7.6377E+01| -0.0002   0.0232  -0.2449   0.0183  -0.0087  -0.0852   0.9653  
+#--------------------------------------------------------------------------------
+#
+#====================================================================================
+#  Covariance Matrix
+#        1           2           3           4           5           6           7   
+#   2.118e-03  -2.270e-03  -1.093e-02   2.245e-03  -9.091e-03  -2.553e-02  -1.791e-02
+#  -2.270e-03   4.629e-02  -4.253e-01   3.042e-02  -2.367e-03   2.231e-03   1.730e+00
+#  -1.093e-02  -4.253e-01   5.402e+00  -4.070e-01   2.579e-01  -8.701e-03  -1.799e+01
+#   2.245e-03   3.042e-02  -4.070e-01   3.169e-02  -2.507e-02  -3.334e-02   1.340e+00
+#  -9.091e-03  -2.367e-03   2.579e-01  -2.507e-02   5.813e-02   1.760e-01  -6.092e-01
+#  -2.553e-02   2.231e-03  -8.701e-03  -3.334e-02   1.760e-01   1.218e+01  -5.667e+00
+#  -1.791e-02   1.730e+00  -1.799e+01   1.340e+00  -6.092e-01  -5.667e+00   7.124e+01
+#------------------------------------------------------------------------------------
+#
+#========================================================================
+#Model TBfeo<1>(simpl<2>(diskbb<3> + relxill<4>)) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.68341      frozen
+#   2    1   TBfeo      O                   0.718572     frozen
+#   3    1   TBfeo      Fe                  0.977861     frozen
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               3.48807      +/-  4.60165E-02  
+#   6    2   simpl      FracSctr            0.431020     +/-  0.215151     
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      3.00000      +/-  2.32420      
+#   9    3   diskbb     norm                0.122813     +/-  0.178028     
+#  10    4   relxill    Index1              3.00000      frozen
+#  11    4   relxill    Index2              3.00000      frozen
+#  12    4   relxill    Rbr                 15.0000      frozen
+#  13    4   relxill    a                   0.935256     +/-  0.241100     
+#  14    4   relxill    Incl       deg      48.4065      +/-  3.49006      
+#  15    4   relxill    Rin                 -1.00000     frozen
+#  16    4   relxill    Rout                400.000      frozen
+#  17    4   relxill    z                   0.0          frozen
+#  18    4   relxill    gamma               3.48807      = p5
+#  19    4   relxill    logxi               1.50538      frozen
+#  20    4   relxill    Afe                 10.0000      +/-  8.44040      
+#  21    4   relxill    Ecut       keV      100.000      frozen
+#  22    4   relxill    refl_frac           -1.00000     frozen
+#  23    4   relxill    norm                0.154619     frozen
+#________________________________________________________________________
+#
+#
+#Fit statistic  : PG-Statistic                 229.31     using 209 bins.
+#
+#Test statistic : Chi-Squared                  230.17     using 209 bins.
+# Null hypothesis probability of 8.47e-02 with 202 degrees of freedom
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     5      3.45669      3.51388    (-0.0313727,0.0258099)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.398067, 0.383133
+#and delta stat 0.0111354, 1.27845
+#but latest trial 0.385745 gives 1.42214
+#Suggest that you check this result using the steppar command.
+#

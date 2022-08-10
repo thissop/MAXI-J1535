@@ -1,0 +1,54 @@
+
+!XSPEC12> error 1. 4 7 12
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     4     -10.3252     -10.3068    (-0.01186,0.00653008)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -10.3132, -9.48818
+#and delta stat 0, 10214.1
+#but latest trial -9.6484 gives 10214.1
+#Suggest that you check this result using the steppar command.
+#     4     -10.3249      -9.9007    (-0.0116368,0.412529)
+#***Warning: Parameter pegged at hard limit: -100
+#***Warning: New best fit found, fit parameters will be set to new values.
+#
+#***Warning: Number of trials exceeded before convergence.
+#Current trial values -9.60997, -10.9638
+#and delta statistic 0.0489238, 3116
+#
+#***Warning: New best fit found, fit parameters will be set to new values.
+#
+#***Warning: Number of trials exceeded before convergence.
+#Current trial values -9.57972, -9.79431
+#and delta statistic 0.982554, 5712.8
+#
+#     4     -9.57972     -5.96755    (-3.28408,0.328092)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -13.8043, -15.9722
+#and delta stat 0.000754239, 10215.1
+#but latest trial -15.1337 gives 2.82289e-05
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -13.682, -4.95689
+#and delta stat 0.00133038, 10212.9
+#but latest trial -13.6285 gives 3.1621e-05
+#Suggest that you check this result using the steppar command.
+#     7     -14.8883     -9.31943    (-1.11912,4.44972)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -17.9022, -29.1749
+#and delta stat 0.000669206, 10212.8
+#but latest trial -17.9713 gives 1.45941e-05
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -17.7576, -14.9432
+#and delta stat 0.000254139, 10215.1
+#but latest trial -17.7414 gives 0.000113527
+#Suggest that you check this result using the steppar command.
+#    12     -23.5386     -16.3504    (-5.749,1.43914)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

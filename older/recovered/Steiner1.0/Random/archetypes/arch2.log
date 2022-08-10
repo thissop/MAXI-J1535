@@ -1,0 +1,27 @@
+#XSPEC version: 12.11.0
+#Build Date/Time: Thu Jul  2 16:22:45 2020
+#
+!XSPEC12> show param
+#
+#Parameters defined:
+#========================================================================
+#Model phabs<1>(powerlaw<2> + diskbb<3>) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   phabs      nH         10^22    4.01151      +/-  4.26559E-03  
+#   2    2   powerlaw   PhoIndex            2.96172      +/-  1.79872E-03  
+#   3    2   powerlaw   norm                165.004      +/-  0.461784     
+#   4    3   diskbb     Tin        keV      0.117942     +/-  1.73681E-04  
+#   5    3   diskbb     norm                1.13014E+10  +/-  2.14878E+08  
+#________________________________________________________________________
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : PG-Statistic               14551.34     using 939 bins.
+#
+#Test statistic : Chi-Squared                14403.11     using 939 bins.
+# Null hypothesis probability of 0.00e+00 with 934 degrees of freedom
+#
+!XSPEC12> log none
+#

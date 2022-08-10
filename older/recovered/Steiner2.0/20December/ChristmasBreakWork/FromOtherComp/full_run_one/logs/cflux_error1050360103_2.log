@@ -1,0 +1,26 @@
+
+!XSPEC12> error 1. 4 7 12
+#     4     -7.33791     -7.33639    (-0.000774684,0.000742499)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     4     -7.30994     -7.29467    (-0.00768035,0.00759658)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the high end of the confidence range.
+#     7     -79.1633     -87.1633    (4,-4)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the high end of the confidence range.
+#    12     -78.0965     -98.0965    (4,-16)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

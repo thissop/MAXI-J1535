@@ -1,0 +1,51 @@
+#XSPEC version: 12.11.0m
+#Build Date/Time: Sun Oct 25 08:05:27 2020
+#
+!XSPEC12> chatter 5 5
+#
+!XSPEC12> parallel error 2
+#
+!XSPEC12> error 1. 5 6 8
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     8     0.427883     0.449502    (-0.0145748,0.00704424)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 2.53664, 2.44157
+#and delta stat 0.962114, 1.70669
+#but latest trial 2.53118 gives 0.925876
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.428459, 0.428335
+#and delta stat 0.989657, 1.02965
+#but latest trial 0.428434 gives 0.977881
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.440218, 0.44024
+#and delta stat 0.925033, 1.02314
+#but latest trial 0.440234 gives 1.10366
+#Suggest that you check this result using the steppar command.
+#     8     0.428397     0.440229    (-0.00723413,0.00459777)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 2.50247, 2.50098
+#and delta stat 0.979237, 1.04379
+#but latest trial 2.50191 gives 1.17459
+#Suggest that you check this result using the steppar command.
+#***Warning: Parameter pegged at hard limit: 3.4
+#     5      2.50173            0    (-0.287418,-2.78915)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.0512844, 0.0515425
+#and delta stat 0.976246, 1.01054
+#but latest trial 0.0514598 gives 1.0323
+#Suggest that you check this result using the steppar command.
+#     6     0.026516    0.0514135    (-0.00977296,0.0151245)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.434785, 0.428414
+#and delta stat 0, 1.02595
+#but latest trial 0.428495 gives 1.08238
+#Suggest that you check this result using the steppar command.
+#     8       0.4316     0.440216    (-0.00318419,0.0054321)
+#
+!XSPEC12> log none
+#

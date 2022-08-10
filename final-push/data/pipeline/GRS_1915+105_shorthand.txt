@@ -1,0 +1,6 @@
+net_count_rate: A
+gamma: B
+kTe: C
+nthcomp_norm: D
+diskbb_tin: E 
+diskbb_norm: F

@@ -1,0 +1,46 @@
+#XSPEC version: 12.11.0
+#Build Date/Time: Thu Jul  2 16:22:45 2020
+#
+!XSPEC12> chatter 10
+#
+!XSPEC12> show data
+#
+#1 file 1 spectrum 
+#Spectrum 1  Spectral Data File: /home/thaddaeus/FMU/Steiner/thaddaeus/1130360198/jspipe/js_ni1130360198_0mpu7_silver_GTI0.jsgrp
+#Net count rate (cts/s) for Spectrum:1  1.741e+00 +/- 5.895e-02 (59.8 % total)
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  36-219
+#  Telescope: NICER Instrument: XTI  Channel Type: PI
+#  Exposure Time: 872.7 sec
+# Using fit statistic: pgstat
+# Using Background File                /home/thaddaeus/FMU/Steiner/thaddaeus/1130360198/jspipe/js_ni1130360198_0mpu7_silver_GTI0.bg
+#  Background Exposure Time: 872.7 sec
+# Using Response (RMF) File            /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : PG-Statistic                 218.50     using 184 bins.
+#
+#Test statistic : Chi-Squared                  251.15     using 184 bins.
+# Null hypothesis probability of 3.02e-04 with 179 degrees of freedom
+#
+!XSPEC12> show param
+#
+#Parameters defined:
+#========================================================================
+#Model TBabs<1>*simpl<2>*diskbb<3> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBabs      nH         10^22    3.09746      +/-  0.933539     
+#   2    2   simpl      Gamma               2.43232      +/-  2.14045      
+#   3    2   simpl      FracSctr            0.990052     +/-  158.774      
+#   4    2   simpl      UpScOnly            1.00000      frozen
+#   5    3   diskbb     Tin        keV      0.684962     +/-  72.9422      
+#   6    3   diskbb     norm                2.71662      +/-  875.636      
+#________________________________________________________________________
+#
+#
+!XSPEC12> log none
+#

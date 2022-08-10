@@ -1,0 +1,52 @@
+
+!XSPEC12> error 1. 2 3 4 9
+#***Warning: Parameter pegged at hard limit: 0.01
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 0.01
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 0.01
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 0.01
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.103271, 0.0978968
+#and delta stat 0.33498, 1.06475
+#but latest trial 0.0983607 gives 1.07951
+#Suggest that you check this result using the steppar command.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 0.01
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 0.01
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 0.01
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 1
+#     2     0.533389            0    (-0.300646,-0.834035)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.925694, 0.918778
+#and delta stat 0.939945, 1.38895
+#but latest trial 0.922236 gives 8.66152
+#Suggest that you check this result using the steppar command.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 1
+#     2     0.544211            0    (-0.259664,-0.803875)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 1
+#     2     0.548149            0    (-0.256056,-0.804205)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     2     0.560849     0.993857    (-0.194654,0.238354)
+#     3      0.97977      8.35788    (-1.90864,5.46947)
+#***Warning: Parameter pegged at hard limit: 1.2
+#     4            0       1.6968    (-1.2,0.496801)
+#     9   0.00165169   0.00489651    (-0.000658594,0.00258623)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

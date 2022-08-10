@@ -1,0 +1,30 @@
+#XSPEC version: 12.11.0
+#Build Date/Time: Thu Jul  2 16:22:45 2020
+#
+!XSPEC12> freeze 1-3 13 14 19 20 23
+#
+#Fit statistic  : PG-Statistic                 186.53     using 190 bins.
+#
+#Test statistic : Chi-Squared                  199.33     using 190 bins.
+# Null hypothesis probability of 2.39e-01 with 186 degrees of freedom
+# Current data and model not fit yet.
+#
+!XSPEC12> chatter 5 5
+#
+!XSPEC12> fit
+#
+!XSPEC12> err 5 6 8
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 3.06521, 3.34358
+#and delta stat 0, 47.5932
+#but latest trial 3.19941 gives 53.3955
+#Suggest that you check this result using the steppar command.
+#     5      3.03382      3.20364    (-0.0313839,0.138431)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.401059, 0.660647
+#and delta stat 0, 45.2554
+#but latest trial 0.627764 gives 47.2591
+#Suggest that you check this result using the steppar command.
+#     6     0.161577     0.530853    (-0.239482,0.129794)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#

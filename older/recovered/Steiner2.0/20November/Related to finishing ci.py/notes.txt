@@ -1,0 +1,17 @@
+$All this below is an error message when the lower bound is invalid: 
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -19.6421, 5.25141
+#and delta stat 0.0302321, 1.323
+#but latest trial -0.399726 gives 1.50074
+#Suggest that you check this result using the steppar command.
+#     8            0     0.104307    (-0.100172,0.00413544)
+$
+$Below is the error message when the parameter is pegged at upper limit: 
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 2.07931, 1.58053
+#and delta stat 0.917209, 29.9447
+#but latest trial 2.0755 gives 0.644743
+#Suggest that you check this result using the steppar command.
+#***Warning: Parameter pegged at hard limit: 3.4
+#     5      1.82992            0    (-0.624445,-2.45437)
+

@@ -1,0 +1,61 @@
+#XSPEC version: 12.11.0
+#Build Date/Time: Thu Jul  2 16:22:45 2020
+#
+!XSPEC12> show data
+#
+#1 file 1 spectrum 
+#Spectrum 1  Spectral Data File: /home/thaddaeus/FMU/Steiner/thaddaeus/1130360227/jspipe/js_ni1130360227_0mpu7_silver_GTI0.jsgrp
+#Net count rate (cts/s) for Spectrum:1  1.862e+01 +/- 1.869e-01 (98.2 % total)
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  34-239
+#  Telescope: NICER Instrument: XTI  Channel Type: PI
+#  Exposure Time: 543.7 sec
+# Using fit statistic: pgstat
+# Using Background File                /home/thaddaeus/FMU/Steiner/thaddaeus/1130360227/jspipe/js_ni1130360227_0mpu7_silver_GTI0.bg
+#  Background Exposure Time: 543.7 sec
+# Using Response (RMF) File            /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u12p5_25_55575341.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+#
+#
+!XSPEC12> show param
+#
+#Parameters defined:
+#========================================================================
+#Model TBfeo<1>(simpl<2>(diskbb<3> + relxill<4>)) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.68341      frozen
+#   2    1   TBfeo      O                   0.718572     frozen
+#   3    1   TBfeo      Fe                  0.977861     frozen
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               1.41348      +/-  0.197651     
+#   6    2   simpl      FracSctr            0.352698     +/-  0.430669     
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      0.924284     +/-  0.339214     
+#   9    3   diskbb     norm                5.56063      +/-  10.0576      
+#  10    4   relxill    Index1              3.00000      frozen
+#  11    4   relxill    Index2              3.00000      frozen
+#  12    4   relxill    Rbr                 15.0000      frozen
+#  13    4   relxill    a                   0.576734     +/-  3.37227      
+#  14    4   relxill    Incl       deg      56.6179      +/-  9.43120      
+#  15    4   relxill    Rin                 -1.00000     frozen
+#  16    4   relxill    Rout                400.000      frozen
+#  17    4   relxill    z                   0.0          frozen
+#  18    4   relxill    gamma               1.41348      = p5
+#  19    4   relxill    logxi               2.89779      +/-  0.497150     
+#  20    4   relxill    Afe                 5.00439      +/-  26.5239      
+#  21    4   relxill    Ecut       keV      100.000      frozen
+#  22    4   relxill    refl_frac           -1.00000     frozen
+#  23    4   relxill    norm                2.37235E-04  +/-  3.72001E-04  
+#________________________________________________________________________
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : PG-Statistic                 237.42     using 206 bins.
+#
+#Test statistic : Chi-Squared                  246.55     using 206 bins.
+# Null hypothesis probability of 9.49e-03 with 197 degrees of freedom
+#
+!XSPEC12> log none
+#

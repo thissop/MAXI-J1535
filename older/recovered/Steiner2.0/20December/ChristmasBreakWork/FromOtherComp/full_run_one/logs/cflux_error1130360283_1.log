@@ -1,0 +1,29 @@
+
+!XSPEC12> error 1. 4 7 12
+#     4     -10.4164      -10.394    (-0.0113741,0.0110393)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: -100, with delta statistic: 0.000773461
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     7       70.509            0    (128,57.491)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -57.1513, -100
+#and delta stat 0.00233348, 55.7755
+#but latest trial -78.5757 gives 0
+#Suggest that you check this result using the steppar command.
+#***Warning: Parameter pegged at hard limit: 100
+#    12     -78.5757            0    (-67.499,11.0767)
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

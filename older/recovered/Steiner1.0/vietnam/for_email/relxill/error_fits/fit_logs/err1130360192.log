@@ -1,0 +1,78 @@
+#XSPEC version: 12.11.0
+#Build Date/Time: Thu Jul  2 16:22:45 2020
+#
+!XSPEC12> freeze 1-3 13 14 19 20 23
+#
+#Fit statistic  : PG-Statistic                 196.17     using 209 bins.
+#
+#Test statistic : Chi-Squared                  197.04     using 209 bins.
+# Null hypothesis probability of 6.43e-01 with 205 degrees of freedom
+# Current data and model not fit yet.
+#
+!XSPEC12> chatter 5 5
+#
+!XSPEC12> fit
+#
+!XSPEC12> err 5 6 8
+#***Warning: New best fit found, fit parameters will be set to new values.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 1.3, with delta statistic: 0.0294153
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 1.3, with delta statistic: 0.0294164
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 1.3, with delta statistic: 0.0294164
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 1.3, with delta statistic: 0.0294164
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter lower  bound is INVALID.
+#
+#     5            0      3.99413    (-1.38457,2.60956)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.00100001, with delta statistic: 2.24042
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.001, with delta statistic: 2.24042
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.001, with delta statistic: 2.24042
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.001, with delta statistic: 2.24042
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter lower  bound is INVALID.
+#
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.402527, 0.939783
+#and delta stat 0, 11.8085
+#but latest trial 0.659713 gives 48.0514
+#Suggest that you check this result using the steppar command.
+#     6            0     0.671155    (-0.402527,0.268628)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 1.63239, 1.05229
+#and delta stat 0, 4.9993
+#but latest trial 1.2056 gives 5.0808
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 1.63239, 2.10493
+#and delta stat 0, 2.91816
+#but latest trial 2.08629 gives 4.32011
+#Suggest that you check this result using the steppar command.
+#     8      1.34234      1.86866    (-0.29005,0.23627)
+#
+!XSPEC12> log none
+#

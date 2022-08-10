@@ -1,0 +1,120 @@
+#XSPEC version: 12.11.0
+#Build Date/Time: Thu Jul  2 16:22:45 2020
+#
+!XSPEC12> freeze 1-3 13 14 19 20 23
+#
+#Fit statistic  : PG-Statistic                 190.84     using 189 bins.
+#
+#Test statistic : Chi-Squared                  197.01     using 189 bins.
+# Null hypothesis probability of 2.59e-01 with 185 degrees of freedom
+# Current data and model not fit yet.
+#
+!XSPEC12> chatter 5 5
+#
+!XSPEC12> fit
+#
+!XSPEC12> err 5 6 8
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 3.09115, 3.0497
+#and delta stat 1.92119, 4.70314
+#but latest trial 3.07775 gives 1.57363
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 3.22141, 3.27889
+#and delta stat 0, 2.81491
+#but latest trial 3.27806 gives 2.90618
+#Suggest that you check this result using the steppar command.
+#     5      3.07043      3.24147    (-0.147288,0.0237521)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.692471, 0.69234
+#and delta stat 2.13392, 3.33629
+#but latest trial 0.69242 gives 3.36988
+#Suggest that you check this result using the steppar command.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 1.05361
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 1.05359
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 1.05359
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 1.05359
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter upper  bound is INVALID.
+#
+#     6     0.692405            0    (-0.198685,-0.89109)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.1, with delta statistic: 2.08634
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.1, with delta statistic: 2.08634
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.1, with delta statistic: 2.08634
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter lower  bound is INVALID.
+#
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     5      3.05125      3.29438    (-0.189404,0.053726)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 0.35182
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 0.35182
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 0.35182
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 0.35182
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter upper  bound is INVALID.
+#
+#     6     0.703685            0    (-0.222578,-0.926263)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 3, with delta statistic: 0
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 3, with delta statistic: 0
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter lower  bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 3, with delta statistic: 0
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 3, with delta statistic: 0
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter upper  bound is INVALID.
+#
+#     8            0            0    (-3,-3)
+#
+!XSPEC12> log none
+#

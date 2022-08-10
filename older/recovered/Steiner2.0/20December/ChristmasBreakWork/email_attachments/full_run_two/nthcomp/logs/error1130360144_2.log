@@ -1,0 +1,21 @@
+
+!XSPEC12> error 1. 2 3 4 9
+#     2     0.592485     0.598699    (-0.00361053,0.0026037)
+#     3      3819.72      4033.09    (-88.4164,124.955)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     2     0.592523     0.598653    (-0.00320074,0.00292908)
+#     3       3820.3      4031.58    (-101.672,109.609)
+#***Warning: Parameter pegged at hard limit: 1.2
+#     4            0      1.29683    (-1.2,0.0968321)
+#     9     0.013203    0.0182319    (-0.00198897,0.00303989)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

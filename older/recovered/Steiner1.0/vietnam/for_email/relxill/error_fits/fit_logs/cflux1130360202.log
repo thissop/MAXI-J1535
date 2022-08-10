@@ -1,0 +1,74 @@
+
+!XSPEC12> chatter 10 10
+#
+!XSPEC12> show data
+#
+#1 file 1 spectrum 
+#Spectrum 1  Spectral Data File: /home/thaddaeus/FMU/Steiner/thaddaeus/1130360202/jspipe/js_ni1130360202_0mpu7_silver_GTI0.jsgrp
+#Net count rate (cts/s) for Spectrum:1  5.392e+01 +/- 4.396e-01 (99.0 % total)
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  37-237
+#  Telescope: NICER Instrument: XTI  Channel Type: PI
+#  Exposure Time: 281.9 sec
+# Using fit statistic: pgstat
+# Using Background File                /home/thaddaeus/FMU/Steiner/thaddaeus/1130360202/jspipe/js_ni1130360202_0mpu7_silver_GTI0.bg
+#  Background Exposure Time: 281.9 sec
+# Using Response (RMF) File            /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : PG-Statistic                 202.20     using 201 bins.
+#
+#Test statistic : Chi-Squared                  209.88     using 201 bins.
+# Null hypothesis probability of 2.52e-01 with 197 degrees of freedom
+#
+!XSPEC12> show param
+#
+#Parameters defined:
+#========================================================================
+#Model TBfeo<1>(simpl<2>(diskbb<3> + relxill<4>)) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    4.02819      frozen
+#   2    1   TBfeo      O                   0.927516     frozen
+#   3    1   TBfeo      Fe                  1.94688      frozen
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               2.94443      +/-  1.25695E-02  
+#   6    2   simpl      FracSctr            3.01671E-02  +/-  3.13297E-03  
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      0.163811     +/-  6.38818E-03  
+#   9    3   diskbb     norm                1.08480E+06  +/-  4.04247E+05  
+#  10    4   relxill    Index1              3.00000      frozen
+#  11    4   relxill    Index2              3.00000      frozen
+#  12    4   relxill    Rbr                 15.0000      frozen
+#  13    4   relxill    a                   0.993683     frozen
+#  14    4   relxill    Incl       deg      75.9565      frozen
+#  15    4   relxill    Rin                 -1.00000     frozen
+#  16    4   relxill    Rout                400.000      frozen
+#  17    4   relxill    z                   0.0          frozen
+#  18    4   relxill    gamma               2.94443      = p5
+#  19    4   relxill    logxi               1.34341      frozen
+#  20    4   relxill    Afe                 0.678792     frozen
+#  21    4   relxill    Ecut       keV      300.000      frozen
+#  22    4   relxill    refl_frac           -1.00000     frozen
+#  23    4   relxill    norm                1.89473E-02  frozen
+#________________________________________________________________________
+#
+#
+!XSPEC12> chatter 5 5
+#
+!XSPEC12> editmod cflux*tbfeo(simpl(diskbb+relxill))
+#
+!XSPEC12> freeze 4-26
+#
+!XSPEC12> thaw 8
+#
+!XSPEC12> fit
+#
+!XSPEC12> err 3
+#     3     -9.42314     -9.40442    (-0.00940812,0.00930631)
+#
+!XSPEC12> log none
+#

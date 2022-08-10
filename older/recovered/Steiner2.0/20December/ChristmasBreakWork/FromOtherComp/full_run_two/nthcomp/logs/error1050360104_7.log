@@ -1,0 +1,23 @@
+
+!XSPEC12> error 1. 2 3 4 9
+#     2     0.609825     0.640886    (-0.0107124,0.0203486)
+#***Warning: Parameter pegged at hard limit: 0
+#     3            0       1023.7    (-348.439,675.26)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 2.20712, 2.20843
+#and delta stat 0.699727, 1.06516
+#but latest trial 2.20821 gives 1.52504
+#Suggest that you check this result using the steppar command.
+#     4       2.1813      2.20778    (-0.0154933,0.010983)
+#     9      15.2641      16.4018    (-0.755548,0.382157)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

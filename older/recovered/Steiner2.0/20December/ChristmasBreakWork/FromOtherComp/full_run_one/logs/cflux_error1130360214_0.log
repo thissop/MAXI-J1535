@@ -1,0 +1,34 @@
+
+!XSPEC12> error 1. 4 7 12
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning:  *** 3 point fit failed during interpolation *** 
+#Upper bound error calculation is invalid.
+#     4     -10.2084      40.9368    (-0.515443,50.6297)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -12.1719, -19.4674
+#and delta stat 0.0151125, 634.747
+#but latest trial -12.3498 gives 0
+#Suggest that you check this result using the steppar command.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     4     -7.56769     -6.94139    (-0.402267,0.22403)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the high end of the confidence range.
+#     7     -7.39544     -12.3954    (4,-1)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the high end of the confidence range.
+#    12     -13.4149     -18.4149    (1,-4)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

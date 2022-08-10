@@ -1,0 +1,33 @@
+
+!XSPEC12> parallel error 4
+#
+!XSPEC12> error 1. 3
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 1.03204e-05, with delta statistic: 0.161416
+#
+#
+#*** Parameter lower bound is INVALID.
+#
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -0.122631, 0.0518975
+#and delta stat 0, 4.16102
+#but latest trial 0.00677679 gives 4.16102
+#Suggest that you check this result using the steppar command.
+#     3            0  9.79688e-05    (-9.3003e-05,4.96572e-06)
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

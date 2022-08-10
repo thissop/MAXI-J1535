@@ -1,0 +1,168 @@
+#XSPEC version: 12.11.0
+#Build Date/Time: Thu Jul  2 16:22:45 2020
+#
+!XSPEC12> error 1. 5 6 8
+# Parameter   Confidence Range (1)
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl       5:Gamma    6:FracSctr         8:Tin        9:norm          13:a       14:Incl        20:Afe
+#160.457      17.2253      -1       3.69733     0.0367794      0.460592       5687.56      0.923536       72.0728      0.838608
+#160.441      41.7696       0       3.69730     0.0367851      0.460595       5687.78      0.919717       72.0853      0.839860
+#160.439      27.7322       0       3.69715     0.0367590      0.460600       5688.26      0.916062       72.0610      0.842700
+#================================================================================
+# Variances and Principal Axes
+#                 5        6        8        9       13       14       20  
+# 1.5428E-07| -0.0595   0.2405   0.9688   0.0000  -0.0008   0.0001   0.0011  
+# 8.6643E-06|  0.1313  -0.9602   0.2464   0.0000   0.0000   0.0002  -0.0074  
+# 8.0228E-04| -0.9859  -0.1409  -0.0255   0.0001  -0.0690   0.0062  -0.0522  
+# 3.3412E-02| -0.0648  -0.0085  -0.0010   0.0001   0.9931  -0.0648  -0.0734  
+# 3.1479E-01| -0.0554  -0.0155  -0.0007  -0.0012   0.0686  -0.0192   0.9958  
+# 2.7660E+01| -0.0009  -0.0002   0.0000  -0.0026  -0.0662  -0.9977  -0.0148  
+# 6.1894E+05|  0.0001   0.0000  -0.0000   1.0000  -0.0001  -0.0026   0.0012  
+#--------------------------------------------------------------------------------
+#
+#====================================================================================
+#  Covariance Matrix
+#        1           2           3           4           5           6           7   
+#   4.332e-03   7.383e-04  -4.910e-04   3.874e+01  -6.674e-03  -7.557e-02   2.871e-02
+#   7.383e-04   1.492e-04  -6.813e-05   5.344e+00  -8.948e-04  -7.665e-03   1.545e-03
+#  -4.910e-04  -6.813e-05   1.148e-04  -8.376e+00   9.562e-04   2.052e-02  -1.007e-02
+#   3.874e+01   5.344e+00  -8.376e+00   6.189e+05  -7.959e+01  -1.600e+03   7.273e+02
+#  -6.674e-03  -8.948e-04   9.562e-04  -7.959e+01   1.659e-01   2.030e+00  -4.741e-02
+#  -7.557e-02  -7.665e-03   2.052e-02  -1.600e+03   2.030e+00   3.167e+01  -1.478e+00
+#   2.871e-02   1.545e-03  -1.007e-02   7.273e+02  -4.741e-02  -1.478e+00   1.173e+00
+#------------------------------------------------------------------------------------
+#
+#========================================================================
+#Model TBfeo<1>(simpl<2>(diskbb<3> + relxill<4>)) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.68341      frozen
+#   2    1   TBfeo      O                   0.718572     frozen
+#   3    1   TBfeo      Fe                  0.977861     frozen
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               3.69715      +/-  6.58191E-02  
+#   6    2   simpl      FracSctr            3.67590E-02  +/-  1.22132E-02  
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      0.460600     +/-  1.07136E-02  
+#   9    3   diskbb     norm                5688.26      +/-  786.723      
+#  10    4   relxill    Index1              3.00000      frozen
+#  11    4   relxill    Index2              3.00000      frozen
+#  12    4   relxill    Rbr                 15.0000      frozen
+#  13    4   relxill    a                   0.916062     +/-  0.407332     
+#  14    4   relxill    Incl       deg      72.0610      +/-  5.62748      
+#  15    4   relxill    Rin                 -1.00000     frozen
+#  16    4   relxill    Rout                400.000      frozen
+#  17    4   relxill    z                   0.0          frozen
+#  18    4   relxill    gamma               3.69715      = p5
+#  19    4   relxill    logxi               3.02667      frozen
+#  20    4   relxill    Afe                 0.842700     +/-  1.08303      
+#  21    4   relxill    Ecut       keV      100.000      frozen
+#  22    4   relxill    refl_frac           -1.00000     frozen
+#  23    4   relxill    norm                1.40366E-02  frozen
+#________________________________________________________________________
+#
+#
+#Fit statistic  : PG-Statistic                 160.44     using 173 bins.
+#
+#Test statistic : Chi-Squared                  152.91     using 173 bins.
+# Null hypothesis probability of 7.58e-01 with 166 degrees of freedom
+#***Warning: New best fit found, fit parameters will be set to new values.
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl       5:Gamma    6:FracSctr         8:Tin        9:norm          13:a       14:Incl        20:Afe
+#160.028      28.5962       0       3.65893     0.0303561      0.465360       5339.12      0.904715       71.3355      0.500005
+#160.002      30.5335       0       3.65878     0.0303351      0.465351       5339.21      0.904632       71.4912      0.500001
+#159.992      43.0951       0       3.65879     0.0303207      0.465347       5339.14      0.907200       71.5054      0.500000
+#159.952      35.7749       0       3.65864     0.0303043      0.465338       5339.15      0.913889       71.6322      0.500000
+#159.936      45.6306       0       3.65865     0.0302894      0.465334       5339.02      0.911442       71.6452      0.500000
+#159.915      40.4596       0       3.65853     0.0302758      0.465323       5338.80      0.909073       71.6982      0.500000
+#159.908      41.7895       0       3.65854     0.0302637      0.465320       5338.71      0.911523       71.7006      0.500000
+#================================================================================
+# Variances and Principal Axes
+#                 5        6        8        9       13       14       20  
+# 1.6073E-07| -0.0625   0.2621   0.9630   0.0000  -0.0009   0.0001   0.0003  
+# 7.7170E-06|  0.1281  -0.9548   0.2682   0.0000  -0.0003   0.0002  -0.0026  
+# 1.0788E-03| -0.9871  -0.1397  -0.0262   0.0002  -0.0712   0.0086  -0.0188  
+# 3.7670E-02|  0.0703   0.0099   0.0009  -0.0000  -0.9944   0.0713   0.0310  
+# 1.8332E+00|  0.0205   0.0055   0.0002   0.0039  -0.0253   0.0596  -0.9977  
+# 3.0788E+01| -0.0023  -0.0003   0.0000  -0.0024  -0.0734  -0.9956  -0.0577  
+# 3.6497E+05|  0.0001   0.0000  -0.0000   1.0000  -0.0001  -0.0026   0.0037  
+#--------------------------------------------------------------------------------
+#
+#====================================================================================
+#  Covariance Matrix
+#        1           2           3           4           5           6           7   
+#   3.800e-03   6.105e-04  -3.081e-04   2.439e+01  -1.099e-03   9.224e-03   5.721e-02
+#   6.105e-04   1.168e-04  -3.960e-05   3.080e+00  -2.205e-04   2.739e-03   1.958e-03
+#  -3.081e-04  -3.960e-05   7.357e-05  -5.127e+00   4.679e-04   1.236e-02  -1.939e-02
+#   2.439e+01   3.080e+00  -5.127e+00   3.650e+05  -4.110e+01  -9.452e+02   1.355e+03
+#  -1.099e-03  -2.205e-04   4.679e-04  -4.110e+01   2.087e-01   2.350e+00   2.269e-02
+#   9.224e-03   2.739e-03   1.236e-02  -9.452e+02   2.350e+00   3.297e+01  -1.852e+00
+#   5.721e-02   1.958e-03  -1.939e-02   1.355e+03   2.269e-02  -1.852e+00   6.961e+00
+#------------------------------------------------------------------------------------
+#
+#========================================================================
+#Model TBfeo<1>(simpl<2>(diskbb<3> + relxill<4>)) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.68341      frozen
+#   2    1   TBfeo      O                   0.718572     frozen
+#   3    1   TBfeo      Fe                  0.977861     frozen
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               3.65854      +/-  6.16445E-02  
+#   6    2   simpl      FracSctr            3.02637E-02  +/-  1.08093E-02  
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      0.465320     +/-  8.57758E-03  
+#   9    3   diskbb     norm                5338.71      +/-  604.117      
+#  10    4   relxill    Index1              3.00000      frozen
+#  11    4   relxill    Index2              3.00000      frozen
+#  12    4   relxill    Rbr                 15.0000      frozen
+#  13    4   relxill    a                   0.911523     +/-  0.456881     
+#  14    4   relxill    Incl       deg      71.7006      +/-  5.74237      
+#  15    4   relxill    Rin                 -1.00000     frozen
+#  16    4   relxill    Rout                400.000      frozen
+#  17    4   relxill    z                   0.0          frozen
+#  18    4   relxill    gamma               3.65854      = p5
+#  19    4   relxill    logxi               3.02667      frozen
+#  20    4   relxill    Afe                 0.500000     +/-  2.63842      
+#  21    4   relxill    Ecut       keV      100.000      frozen
+#  22    4   relxill    refl_frac           -1.00000     frozen
+#  23    4   relxill    norm                1.40366E-02  frozen
+#________________________________________________________________________
+#
+#
+#Fit statistic  : PG-Statistic                 159.91     using 173 bins.
+#
+#Test statistic : Chi-Squared                  153.33     using 173 bins.
+# Null hypothesis probability of 7.51e-01 with 166 degrees of freedom
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 3.75843, 3.75705
+#and delta stat 0.385496, 1.04636
+#but latest trial 3.75714 gives 0.0465801
+#Suggest that you check this result using the steppar command.
+#     5      3.62106      3.70999    (-0.037343,0.0515952)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.0302473, 0.019438
+#and delta stat 0, 1.08743
+#but latest trial 0.0198816 gives 1.12067
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.0302473, 0.0410566
+#and delta stat 0, 1.01355
+#but latest trial 0.0409841 gives 1.15835
+#Suggest that you check this result using the steppar command.
+#     6    0.0248426    0.0356519    (-0.00540464,0.00540464)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.459353, 0.459033
+#and delta stat 0.750375, 1.0687
+#but latest trial 0.459122 gives 1.5441
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.468554, 0.468929
+#and delta stat 0.83001, 1.01954
+#but latest trial 0.468892 gives 1.6861
+#Suggest that you check this result using the steppar command.
+#     8     0.459193     0.468742    (-0.00611579,0.00343303)
+#
+!XSPEC12> log none
+#

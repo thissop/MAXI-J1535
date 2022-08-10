@@ -1,0 +1,59 @@
+#XSPEC version: 12.11.0m
+#Build Date/Time: Sat Nov 21 22:38:27 2020
+#
+!XSPEC12> show data
+#
+#1 file 1 spectrum 
+#Spectrum 1  Spectral Data File: /home/thaddaeus/FMU/Steiner/thaddaeus/1130360146/jspipe/js_ni1130360146_0mpu7_silver_GTI1.jsgrp
+#Net count rate (cts/s) for Spectrum:1  2.547e+02 +/- 1.043e+00 (98.5 % total)
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  22-54,83-246
+#  Telescope: NICER Instrument: XTI  Channel Type: PI
+#  Exposure Time: 237.7 sec
+# Using fit statistic: pgstat
+# Using Background File                /home/thaddaeus/FMU/Steiner/thaddaeus/1130360146/jspipe/js_ni1130360146_0mpu7_silver_GTI1.bg
+#  Background Exposure Time: 237.7 sec
+# Using Response (RMF) File            /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u25_50_55575341.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+#
+#
+!XSPEC12> show model
+#
+#Current model list:
+#
+#Model TBabs<1>*cflux<2>(cflux<3>*diskbb<4> + cflux<5>*nthComp<6>) Source No.: 1   Active/On
+#      For Data Group(s): 1 
+#
+#   Using energies from responses.
+#
+#
+!XSPEC12> show param
+#
+#Parameters defined:
+#========================================================================
+#Model TBabs<1>*cflux<2>(cflux<3>*diskbb<4> + cflux<5>*nthComp<6>) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBabs      nH         10^22    3.20000      frozen
+#   2    2   cflux      Emin       keV      0.500000     frozen
+#   3    2   cflux      Emax       keV      10.0000      frozen
+#   4    2   cflux      lg10Flux   cgs      -8.09804     +/-  1.77564E-03  
+#   5    3   cflux      Emin       keV      0.500000     frozen
+#   6    3   cflux      Emax       keV      10.0000      frozen
+#   7    3   cflux      lg10Flux   cgs      -95.0922     +/-  1.56410E+06  
+#   8    4   diskbb     Tin        keV      0.593211     frozen
+#   9    4   diskbb     norm                3774.04      frozen
+#  10    5   cflux      Emin       keV      0.500000     frozen
+#  11    5   cflux      Emax       keV      10.0000      frozen
+#  12    5   cflux      lg10Flux   cgs      -97.1691     +/-  1.52685E+06  
+#  13    6   nthComp    Gamma               1.39095      frozen
+#  14    6   nthComp    kT_e       keV      100.000      frozen
+#  15    6   nthComp    kT_bb      keV      0.593211     = p8
+#  16    6   nthComp    inp_type   0/1      1.00000      frozen
+#  17    6   nthComp    Redshift            0.0          frozen
+#  18    6   nthComp    norm                5.98446E-03  frozen
+#________________________________________________________________________
+#
+#
+!XSPEC12> log none
+#

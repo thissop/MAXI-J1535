@@ -1,0 +1,60 @@
+#XSPEC version: 12.11.0m
+#Build Date/Time: Sun Oct 25 08:05:27 2020
+#
+!XSPEC12> chatter 5 5
+#
+!XSPEC12> parallel error 2
+#
+!XSPEC12> error 1. 5 6 8
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 3.4
+#     5      3.20939            0    (-0.189798,-3.39919)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 2.47233, 2.35153
+#and delta stat 0, 1.11325
+#but latest trial 2.35823 gives 1.12174
+#Suggest that you check this result using the steppar command.
+#     8      2.41193      2.87506    (-0.0603898,0.402733)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 2.3745, 2.26655
+#and delta stat 0, 1.09965
+#but latest trial 2.27183 gives 1.26265
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 2.73924, 2.86158
+#and delta stat 0.7051, 1.17789
+#but latest trial 2.80767 gives 1.39024
+#Suggest that you check this result using the steppar command.
+#     8      2.32052      2.80005    (-0.0539751,0.425553)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 3.4
+#     5       3.2714            0    (-0.128566,-3.39997)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 0.393269
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 0.39327
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 0.39327
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 0.39327
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter upper  bound is INVALID.
+#
+#     6     0.555336            0    (-0.266387,-0.821723)
+#     8      2.10449      2.83363    (-0.229934,0.499213)
+#
+!XSPEC12> log none
+#

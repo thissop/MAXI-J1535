@@ -1,0 +1,27 @@
+
+!XSPEC12> error 1. 4 7 12
+#     4      -8.1764     -8.17136    (-0.00252293,0.00251789)
+#
+#***Warning: Number of trials exceeded before convergence.
+#Current trial values 97.9099, -100
+#and delta statistic 0, 5526.52
+#
+#***Warning: Parameter pegged at hard limit: 100
+#     7      3.61604            0    (-94.2939,-97.9099)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: -100, with delta statistic: 2.38742e-12
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#    12      29.0463            0    (128,98.9537)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

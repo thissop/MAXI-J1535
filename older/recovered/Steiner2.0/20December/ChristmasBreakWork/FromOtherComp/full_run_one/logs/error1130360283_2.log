@@ -1,0 +1,25 @@
+
+!XSPEC12> error 1. 2 3 4 9
+#***Warning: Parameter pegged at hard limit: 1
+#     2      0.70529            0    (-0.294662,-0.999951)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0, with delta statistic: 2.18563e-11
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     3          0.5            0    (0.5,-4.98007e-17)
+#     4      1.74242      2.04837    (-0.244059,0.0618951)
+#     9   0.00438267   0.00509288    (-0.000118976,0.000591233)
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

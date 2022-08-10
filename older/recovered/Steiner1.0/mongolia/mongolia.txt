@@ -1,0 +1,384 @@
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.6,1.5 1.501 4.5 5.0
+newpar 2
+2,1.3 1.3 4 4
+newpar 3
+0.3,0.001 0.005 0.99 0.999
+newpar 5
+0.7,0.1 0.15 2.8 3
+chatter 5
+parallel leven 2
+fit
+
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+66,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+fit
+editmod tbfeo(simpl(diskbb+relxill))
+3.68341
+0.7185715
+0.977861
+
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner/mongolia/correct_rsps_comparison/logs/1050360105.log
+show data
+show param
+show fit
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.6,1.5 1.501 4.5 5.0
+newpar 2
+2,1.3 1.3 4 4
+newpar 3
+0.3,0.001 0.005 0.99 0.999
+newpar 5
+0.7,0.1 0.15 2.8 3
+chatter 5
+parallel leven 2
+fit
+
+notice 0.5-10.0
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+66,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+fit
+editmod tbfeo(simpl(diskbb+relxill))
+3.68341
+0.7185715
+0.977861
+
+freeze 1-3
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner/mongolia/correct_rsps_comparison/logs/1050360115.log
+show data
+show param
+show fit
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360135/jspipe/js_ni1130360135_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360135/jspipe/js_ni1130360135_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.6,1.5 1.501 4.5 5.0
+newpar 2
+2,1.3 1.3 4 4
+newpar 3
+0.3,0.001 0.005 0.99 0.999
+newpar 5
+0.7,0.1 0.15 2.8 3
+chatter 5
+parallel leven 2
+fit
+
+notice 0.5-1.5
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+66,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+editmod tbfeo(simpl(diskbb+relxill))
+3.68341
+0.7185715
+0.977861
+
+freeze 1-3
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner/mongolia/correct_rsps_comparison/logs/1130360135.log
+show data
+show param
+show fit
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360113/jspipe/js_ni1130360113_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360113/jspipe/js_ni1130360113_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.6,1.5 1.501 4.5 5.0
+newpar 2
+2,1.3 1.3 4 4
+newpar 3
+0.3,0.001 0.005 0.99 0.999
+newpar 5
+0.7,0.1 0.15 2.8 3
+chatter 5
+parallel leven 2
+fit
+
+notice 0.5-1.5
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+66,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+editmod tbfeo(simpl(diskbb+relxill))
+3.68341
+0.7185715
+0.977861
+
+freeze 1-3
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner/mongolia/correct_rsps_comparison/logs/1130360113.log
+show data
+show param
+show fit
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1050360103/jspipe/js_ni1050360103_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1050360103/jspipe/js_ni1050360103_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.6,1.5 1.501 4.5 5.0
+newpar 2
+2,1.35 1.35 3.3 3.3
+newpar 3
+0.3,0.001 0.005 0.99 0.999
+newpar 5
+0.7,0.1 0.15 2.8 3
+chatter 5
+parallel leven 2
+fit
+
+notice 0.5-1.5
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+66,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+editmod tbfeo(simpl(diskbb+relxill))
+3.68341
+0.7185715
+0.977861
+
+#freeze 1-3
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner/mongolia/correct_rsps_comparison/logs/1050360103.log
+show data
+show param
+show fit
+log none
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360133/jspipe/js_ni1130360133_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360133/jspipe/js_ni1130360133_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u150_200_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.6,1.5 1.501 4.5 5.0
+newpar 2
+2,1.3 1.3 3.3 3.3
+newpar 3
+0.3,0.001 0.005 0.99 0.999
+newpar 5
+0.7,0.1 0.15 2.8 3
+chatter 5
+parallel leven 2
+fit
+
+notice 0.5-1.5
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+66,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+editmod tbfeo(simpl(diskbb+relxill))
+3.68341
+0.7185715
+0.977861
+
+freeze 1-3
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner/mongolia/correct_rsps_comparison/logs/1130360133.log
+show data
+show param
+show fit
+log none
+quit
+y

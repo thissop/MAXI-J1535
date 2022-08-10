@@ -1,0 +1,2666 @@
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360182/jspipe/js_ni1130360182_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360182/jspipe/js_ni1130360182_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360182.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360183.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.7 5
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360184.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360185/jspipe/js_ni1130360185_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360185/jspipe/js_ni1130360185_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360185.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360186/jspipe/js_ni1130360186_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360186/jspipe/js_ni1130360186_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360186.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360187/jspipe/js_ni1130360187_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360187/jspipe/js_ni1130360187_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360187.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360188/jspipe/js_ni1130360188_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360188/jspipe/js_ni1130360188_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360188.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360189/jspipe/js_ni1130360189_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360189/jspipe/js_ni1130360189_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360189.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360190/jspipe/js_ni1130360190_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360190/jspipe/js_ni1130360190_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360190.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360192/jspipe/js_ni1130360192_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360192/jspipe/js_ni1130360192_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360192.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360198/jspipe/js_ni1130360198_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360198/jspipe/js_ni1130360198_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360198.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360199/jspipe/js_ni1130360199_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360199/jspipe/js_ni1130360199_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360199.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360201/jspipe/js_ni1130360201_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360201/jspipe/js_ni1130360201_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360201.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360202/jspipe/js_ni1130360202_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360202/jspipe/js_ni1130360202_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360202.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360203/jspipe/js_ni1130360203_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360203/jspipe/js_ni1130360203_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360203.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360205/jspipe/js_ni1130360205_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360205/jspipe/js_ni1130360205_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360205.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360206/jspipe/js_ni1130360206_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360206/jspipe/js_ni1130360206_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360206.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360207/jspipe/js_ni1130360207_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360207/jspipe/js_ni1130360207_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360207.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360208/jspipe/js_ni1130360208_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360208/jspipe/js_ni1130360208_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360208.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360209/jspipe/js_ni1130360209_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360209/jspipe/js_ni1130360209_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360209.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360210/jspipe/js_ni1130360210_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360210/jspipe/js_ni1130360210_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360210.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360211/jspipe/js_ni1130360211_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360211/jspipe/js_ni1130360211_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360211.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360212/jspipe/js_ni1130360212_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360212/jspipe/js_ni1130360212_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360212.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360213/jspipe/js_ni1130360213_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360213/jspipe/js_ni1130360213_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360213.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360214/jspipe/js_ni1130360214_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360214/jspipe/js_ni1130360214_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360214.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360215/jspipe/js_ni1130360215_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360215/jspipe/js_ni1130360215_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360215.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360216/jspipe/js_ni1130360216_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360216/jspipe/js_ni1130360216_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360216.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360217/jspipe/js_ni1130360217_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360217/jspipe/js_ni1130360217_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360217.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360218/jspipe/js_ni1130360218_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360218/jspipe/js_ni1130360218_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360218.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360219/jspipe/js_ni1130360219_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360219/jspipe/js_ni1130360219_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360219.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360221/jspipe/js_ni1130360221_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360221/jspipe/js_ni1130360221_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360221.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360222/jspipe/js_ni1130360222_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360222/jspipe/js_ni1130360222_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360222.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360223/jspipe/js_ni1130360223_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360223/jspipe/js_ni1130360223_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360223.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360224/jspipe/js_ni1130360224_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360224/jspipe/js_ni1130360224_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360224.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360225/jspipe/js_ni1130360225_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360225/jspipe/js_ni1130360225_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360225.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360226.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360227/jspipe/js_ni1130360227_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360227/jspipe/js_ni1130360227_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360227.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360229/jspipe/js_ni1130360229_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360229/jspipe/js_ni1130360229_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360229.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360230/jspipe/js_ni1130360230_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360230/jspipe/js_ni1130360230_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360230.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360231/jspipe/js_ni1130360231_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360231/jspipe/js_ni1130360231_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360231.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360232/jspipe/js_ni1130360232_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360232/jspipe/js_ni1130360232_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360232.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360233/jspipe/js_ni1130360233_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360233/jspipe/js_ni1130360233_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360233.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360234/jspipe/js_ni1130360234_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360234/jspipe/js_ni1130360234_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360234.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360235/jspipe/js_ni1130360235_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360235/jspipe/js_ni1130360235_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360235.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360245/jspipe/js_ni1130360245_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360245/jspipe/js_ni1130360245_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360245.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360246/jspipe/js_ni1130360246_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360246/jspipe/js_ni1130360246_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360246.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360246/jspipe/js_ni1130360246_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360246/jspipe/js_ni1130360246_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360246.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360246/jspipe/js_ni1130360246_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360246/jspipe/js_ni1130360246_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360246.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360248/jspipe/js_ni1130360248_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360248/jspipe/js_ni1130360248_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360248.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360259/jspipe/js_ni1130360259_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360259/jspipe/js_ni1130360259_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360259.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360260/jspipe/js_ni1130360260_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360260/jspipe/js_ni1130360260_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360260.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360264/jspipe/js_ni1130360264_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360264/jspipe/js_ni1130360264_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360264.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360268/jspipe/js_ni1130360268_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360268/jspipe/js_ni1130360268_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360268.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360270/jspipe/js_ni1130360270_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360270/jspipe/js_ni1130360270_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360270.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360272/jspipe/js_ni1130360272_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360272/jspipe/js_ni1130360272_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360272.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360274/jspipe/js_ni1130360274_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360274/jspipe/js_ni1130360274_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360274.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360275/jspipe/js_ni1130360275_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360275/jspipe/js_ni1130360275_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360275.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360276/jspipe/js_ni1130360276_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360276/jspipe/js_ni1130360276_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360276.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360283/jspipe/js_ni1130360283_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360283/jspipe/js_ni1130360283_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360283.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360284/jspipe/js_ni1130360284_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360284/jspipe/js_ni1130360284_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/1130360284.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/2130360201/jspipe/js_ni2130360201_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/2130360201/jspipe/js_ni2130360201_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/2130360201.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/2130360203/jspipe/js_ni2130360203_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/2130360203/jspipe/js_ni2130360203_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/2130360203.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/2130360204/jspipe/js_ni2130360204_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/2130360204/jspipe/js_ni2130360204_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/2130360204.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/2130360205/jspipe/js_ni2130360205_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/2130360205/jspipe/js_ni2130360205_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/2130360205.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/2130360211/jspipe/js_ni2130360211_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/2130360211/jspipe/js_ni2130360211_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs*simpl(diskbb)
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 4.8
+newpar 2
+2 0.02 1.3 1.4 2.75 3.2
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+notice 1.0-10.0
+fit
+
+log /home/thaddaeus/FMU/Steiner/vietnam/calibratingtbfeo/logs(tbabsloosest2)/2130360211.log
+chatter 10
+show data
+show fit
+show param
+log none
+quit
+y
+

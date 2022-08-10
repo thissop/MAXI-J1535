@@ -1,0 +1,10 @@
+Model: tbabs(diskbb+nthcomp)
+Delta fit statistic: 1.
+nH: 3.2 (frozen)
+Tin lower limit: 0.01
+Tin upper limit: 1.0
+Gamma lower limit: 1.2
+Gamma upper limit: 3.0
+High energy rollover: 100 keV
+inp_type: 1
+Redshift: 0

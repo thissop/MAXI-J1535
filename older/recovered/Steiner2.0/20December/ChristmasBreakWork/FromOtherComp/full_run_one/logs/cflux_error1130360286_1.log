@@ -1,0 +1,39 @@
+
+!XSPEC12> error 1. 4 7 12
+#     4     -10.4474     -10.4219    (-0.0121355,0.0133388)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: -100, with delta statistic: 0
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     7     -26.5299            0    (64,90.5299)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     4     -8.25474     -8.15747    (-0.0463635,0.050909)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     4     -8.25411     -8.15762    (-0.050214,0.0462739)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the high end of the confidence range.
+#     7     -87.8072     -97.8072    (8,-2)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: -100, with delta statistic: 0.00304609
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#    12     -96.0503            0    (2,98.0503)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

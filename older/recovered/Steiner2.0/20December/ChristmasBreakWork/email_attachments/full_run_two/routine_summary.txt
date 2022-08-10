@@ -1,0 +1,23 @@
+##Model One##
+Model: tbabs(diskbb+nthcomp)
+Delta fit statistic: 1.
+Noticed Channels: 0.5-1.5 2.3-10.0 keV
+nH: 3.2 (frozen)
+Tin lower limit: 0.01
+Tin upper limit: 1.0
+Gamma lower limit: 1.2
+Gamma upper limit: 3.0
+High energy rollover: 100 keV
+inp_type: 1
+Redshift: 0
+
+##Model Two##
+Model: tbabs(simpl(diskbb))
+Delta fit statistic: 1.
+Noticed Channels: 0.5-1.5 2.3-10.0 keV
+nH: 3.2 (frozen)
+Tin lower limit: 0.01
+Tin upper limit: 1.0
+Gamma lower limit: 1.4
+Gamma upper limit: 3.4
+UpScOnly value: 1

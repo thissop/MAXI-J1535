@@ -1,0 +1,70 @@
+
+!XSPEC12> error 1. 2 3 4 9
+#***Warning: New best fit found, fit parameters will be set to new values.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.010183, with delta statistic: 0
+#
+#
+#*** Parameter lower bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.0107237, with delta statistic: 0.000158715
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     2            0            0    (-0.0107237,-0.0107237)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.00215827, with delta statistic: 9.06269e-05
+#
+#
+#*** Parameter lower bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.00215827, with delta statistic: 9.06269e-05
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     3            0            0    (-0.00215827,-0.00215827)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 1.61731, with delta statistic: 0.000779463
+#
+#
+#*** Parameter lower bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 1.61731, with delta statistic: 0.000779463
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     4            0            0    (-1.61731,-1.61731)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.0362812, with delta statistic: 7.76999e-05
+#
+#
+#*** Parameter lower bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.0362812, with delta statistic: 7.76999e-05
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     9            0            0    (-0.0362812,-0.0362812)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

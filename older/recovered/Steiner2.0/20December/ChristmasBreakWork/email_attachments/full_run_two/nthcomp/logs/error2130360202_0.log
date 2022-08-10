@@ -1,0 +1,53 @@
+
+!XSPEC12> error 1. 2 3 4 9
+#***Warning: Parameter pegged at hard limit: 0.01
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 0.01
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.586896, 0.499504
+#and delta stat 0.957115, 1.82224
+#but latest trial 0.582553 gives 0.82254
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.766473, 0.99958
+#and delta stat 0.207274, 2.84541
+#but latest trial 0.869556 gives 61.8965
+#Suggest that you check this result using the steppar command.
+#     2       0.5432     0.883027    (-0.141081,0.198746)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.686178, 0.589119
+#and delta stat 0, 1.07157
+#but latest trial 0.596379 gives 1.53848
+#Suggest that you check this result using the steppar command.
+#     2     0.637648      0.85506    (-0.0486584,0.168753)
+#     3      0.47722      2.65115    (-0.689803,1.48413)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.691739, 0.591908
+#and delta stat 0, 1.24711
+#but latest trial 0.616343 gives 2.43607
+#Suggest that you check this result using the steppar command.
+#     2     0.641824     0.853314    (-0.0499154,0.161576)
+#     3     0.481034      2.62883    (-0.638534,1.50927)
+#***Warning: Parameter pegged at hard limit: 1.2
+#     4            0      1.31644    (-1.2,0.116443)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.00142629, 0.00141047
+#and delta stat 0.614918, 1.23981
+#but latest trial 0.00141597 gives 0.124881
+#Suggest that you check this result using the steppar command.
+#     9   0.00141838   0.00183825    (-6.50238e-05,0.000354845)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

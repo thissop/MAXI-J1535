@@ -1,12 +1,27 @@
+import matplotlib.pyplot as plt 
+import seaborn as sns
+
+sns.set_style('darkgrid')
+plt.style.use('https://gist.githubusercontent.com/thissop/44b6f15f8f65533e3908c2d2cdf1c362/raw/fab353d758a3f7b8ed11891e27ae4492a3c1b559/science.mplstyle')
+sns.set_context("paper") #font_scale=
+sns.set_palette('deep')
+seaborn_colors = sns.color_palette('deep')
+
+plt.rcParams['font.family'] = 'serif'
+plt.rcParams["mathtext.fontset"] = "dejavuserif"
+
+#bi_cm = LinearSegmentedColormap.from_list("Custom", [seaborn_colors[0], (1,1,1), seaborn_colors[3]], N=20)
+
 def pipeline(sources:list, models:list, model_names:list, source_classes:list, source_instruments:list,
              qpo_preprocess_dictionaries:dict, context_preprocess_dictionaries:list,
              model_hyperparameter_dictionaries:list,
              input_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline', 
              output_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/output/pipeline',
              manuscript_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/',
-             model_comparison_statistic:str='mae', k:int=10, repetitions:int=2):
+             model_comparison_statistic:str='mae', k:int=10, repetitions:int=2, 
+             units:dict=None):
 
-    r'''
+    r''' 
     model_comparison_statistic : str
         either 'mae' or 'mse' 
 
@@ -16,11 +31,13 @@ def pipeline(sources:list, models:list, model_names:list, source_classes:list, s
     import matplotlib.pyplot as plt
     import numpy as np
     import pandas as pd
+    import seaborn as sns
     from qpoml import collection
     from qpoml.plotting import plot_model_comparison
     from qpoml.utilities import compare_models
 
-    plt.style.use('https://gist.githubusercontent.com/thissop/44b6f15f8f65533e3908c2d2cdf1c362/raw/fab353d758a3f7b8ed11891e27ae4492a3c1b559/science.mplstyle')
+    #plt.rcParams["mathtext.fontset"] = "dejavuserif"
+    #plt.style.use('https://gist.githubusercontent.com/thissop/44b6f15f8f65533e3908c2d2cdf1c362/raw/fab353d758a3f7b8ed11891e27ae4492a3c1b559/science.mplstyle')
 
     # 1: Preparation for Pipeline # 
 
@@ -48,6 +65,8 @@ def pipeline(sources:list, models:list, model_names:list, source_classes:list, s
 
     all_gridsearch_scores = []
     source_observation_counts = []
+
+    alphabet = [str(chr(letter)).upper() for letter in range(97,123)] 
 
     # 2: Source-wise Machine Learning #
 
@@ -78,7 +97,7 @@ def pipeline(sources:list, models:list, model_names:list, source_classes:list, s
 
             collec= collection()
             collec.load(qpo_csv=qpo_path, context_csv=scalar_context_path, context_type='scalar',  
-                        context_preprocess=context_preprocess_dict, qpo_preprocess=qpo_preprocess_dict) # fix qpo_approach='single' since no more eurostep?? 
+                        context_preprocess=context_preprocess_dict, qpo_preprocess=qpo_preprocess_dict, units=units) 
 
             # 2.1.1: GridSearch # 
 
@@ -113,31 +132,31 @@ def pipeline(sources:list, models:list, model_names:list, source_classes:list, s
 
             # 2.1.4: Plot Results Regression from 10th Fold # 
             fig, ax = plt.subplots(figsize=(4,4))
+
             collec.plot_results_regression(feature_name='frequency', which=[0], ax = ax, fold=9)
             temp_path = f'{source_figure_directory}results-regression_fold={9}_model={model_name}'
             plt.savefig(f'{temp_path}.pdf')
             plt.savefig(f'{temp_path}.png', dpi=200)
-            plt.clf()
             plt.close()
 
             # 2.1.5: Plot Feature Importances from 10th Fold # 
             fig, ax = plt.subplots(figsize=(6,6))
+
             collec.plot_feature_importances(model=model, fold=9, kind='tree-shap', style='box', ax=ax)
             temp_path = f'{source_figure_directory}feature-importances_fold={9}_model={model_name}'
             plt.savefig(f'{temp_path}.pdf')
             plt.savefig(f'{temp_path}.png', dpi=200)
-            plt.clf()
             plt.close()
 
         # 2.2: All-Models One Source Results # 
 
         # 2.2.1: Plot Performances for all Models #
         fig, ax = plt.subplots()
+
         plot_model_comparison(model_names=model_names, performance_lists=fold_performances, metric=model_comparison_statistic, style='violin', ax=ax)
         temp_path = f'{source_figure_directory}{source}_model-comparison'
         plt.savefig(f'{temp_path}.pdf') 
         plt.savefig(f'{temp_path}.png', dpi=200) 
-        plt.clf()
         plt.close()
 
         # 2.2.2: Pairwise Statistical Model Comparison # 
@@ -190,7 +209,7 @@ def pipeline(sources:list, models:list, model_names:list, source_classes:list, s
 
         temp_df = context_df.merge(dates_df, on='observation_ID')
         temp_MJDs.append(np.array(temp_df['MJD']))
-        NCRs = np.array(temp_df['net_count_rate'])/np.median(temp_df['net_count_rate'])
+        NCRs = np.array(temp_df['A'])/np.median(temp_df['A'])
         temp_NCRs.append(NCRs)
     
     if source_n>1: 
@@ -205,15 +224,15 @@ def pipeline(sources:list, models:list, model_names:list, source_classes:list, s
 
     else: 
         fig, ax = plt.subplots(figsize=(6,2))
+
         ax.scatter(temp_MJDs[0], temp_NCRs[0], s=2)
         ax.set(ylabel='Normalized Count Rate', xlabel='Date (MJD)')
         ax.xaxis.set_ticklabels([])
 
     plt.subplots_adjust(hspace=0)
-    plt.tight_layout()
+    #plt.tight_layout()
     plt.savefig(f'{figures_directory}stacked_NCRs.pdf')
     plt.savefig(f'{figures_directory}stacked_NCRs.png', dpi=200)
-    plt.clf()
     plt.close()
 
     # 3.2: Plot GridSearch Results Plot # 
@@ -239,15 +258,15 @@ def pipeline(sources:list, models:list, model_names:list, source_classes:list, s
         for temp_index, score_arr in enumerate(all_gridsearch_scores[0]):
             x = np.arange(0, len(score_arr))
             
-            ax.plot(x, score_arr, label=model_names[temp_index])
+            ax.plot(x, score_arr, label=alphabet[temp_index])
             
             ax.set(xlabel=source, xticks=[], yticks=[])
-            ax.legend(loc='upper right', fontsize='small')
+            ax.legend(loc='upper right', fontsize='x-small')
                 
     fig.supxlabel('Model Permutation')
     fig.supylabel('Score')
 
-    plt.tight_layout()
+    #plt.tight_layout()
     plt.subplots_adjust(hspace=0)
 
     temp_path = f'{figures_directory}GridSearchSummary'

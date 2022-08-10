@@ -1,0 +1,29 @@
+#XSPEC version: 12.11.0m
+#Build Date/Time: Sun Oct 25 08:05:27 2020
+#
+!XSPEC12> chatter 5 5
+#
+!XSPEC12> parallel error 2
+#
+!XSPEC12> error 1. 5 6 8
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 2.4749, 2.24702
+#and delta stat 0, 1.39751
+#but latest trial 2.28214 gives 4.22659
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 2.66624, 2.70277
+#and delta stat 0.960655, 1.49361
+#but latest trial 2.6721 gives 0.960118
+#Suggest that you check this result using the steppar command.
+#     5      2.36096      2.68451    (-0.113937,0.20961)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.0846186, 0.0844694
+#and delta stat 0.940591, 1.06084
+#but latest trial 0.0845363 gives 2.51187
+#Suggest that you check this result using the steppar command.
+#     6     0.084544     0.117301    (-0.014709,0.018048)
+#     8     0.388482     0.405469    (-0.00836238,0.00862493)
+#
+!XSPEC12> log none
+#

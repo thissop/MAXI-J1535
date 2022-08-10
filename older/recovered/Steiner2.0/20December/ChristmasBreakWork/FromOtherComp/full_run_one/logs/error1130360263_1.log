@@ -1,0 +1,75 @@
+
+!XSPEC12> error 1. 2 3 4 9
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.01, with delta statistic: 0
+#
+#
+#*** Parameter lower bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.01, with delta statistic: 0
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     2            0            0    (-0.01,-0.01)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.0231488, with delta statistic: 0
+#
+#
+#*** Parameter lower bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.0231488, with delta statistic: 0
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     3            0            0    (-0.0231488,-0.0231488)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 1.40835, with delta statistic: 1.71421e-07
+#
+#
+#*** Parameter lower bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 1.40835, with delta statistic: 1.71421e-07
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     4            0            0    (-1.40835,-1.40835)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.0017188, with delta statistic: 0
+#
+#
+#*** Parameter lower bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.0017188, with delta statistic: 0
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     9            0            0    (-0.0017188,-0.0017188)
+#
+!XSPEC12> log /home/thaddaeus/FMU/Steiner/ChristmasBreak/full_run_one/logs/cflux1130360263_1.log
+#
+!XSPEC12> show data
+#
+!XSPEC12> show model
+#
+!XSPEC12> show param
+#
+!XSPEC12> log none
+#

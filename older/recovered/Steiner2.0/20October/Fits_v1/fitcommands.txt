@@ -1,0 +1,2640 @@
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360227/jspipe/js_ni1130360227_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360227/jspipe/js_ni1130360227_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u12p5_25_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360227.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360227.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360227.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360205/jspipe/js_ni1130360205_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360205/jspipe/js_ni1130360205_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360205.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360205.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360205.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360221/jspipe/js_ni1130360221_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360221/jspipe/js_ni1130360221_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360221.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360221.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360221.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360206/jspipe/js_ni1130360206_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360206/jspipe/js_ni1130360206_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u12p5_25_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360206.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360206.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360206.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360218/jspipe/js_ni1130360218_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360218/jspipe/js_ni1130360218_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360218.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360218.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360218.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360189/jspipe/js_ni1130360189_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360189/jspipe/js_ni1130360189_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360189.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360189.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360189.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360207/jspipe/js_ni1130360207_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360207/jspipe/js_ni1130360207_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u12p5_25_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360207.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360207.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360207.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360223/jspipe/js_ni1130360223_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360223/jspipe/js_ni1130360223_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360223.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360223.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360223.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360230/jspipe/js_ni1130360230_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360230/jspipe/js_ni1130360230_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u12p5_25_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360230.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360230.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360230.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360192/jspipe/js_ni1130360192_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360192/jspipe/js_ni1130360192_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360192.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360192.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360192.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360283/jspipe/js_ni1130360283_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360283/jspipe/js_ni1130360283_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d48_u100_150_53019466.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d48_53019466.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360283.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360283.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360283.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360245/jspipe/js_ni1130360245_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360245/jspipe/js_ni1130360245_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360245.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360245.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360245.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u12p5_25_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360183.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360183.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360183.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360208/jspipe/js_ni1130360208_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360208/jspipe/js_ni1130360208_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360208.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360208.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360208.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360229/jspipe/js_ni1130360229_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360229/jspipe/js_ni1130360229_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u12p5_25_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360229.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360229.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360229.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360212/jspipe/js_ni1130360212_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360212/jspipe/js_ni1130360212_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u12p5_25_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360212.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360212.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360212.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/2130360204/jspipe/js_ni2130360204_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/2130360204/jspipe/js_ni2130360204_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/2130360204.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/2130360204.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error2130360204.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360264/jspipe/js_ni1130360264_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360264/jspipe/js_ni1130360264_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u100_150_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360264.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360264.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360264.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360272/jspipe/js_ni1130360272_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360272/jspipe/js_ni1130360272_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360272.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360272.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360272.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360275/jspipe/js_ni1130360275_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360275/jspipe/js_ni1130360275_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u150_200_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360275.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360275.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360275.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360222/jspipe/js_ni1130360222_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360222/jspipe/js_ni1130360222_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360222.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360222.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360222.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360201/jspipe/js_ni1130360201_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360201/jspipe/js_ni1130360201_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360201.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360201.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360201.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360232/jspipe/js_ni1130360232_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360232/jspipe/js_ni1130360232_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u25_50_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360232.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360232.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360232.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360185/jspipe/js_ni1130360185_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360185/jspipe/js_ni1130360185_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360185.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360185.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360185.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360214/jspipe/js_ni1130360214_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360214/jspipe/js_ni1130360214_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u12p5_25_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360214.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360214.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360214.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u12p5_25_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360226.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360226.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360226.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360184.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360184.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360184.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360187/jspipe/js_ni1130360187_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360187/jspipe/js_ni1130360187_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360187.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360187.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360187.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360198/jspipe/js_ni1130360198_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360198/jspipe/js_ni1130360198_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360198.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360198.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360198.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360259/jspipe/js_ni1130360259_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360259/jspipe/js_ni1130360259_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u50_100_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360259.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360259.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360259.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360190/jspipe/js_ni1130360190_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360190/jspipe/js_ni1130360190_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360190.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360190.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360190.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360260/jspipe/js_ni1130360260_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360260/jspipe/js_ni1130360260_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u50_100_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360260.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360260.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360260.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y
+heainit
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1130360202/jspipe/js_ni1130360202_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1130360202/jspipe/js_ni1130360202_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.5 1.5-2.2 10.0-**
+ignore bad
+query yes
+statistic pgstat
+setp back on
+model tbabs(simpl(diskbb))
+/*
+newpar 1
+3.0 0.01 1.5 1.501 4.5 5.0
+newpar 2
+2 0.02 1.3 1.3 3.4 3.4
+newpar 3
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 5
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1
+fit
+
+thaw 1
+fit
+
+lmod relxill .
+editmod tbabs(simpl(diskbb+relxill))
+
+
+
+
+86,3 5,,
+
+
+
+=2
+
+
+100
+-1
+
+freeze 19
+parallel leven 2
+fit
+
+editmod tbfeo(simpl(diskbb+relxill))
+3.762315
+0.67563
+0.909694
+
+freeze 1 2 3
+freeze 19
+parallel leven 2
+fit
+chatter 10
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/1130360202.log
+show data
+show fit
+show param
+log none
+cpd /xs
+setplot energy
+plot ldata euf mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/plots/1130360202.png/png
+quit
+log /home/thaddaeus/FMU/Steiner2.0/20October/Fits_v1/logs/error1130360202.log
+chatter 5 5
+parallel error 2
+error 1. 5 6 8
+log none
+quit
+y

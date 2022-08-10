@@ -1,0 +1,39 @@
+
+!XSPEC12> error 1. 4 7 12
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     4     -9.12835      -8.7923    (-0.223859,0.112201)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     4     -9.12293     -8.79568    (-0.18734,0.139911)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -64.1343, -65.2015
+#and delta stat 0.0235005, 36.6179
+#but latest trial -64.246 gives 3.76595e-05
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -63.4995, -53.6954
+#and delta stat 0.000349676, 1950.66
+#but latest trial -63.4011 gives 4.54372e-05
+#Suggest that you check this result using the steppar command.
+#     7     -64.6679     -58.5975    (-0.744867,5.32562)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -65.4744, -75.676
+#and delta stat 0.00045977, 1947.8
+#but latest trial -65.6181 gives 0.000173075
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -64.176, -63.9331
+#and delta stat 0.00372333, 8.82654
+#but latest trial -64.0546 gives 3.08082e-05
+#Suggest that you check this result using the steppar command.
+#    12     -70.5752     -64.0546    (-5.33729,1.18333)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

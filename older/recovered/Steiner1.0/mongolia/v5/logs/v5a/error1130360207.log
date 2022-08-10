@@ -1,0 +1,215 @@
+#XSPEC version: 12.11.0
+#Build Date/Time: Thu Jul  2 16:22:45 2020
+#
+!XSPEC12> error 1. 5 6 8
+# Parameter   Confidence Range (1)
+#     5      3.68392      3.78323    (-0.0545948,0.044708)
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl       5:Gamma    6:FracSctr         8:Tin        9:norm          13:a       14:Incl        20:Afe
+#180.876      4.86491       0       3.73516      0.657120       2.60635      0.306500      0.975435       83.1611       1.11840
+#180.866      5.06641       0       3.73527      0.657249       2.60697      0.306290      0.975490       83.1620       1.11591
+#180.863      5.06504      -1       3.73619      0.658760       2.61314      0.304547      0.975576       83.1958       1.08387
+#================================================================================
+# Variances and Principal Axes
+#                 5        6        8        9       13       14       20  
+# 6.9963E-06| -0.8471   0.3419   0.0991   0.2729  -0.2840   0.0101  -0.0187  
+# 8.4482E-05|  0.1548  -0.2230   0.3556   0.8656   0.2242  -0.0078   0.0153  
+# 2.6135E-03| -0.5013  -0.6523  -0.2066  -0.1271   0.5133  -0.0181   0.0250  
+# 5.5434E-02| -0.0426   0.5641   0.2923  -0.1620   0.7535  -0.0109  -0.0216  
+# 3.1536E-01| -0.0728  -0.2934   0.8560  -0.3654  -0.1939  -0.0329   0.0600  
+# 1.0211E+02|  0.0017  -0.0593   0.0493  -0.0160  -0.0025   0.2313  -0.9697  
+# 8.3546E+02|  0.0026   0.0070  -0.0185   0.0086  -0.0168  -0.9720  -0.2333  
+#--------------------------------------------------------------------------------
+#
+#====================================================================================
+#  Covariance Matrix
+#        1           2           3           4           5           6           7   
+#   8.405e-03   1.126e-02  -5.196e-02   2.503e-02  -3.499e-02  -2.078e+00  -6.756e-01
+#   1.126e-02   4.457e-01  -4.756e-01   1.760e-01  -4.201e-02  -7.045e+00   4.513e+00
+#  -5.196e-02  -4.756e-01   7.697e-01  -3.152e-01   2.067e-01   1.618e+01  -1.255e+00
+#   2.503e-02   1.760e-01  -3.152e-01   1.322e-01  -1.017e-01  -7.389e+00  -1.066e-01
+#  -3.499e-02  -4.201e-02   2.067e-01  -1.017e-01   2.799e-01   1.357e+01   3.508e+00
+#  -2.078e+00  -7.045e+00   1.618e+01  -7.389e+00   1.357e+01   7.948e+02   1.665e+02
+#  -6.756e-01   4.513e+00  -1.255e+00  -1.066e-01   3.508e+00   1.665e+02   1.415e+02
+#------------------------------------------------------------------------------------
+#
+#========================================================================
+#Model TBfeo<1>(simpl<2>(diskbb<3> + relxill<4>)) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.68341      frozen
+#   2    1   TBfeo      O                   0.718572     frozen
+#   3    1   TBfeo      Fe                  0.977861     frozen
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               3.73619      +/-  9.16779E-02  
+#   6    2   simpl      FracSctr            0.658760     +/-  0.667617     
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      2.61314      +/-  0.877334     
+#   9    3   diskbb     norm                0.304547     +/-  0.363526     
+#  10    4   relxill    Index1              3.00000      frozen
+#  11    4   relxill    Index2              3.00000      frozen
+#  12    4   relxill    Rbr                 15.0000      frozen
+#  13    4   relxill    a                   0.975576     +/-  0.529020     
+#  14    4   relxill    Incl       deg      83.1958      +/-  28.1925      
+#  15    4   relxill    Rin                 -1.00000     frozen
+#  16    4   relxill    Rout                400.000      frozen
+#  17    4   relxill    z                   0.0          frozen
+#  18    4   relxill    gamma               3.73619      = p5
+#  19    4   relxill    logxi               2.53530      frozen
+#  20    4   relxill    Afe                 1.08387      +/-  11.8946      
+#  21    4   relxill    Ecut       keV      100.000      frozen
+#  22    4   relxill    refl_frac           -1.00000     frozen
+#  23    4   relxill    norm                2.96889E-03  frozen
+#________________________________________________________________________
+#
+#
+#Fit statistic  : PG-Statistic                 180.86     using 189 bins.
+#
+#Test statistic : Chi-Squared                  186.17     using 189 bins.
+# Null hypothesis probability of 4.01e-01 with 182 degrees of freedom
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     5      3.69915      3.79212    (-0.0441055,0.0488588)
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl       5:Gamma    6:FracSctr         8:Tin        9:norm          13:a       14:Incl        20:Afe
+#180.191      3.97956       0       3.74065      0.569591       2.67561      0.288117      0.978969       84.3546      0.652099
+#================================================================================
+# Variances and Principal Axes
+#                 5        6        8        9       13       14       20  
+# 6.4792E-06| -0.7824   0.3803   0.0941   0.2827  -0.3913   0.0204  -0.0298  
+# 7.1125E-05|  0.0868  -0.2358   0.3243   0.8623   0.2950  -0.0149   0.0297  
+# 1.8550E-03| -0.6106  -0.4868  -0.2003  -0.1892   0.5589  -0.0273   0.0338  
+# 2.7294E-02|  0.0035   0.7118   0.1935  -0.1026   0.6631   0.0043  -0.0744  
+# 2.6219E-01| -0.0851  -0.2212   0.8913  -0.3563  -0.0861  -0.0892  -0.0839  
+# 2.2595E+00|  0.0131  -0.0631  -0.0990   0.0521  -0.0050  -0.1232  -0.9839  
+# 8.5310E+01|  0.0055   0.0558  -0.0647   0.0233  -0.0167  -0.9877   0.1280  
+#--------------------------------------------------------------------------------
+#
+#====================================================================================
+#  Covariance Matrix
+#        1           2           3           4           5           6           7   
+#   5.605e-03   3.008e-02  -5.317e-02   2.073e-02  -6.704e-03  -4.689e-01   3.334e-02
+#   3.008e-02   3.014e-01  -3.414e-01   1.224e-01  -6.148e-02  -4.676e+00   7.524e-01
+#  -5.317e-02  -3.414e-01   5.885e-01  -2.241e-01   7.658e-02   5.457e+00  -5.061e-01
+#   2.073e-02   1.224e-01  -2.241e-01   8.623e-02  -2.785e-02  -1.971e+00   1.467e-01
+#  -6.704e-03  -6.148e-02   7.658e-02  -2.785e-02   3.845e-02   1.413e+00  -1.709e-01
+#  -4.689e-01  -4.676e+00   5.457e+00  -1.971e+00   1.413e+00   8.325e+01  -1.051e+01
+#   3.334e-02   7.524e-01  -5.061e-01   1.467e-01  -1.709e-01  -1.051e+01   3.586e+00
+#------------------------------------------------------------------------------------
+#
+#========================================================================
+#Model TBfeo<1>(simpl<2>(diskbb<3> + relxill<4>)) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.68341      frozen
+#   2    1   TBfeo      O                   0.718572     frozen
+#   3    1   TBfeo      Fe                  0.977861     frozen
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               3.74065      +/-  7.48649E-02  
+#   6    2   simpl      FracSctr            0.569591     +/-  0.549032     
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      2.67561      +/-  0.767139     
+#   9    3   diskbb     norm                0.288117     +/-  0.293652     
+#  10    4   relxill    Index1              3.00000      frozen
+#  11    4   relxill    Index2              3.00000      frozen
+#  12    4   relxill    Rbr                 15.0000      frozen
+#  13    4   relxill    a                   0.978969     +/-  0.196089     
+#  14    4   relxill    Incl       deg      84.3546      +/-  9.12439      
+#  15    4   relxill    Rin                 -1.00000     frozen
+#  16    4   relxill    Rout                400.000      frozen
+#  17    4   relxill    z                   0.0          frozen
+#  18    4   relxill    gamma               3.74065      = p5
+#  19    4   relxill    logxi               2.53530      frozen
+#  20    4   relxill    Afe                 0.652099     +/-  1.89374      
+#  21    4   relxill    Ecut       keV      100.000      frozen
+#  22    4   relxill    refl_frac           -1.00000     frozen
+#  23    4   relxill    norm                2.96889E-03  frozen
+#________________________________________________________________________
+#
+#
+#Fit statistic  : PG-Statistic                 180.19     using 189 bins.
+#
+#Test statistic : Chi-Squared                  185.18     using 189 bins.
+# Null hypothesis probability of 4.20e-01 with 182 degrees of freedom
+#***Warning: New best fit found, fit parameters will be set to new values.
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl       5:Gamma    6:FracSctr         8:Tin        9:norm          13:a       14:Incl        20:Afe
+#179.887      2.6451        0       3.75829      0.558931       2.68833      0.293079      0.983248       84.6525      0.500066
+#================================================================================
+# Variances and Principal Axes
+#                 5        6        8        9       13       14       20  
+# 5.9133E-06| -0.7501   0.3726   0.0907   0.2699  -0.4657   0.0181  -0.0133  
+# 6.5726E-05|  0.0255  -0.2199   0.3235   0.8545   0.3404  -0.0130   0.0142  
+# 1.4645E-03| -0.6552  -0.3947  -0.2052  -0.2300   0.5651  -0.0211   0.0128  
+# 2.9533E-02|  0.0071   0.7705   0.2278  -0.1191   0.5816  -0.0006  -0.0437  
+# 2.7324E-01| -0.0852  -0.2472   0.8864  -0.3582  -0.0965  -0.0690  -0.0597  
+# 5.1685E+00|  0.0076  -0.0254  -0.0720   0.0360  -0.0047  -0.1750  -0.9809  
+# 1.5193E+02|  0.0045   0.0397  -0.0478   0.0175  -0.0180  -0.9817   0.1783  
+#--------------------------------------------------------------------------------
+#
+#====================================================================================
+#  Covariance Matrix
+#        1           2           3           4           5           6           7   
+#   6.017e-03   3.255e-02  -5.605e-02   2.197e-02  -1.068e-02  -6.788e-01   8.502e-02
+#   3.255e-02   2.776e-01  -3.338e-01   1.226e-01  -8.840e-02  -5.898e+00   1.209e+00
+#  -5.605e-02  -3.338e-01   5.905e-01  -2.281e-01   1.126e-01   7.181e+00  -9.454e-01
+#   2.197e-02   1.226e-01  -2.281e-01   8.886e-02  -4.142e-02  -2.637e+00   2.980e-01
+#  -1.068e-02  -8.840e-02   1.126e-01  -4.142e-02   6.215e-02   2.685e+00  -4.622e-01
+#  -6.788e-01  -5.898e+00   7.181e+00  -2.637e+00   2.685e+00   1.466e+02  -2.571e+01
+#   8.502e-02   1.209e+00  -9.454e-01   2.980e-01  -4.622e-01  -2.571e+01   9.807e+00
+#------------------------------------------------------------------------------------
+#
+#========================================================================
+#Model TBfeo<1>(simpl<2>(diskbb<3> + relxill<4>)) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.68341      frozen
+#   2    1   TBfeo      O                   0.718572     frozen
+#   3    1   TBfeo      Fe                  0.977861     frozen
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               3.75829      +/-  7.75723E-02  
+#   6    2   simpl      FracSctr            0.558931     +/-  0.526906     
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      2.68833      +/-  0.768448     
+#   9    3   diskbb     norm                0.293079     +/-  0.298098     
+#  10    4   relxill    Index1              3.00000      frozen
+#  11    4   relxill    Index2              3.00000      frozen
+#  12    4   relxill    Rbr                 15.0000      frozen
+#  13    4   relxill    a                   0.983248     +/-  0.249307     
+#  14    4   relxill    Incl       deg      84.6525      +/-  12.1069      
+#  15    4   relxill    Rin                 -1.00000     frozen
+#  16    4   relxill    Rout                400.000      frozen
+#  17    4   relxill    z                   0.0          frozen
+#  18    4   relxill    gamma               3.75829      = p5
+#  19    4   relxill    logxi               2.53530      frozen
+#  20    4   relxill    Afe                 0.500066     +/-  3.13157      
+#  21    4   relxill    Ecut       keV      100.000      frozen
+#  22    4   relxill    refl_frac           -1.00000     frozen
+#  23    4   relxill    norm                2.96889E-03  frozen
+#________________________________________________________________________
+#
+#
+#Fit statistic  : PG-Statistic                 179.89     using 189 bins.
+#
+#Test statistic : Chi-Squared                  186.11     using 189 bins.
+# Null hypothesis probability of 4.02e-01 with 182 degrees of freedom
+#***Warning: New best fit found, fit parameters will be set to new values.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 4.03852, 4.03886
+#and delta stat 0.989005, 1.12763
+#but latest trial 4.03855 gives 0.980814
+#Suggest that you check this result using the steppar command.
+#     5      3.71181      3.77758    (-0.046471,0.0192943)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.507091, 0.491183
+#and delta stat 0.22812, 5.22442
+#but latest trial 0.501877 gives 0.157981
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.787987, 0.817564
+#and delta stat 0.861837, 1.0167
+#but latest trial 0.812551 gives 2.44789
+#Suggest that you check this result using the steppar command.
+#     6     0.499137     0.802775    (-0.0597947,0.243843)
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl       5:Gamma    6:FracSctr         8:Tin        9:norm          13:a       14:Incl        20:Afe
+#

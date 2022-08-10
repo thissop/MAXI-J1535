@@ -1,0 +1,162 @@
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1050360111/jspipe/js_ni1050360111_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1050360111/jspipe/js_ni1050360111_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.3
+ignore 10.0-**
+ignore bad
+query yes
+statistic pgstat
+cpd /xs
+setplot energy
+setp back on
+model tbfeo*simpl(diskbb)
+/*
+newpar 1
+3.7 0.01 3.2 3.3 4.3 4.4
+newpar 2
+0.6 0.02 0.01 0.15 3 5
+newpar 3
+1 0.01 0.01 0.04 3 5
+newpar 5
+2 0.02 1.3 1.4 2.75 3.2
+newpar 6
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 8
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1-3
+fit
+thaw 1-3
+fit
+freeze 1-3
+fit
+chatter 10
+show param
+show fit
+plot ldata rat mod chi
+
+log /home/thaddaeus/FMU/Steiner/vietnam/goodexamplesofbadresiduals/logs/0.3:1050360111.log
+chatter 10
+show data
+show fit
+show param
+log none
+plot ldata rat mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner/vietnam/goodexamplesofbadresiduals/plots/0.3:1050360111/png
+quit
+ignore **-1.0
+chatter 5
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/goodexamplesofbadresiduals/logs/1:1050360111.log
+chatter 10
+show data
+show fit
+show param
+log none
+plot ldata rat mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner/vietnam/goodexamplesofbadresiduals/plots/1:1050360111/png
+quit
+ignore **-2.3
+chatter 5
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/goodexamplesofbadresiduals/logs/2.3:1050360111.log
+chatter 10
+show data
+show fit
+show param
+log none
+plot ldata rat mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner/vietnam/goodexamplesofbadresiduals/plots/2.3:1050360111/png
+quit
+quit
+y
+xspec
+xsect vern
+abun wilm
+data /home/thaddaeus/FMU/Steiner/thaddaeus/1050360112/jspipe/js_ni1050360112_0mpu7_silver_GTI0.jsgrp
+none
+none
+backgrnd /home/thaddaeus/FMU/Steiner/thaddaeus/1050360112/jspipe/js_ni1050360112_0mpu7_silver_GTI0.bg
+response /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf
+arf /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+ignore **-0.3
+ignore 10.0-**
+ignore bad
+query yes
+statistic pgstat
+cpd /xs
+setplot energy
+setp back on
+model tbfeo*simpl(diskbb)
+/*
+newpar 1
+3.7 0.01 3.2 3.3 4.3 4.4
+newpar 2
+0.6 0.02 0.01 0.15 3 5
+newpar 3
+1 0.01 0.01 0.04 3 5
+newpar 5
+2 0.02 1.3 1.4 2.75 3.2
+newpar 6
+0.3 0.01 0.001 0.005 0.99 0.999
+newpar 8
+0.7 0.02 0.1 0.15 2.8 3
+chatter 5
+freeze 1-3
+fit
+thaw 1-3
+fit
+freeze 1-3
+fit
+chatter 10
+show param
+show fit
+plot ldata rat mod chi
+
+log /home/thaddaeus/FMU/Steiner/vietnam/goodexamplesofbadresiduals/logs/0.3:1050360112.log
+chatter 10
+show data
+show fit
+show param
+log none
+plot ldata rat mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner/vietnam/goodexamplesofbadresiduals/plots/0.3:1050360112/png
+quit
+ignore **-1.0
+chatter 5
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/goodexamplesofbadresiduals/logs/1:1050360112.log
+chatter 10
+show data
+show fit
+show param
+log none
+plot ldata rat mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner/vietnam/goodexamplesofbadresiduals/plots/1:1050360112/png
+quit
+ignore **-2.3
+chatter 5
+fit
+log /home/thaddaeus/FMU/Steiner/vietnam/goodexamplesofbadresiduals/logs/2.3:1050360112.log
+chatter 10
+show data
+show fit
+show param
+log none
+plot ldata rat mod chi
+iplot
+hard /home/thaddaeus/FMU/Steiner/vietnam/goodexamplesofbadresiduals/plots/2.3:1050360112/png
+quit
+quit
+y

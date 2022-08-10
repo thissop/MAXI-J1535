@@ -1,0 +1,30 @@
+
+!XSPEC12> error 1. 4 7 12
+#
+#***XSPEC Error:  No variable parameters for fit      4            0     -8.07377    (8.07599,0.00222088)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 56.3478, -87.9026
+#and delta stat 0, 1.01012
+#but latest trial -87.1782 gives 1.24279
+#Suggest that you check this result using the steppar command.
+#***Warning: Parameter pegged at hard limit: 100
+#     7     -15.7774            0    (-72.1252,-56.3478)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: -100, with delta statistic: 1.14539e-11
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#    12      -29.599            0    (64,93.599)
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

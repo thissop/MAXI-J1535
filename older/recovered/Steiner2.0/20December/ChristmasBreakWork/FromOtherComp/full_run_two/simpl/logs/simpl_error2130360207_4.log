@@ -1,0 +1,23 @@
+
+!XSPEC12> parallel error 4
+#
+!XSPEC12> error 1. 3
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 1.00001e-05, with delta statistic: 0.417703
+#
+#
+#*** Parameter lower bound is INVALID.
+#
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 1
+#     3  1.00472e-05            0    (-0.202259,-0.202269)
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

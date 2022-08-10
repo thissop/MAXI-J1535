@@ -1,0 +1,53 @@
+#XSPEC version: 12.11.0m
+#Build Date/Time: Sat Nov 21 22:38:27 2020
+#
+!XSPEC12> show data
+#
+#1 file 1 spectrum 
+#Spectrum 1  Spectral Data File: /home/thaddaeus/FMU/Steiner/thaddaeus/1130360233/jspipe/js_ni1130360233_0mpu7_silver_GTI1.jsgrp
+#Net count rate (cts/s) for Spectrum:1  7.447e+00 +/- 1.873e-01 (95.4 % total)
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  16-36,65-187
+#  Telescope: NICER Instrument: XTI  Channel Type: PI
+#  Exposure Time: 222.9 sec
+# Using fit statistic: pgstat
+# Using Background File                /home/thaddaeus/FMU/Steiner/thaddaeus/1130360233/jspipe/js_ni1130360233_0mpu7_silver_GTI1.bg
+#  Background Exposure Time: 222.9 sec
+# Using Response (RMF) File            /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+#
+#
+!XSPEC12> show model
+#
+#Current model list:
+#
+#Model TBabs<1>*cflux<2>(diskbb<3> + nthComp<4>) Source No.: 1   Active/On
+#      For Data Group(s): 1 
+#
+#   Using energies from responses.
+#
+#
+!XSPEC12> show param
+#
+#Parameters defined:
+#========================================================================
+#Model TBabs<1>*cflux<2>(diskbb<3> + nthComp<4>) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBabs      nH         10^22    3.20000      frozen
+#   2    2   cflux      Emin       keV      0.500000     frozen
+#   3    2   cflux      Emax       keV      10.0000      frozen
+#   4    2   cflux      lg10Flux   cgs      -9.64090     +/-  8.98608E-02  
+#   5    3   diskbb     Tin        keV      0.198967     +/-  7.21698E-02  
+#   6    3   diskbb     norm                5846.46      +/-  2.40892E+10  
+#   7    4   nthComp    Gamma               1.46605      +/-  7.94778E-02  
+#   8    4   nthComp    kT_e       keV      100.000      frozen
+#   9    4   nthComp    kT_bb      keV      0.198967     = p5
+#  10    4   nthComp    inp_type   0/1      1.00000      frozen
+#  11    4   nthComp    Redshift            0.0          frozen
+#  12    4   nthComp    norm                1.91514E-02  +/-  9.15522E+04  
+#________________________________________________________________________
+#
+#
+!XSPEC12> log none
+#

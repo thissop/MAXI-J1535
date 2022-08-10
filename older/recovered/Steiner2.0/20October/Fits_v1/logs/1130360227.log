@@ -1,0 +1,61 @@
+#XSPEC version: 12.11.0m
+#Build Date/Time: Sun Oct 25 08:05:27 2020
+#
+!XSPEC12> show data
+#
+#1 file 1 spectrum 
+#Spectrum 1  Spectral Data File: /home/thaddaeus/FMU/Steiner/thaddaeus/1130360227/jspipe/js_ni1130360227_0mpu7_silver_GTI0.jsgrp
+#Net count rate (cts/s) for Spectrum:1  1.340e+01 +/- 1.594e-01 (97.2 % total)
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  21-50,75-238
+#  Telescope: NICER Instrument: XTI  Channel Type: PI
+#  Exposure Time: 543.7 sec
+# Using fit statistic: pgstat
+# Using Background File                /home/thaddaeus/FMU/Steiner/thaddaeus/1130360227/jspipe/js_ni1130360227_0mpu7_silver_GTI0.bg
+#  Background Exposure Time: 543.7 sec
+# Using Response (RMF) File            /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_u12p5_25_55575341.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : PG-Statistic                 216.60     using 194 bins.
+#
+#Test statistic : Chi-Squared                  246.95     using 194 bins.
+# Null hypothesis probability of 1.85e-03 with 186 degrees of freedom
+#
+!XSPEC12> show param
+#
+#Parameters defined:
+#========================================================================
+#Model TBfeo<1>(simpl<2>(diskbb<3> + relxill<4>)) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.76232      frozen
+#   2    1   TBfeo      O                   0.675630     frozen
+#   3    1   TBfeo      Fe                  0.909694     frozen
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               2.76742      +/-  0.196155     
+#   6    2   simpl      FracSctr            8.44070E-02  +/-  7.13730E-02  
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      0.148410     +/-  1.63397E+13  
+#   9    3   diskbb     norm                4.92303E-14  +/-  1.16373E+04  
+#  10    4   relxill    Index1              3.00000      frozen
+#  11    4   relxill    Index2              3.00000      frozen
+#  12    4   relxill    Rbr                 15.0000      frozen
+#  13    4   relxill    a                   0.998000     +/-  0.333017     
+#  14    4   relxill    Incl       deg      55.4085      +/-  4.26497      
+#  15    4   relxill    Rin                 -1.00000     frozen
+#  16    4   relxill    Rout                400.000      frozen
+#  17    4   relxill    z                   0.0          frozen
+#  18    4   relxill    gamma               2.76742      = p5
+#  19    4   relxill    logxi               0.645811     frozen
+#  20    4   relxill    Afe                 0.500000     +/-  0.807175     
+#  21    4   relxill    Ecut       keV      100.000      frozen
+#  22    4   relxill    refl_frac           -1.00000     frozen
+#  23    4   relxill    norm                1.25341E-02  +/-  8.42982E-03  
+#________________________________________________________________________
+#
+#
+!XSPEC12> log none
+#

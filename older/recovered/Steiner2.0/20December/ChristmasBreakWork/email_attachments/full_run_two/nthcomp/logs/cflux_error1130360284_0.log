@@ -1,0 +1,24 @@
+
+!XSPEC12> error 1. 4
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: -10.3749, with delta statistic: 0
+#
+#
+#*** Parameter lower bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: -10.3749, with delta statistic: 0
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     4            0            0    (10.3749,10.3749)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

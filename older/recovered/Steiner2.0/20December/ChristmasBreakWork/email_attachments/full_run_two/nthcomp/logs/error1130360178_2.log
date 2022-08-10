@@ -1,0 +1,43 @@
+
+!XSPEC12> error 1. 2 3 4 9
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 0.01
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 0.01
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: Parameter pegged at hard limit: 0.01
+#     2            0     0.724521    (-0.409553,0.314968)
+#***Warning: Parameter pegged at hard limit: 0
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 52.902, 52.943
+#and delta stat 0.923215, 1.21025
+#but latest trial 52.9137 gives 0.772396
+#Suggest that you check this result using the steppar command.
+#     3            0      52.9225    (-2.56008,50.3624)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 2.50777, 2.63472
+#and delta stat 0.768683, 1.66071
+#but latest trial 2.54473 gives 0.673486
+#Suggest that you check this result using the steppar command.
+#     4      1.52588      2.57125    (-0.68474,0.360625)
+#
+#***Warning: Number of trials exceeded before convergence.
+#Current trial values 0.0012602, 0.00125271
+#and delta statistic 0.943605, 1.24832
+#
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.00643487, 0.00653104
+#and delta stat 0.986591, 1.10763
+#but latest trial 0.00644649 gives 0.984539
+#Suggest that you check this result using the steppar command.
+#     9   0.00125645   0.00648295    (-0.00283169,0.00239481)
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

@@ -1,0 +1,21 @@
+
+!XSPEC12> error 1. 2 3 4 9
+#     2     0.253303     0.267806    (-0.00723898,0.00726407)
+#     3      6651.58      9590.08    (-1313.36,1625.14)
+#***Warning: Parameter pegged at hard limit: 1.2
+#     4            0      1.22585    (-1.2,0.0258517)
+#
+#***Warning: Number of trials exceeded before convergence.
+#Current trial values 0.00204217, 0.00204213
+#and delta statistic 0.964916, 1.20734
+#
+#     9   0.00204216   0.00237503    (-0.000164178,0.000168689)
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

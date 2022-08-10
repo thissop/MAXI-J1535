@@ -1,0 +1,27 @@
+
+!XSPEC12> error 1. 2 3 4 9
+#***Warning: New best fit found, fit parameters will be set to new values.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     2    0.0275072    0.0585233    (-0.017044,0.013972)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     2    0.0278534    0.0575649    (-0.0125948,0.0171166)
+#
+#***Warning: Number of trials exceeded before convergence.
+#Current trial values 1.03026e+10, 1.07373e+08
+#and delta statistic 0.821914, 2.98513
+#
+#
+#***Warning: Number of trials exceeded before convergence.
+#Current trial values 3.2378e+15, 3.28012e+15
+#and delta statistic 0.464792, 3.08681
+#
+#     3  3.81289e+09  3.24189e+15    (-6.61188e+12,3.23528e+15)
+#     4      1.85002      2.14155    (-0.146627,0.144896)
+#     9    0.0112807    0.0161852    (-0.00228262,0.00262183)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

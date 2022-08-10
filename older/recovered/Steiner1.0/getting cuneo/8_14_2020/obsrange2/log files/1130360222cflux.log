@@ -1,0 +1,37 @@
+#XSPEC version: 12.11.0
+#Build Date/Time: Thu Jul  2 16:22:45 2020
+#
+!XSPEC12> chatter 5 5
+#
+!XSPEC12> freeze 1-3 5 6 8 9
+#
+!XSPEC12> editmod cflux*tbfeo*simpl(diskbb)
+#
+!XSPEC12> fit
+#
+!XSPEC12> chatter 10 10
+#
+!XSPEC12> show param
+#
+#Parameters defined:
+#========================================================================
+#Model cflux<1>*TBfeo<2>*simpl<3>*diskbb<4> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   cflux      Emin       keV      0.600000     frozen
+#   2    1   cflux      Emax       keV      10.0000      frozen
+#   3    1   cflux      lg10Flux   cgs      -10.6428     +/-  1.21895E-02  
+#   4    2   TBfeo      nH         10^22    4.00635      frozen
+#   5    2   TBfeo      O                   1.73891      frozen
+#   6    2   TBfeo      Fe                  1.02375      frozen
+#   7    2   TBfeo      redshift            0.0          frozen
+#   8    3   simpl      Gamma               1.39365      frozen
+#   9    3   simpl      FracSctr            0.380301     frozen
+#  10    3   simpl      UpScOnly            1.00000      frozen
+#  11    4   diskbb     Tin        keV      0.591658     frozen
+#  12    4   diskbb     norm                11.8701      frozen
+#________________________________________________________________________
+#
+#
+!XSPEC12> log none
+#

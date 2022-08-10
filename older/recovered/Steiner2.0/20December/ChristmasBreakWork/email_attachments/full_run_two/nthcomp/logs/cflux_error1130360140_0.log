@@ -1,0 +1,17 @@
+
+!XSPEC12> error 1. 4
+#
+#***Warning: Number of trials exceeded before convergence.
+#Current trial values -8.0279, -8.0279
+#and delta statistic 0.83851, 1.52212
+#
+#     4      -8.0315      -8.0279    (-0.00187548,0.00172252)
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

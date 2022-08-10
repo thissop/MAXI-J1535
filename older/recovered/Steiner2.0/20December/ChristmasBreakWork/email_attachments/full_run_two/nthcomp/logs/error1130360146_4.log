@@ -1,0 +1,19 @@
+
+!XSPEC12> error 1. 2 3 4 9
+#     2     0.588649     0.595729    (-0.00370654,0.00337289)
+#     3      3597.05      3811.37    (-108.431,105.887)
+#***Warning: Parameter pegged at hard limit: 1.2
+#***Warning: Parameter pegged at hard limit: 3
+#     4            0            0    (-2.21117,-2.21117)
+#     9   0.00143718    0.0312837    (-0.00845332,0.0213932)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

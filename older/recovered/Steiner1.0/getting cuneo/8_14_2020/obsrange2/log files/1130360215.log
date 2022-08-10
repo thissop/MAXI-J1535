@@ -1,0 +1,47 @@
+#XSPEC version: 12.11.0
+#Build Date/Time: Thu Jul  2 16:22:45 2020
+#
+!XSPEC12> show data
+#
+#1 file 1 spectrum 
+#Spectrum 1  Spectral Data File: /home/thaddaeus/FMU/Steiner/thaddaeus/1130360215/jspipe/js_ni1130360215_0mpu7_silver_GTI0.jsgrp
+#Net count rate (cts/s) for Spectrum:1  2.086e+00 +/- 9.271e-02 (76.7 % total)
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  69-181
+#  Telescope: NICER Instrument: XTI  Channel Type: PI
+#  Exposure Time: 318.9 sec
+# Using fit statistic: pgstat
+# Using Background File                /home/thaddaeus/FMU/Steiner/thaddaeus/1130360215/jspipe/js_ni1130360215_0mpu7_silver_GTI0.bg
+#  Background Exposure Time: 318.9 sec
+# Using Response (RMF) File            /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+#
+#
+!XSPEC12> show param
+#
+#Parameters defined:
+#========================================================================
+#Model TBfeo<1>*simpl<2>*diskbb<3> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.44434      +/-  28.1753      
+#   2    1   TBfeo      O                   0.177289     +/-  18.1878      
+#   3    1   TBfeo      Fe                  9.95149E-03  +/-  25.1228      
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               1.39365      +/-  5.47173      
+#   6    2   simpl      FracSctr            0.829095     +/-  4.96831      
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      1.03075      +/-  11.2858      
+#   9    3   diskbb     norm                0.947004     +/-  29.5202      
+#________________________________________________________________________
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : PG-Statistic                 107.30     using 113 bins.
+#
+#Test statistic : Chi-Squared                  114.47     using 113 bins.
+# Null hypothesis probability of 2.70e-01 with 106 degrees of freedom
+#
+!XSPEC12> log none
+#

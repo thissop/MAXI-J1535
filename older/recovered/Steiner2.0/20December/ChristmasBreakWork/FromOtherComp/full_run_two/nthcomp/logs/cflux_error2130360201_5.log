@@ -1,0 +1,19 @@
+
+!XSPEC12> error 1. 4
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values -10.4135, -9.69703
+#and delta stat 0, 2.83574
+#but latest trial -10.3005 gives 50.3668
+#Suggest that you check this result using the steppar command.
+#     4     -10.4299     -10.0553    (-0.0163588,0.35824)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

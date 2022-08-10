@@ -1,0 +1,9 @@
+
+!XSPEC12> show param
+#
+!XSPEC12> chatter 5
+#
+!XSPEC12> error 2.706 3
+#
+!XSPEC12> log none
+#

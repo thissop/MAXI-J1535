@@ -1,0 +1,34 @@
+XSPEC12>show data
+
+1 file 1 spectrum 
+Spectrum 1  Spectral Data File: /home/thaddaeus/FMU/Steiner2.0/permanent/data/thaddaeus/1130360110/jspipe/js_ni1130360110_0mpu7_silver_GTI0-bin.pds
+Net count rate (cts/s) for Spectrum:1  4.077e-03 +/- 4.950e-05
+ Assigned to Data Group 1 and Plot Group 1
+  Noticed Channels:  9-215
+  Telescope:  Instrument:   Channel Type: PI
+  Exposure Time: 1 sec
+ Using fit statistic: chi
+ Using Response (RMF) File            /home/thaddaeus/FMU/Steiner2.0/permanent/data/thaddaeus/1130360110/jspipe/js_ni1130360110_0mpu7_silver_GTI0-fak.rsp for Source 1
+ 
+XSPEC12>show param
+
+Parameters defined:
+========================================================================
+Model lorentz<1> + lorentz<2> Source No.: 1   Active/On
+Model Model Component  Parameter  Unit     Value
+ par  comp
+   1    1   lorentz    LineE      keV      6.75615      +/-  3.12494E-02  
+   2    1   lorentz    Width      keV      2.44031      +/-  8.47261E-02  
+   3    1   lorentz    norm                1.42495E-03  +/-  3.10796E-05  
+   4    2   lorentz    LineE      keV      1.00386      +/-  2.13479E-02  
+   5    2   lorentz    Width      keV      1.72055      +/-  5.78979E-02  
+   6    2   lorentz    norm                2.32632E-03  +/-  3.98607E-05  
+________________________________________________________________________
+
+XSPEC12>show fit
+
+Fit statistic  : Chi-Squared                  686.97     using 207 bins.
+
+Test statistic : Chi-Squared                  686.97     using 207 bins.
+ Null hypothesis probability of 2.13e-54 with 201 degrees of freedom
+

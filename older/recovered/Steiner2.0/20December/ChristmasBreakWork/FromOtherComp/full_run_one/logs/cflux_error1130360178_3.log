@@ -1,0 +1,28 @@
+
+!XSPEC12> error 1. 4 7 12
+#     4     -10.8345     -10.7623    (-0.0369059,0.0353202)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     4      -10.813     -10.7413    (-0.0365684,0.0351128)
+#
+#***Warning: Number of trials exceeded before convergence.
+#Current trial values 99.9671, 94.061
+#and delta statistic 0, 19.1238
+#
+#***Warning: Parameter pegged at hard limit: 100
+#     7      98.3726            0    (-1.59457,-99.9671)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 99.3401, 95.9945
+#and delta stat 0.000378746, 18.7689
+#but latest trial 98.5677 gives 0
+#Suggest that you check this result using the steppar command.
+#***Warning: Parameter pegged at hard limit: 100
+#    12      97.6673            0    (-2.32699,-99.9943)
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

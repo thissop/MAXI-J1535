@@ -1,0 +1,17 @@
+
+!XSPEC12> parallel error 4
+#
+!XSPEC12> error 1. 3
+#***Warning: Parameter pegged at hard limit: 1
+#     3     0.601158            0    (-0.0497097,-0.650868)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

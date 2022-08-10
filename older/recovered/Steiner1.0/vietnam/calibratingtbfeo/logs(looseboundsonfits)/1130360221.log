@@ -1,0 +1,49 @@
+#XSPEC version: 12.11.0
+#Build Date/Time: Thu Jul  2 16:22:45 2020
+#
+!XSPEC12> chatter 10
+#
+!XSPEC12> show data
+#
+#1 file 1 spectrum 
+#Spectrum 1  Spectral Data File: /home/thaddaeus/FMU/Steiner/thaddaeus/1130360221/jspipe/js_ni1130360221_0mpu7_silver_GTI0.jsgrp
+#Net count rate (cts/s) for Spectrum:1  1.668e+00 +/- 4.666e-02 (83.9 % total)
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  82-224
+#  Telescope: NICER Instrument: XTI  Channel Type: PI
+#  Exposure Time: 926.7 sec
+# Using fit statistic: pgstat
+# Using Background File                /home/thaddaeus/FMU/Steiner/thaddaeus/1130360221/jspipe/js_ni1130360221_0mpu7_silver_GTI0.bg
+#  Background Exposure Time: 926.7 sec
+# Using Response (RMF) File            /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /home/thaddaeus/FMU/Steiner/thaddaeus/nicer_d49_55575341.arf
+#
+#
+!XSPEC12> show fit
+#
+#Fit statistic  : PG-Statistic                 133.42     using 143 bins.
+#
+#Test statistic : Chi-Squared                  129.42     using 143 bins.
+# Null hypothesis probability of 6.42e-01 with 136 degrees of freedom
+#
+!XSPEC12> show param
+#
+#Parameters defined:
+#========================================================================
+#Model TBfeo<1>*simpl<2>*diskbb<3> Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.09944      +/-  21.3373      
+#   2    1   TBfeo      O                   9.48572E-02  +/-  10.8749      
+#   3    1   TBfeo      Fe                  3.94272E-02  +/-  12.8105      
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               1.39365      +/-  2.82996      
+#   6    2   simpl      FracSctr            0.858087     +/-  2.78535      
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      0.946467     +/-  9.46877      
+#   9    3   diskbb     norm                1.28605      +/-  40.0522      
+#________________________________________________________________________
+#
+#
+!XSPEC12> log none
+#

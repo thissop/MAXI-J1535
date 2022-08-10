@@ -1,0 +1,111 @@
+#XSPEC version: 12.11.0
+#Build Date/Time: Thu Jul  2 16:22:45 2020
+#
+!XSPEC12> error 1. 5 6 8
+# Parameter   Confidence Range (1)
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 9 is pegged at 3.0986e-14 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 9 is pegged at 3.0986e-14 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 9 is pegged at 6.40317e-14 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 9 is pegged at 8.925e-14 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#***Warning: Zero alpha-matrix diagonal element for parameter 9
+# Parameter 9 is pegged at 8.925e-14 due to zero or negative pivot element, likely
+# caused by the fit being insensitive to the parameter.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 3.37262, 3.35328
+#and delta stat 0.794386, 1.10108
+#but latest trial 3.36032 gives 3.98529
+#Suggest that you check this result using the steppar command.
+#     5      3.33368       3.6653    (-0.258133,0.0734848)
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl       5:Gamma    6:FracSctr         8:Tin        9:norm          13:a       14:Incl        20:Afe
+#================================================================================
+# Variances and Principal Axes
+#                 5        6        8        9       13       14       20  
+# 2.3351E-06| -0.0138   0.0192   0.0022   0.9997  -0.0000   0.0000  -0.0001  
+# 9.0238E-03| -0.2130  -0.9769   0.0079   0.0158  -0.0006   0.0001  -0.0008  
+# 6.2470E-02|  0.9768  -0.2128  -0.0131   0.0176  -0.0032  -0.0018   0.0096  
+# 3.8629E+02| -0.0070  -0.0047  -0.7461   0.0016   0.6216   0.1667  -0.1705  
+# 8.4026E+02| -0.0106  -0.0022  -0.6277   0.0013  -0.7716  -0.0322  -0.0973  
+# 1.8281E+03|  0.0024   0.0005   0.1015  -0.0002  -0.1296   0.9853   0.0463  
+# 2.9445E+04|  0.0121  -0.0002   0.1970  -0.0004  -0.0377   0.0207  -0.9794  
+#--------------------------------------------------------------------------------
+#
+#====================================================================================
+#  Covariance Matrix
+#        1           2           3           4           5           6           7   
+#   4.497e+00  -6.161e-02   7.825e+01  -1.499e-01  -8.838e+00   1.155e+01  -3.475e+02
+#  -6.161e-02   2.627e-02   1.229e+00  -3.186e-03   4.280e-01   4.761e-01   7.411e+00
+#   7.825e+01   1.229e+00   1.707e+03  -3.355e+00  -1.492e+01   2.719e+02  -5.571e+03
+#  -1.499e-01  -3.186e-03  -3.355e+00   6.630e-03   4.514e-02  -5.144e-01   1.066e+01
+#  -8.838e+00   4.280e-01  -1.492e+01   4.514e-02   7.221e+02  -1.955e+02   1.099e+03
+#   1.155e+01   4.761e-01   2.719e+02  -5.144e-01  -1.955e+02   1.799e+03  -5.221e+02
+#  -3.475e+02   7.411e+00  -5.571e+03   1.066e+01   1.099e+03  -5.221e+02   2.827e+04
+#------------------------------------------------------------------------------------
+#
+#========================================================================
+#Model TBfeo<1>(simpl<2>(diskbb<3> + relxill<4>)) Source No.: 1   Active/On
+#Model Model Component  Parameter  Unit     Value
+# par  comp
+#   1    1   TBfeo      nH         10^22    3.68341      frozen
+#   2    1   TBfeo      O                   0.718572     frozen
+#   3    1   TBfeo      Fe                  0.977861     frozen
+#   4    1   TBfeo      redshift            0.0          frozen
+#   5    2   simpl      Gamma               3.56359      +/-  2.12068      
+#   6    2   simpl      FracSctr            1.91870E-03  +/-  0.162092     
+#   7    2   simpl      UpScOnly            1.00000      frozen
+#   8    3   diskbb     Tin        keV      2.82465      +/-  41.3174      
+#   9    3   diskbb     norm                2.00138E-03  +/-  8.14256E-02  
+#  10    4   relxill    Index1              3.00000      frozen
+#  11    4   relxill    Index2              3.00000      frozen
+#  12    4   relxill    Rbr                 15.0000      frozen
+#  13    4   relxill    a                   -0.996963    +/-  26.8721      
+#  14    4   relxill    Incl       deg      49.4579      +/-  42.4126      
+#  15    4   relxill    Rin                 -1.00000     frozen
+#  16    4   relxill    Rout                400.000      frozen
+#  17    4   relxill    z                   0.0          frozen
+#  18    4   relxill    gamma               3.56359      = p5
+#  19    4   relxill    logxi               0.308056     frozen
+#  20    4   relxill    Afe                 9.99826      +/-  168.129      
+#  21    4   relxill    Ecut       keV      100.000      frozen
+#  22    4   relxill    refl_frac           -1.00000     frozen
+#  23    4   relxill    norm                2.61079E-03  frozen
+#________________________________________________________________________
+#
+#
+#Fit statistic  : PG-Statistic                 245.51     using 218 bins.
+#
+#Test statistic : Chi-Squared                  256.76     using 218 bins.
+# Null hypothesis probability of 1.72e-02 with 211 degrees of freedom
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     5      3.36332      3.65728    (-0.200269,0.0936883)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.00100003, with delta statistic: 0.000320255
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.001, with delta statistic: 0.000320339
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.001, with delta statistic: 0.000320339
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.001, with delta statistic: 0.000320339
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter lower  bound is INVALID.
+#
+#                                   Parameters
+#PG-Statistic |beta|/N    Lvl       5:Gamma    6:FracSctr         8:Tin        9:norm          13:a       14:Incl        20:Afe
+#

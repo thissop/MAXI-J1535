@@ -1,0 +1,31 @@
+
+!XSPEC12> error 1. 4 7 12
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     4     -7.00021     -6.99909    (-0.000525764,0.000596205)
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the low end of the confidence range.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: -100, with delta statistic: 0.000462791
+#
+#
+#*** Parameter upper bound is INVALID.
+#
+#     7     -23.5778            0    (4,27.5778)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 100, with delta statistic: 0.000372245
+#
+#
+#*** Parameter lower bound is INVALID.
+#
+#***Warning: Identical values of the parameter give different values of the statistic.
+#Please check your result for the high end of the confidence range.
+#    12            0     -87.3009    (23.3009,-64)
+#
+!XSPEC12> n
+#
+!XSPEC12> 
+#
+!XSPEC12> log none
+#

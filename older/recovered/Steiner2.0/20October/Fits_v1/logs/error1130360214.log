@@ -1,0 +1,85 @@
+#XSPEC version: 12.11.0m
+#Build Date/Time: Sun Oct 25 08:05:27 2020
+#
+!XSPEC12> chatter 5 5
+#
+!XSPEC12> parallel error 2
+#
+!XSPEC12> error 1. 5 6 8
+#***Warning: Parameter pegged at hard limit: 1.3
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     5      2.31624      2.39166    (-0.0294396,0.0459808)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.124473, -0.0650599
+#and delta stat 0, 6.07584
+#but latest trial 0.096496 gives 11.6233
+#Suggest that you check this result using the steppar command.
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 0.203188
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 0.271408
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 0.272261
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.999, with delta statistic: 0.272261
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter upper  bound is INVALID.
+#
+#     6    0.0297065            0    (-0.0947664,-0.124473)
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     5      2.34314       2.4159    (-0.0318691,0.0408875)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.159887, -0.243731
+#and delta stat 0, 5.28794
+#but latest trial 0.0921189 gives 52.4151
+#Suggest that you check this result using the steppar command.
+#***Warning: New best fit found, fit parameters will be set to new values.
+#     5      2.41053      2.74952    (-0.312491,0.0264946)
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.163095, -0.274581
+#and delta stat 0.502196, 6.68972
+#but latest trial 0.110145 gives 0.0199204
+#Suggest that you check this result using the steppar command.
+#Apparent non-monotonicity in statistic space detected.
+#Current bracket values 0.362697, 0.709793
+#and delta stat 0.306576, 1.03523
+#but latest trial 0.692183 gives 1.04684
+#Suggest that you check this result using the steppar command.
+#     6   0.00484551     0.536245    (-0.221225,0.310174)
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.1, with delta statistic: 0
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.1, with delta statistic: 0
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter lower  bound is INVALID.
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.1, with delta statistic: 0
+#
+#
+#***Warning: Number of trials exceeded before bracketing of delta fit-stat.
+#Last attempt: 0.1, with delta statistic: 0
+#
+#***Warning: Error search cannot find bracket around delta fit-stat,
+#   will automatically exit from trials loop.
+#   parameter upper  bound is INVALID.
+#
+#     8            0            0    (-0.1,-0.1)
+#
+!XSPEC12> log none
+#
