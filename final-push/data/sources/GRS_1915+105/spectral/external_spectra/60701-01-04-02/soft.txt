@@ -1,0 +1,14 @@
+#XSPEC version: 12.12.0
+#Build Date/Time: Mon Jan 31 20:12:49 2022
+#
+!XSPEC12> show data
+#
+#1 file 1 spectrum 
+#Spectrum 1  Spectral Data File: src_pcu2.pha
+#Net count rate (cts/s) for Spectrum:1  1.738e+03 +/- 3.437e+00 (99.7 % total)
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  5-20
+#  Telescope: XTE Instrument: PCA  Channel Type: PHA
+#  Exposure Time: 538.3 sec
+# Using fit statistic: chi
+#

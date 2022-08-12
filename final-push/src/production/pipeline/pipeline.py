@@ -165,12 +165,27 @@ def pipeline(sources:list, models:list, model_names:list, source_classes:list, s
         first_better_probabilities, second_better_probabilities = ([], []) 
 
         for i, first_score_list in enumerate(fold_performances):
+            first_median = np.median(first_score_list)
             for j in range(i+1, model_n):
-                first_model_names.append(model_names[i])
-                second_model_names.append(model_names[j])
+
+                temp_model_names = [model_names[i], model_names[j]]
                 second_score_list = fold_performances[j]
-                t, p = compare_models(first_score_list, second_score_list, n_train=n_train, n_test=n_test, approach='frequentist')
-                first_better, second_better, _, _ = compare_models(first_score_list, second_score_list, n_train=n_train, n_test=n_test, approach='bayesian')
+                second_median = np.median(second_score_list)
+
+                sort_idx = np.argsort([first_median, second_median])
+
+                temp_first_name = temp_model_names[sort_idx[0]]
+                temp_second_name = temp_model_names[sort_idx[1]]
+
+                first_model_names.append(temp_first_name)
+                second_model_names.append(temp_second_name)
+
+                temp_scores = [first_score_list, second_score_list]
+                temp_first_scores = temp_scores[sort_idx[0]]
+                temp_second_scores = temp_scores[sort_idx[1]]
+
+                t, p = compare_models(temp_first_scores, temp_second_scores, n_train=n_train, n_test=n_test, approach='frequentist')
+                first_better, second_better, _, _ = compare_models(temp_first_scores, temp_second_scores, n_train=n_train, n_test=n_test, approach='bayesian')
             
                 t_values.append(t)
                 p_values.append(p)
@@ -178,7 +193,7 @@ def pipeline(sources:list, models:list, model_names:list, source_classes:list, s
                 second_better_probabilities.append(second_better)
 
         temp_columns = [first_model_names, second_model_names, t_values, p_values, first_better_probabilities, second_better_probabilities]
-        temp_names = ['first_model_name', 'second_model_name', 't_value', 'p_value', 'first_better_probability', 'second_better_probability']
+        temp_names = ['First Model Name', 'Second Model Name', 't', 'p', '% Chance First Better', '% Chance Second Better']
         
         pairwise_results_df = pd.DataFrame()
         for i in range(len(temp_columns)): 

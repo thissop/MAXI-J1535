@@ -1,0 +1,61 @@
+def make_grs_hids(data_file='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/GRS_1915+105_Scalar-Input.csv', cols:list=['A', 'H']):
+    r'''
+    
+    Notes
+    -----
+    - Hardness is calculated as [3-10]/[10-50]
+    
+    '''
+
+    import matplotlib.pyplot as plt 
+    import pandas as pd
+    import seaborn as sns
+    from matplotlib.colors import LinearSegmentedColormap
+
+
+
+    df = pd.read_csv(data_file)
+
+    df2 = pd.read_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/GRS_1915+105_QPO-Input.csv')
+
+    df = df.merge(df2, on='observation_ID')
+
+    sns.set_style('darkgrid')
+    #sns.set_style('ticks')
+    plt.style.use('https://gist.githubusercontent.com/thissop/44b6f15f8f65533e3908c2d2cdf1c362/raw/fab353d758a3f7b8ed11891e27ae4492a3c1b559/science.mplstyle')
+    sns.set_context("paper", font_scale=0.6) #font_scale=
+
+    plt.rcParams['font.family'] = 'serif'
+    plt.rcParams["mathtext.fontset"] = "dejavuserif"
+
+    plt.scatter(df['A'], df['H'], c=df['frequency'], cmap='viridis', s=3)
+
+    plt.gca().set(ylabel='Hardness Ratio', xlabel='Net Count Rate') # 
+
+    plt.colorbar(orientation='vertical', shrink=0.8, label='QPO Centroid Frequency')
+
+    plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_three/GRS_count_rate_vs_hardness.png', dpi=150)
+
+    plt.clf()
+    plt.close()
+
+    sns.set_style('darkgrid')
+    #sns.set_style('ticks')
+    plt.style.use('https://gist.githubusercontent.com/thissop/44b6f15f8f65533e3908c2d2cdf1c362/raw/fab353d758a3f7b8ed11891e27ae4492a3c1b559/science.mplstyle')
+    sns.set_context("paper", font_scale=0.6) #font_scale=
+
+    plt.rcParams['font.family'] = 'serif'
+    plt.rcParams["mathtext.fontset"] = "dejavuserif"
+
+    plt.scatter(df['frequency'], df['H'], c=df['A'], cmap='viridis', s=3)
+
+    plt.gca().set(ylabel='Hardness Ratio', xlabel='Net Count Rate') # 
+
+    plt.colorbar(orientation='vertical', shrink=0.8, label='Net Count Rate')
+
+    plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_three/GRS_freq_vs_hardness.png', dpi=150)
+
+    plt.clf()
+    plt.close()
+
+#make_grs_hids()
