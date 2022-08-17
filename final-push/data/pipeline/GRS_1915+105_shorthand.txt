@@ -4,4 +4,4 @@ kTe: C
 nthcomp_norm: D
 diskbb_tin: E 
 diskbb_norm: F
-hardness: H
+hardness: G

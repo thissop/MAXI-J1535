@@ -184,7 +184,7 @@ def pipeline(sources:list, models:list, model_names:list, source_classes:list, s
                 temp_first_scores = temp_scores[sort_idx[0]]
                 temp_second_scores = temp_scores[sort_idx[1]]
 
-                t, p = compare_models(temp_first_scores, temp_second_scores, n_train=n_train, n_test=n_test, approach='frequentist')
+                t, p = compare_models(temp_second_scores, temp_first_scores, n_train=n_train, n_test=n_test, approach='frequentist')
                 first_better, second_better, _, _ = compare_models(temp_first_scores, temp_second_scores, n_train=n_train, n_test=n_test, approach='bayesian')
             
                 t_values.append(t)
