@@ -158,4 +158,32 @@ def prep_context(context_file:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J
     context_df = pd.DataFrame(list(zip(obsid, times)), columns=['observation_ID', 'MJD'])
     context_df.to_csv(context_file, index=False)
 
-prep_context()
+#prep_context()
+
+def fix_response_paths():
+
+    r'''
+    
+    notes
+    -----
+
+    this function is not relevant any more since it's been run and the header response file terms have been fixed.
+    
+    '''
+
+
+    import os
+    from astropy.io import fits 
+    from tqdm import tqdm 
+
+    root = '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/sources/GRS_1915+105/qpo/external_PDS/'
+
+    for sub_dir in tqdm(os.listdir(root)):
+        if sub_dir!='.gitkeep':
+            sub_dir = root+sub_dir
+            os.chdir(sub_dir)
+
+            hdul = fits.open('power_0_249.pha')            
+            fits.setval('power_0_249.pha', 'RESPFILE', value='power_0_249.rmf', ext=1)
+            
+#fix_response_paths()
