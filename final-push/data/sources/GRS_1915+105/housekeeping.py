@@ -1,3 +1,8 @@
+import xspec 
+from xspec import *
+import numpy as np
+import pandas as pd
+
 def reformat_spectral_directory(root:str='./final-push/data/sources/GRS_1915+105/spectral/external_spectra/'): 
     r'''
     
@@ -187,3 +192,79 @@ def fix_response_paths():
             fits.setval('power_0_249.pha', 'RESPFILE', value='power_0_249.rmf', ext=1)
             
 #fix_response_paths()
+
+def pds_data_to_csv(root:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/sources/GRS_1915+105/qpo/external_PDS', 
+                    plot_dir:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/sources/GRS_1915+105/qpo/pds_plots', 
+                    pds_csv_dir:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/sources/GRS_1915+105/qpo/pds_csv'):
+    import matplotlib.pyplot as plt 
+    import os 
+    from tqdm import tqdm 
+
+    if root[-1]!='/':
+        root+='/'
+
+    if plot_dir[-1]!='/':
+        plot_dir+='/'
+
+    if pds_csv_dir[-1]!='/':
+        pds_csv_dir+='/'
+
+    for obsid in tqdm(os.listdir(root)):
+        if obsid!='.gitkeep':
+            os.chdir(f'{root}{obsid}')
+
+            Xset.chatter = 0
+
+            s = Spectrum("power_0_249.pha")
+
+            #Plot.device = "/xs"
+            Plot.xAxis = "kev"
+
+            Plot("data")
+
+            x = np.array(Plot.x())
+            y = np.array(Plot.y())
+            #y /= np.median(y)
+
+            mask = np.logical_and(x>0.25, x<10)
+            x, y = (i[mask] for i in [x,y])
+
+            xerr = np.array(Plot.xErr())
+            yerr = np.array(Plot.yErr())
+
+            fig, ax = plt.subplots()
+
+            ax.scatter(x, y)
+            ax.set(xlabel='Frequency [Hz]', ylabel='Power')
+            plt.savefig(f'{plot_dir}{obsid}.png', dpi=200)
+
+            s = None 
+            xspec.Plot.commands = ()
+            xspec.AllData.clear()
+            plt.clf()
+            plt.close()
+            
+            df = pd.DataFrame(list(zip(x,y,xerr,yerr)), columns=['x','y','xerr','yerr'])
+            df.to_csv(f'{pds_csv_dir}{obsid}.csv', index=False)
+
+#pds_data_to_csv()
+
+def prep_csv_pds_for_ml(pds_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/sources/GRS_1915+105/qpo/pds_csv'):
+    import os 
+    from tqdm import tqdm 
+
+    if pds_directory[-1]!='/':
+        pds_directory+='/'
+
+    powers = []
+    obsids = []
+
+    for pds in tqdm(os.listdir(pds_directory)):
+        df = pd.read_csv(f'{pds_directory}{pds}')
+        powers.append(list(df['y']))
+        obsids.append(pds.split('.')[0])
+
+    df = pd.DataFrame(np.transpose(powers), columns=obsids)
+    df.to_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/sources/GRS_1915+105/qpo/qpo_pds_for_ml.csv', index=False)
+
+prep_csv_pds_for_ml()
