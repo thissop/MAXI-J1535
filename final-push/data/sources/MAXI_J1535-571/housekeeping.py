@@ -1,3 +1,6 @@
+import pandas as pd 
+import numpy as np
+
 def make_maxi_light(old_master = r"C:\Users\Research\Documents\GitHub_LFS\Steiner\thaddaeus",
                     new_spectral_root='./final-push/data/sources/MAXI_J1535-571/spectral/jspipe_spectra/', 
                     new_qpo_root='./final-push/data/sources/MAXI_J1535-571/qpo/jspipe_qpo/'):
@@ -92,7 +95,7 @@ def check_internal_paths():
             print(key, hdul[1].header[key])
         print('###')
 
-check_internal_paths()
+#check_internal_paths()
 
 def fix_internal_paths(): 
     r'''
@@ -116,10 +119,29 @@ def fix_internal_paths():
 
     GRS 1915 notes
     --------------
-
-
-
     
-
     '''
     pass 
+
+def spot_check_num_maxi_obs():
+    r'''
+    notes
+    -----
+    - not relevant after first run
+    
+    '''
+
+    df = pd.read_csv('https://raw.githubusercontent.com/thissop/MAXI-J1535/main/older/data/processed/2022/new_current_qpos.csv?token=GHSAT0AAAAAABYDVJLWB3UAKESE6S2QLMIAYYMI5HQ')
+    classes = np.array(df['confidence_class'])
+    df = df[np.logical_and(classes>=0, classes<=3)]
+
+    print(len(df.index))
+    print(len(np.where(df['num_qpos']>0)[0]))
+
+    df.to_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/MAXI_J1535-571_QPO-Input.csv', index=False)
+
+    r'''
+    
+    '''
+
+spot_check_num_maxi_obs()
