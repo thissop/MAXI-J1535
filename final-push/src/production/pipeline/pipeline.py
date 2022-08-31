@@ -12,7 +12,7 @@ plt.rcParams["mathtext.fontset"] = "dejavuserif"
 
 #bi_cm = LinearSegmentedColormap.from_list("Custom", [seaborn_colors[0], (1,1,1), seaborn_colors[3]], N=20)
 
-def pipeline(sources:list, models:list, model_names:list, source_classes:list, source_instruments:list,
+def regression_pipeline(sources:list, models:list, model_names:list, source_classes:list, source_instruments:list,
              qpo_preprocess_dictionaries:dict, context_preprocess_dictionaries:list,
              model_hyperparameter_dictionaries:list,
              input_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline', 
@@ -209,46 +209,6 @@ def pipeline(sources:list, models:list, model_names:list, source_classes:list, s
         all_gridsearch_scores.append(gridsearch_scores)
 
     # 3: Collective Post-Routine Analysis #
-    
-    # 3.1: Plot Combined Net Counts # 
-
-    temp_MJDs = []
-    temp_NCRs = [] # NetCountRates
-
-    for source in sources: 
-        
-        scalar_context_path = f'{input_directory}{source}_Scalar-Input.csv'
-        context_df = pd.read_csv(scalar_context_path)
-
-        dates_df = pd.read_csv(f'{input_directory}{source}_dates.csv')
-
-        temp_df = context_df.merge(dates_df, on='observation_ID')
-        temp_MJDs.append(np.array(temp_df['MJD']))
-        NCRs = np.array(temp_df['A'])/np.median(temp_df['A'])
-        temp_NCRs.append(NCRs)
-    
-    if source_n>1: 
-        fig, axs = plt.subplots(source_n, 1, figsize=(6,2*source_n))
-
-        for i in range(source_n):
-            ax = axs[i] 
-            ax.scatter(temp_MJDs[i], temp_NCRs[i], s=2)
-            
-        fig.supylabel('Normalized Count Rate') # Source-Wise Median Normalized Net Count Rate
-        fig.supxlabel('Date (MJD)')
-
-    else: 
-        fig, ax = plt.subplots(figsize=(6,2))
-
-        ax.scatter(temp_MJDs[0], temp_NCRs[0], s=2)
-        ax.set(ylabel='Normalized Count Rate', xlabel='Date (MJD)')
-        ax.xaxis.set_ticklabels([])
-
-    plt.subplots_adjust(hspace=0)
-    #plt.tight_layout()
-    plt.savefig(f'{figures_directory}stacked_NCRs.pdf')
-    plt.savefig(f'{figures_directory}stacked_NCRs.png', dpi=200)
-    plt.close()
 
     # 3.2: Plot GridSearch Results Plot # 
     
@@ -297,3 +257,44 @@ def pipeline(sources:list, models:list, model_names:list, source_classes:list, s
     observation_summary_df['Number of Observations'] = source_observation_counts
 
     observation_summary_df.to_latex(f'{output_directory}ObservationsTable.tex', index=False)
+
+def net_count_rate_plots(): 
+    # 3.1: Plot Combined Net Counts # 
+
+    temp_MJDs = []
+    temp_NCRs = [] # NetCountRates
+
+    for source in sources: 
+        
+        scalar_context_path = f'{input_directory}{source}_Scalar-Input.csv'
+        context_df = pd.read_csv(scalar_context_path)
+
+        dates_df = pd.read_csv(f'{input_directory}{source}_dates.csv')
+
+        temp_df = context_df.merge(dates_df, on='observation_ID')
+        temp_MJDs.append(np.array(temp_df['MJD']))
+        NCRs = np.array(temp_df['A'])/np.median(temp_df['A'])
+        temp_NCRs.append(NCRs)
+    
+    if source_n>1: 
+        fig, axs = plt.subplots(source_n, 1, figsize=(6,2*source_n))
+
+        for i in range(source_n):
+            ax = axs[i] 
+            ax.scatter(temp_MJDs[i], temp_NCRs[i], s=2)
+            
+        fig.supylabel('Normalized Count Rate') # Source-Wise Median Normalized Net Count Rate
+        fig.supxlabel('Date (MJD)')
+
+    else: 
+        fig, ax = plt.subplots(figsize=(6,2))
+
+        ax.scatter(temp_MJDs[0], temp_NCRs[0], s=2)
+        ax.set(ylabel='Normalized Count Rate', xlabel='Date (MJD)')
+        ax.xaxis.set_ticklabels([])
+
+    plt.subplots_adjust(hspace=0)
+    #plt.tight_layout()
+    plt.savefig(f'{figures_directory}stacked_NCRs.pdf')
+    plt.savefig(f'{figures_directory}stacked_NCRs.png', dpi=200)
+    plt.close()

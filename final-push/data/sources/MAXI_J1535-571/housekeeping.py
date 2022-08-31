@@ -1,3 +1,4 @@
+from multiprocessing.spawn import prepare
 import pandas as pd 
 import numpy as np
 
@@ -144,4 +145,46 @@ def spot_check_num_maxi_obs():
     
     '''
 
-spot_check_num_maxi_obs()
+#spot_check_num_maxi_obs()
+
+def prepare_classification_data(): 
+    
+    '''
+    kinda irrelevant now ... 
+    '''
+
+    old_qpos_path = '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/older/data/processed/2022/new_current_qpos.csv' 
+    old_df = pd.read_csv(old_qpos_path)
+
+    restricted_df = old_df[np.logical_and(old_df['confidence_class']>=0, old_df['confidence_class']<4)]
+    
+    print(list(set(old_df['confidence_class'])))
+    num_qpos = np.array(restricted_df['num_qpos'])
+    
+    qpo_class = np.zeros(len(num_qpos))
+    qpo_class[num_qpos>0]=1
+
+
+    print(len(qpo_class))
+    print(len(np.where(qpo_class>0)[0]))
+    '''
+    270
+    82
+    '''
+
+    small_df = pd.DataFrame()
+    small_df['observation_ID'] = restricted_df['full_id']
+    small_df['qpo_state'] = qpo_class.astype(int)
+    small_df.to_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/sources/MAXI_J1535-571/classification/output.csv', index=False)
+
+    small_df = small_df.merge(pd.read_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/older/data/processed/2022/simpl_AND_nthcomp.csv'), left_on=['observation_ID'], right_on='full_ids')
+
+    keep_columns = ['observation_ID', 'simpl_FracScat','net_source_count_rate','tin_before_error','diskbb_norm_before_error','gamma_before_error','nthcomp_norm_before_error','hardness_ratio']
+
+    small_df = small_df.drop(columns=np.setdiff1d(list(small_df), keep_columns))
+
+    small_df.to_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/sources/MAXI_J1535-571/classification/input.csv', index=False)
+
+    print(small_df)
+
+#prepare_classification_data()
