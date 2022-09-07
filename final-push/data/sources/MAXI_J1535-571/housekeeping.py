@@ -188,3 +188,16 @@ def prepare_classification_data():
     print(small_df)
 
 #prepare_classification_data()
+
+def make_dates_file(): 
+    small_df = pd.read_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/classification/output.csv')
+    long_df = pd.read_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/older/data/processed/2022/simpl_AND_nthcomp.csv')
+    merge = small_df.merge(long_df, left_on=['observation_ID'], right_on='full_ids')
+
+    date_df = pd.DataFrame()
+    date_df['observation_ID'] = np.array(merge['observation_ID'])
+    date_df['date'] = np.array(merge['mjd'])
+
+    date_df.to_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/classification/MAXI_J1535-571_dates.csv', index=False)
+
+make_dates_file()

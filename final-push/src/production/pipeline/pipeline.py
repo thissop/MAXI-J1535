@@ -1,3 +1,6 @@
+import os
+import numpy as np
+import pandas as pd
 import matplotlib.pyplot as plt 
 import seaborn as sns
 
@@ -258,39 +261,133 @@ def regression_pipeline(sources:list, models:list, model_names:list, source_clas
 
     observation_summary_df.to_latex(f'{output_directory}ObservationsTable.tex', index=False)
 
-def net_count_rate_plots(): 
-    # 3.1: Plot Combined Net Counts # 
+def classification_pipeline(sources:list, models:list, model_names:list, source_classes:list, source_instruments:list,
+                            qpo_preprocess_dictionaries:dict, context_preprocess_dictionaries:list,
+                            model_hyperparameter_dictionaries:list,
+                            input_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline', 
+                            output_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/output/pipeline',
+                            manuscript_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/',
+                            model_comparison_statistic:str='mae', k:int=10, repetitions:int=2): 
+    
+    import os
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import pandas as pd
+    import seaborn as sns
+    from qpoml import collection
+    from qpoml.plotting import plot_model_comparison
+
+    # 1. Preparation for Pipeline #
+
+    n = len(sources)
+    source_n = len(sources)
+    model_n = len(models)
+
+    if input_directory[-1]!='/':
+        input_directory+='/'
+
+    if output_directory[-1]!='/':
+        output_directory+='/'
+
+    if manuscript_directory[-1]!='/':
+        manuscript_directory+='/'
+
+    figures_directory = manuscript_directory+'figures/'
+    tables_directory = manuscript_directory+'tables/'
+
+    source_figure_directories = [figures_directory+source+'/' for source in sources]
+    source_output_directories = [output_directory+source+'/' for source in sources]
+    for directory in [figures_directory, tables_directory]+source_figure_directories+source_output_directories:
+        if not os.path.exists(directory):
+            os.mkdir(directory)
+
+    all_gridsearch_scores = []
+    source_observation_counts = []
+
+    alphabet = [str(chr(letter)).upper() for letter in range(97,123)] 
+
+    # 2: Source-wise Machine Learning #
+
+    for source_index, source in enumerate(sources): 
+
+        source_figure_directory = source_figure_directories[source_index]
+
+        scalar_context_path = f'{input_directory}{source}_Scalar-Input.csv'
+        qpo_path = f'{input_directory}{source}_QPO-Input.csv'
+
+        n_total_qpos = len(pd.read_csv(qpo_path).index)
+        n_test = int(n_total_qpos/k)
+        n_train = n_total_qpos-n_test
+
+        context_preprocess_dict = context_preprocess_dictionaries[source_index]
+
+        fold_performances = []
+        gridsearch_scores = []
+
+        source_observation_counts.append(len(pd.read_csv(scalar_context_path).index))
+
+        # 2.1: Machine Learning for Each Model # 
+
+        for model_index, model in enumerate(models):
+
+            model_name = model_names[model_index]
+
+            collec= collection()
+            collec.load(qpo_csv=qpo_path, context_csv=scalar_context_path, context_type='scalar', context_preprocess=context_preprocess_dict) 
+
+            
+
+def net_count_rate_plots(sources=['GRS 1915+105', 'MAXI J1535-571'],
+                         date_csvs:list=['/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/regression/GRS_1915+105_dates.csv', '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/classification/MAXI_J1535-571_dates.csv'],
+                         context_csvs:list=['/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/regression/GRS_1915+105_Scalar-Input.csv', '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/classification/input.csv'], 
+                         y_colums:list=['A','B'],
+                         figures_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures'): 
+
+    import numpy as np
+    import pandas as pd 
+
+    # 0. Preparation #
+
+    if figures_directory[-1]!='/':
+        figures_directory+='/'
+
+    # 1.1: Plot Combined Net Counts # 
 
     temp_MJDs = []
     temp_NCRs = [] # NetCountRates
 
-    for source in sources: 
-        
-        scalar_context_path = f'{input_directory}{source}_Scalar-Input.csv'
-        context_df = pd.read_csv(scalar_context_path)
+    source_n = len(date_csvs)
 
-        dates_df = pd.read_csv(f'{input_directory}{source}_dates.csv')
+    for i in range(source_n):
+        date_df = pd.read_csv(date_csvs[i])
+        source_df = date_df.merge(pd.read_csv(context_csvs[i]), left_on='observation_ID', right_on='observation_ID')
 
-        temp_df = context_df.merge(dates_df, on='observation_ID')
-        temp_MJDs.append(np.array(temp_df['MJD']))
-        NCRs = np.array(temp_df['A'])/np.median(temp_df['A'])
-        temp_NCRs.append(NCRs)
+        temp_MJDs.append(np.array(source_df['MJD']))
+        temp_NCRs.append(np.array(source_df[y_colums[i]])) 
     
     if source_n>1: 
         fig, axs = plt.subplots(source_n, 1, figsize=(6,2*source_n))
 
         for i in range(source_n):
             ax = axs[i] 
-            ax.scatter(temp_MJDs[i], temp_NCRs[i], s=2)
+            if sources[i] == 'MAXI J1535-571':
+                c = np.array(pd.read_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/classification/output.csv')['qpo_state'])
+                ax.scatter(temp_MJDs[i], temp_NCRs[i], s=2, c=c)
+            else: 
+                ax.scatter(temp_MJDs[i], temp_NCRs[i], s=2)
             
-        fig.supylabel('Normalized Count Rate') # Source-Wise Median Normalized Net Count Rate
-        fig.supxlabel('Date (MJD)')
+            
+            ax.xaxis.set_ticklabels([])
+            
+        fig.supylabel('Normalized Count Rate', fontsize='small') # Source-Wise Median Normalized Net Count Rate
+        fig.supxlabel('Date (MJD)', fontsize='small')
 
     else: 
         fig, ax = plt.subplots(figsize=(6,2))
 
         ax.scatter(temp_MJDs[0], temp_NCRs[0], s=2)
-        ax.set(ylabel='Normalized Count Rate', xlabel='Date (MJD)')
+        ax.set_ylabel('Normalized Count Rate', fontsize='small') 
+        ax.set_xlabel('Date (MJD)', fontsize='small')
         ax.xaxis.set_ticklabels([])
 
     plt.subplots_adjust(hspace=0)
@@ -298,3 +395,5 @@ def net_count_rate_plots():
     plt.savefig(f'{figures_directory}stacked_NCRs.pdf')
     plt.savefig(f'{figures_directory}stacked_NCRs.png', dpi=200)
     plt.close()
+
+#net_count_rate_plots()
