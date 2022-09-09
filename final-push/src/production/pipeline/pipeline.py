@@ -261,13 +261,14 @@ def regression_pipeline(sources:list, models:list, model_names:list, source_clas
 
     observation_summary_df.to_latex(f'{output_directory}ObservationsTable.tex', index=False)
 
-def classification_pipeline(sources:list, models:list, model_names:list, source_classes:list, source_instruments:list,
-                            qpo_preprocess_dictionaries:dict, context_preprocess_dictionaries:list,
+def classification_pipeline(source:list, models:list, model_names:list, source_class:str, source_instrument:str,
+                            qpo_preprocess_dictionary:dict, context_preprocess_dict:dict,
                             model_hyperparameter_dictionaries:list,
-                            input_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline', 
+                            input_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/classification', 
                             output_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/output/pipeline',
                             manuscript_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/',
-                            model_comparison_statistic:str='mae', k:int=10, repetitions:int=2): 
+                            model_comparison_statistic:str='mae', k:int=10, repetitions:int=2, 
+                            fig_two_cols:list=['B', 'G']): 
     
     import os
     import matplotlib.pyplot as plt
@@ -278,10 +279,6 @@ def classification_pipeline(sources:list, models:list, model_names:list, source_
     from qpoml.plotting import plot_model_comparison
 
     # 1. Preparation for Pipeline #
-
-    n = len(sources)
-    source_n = len(sources)
-    model_n = len(models)
 
     if input_directory[-1]!='/':
         input_directory+='/'
@@ -295,9 +292,9 @@ def classification_pipeline(sources:list, models:list, model_names:list, source_
     figures_directory = manuscript_directory+'figures/'
     tables_directory = manuscript_directory+'tables/'
 
-    source_figure_directories = [figures_directory+source+'/' for source in sources]
-    source_output_directories = [output_directory+source+'/' for source in sources]
-    for directory in [figures_directory, tables_directory]+source_figure_directories+source_output_directories:
+    source_figure_directory = figures_directory+source+'/'
+    source_output_directory = output_directory+source+'/' 
+    for directory in [figures_directory, tables_directory, source_figure_directory, source_output_directory]:
         if not os.path.exists(directory):
             os.mkdir(directory)
 
@@ -308,38 +305,54 @@ def classification_pipeline(sources:list, models:list, model_names:list, source_
 
     # 2: Source-wise Machine Learning #
 
-    for source_index, source in enumerate(sources): 
+    scalar_context_path = f'{input_directory}{source}_Scalar-Input.csv'
+    qpo_path = f'{input_directory}{source}_QPO-Input.csv'
 
-        source_figure_directory = source_figure_directories[source_index]
+    n_total_qpos = len(pd.read_csv(qpo_path).index)
+    n_test = int(n_total_qpos/k)
+    n_train = n_total_qpos-n_test
 
-        scalar_context_path = f'{input_directory}{source}_Scalar-Input.csv'
-        qpo_path = f'{input_directory}{source}_QPO-Input.csv'
+    fold_performances = []
+    gridsearch_scores = []
 
-        n_total_qpos = len(pd.read_csv(qpo_path).index)
-        n_test = int(n_total_qpos/k)
-        n_train = n_total_qpos-n_test
+    source_observation_counts.append(len(pd.read_csv(scalar_context_path).index))
 
-        context_preprocess_dict = context_preprocess_dictionaries[source_index]
+    # 2.1: initial Plot 
 
-        fold_performances = []
-        gridsearch_scores = []
+    fig, ax = plt.subplots(figsize=(4,4))
 
-        source_observation_counts.append(len(pd.read_csv(scalar_context_path).index))
+    temp_merged = pd.read_csv(qpo_path).merge(pd.read_csv(scalar_context_path), on='observation_ID')
 
-        # 2.1: Machine Learning for Each Model # 
+    zero_mask = np.array(temp_merged['qpo_state']) < 1
+    
+    ncrs = np.array(temp_merged[fig_two_cols[0]])
+    hardnesses = np.array(temp_merged[fig_two_cols[1]])
+    qpos = np.array(temp_merged['qpo_state'])
+    ax.scatter(ncrs[zero_mask], hardnesses[zero_mask], c=qpos[zero_mask], label='No QPO')
+    ax.scatter(ncrs[~zero_mask], hardnesses[~zero_mask], c=qpos[~zero_mask], label='QPO')
 
-        for model_index, model in enumerate(models):
+    ax.legend()
+    ax.set(xlabel='Net Count Rate', ylabel='Hardness')
+    plt.savefig(f'{source_figure_directory}MAXI-HID.pdf')
+    plt.savefig(f'{source_figure_directory}MAXI-HID.png', dpi=300)
 
-            model_name = model_names[model_index]
+    plt.clf()
+    plt.close()
 
-            collec= collection()
-            collec.load(qpo_csv=qpo_path, context_csv=scalar_context_path, context_type='scalar', context_preprocess=context_preprocess_dict) 
+    # 2.1: Machine Learning for Each Model # 
 
-            
+    for model_index, model in enumerate(models):
+
+        model_name = model_names[model_index]
+
+        collec= collection()
+        collec.load(qpo_csv=qpo_path, context_csv=scalar_context_path, context_type='scalar', context_preprocess=context_preprocess_dict, approach='classification') 
+        print('we good')
+
 
 def net_count_rate_plots(sources=['GRS 1915+105', 'MAXI J1535-571'],
                          date_csvs:list=['/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/regression/GRS_1915+105_dates.csv', '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/classification/MAXI_J1535-571_dates.csv'],
-                         context_csvs:list=['/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/regression/GRS_1915+105_Scalar-Input.csv', '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/classification/input.csv'], 
+                         context_csvs:list=['/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/regression/GRS_1915+105_Scalar-Input.csv', '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/classification/MAXI_J1535-571_Scalar-Input.csv'], 
                          y_colums:list=['A','B'],
                          figures_directory:str='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures'): 
 
@@ -371,8 +384,15 @@ def net_count_rate_plots(sources=['GRS 1915+105', 'MAXI J1535-571'],
         for i in range(source_n):
             ax = axs[i] 
             if sources[i] == 'MAXI J1535-571':
-                c = np.array(pd.read_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/classification/output.csv')['qpo_state'])
-                ax.scatter(temp_MJDs[i], temp_NCRs[i], s=2, c=c)
+                c = np.array(pd.read_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/classification/MAXI_J1535-571_QPO-Input.csv')['qpo_state'])
+                
+                zero_mask = c<1
+                
+                ax.scatter(temp_MJDs[i][zero_mask], temp_NCRs[i][zero_mask], s=2, color='red', label='No QPO', alpha=0.5)
+                ax.scatter(temp_MJDs[i][~zero_mask], temp_NCRs[i][~zero_mask], s=2, color='blue', label='QPO', alpha=0.5)
+            
+                ax.legend(fontsize='small')
+
             else: 
                 ax.scatter(temp_MJDs[i], temp_NCRs[i], s=2)
             
@@ -396,4 +416,4 @@ def net_count_rate_plots(sources=['GRS 1915+105', 'MAXI J1535-571'],
     plt.savefig(f'{figures_directory}stacked_NCRs.png', dpi=200)
     plt.close()
 
-#net_count_rate_plots()
+net_count_rate_plots()

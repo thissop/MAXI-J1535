@@ -1,0 +1,6 @@
+40116-01-01-07
+
+observation_ID,date,frequency,frequency_err,width,width_err,rms,rms_err
+51357.41,1.592,0.005,0.187,0.012,13.724,0.284
+
+https://heasarc.gsfc.nasa.gov/docs/xte/recipes/plotting.html 
