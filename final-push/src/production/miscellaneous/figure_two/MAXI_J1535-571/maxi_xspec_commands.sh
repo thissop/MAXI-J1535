@@ -17,8 +17,8 @@ model tbabs(diskbb+nthcomp)
 freeze 1 5
 chatter 5 10
 parallel leven 2
-fit 750
-n
+query yes 
+fit
 
 chatter 10
 show fit
