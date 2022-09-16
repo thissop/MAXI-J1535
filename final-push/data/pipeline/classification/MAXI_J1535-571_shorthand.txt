@@ -4,4 +4,4 @@ C:tin_before_error
 D:diskbb_norm_before_error
 E:gamma_before_error
 F:nthcomp_norm_before_error
-G:hardness_ratio
+G:hardness_ratio 

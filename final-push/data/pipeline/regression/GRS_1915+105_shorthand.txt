@@ -5,3 +5,12 @@ nthcomp_norm: D
 diskbb_tin: E 
 diskbb_norm: F
 hardness: G
+
+### 
+
+net_count_rate: A
+gamma: B
+nthcomp_norm: C
+diskbb_tin: D
+diskbb_norm: E
+hardness: F
