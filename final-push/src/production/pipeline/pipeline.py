@@ -1,6 +1,4 @@
-from multiprocessing import context
 import os
-from tkinter import font
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt 
@@ -116,7 +114,8 @@ def regression_pipeline(source:str, models:list, model_names:list,
 
         # 2.1.5: Plot Feature Importances from 10th Fold # 
         fig, ax = plt.subplots(figsize=(6,6))
-        collec.plot_feature_importances(model=model, fold=0, kind='tree-shap', style='box', ax=ax)
+        imps_path = ''
+        collec.plot_feature_importances(model=model, fold=0, kind='tree-shap', style='box', ax=ax, save_path=imps_path)
         temp_path = f'/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_four/feature-importances_fold={0}_model={model_name}'
         plt.savefig(f'{temp_path}.pdf')
         plt.savefig(f'{temp_path}.png', dpi=200)
@@ -127,7 +126,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
     # 2.2.1: Plot Performances for all Models #
     fig, ax = plt.subplots()
     print(model_names, len(fold_performances))
-    plot_model_comparison(model_names=model_names, performance_lists=fold_performances, style='violin', ax=ax)
+    plot_model_comparison(model_names=model_names, performance_lists=fold_performances, style='violin', ax=ax, cut=0)
     temp_path = f'/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_four/{source}_model-comparison'
     plt.savefig(f'{temp_path}.pdf') 
     plt.savefig(f'{temp_path}.png', dpi=200) 
@@ -289,7 +288,7 @@ model_hyperparameter_dictionaries = [{'normalize':[True, False]},
 print('starting')
 regression_pipeline(source='GRS 1915+905', 
                     models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor(), XGBRegressor()], 
-                    model_names=['Linear Regression', 'Decision Tree', 'Random Forest', 'Extra Trees', 'XGBoost'], 
+                    model_names=['Linear', 'DT', 'RF', 'ET', 'XGBoost'], 
                     qpo_path='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/regression/GRS_1915+105_QPO-Input.csv', 
                     context_path='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/regression/GRS_1915+105_Scalar-Input.csv', 
                     qpo_preprocess_dict={'frequency':'normalize', 'width':'normalize', 'rms':'normalize'}, 

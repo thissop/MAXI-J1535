@@ -1,3 +1,5 @@
+SHARED 
+
 A:simpl_FracScat
 B:net_source_count_rate
 C:tin_before_error

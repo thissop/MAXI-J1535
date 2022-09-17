@@ -8,7 +8,6 @@ from qpoml.utilities import unprocess1d
 
 import matplotlib.pyplot as plt 
 
-
 collec = collection()
 
 qpo_path = '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/regression/GRS_1915+105_QPO-Input.csv'
