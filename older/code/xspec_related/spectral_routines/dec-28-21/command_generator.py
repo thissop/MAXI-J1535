@@ -176,4 +176,4 @@ params_dict = {'diskbb_tin':[',', ',', 0.2, 0.2, 2, 3],
                'nthcomp_gamma':[',',',',1.1, 1.2, 3.5, 4], 
               }
 
-write_commands(key, data_dir, params_dict, log_dir, commands_file)
+write_commands(key, data_dir, params_dict, log_dir, commands_file) 

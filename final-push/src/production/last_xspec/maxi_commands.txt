@@ -1,0 +1,6756 @@
+heainit
+xspec
+chatter 5 10
+cd /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360103/jspipe/js_ni1050360103_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360103_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360103/jspipe/js_ni1050360103_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360103_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360103/jspipe/js_ni1050360103_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360103_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360104/jspipe/js_ni1050360104_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360104_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360104/jspipe/js_ni1050360104_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360104_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360104/jspipe/js_ni1050360104_0mpu7_silver_GTI11.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360104_11|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360104/jspipe/js_ni1050360104_0mpu7_silver_GTI12.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360104_12|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360104/jspipe/js_ni1050360104_0mpu7_silver_GTI13.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360104_13|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360104/jspipe/js_ni1050360104_0mpu7_silver_GTI14.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360104_14|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360104/jspipe/js_ni1050360104_0mpu7_silver_GTI5.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360104_5|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360104/jspipe/js_ni1050360104_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360104_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360104/jspipe/js_ni1050360104_0mpu7_silver_GTI7.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360104_7|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360104/jspipe/js_ni1050360104_0mpu7_silver_GTI8.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360104_8|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360104/jspipe/js_ni1050360104_0mpu7_silver_GTI9.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360104_9|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360105_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI15.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360105_15|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI16.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360105_16|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI17.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360105_17|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI18.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360105_18|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI19.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360105_19|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360105_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI21.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360105_21|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI23.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360105_23|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI26.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360105_26|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI28.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360105_28|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI29.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360105_29|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360105/jspipe/js_ni1050360105_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360105_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360106/jspipe/js_ni1050360106_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360106_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360106/jspipe/js_ni1050360106_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360106_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360106/jspipe/js_ni1050360106_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360106_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360106/jspipe/js_ni1050360106_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360106_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360106/jspipe/js_ni1050360106_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360106_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360106/jspipe/js_ni1050360106_0mpu7_silver_GTI5.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360106_5|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360106/jspipe/js_ni1050360106_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360106_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360106/jspipe/js_ni1050360106_0mpu7_silver_GTI7.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360106_7|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360106/jspipe/js_ni1050360106_0mpu7_silver_GTI8.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360106_8|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360106/jspipe/js_ni1050360106_0mpu7_silver_GTI9.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360106_9|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360107/jspipe/js_ni1050360107_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360107_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360107/jspipe/js_ni1050360107_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360107_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360108/jspipe/js_ni1050360108_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360108_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360108/jspipe/js_ni1050360108_0mpu7_silver_GTI8.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360108_8|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360108/jspipe/js_ni1050360108_0mpu7_silver_GTI9.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360108_9|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360109/jspipe/js_ni1050360109_0mpu7_silver_GTI10.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360109_10|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360109/jspipe/js_ni1050360109_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360109_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360109/jspipe/js_ni1050360109_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360109_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360109/jspipe/js_ni1050360109_0mpu7_silver_GTI5.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360109_5|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360109/jspipe/js_ni1050360109_0mpu7_silver_GTI8.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360109_8|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360110/jspipe/js_ni1050360110_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360110_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360110/jspipe/js_ni1050360110_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360110_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360110/jspipe/js_ni1050360110_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360110_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360110/jspipe/js_ni1050360110_0mpu7_silver_GTI5.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360110_5|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360110/jspipe/js_ni1050360110_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360110_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360111/jspipe/js_ni1050360111_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360111_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360111/jspipe/js_ni1050360111_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360111_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360111/jspipe/js_ni1050360111_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360111_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360112/jspipe/js_ni1050360112_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360112_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360112/jspipe/js_ni1050360112_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360112_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360113/jspipe/js_ni1050360113_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360113_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360113/jspipe/js_ni1050360113_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360113_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360113/jspipe/js_ni1050360113_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360113_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360113/jspipe/js_ni1050360113_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360113_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360113/jspipe/js_ni1050360113_0mpu7_silver_GTI7.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360113_7|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360114/jspipe/js_ni1050360114_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360114_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360114/jspipe/js_ni1050360114_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360114_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI10.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360115_10|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI12.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360115_12|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI14.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360115_14|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI15.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360115_15|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI16.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360115_16|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI17.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360115_17|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI18.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360115_18|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI19.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360115_19|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360115_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI20.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360115_20|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI21.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360115_21|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360115_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360115/jspipe/js_ni1050360115_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360115_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360116/jspipe/js_ni1050360116_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360116_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360116/jspipe/js_ni1050360116_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360116_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360116/jspipe/js_ni1050360116_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360116_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360116/jspipe/js_ni1050360116_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360116_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360116/jspipe/js_ni1050360116_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360116_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360116/jspipe/js_ni1050360116_0mpu7_silver_GTI7.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360116_7|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360116/jspipe/js_ni1050360116_0mpu7_silver_GTI8.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360116_8|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360117/jspipe/js_ni1050360117_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360117_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360117/jspipe/js_ni1050360117_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360117_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360117/jspipe/js_ni1050360117_0mpu7_silver_GTI7.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360117_7|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360117/jspipe/js_ni1050360117_0mpu7_silver_GTI8.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360117_8|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360118/jspipe/js_ni1050360118_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360118_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360118/jspipe/js_ni1050360118_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360118_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360118/jspipe/js_ni1050360118_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360118_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360118/jspipe/js_ni1050360118_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360118_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360118/jspipe/js_ni1050360118_0mpu7_silver_GTI5.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360118_5|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360119/jspipe/js_ni1050360119_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360119_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360119/jspipe/js_ni1050360119_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360119_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360119/jspipe/js_ni1050360119_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360119_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360120/jspipe/js_ni1050360120_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360120_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360120/jspipe/js_ni1050360120_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360120_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360120/jspipe/js_ni1050360120_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360120_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360120/jspipe/js_ni1050360120_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360120_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360120/jspipe/js_ni1050360120_0mpu7_silver_GTI5.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360120_5|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360120/jspipe/js_ni1050360120_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360120_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360120/jspipe/js_ni1050360120_0mpu7_silver_GTI7.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1050360120_7|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360103/jspipe/js_ni1130360103_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360103_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360103/jspipe/js_ni1130360103_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360103_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360103/jspipe/js_ni1130360103_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360103_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360103/jspipe/js_ni1130360103_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360103_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360104/jspipe/js_ni1130360104_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360104_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360104/jspipe/js_ni1130360104_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360104_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360105/jspipe/js_ni1130360105_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360105_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360105/jspipe/js_ni1130360105_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360105_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360105/jspipe/js_ni1130360105_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360105_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360105/jspipe/js_ni1130360105_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360105_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360106/jspipe/js_ni1130360106_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360106_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360106/jspipe/js_ni1130360106_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360106_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360107/jspipe/js_ni1130360107_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360107_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360107/jspipe/js_ni1130360107_0mpu7_silver_GTI11.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360107_11|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360107/jspipe/js_ni1130360107_0mpu7_silver_GTI12.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360107_12|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360107/jspipe/js_ni1130360107_0mpu7_silver_GTI13.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360107_13|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360107/jspipe/js_ni1130360107_0mpu7_silver_GTI14.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360107_14|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360107/jspipe/js_ni1130360107_0mpu7_silver_GTI15.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360107_15|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360107/jspipe/js_ni1130360107_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360107_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360107/jspipe/js_ni1130360107_0mpu7_silver_GTI7.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360107_7|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360108/jspipe/js_ni1130360108_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360108_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360109/jspipe/js_ni1130360109_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360109_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360109/jspipe/js_ni1130360109_0mpu7_silver_GTI5.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360109_5|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360110/jspipe/js_ni1130360110_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360110_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360110/jspipe/js_ni1130360110_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360110_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360110/jspipe/js_ni1130360110_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360110_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360110/jspipe/js_ni1130360110_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360110_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360111/jspipe/js_ni1130360111_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360111_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360111/jspipe/js_ni1130360111_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360111_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360111/jspipe/js_ni1130360111_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360111_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360113/jspipe/js_ni1130360113_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360113_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360113/jspipe/js_ni1130360113_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360113_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360130/jspipe/js_ni1130360130_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360130_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360130/jspipe/js_ni1130360130_0mpu7_silver_GTI5.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360130_5|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360130/jspipe/js_ni1130360130_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360130_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360130/jspipe/js_ni1130360130_0mpu7_silver_GTI8.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360130_8|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360130/jspipe/js_ni1130360130_0mpu7_silver_GTI9.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360130_9|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360131/jspipe/js_ni1130360131_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360131_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360131/jspipe/js_ni1130360131_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360131_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360131/jspipe/js_ni1130360131_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360131_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360131/jspipe/js_ni1130360131_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360131_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360131/jspipe/js_ni1130360131_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360131_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360131/jspipe/js_ni1130360131_0mpu7_silver_GTI5.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360131_5|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360131/jspipe/js_ni1130360131_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360131_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360131/jspipe/js_ni1130360131_0mpu7_silver_GTI7.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360131_7|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360131/jspipe/js_ni1130360131_0mpu7_silver_GTI8.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360131_8|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360132/jspipe/js_ni1130360132_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360132_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360132/jspipe/js_ni1130360132_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360132_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360132/jspipe/js_ni1130360132_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360132_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360133/jspipe/js_ni1130360133_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360133_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360134/jspipe/js_ni1130360134_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360134_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360135/jspipe/js_ni1130360135_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360135_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360137/jspipe/js_ni1130360137_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360137_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360138/jspipe/js_ni1130360138_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360138_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360138/jspipe/js_ni1130360138_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360138_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360143/jspipe/js_ni1130360143_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360143_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360144/jspipe/js_ni1130360144_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360144_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360144/jspipe/js_ni1130360144_0mpu7_silver_GTI5.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360144_5|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360145/jspipe/js_ni1130360145_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360145_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360145/jspipe/js_ni1130360145_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360145_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360145/jspipe/js_ni1130360145_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360145_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360145/jspipe/js_ni1130360145_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360145_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360146/jspipe/js_ni1130360146_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360146_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360146/jspipe/js_ni1130360146_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360146_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360146/jspipe/js_ni1130360146_0mpu7_silver_GTI10.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360146_10|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360146/jspipe/js_ni1130360146_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360146_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360146/jspipe/js_ni1130360146_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360146_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360146/jspipe/js_ni1130360146_0mpu7_silver_GTI7.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360146_7|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360146/jspipe/js_ni1130360146_0mpu7_silver_GTI8.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360146_8|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360146/jspipe/js_ni1130360146_0mpu7_silver_GTI9.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360146_9|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360147/jspipe/js_ni1130360147_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360147_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360152/jspipe/js_ni1130360152_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360152_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360152/jspipe/js_ni1130360152_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360152_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360153/jspipe/js_ni1130360153_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360153_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360155/jspipe/js_ni1130360155_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360155_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360155/jspipe/js_ni1130360155_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360155_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360156/jspipe/js_ni1130360156_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360156_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360156/jspipe/js_ni1130360156_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360156_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360156/jspipe/js_ni1130360156_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360156_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360156/jspipe/js_ni1130360156_0mpu7_silver_GTI5.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360156_5|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360156/jspipe/js_ni1130360156_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360156_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360157/jspipe/js_ni1130360157_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360157_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360157/jspipe/js_ni1130360157_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360157_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360157/jspipe/js_ni1130360157_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360157_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360157/jspipe/js_ni1130360157_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360157_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360157/jspipe/js_ni1130360157_0mpu7_silver_GTI5.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360157_5|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360158/jspipe/js_ni1130360158_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360158_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360158/jspipe/js_ni1130360158_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360158_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360160/jspipe/js_ni1130360160_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360160_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360160/jspipe/js_ni1130360160_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360160_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360160/jspipe/js_ni1130360160_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360160_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360161/jspipe/js_ni1130360161_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360161_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360181/jspipe/js_ni1130360181_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360181_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360181/jspipe/js_ni1130360181_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360181_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360181/jspipe/js_ni1130360181_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360181_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360181/jspipe/js_ni1130360181_0mpu7_silver_GTI5.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360181_5|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360181/jspipe/js_ni1130360181_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360181_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360182/jspipe/js_ni1130360182_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360182_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360182/jspipe/js_ni1130360182_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360182_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360182/jspipe/js_ni1130360182_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360182_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360182/jspipe/js_ni1130360182_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360182_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360182/jspipe/js_ni1130360182_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360182_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360182/jspipe/js_ni1130360182_0mpu7_silver_GTI9.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360182_9|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360183_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360183_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360183_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360183_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360183_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360183_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI7.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360183_7|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360183/jspipe/js_ni1130360183_0mpu7_silver_GTI8.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360183_8|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360184_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI10.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360184_10|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI11.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360184_11|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI12.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360184_12|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI13.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360184_13|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI14.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360184_14|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI15.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360184_15|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI16.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360184_16|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI17.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360184_17|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360184_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360184_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI7.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360184_7|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360184/jspipe/js_ni1130360184_0mpu7_silver_GTI9.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360184_9|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360185/jspipe/js_ni1130360185_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360185_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360185/jspipe/js_ni1130360185_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360185_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360185/jspipe/js_ni1130360185_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360185_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360186/jspipe/js_ni1130360186_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360186_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360186/jspipe/js_ni1130360186_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360186_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360187/jspipe/js_ni1130360187_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360187_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360188/jspipe/js_ni1130360188_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360188_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360199/jspipe/js_ni1130360199_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360199_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360199/jspipe/js_ni1130360199_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360199_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360201/jspipe/js_ni1130360201_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360201_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360202/jspipe/js_ni1130360202_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360202_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360203/jspipe/js_ni1130360203_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360203_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360203/jspipe/js_ni1130360203_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360203_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360203/jspipe/js_ni1130360203_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360203_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360204/jspipe/js_ni1130360204_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360204_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360205/jspipe/js_ni1130360205_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360205_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360205/jspipe/js_ni1130360205_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360205_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360205/jspipe/js_ni1130360205_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360205_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360206/jspipe/js_ni1130360206_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360206_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360206/jspipe/js_ni1130360206_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360206_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360207/jspipe/js_ni1130360207_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360207_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360207/jspipe/js_ni1130360207_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360207_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360208/jspipe/js_ni1130360208_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360208_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360209/jspipe/js_ni1130360209_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360209_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360226_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360226_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI5.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360226_5|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360226/jspipe/js_ni1130360226_0mpu7_silver_GTI6.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360226_6|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360227/jspipe/js_ni1130360227_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360227_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360227/jspipe/js_ni1130360227_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360227_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360228/jspipe/js_ni1130360228_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360228_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360228/jspipe/js_ni1130360228_0mpu7_silver_GTI4.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360228_4|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360229/jspipe/js_ni1130360229_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360229_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360229/jspipe/js_ni1130360229_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360229_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360230/jspipe/js_ni1130360230_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360230_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360230/jspipe/js_ni1130360230_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360230_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360231/jspipe/js_ni1130360231_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360231_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360231/jspipe/js_ni1130360231_0mpu7_silver_GTI1.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360231_1|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360231/jspipe/js_ni1130360231_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360231_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360231/jspipe/js_ni1130360231_0mpu7_silver_GTI3.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360231_3|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360232/jspipe/js_ni1130360232_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360232_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360232/jspipe/js_ni1130360232_0mpu7_silver_GTI2.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360232_2|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1130360248/jspipe/js_ni1130360248_0mpu7_silver_GTI0.jsgrp
+ignore **-0.5 10.0-**
+ignore 1.7-2.5
+ignore bad
+model tbabs*(diskbb+nthcomp)
+3.2107
+, , 0.2 0.2 3 3
+
+, , 1.1 1.1 3.5 4.0
+, , 4 4 250 250
+=p2
+1
+0
+
+freeze 1 7 8
+query no
+fit 400
+log /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/temp_dir/MAXI|1130360248_0|.txt
+show data
+show param
+show fit
+log none
+data none
+model none
+python /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/production/last_xspec/aggregator.py
+quit
+y

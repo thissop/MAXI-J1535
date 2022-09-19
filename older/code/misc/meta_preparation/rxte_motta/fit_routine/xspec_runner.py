@@ -292,7 +292,7 @@ def run_nH_nthcomp_routine(fits_key: str='./code/misc/meta_preparation/rxte_mott
             
             full_id = ids[index]
             id_list = full_id.split('_')
-            prop_num = id_list[0]
+            prop_num = id_list[0] 
 
             source_name = objects[index]
             
