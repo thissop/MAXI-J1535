@@ -1,4 +1,4 @@
-full_id,num_qpos,first_freq,first_width,first_norm,first_rms_power,second_freq,second_width,second_norm,second_rms_power,third_freq,third_width,third_norm,third_rms_power,confidence_class
+observation_ID,num_qpos,first_freq,first_width,first_norm,first_rms_power,second_freq,second_width,second_norm,second_rms_power,third_freq,third_width,third_norm,third_rms_power,confidence_class
 1050360103_0,0.0,,,,,,,,,,,,,0
 1050360103_1,0.0,,,,,,,,,,,,,0
 1050360103_2,0.0,,,,,,,,,,,,,0
