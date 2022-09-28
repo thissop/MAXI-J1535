@@ -42,6 +42,7 @@ t off
 View 0.12 0.12
 csize 2.0
 rescale x 1. 15.
+log y
 hard /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_two/MAXI_J1535-571/1050360105_21[pds-data].ps/ps
 quit 
 plot model 
@@ -54,6 +55,7 @@ label Y Power (rms Normalized)
 View 0.12 0.12
 csize 2.0
 rescale x 1. 15.
+log y
 hard /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_two/MAXI_J1535-571/1050360105_21[pds-model].ps/ps
 quit
 quit

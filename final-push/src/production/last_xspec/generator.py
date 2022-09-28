@@ -73,7 +73,7 @@ def generate_maxi_commands():
         gti = obsid_list[1]
         commands.append(f'data /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/{obsid}/jspipe/js_ni{obsid}_0mpu7_silver_GTI{gti}.jsgrp')
         commands.append('ignore **-0.5 10.0-**')
-        commands.append('ignore 1.7-2.5')
+        commands.append('ignore 1.5-2.3')
         commands.append('ignore bad')
         commands.append('model tbabs*(diskbb+nthcomp)')
 
