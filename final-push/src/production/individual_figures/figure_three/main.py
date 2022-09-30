@@ -1,4 +1,4 @@
-def make_grs_hids(data_file='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/regression/GRS_1915+105_Scalar-Input.csv', cols:list=['A', 'G']):
+def make_grs_hids(data_file='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/regression/GRS_1915+105_Scalar-Input.csv', cols:list=['A', 'F']):
     r'''
     
     Notes
@@ -32,14 +32,14 @@ def make_grs_hids(data_file='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/f
 
     #fig, ax = plt.subplots(figsize=())
 
-    plt.scatter(df['A'], df['G'], c=df['frequency'], lw=0.3, edgecolors='black', cmap='viridis', s=3)
+    plt.scatter(df['F'], df['A'], c=df['frequency'], lw=0.3, edgecolors='black', cmap='viridis', s=3)
 
-    plt.gca().set(ylabel='Hardness Ratio', xlabel='Net Count Rate') # 
+    plt.gca().set(xlabel='Hardness Ratio', ylabel='Net Count Rate') # 
 
     plt.colorbar(orientation='vertical', shrink=0.8, label='QPO Centroid Frequency')
 
-    plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_three/GRS_count_rate_vs_hardness.png', dpi=250)
-
+    plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/individual/figure_3/GRS_count_rate_vs_hardness.png', dpi=250)
+    plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/individual/figure_3/GRS_count_rate_vs_hardness.pdf')
     plt.clf()
     plt.close()
 
@@ -53,13 +53,14 @@ def make_grs_hids(data_file='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/f
     #plt.rcParams['font.family'] = 'serif'
     #plt.rcParams["mathtext.fontset"] = "dejavuserif"
 
-    plt.scatter(df['frequency'], df['G'], c=df['A'], lw=0.3, edgecolors='black', cmap='viridis', s=3)
+    plt.scatter(df['F'], df['frequency'], c=df['A'], lw=0.3, edgecolors='black', cmap='viridis', s=3)
 
-    plt.gca().set(ylabel='Hardness Ratio', xlabel='QPO Centroid Frequency') # 
+    plt.gca().set(xlabel='Hardness Ratio', ylabel='QPO Centroid Frequency') # 
 
     plt.colorbar(orientation='vertical', shrink=0.8, label='Net Count Rate')
 
-    plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_three/GRS_freq_vs_hardness.png', dpi=250)
+    plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/individual/figure_3/GRS_freq_vs_hardness.png', dpi=250)
+    plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/individual/figure_3/GRS_freq_vs_hardness.pdf')
 
     plt.clf()
     plt.close()
@@ -70,9 +71,9 @@ def make_grs_hids(data_file='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/f
 
     fig, ax = plt.subplots()
 
-    ax.scatter(df['B'], df['G'])
+    ax.scatter(df['B'], df['F'])
     ax.set(xscale='log')
 
-    plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_three/maxi_temp.png', dpi=200)
+    plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/individual/figure_3/maxi_temp.png', dpi=200)
 
 make_grs_hids()

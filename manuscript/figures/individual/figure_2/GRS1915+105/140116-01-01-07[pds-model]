@@ -1,7 +1,7 @@
 %!PS-Adobe-3.0 EPSF-3.0
 %%Title: PGPLOT PostScript plot
 %%Creator: PGPLOT
-%%CreationDate: 29-Sep-2022 17:04
+%%CreationDate: 29-Sep-2022 16:45
 %%BoundingBox: (atend)
 %%Orientation: Landscape
 %%Pages: (atend)
@@ -84,7 +84,7 @@ exch definefont exch dup lr mul LG dup FS
 0.000 setgray
 
 %%Trailer
-%%BoundingBox: 91 -30 596 712
+%%BoundingBox: 91 -24 596 712
 %%DocumentFonts:
 %%Pages: 0
 %%EOF

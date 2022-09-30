@@ -1,6 +1,6 @@
 figure one: time vs net count rate plots for both (done)
-figure two: energy/timing data and models for both sources (almost done)
-figure three: HIDs for GRS (fix)
+figure two: energy/timing data and models for both sources (done)
+figure three: HIDs for GRS (fix with new data, otherwise good)
 figure four: violin plots (need to fix, add MAXI)
 figure five: pds with overplotted models and models (for now just GRS, may stay that way for space)
 figure six: results regression plots (3x5: grs, maxi spectrum, maxi features five columns for five models; MAKE FONT SCALE BIGGER!)

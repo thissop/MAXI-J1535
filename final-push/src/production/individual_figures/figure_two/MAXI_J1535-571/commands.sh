@@ -30,9 +30,10 @@ freeze 4-9
 
 fit
 
-cpd /ps
 setplot energy
-plot data
+cpd /ps
+plot ldata
+cd /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/individual/figure_2/MAXI_J1535-571/
 iplot 
 label bottom Frequency (Hz)
 label left Power (rms Normalized)
@@ -41,9 +42,9 @@ font roman
 t off
 View 0.12 0.12
 csize 2.0
-rescale x 1. 15.
-log y
-hard /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_two/MAXI_J1535-571/1050360105_21[pds-data].ps/ps
+rescale x 1. 10.
+rescale y 0.00001 0.01
+hard 1050360105_21[pds-data].ps/ps
 quit 
 plot model 
 iplot
@@ -54,14 +55,14 @@ label X Frequency (Hz)
 label Y Power (rms Normalized)
 View 0.12 0.12
 csize 2.0
-rescale x 1. 15.
-log y
-hard /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_two/MAXI_J1535-571/1050360105_21[pds-model].ps/ps
+rescale x 1. 10.
+rescale y 0.00001 0.01
+hard 1050360105_21[pds-model].ps/ps
 quit
 quit
 y
 
-cd /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_two/MAXI_J1535-571/
+cd /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/individual/figure_2/MAXI_J1535-571/
 
 xspec 
 chatter 0
@@ -86,9 +87,10 @@ query yes
 fit
 
 notice 0.5-10.0
-cpd /VPS
 setplot energy 
-plot data 
+cpd /ps
+plot ldata 
+cd /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/individual/figure_2/MAXI_J1535-571/
 iplot 
 font roman
 t off
@@ -96,8 +98,6 @@ label top
 View 0.12 0.12
 csize 2.0
 rescale x 0.5 10.
-hard /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_two/MAXI_J1535-571/1050360105_21[spectrum-data].ps/ps
-1050360105_21[spectrum-data]/ps
 hard 1050360105_21[spectrum-data].ps/ps
 quit
 
@@ -108,9 +108,7 @@ t off
 label top
 View 0.12 0.12
 csize 2.0
-rescale x 0.5 20.
-hard /mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_two/MAXI_J1535-571/1050360105_21[spectrum-model].ps/ps
-1050360105_21[spectrum-model]/ps
+rescale x 0.5 10.
 hard 1050360105_21[spectrum-model].ps/ps
 quit 
 quit
@@ -119,7 +117,7 @@ y
 python 
 import os 
 
-dir = '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/figure_two/MAXI_J1535-571/'
+dir = '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/individual/figure_2/MAXI_J1535-571/'
 
 old_plots = ['1050360105_21[pds-data].ps', '1050360105_21[pds-model].ps', '1050360105_21[spectrum-model].ps', '1050360105_21[spectrum-data].ps']
 
