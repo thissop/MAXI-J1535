@@ -9,7 +9,7 @@ from sklearn.linear_model import LogisticRegression, LinearRegression
 from xgboost import XGBRegressor
 from sklearn.tree import DecisionTreeRegressor
 
-wh1 = False
+wh1 = True
 
 if wh1: 
     plt.style.use('/ar1/PROJ/fjuhsd/personal/thaddaeus/github/QPOML/qpoml/stylish.mplstyle')
@@ -134,7 +134,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
         # 2.1.5: Plot Feature Importances from fold-th Fold # 
         fig, ax = plt.subplots(figsize=(6,6))
         
-        collec.plot_feature_importances(model=model, fold=fold, kind='tree-shap', style='box', ax=ax, save_path=imps_path)
+        collec.plot_feature_importances(model=model, fold=fold, kind='tree-shap', style='box', ax=ax)
         
         temp_path = None 
 
@@ -210,7 +210,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
         all_gridsearch_scores.append(gridsearch_scores)
 
 def classification_pipeline(source:str, models:list, model_names:list,repository_path:str,
-                            scalar_context_path:str, qpo_path:str, 
+                            context_path:str, qpo_path:str, 
                             model_hyperparameter_dictionaries:list,
                             context_preprocess_dictionary:dict, wh1=wh1, fold:int=0,
                             k:int=10, repetitions:int=2, spectrum:bool=False): 
@@ -244,7 +244,7 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
 
     # MAKE GRID SEARCH SCORES PLOT? # 
 
-    source_observation_counts.append(len(pd.read_csv(scalar_context_path).index))
+    source_observation_counts.append(len(pd.read_csv(context_path).index))
     print('Source Observation Counts', source_observation_counts)
 
     for model_index, model in enumerate(models):
@@ -254,7 +254,7 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
         notation_string = f'[{model_name}][{source}][{spectrum}]'
 
         collec = collection()
-        collec.load(qpo_csv=qpo_path, context_csv=scalar_context_path, context_preprocess=context_preprocess_dictionary, approach='classification', units={'frequency':'hz'})
+        collec.load(qpo_csv=qpo_path, context_csv=context_path, context_preprocess=context_preprocess_dictionary, approach='classification', units={'frequency':'hz'})
         
         scores, _, _, best_params = collec.gridsearch(model=model, parameters=model_hyperparameter_dictionaries[model_index])
 
@@ -346,25 +346,68 @@ model_hyperparameter_dictionaries = [{'normalize':[True, False]},
                                      {'n_estimators':[500,1000], 'eta':[0.1]}]
 print('starting')
 
+# SHARE DICTIONARIES # 
+
+maxi_spectrum_context_preprocess = dict(zip([f'rebin_channel_{i}' for i in range(19)], 18*['normalize']))
+
 # ROUND ONE: GRS REGRESSION # 
 
-regression_pipeline(source='GRS 1915+905', 
+regression_pipeline(source='GRS_1915+905', 
                     models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor(), XGBRegressor()], 
                     model_names=['Linear', 'DT', 'RF', 'ET', 'XGBoost'], 
-                    qpo_path='final-push/data/pipeline/regression/GRS_1915+105_QPO-Input.csv', 
-                    context_path='final-push/data/pipeline/regression/GRS_1915+105_Scalar-Input.csv', 
+                    qpo_path='final-push/data/pipeline/GRS/GRS_1915+105_QPO-Input.csv', 
+                    context_path='final-push/data/pipeline/GRS/GRS_1915+105_Scalar-Input.csv', 
                     qpo_preprocess_dict={'frequency':'normalize', 'width':'normalize', 'rms':'normalize'}, 
                     context_preprocess_dict={'A':'normalize','B':'normalize','C':'normalize','D':'normalize','E':'normalize','F':'normalize','G':'normalize'}, 
-                    model_hyperparameter_dictionaries=model_hyperparameter_dictionaries)
+                    model_hyperparameter_dictionaries=model_hyperparameter_dictionaries,
+                    repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
 
-# ROUND FOUR: MAXI CLASSIFICATION, SCALAR INPUT
+# ROUND TWO: MAXI REGRESSION, SCALAR INPUT 
 
-classification_pipeline(source='MAXI J1535-571', 
+regression_pipeline(source='MAXI_J1535-571', 
+                    models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor(), XGBRegressor()], 
+                    model_names=['Linear', 'DT', 'RF', 'ET', 'XGBoost'], 
+                    qpo_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_QPO_regression.csv', 
+                    context_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_Scalar-Input.csv', 
+                    qpo_preprocess_dict={'frequency':'normalize','width':'normalize','normalization':'normalize'}, 
+                    context_preprocess_dict={'A':'normalize','B':'normalize','C':'normalize','D':'normalize','E':'normalize','F':'normalize'}, 
+                    model_hyperparameter_dictionaries=model_hyperparameter_dictionaries,
+                    repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
+
+# ROUND THREE: MAXI REGRESSION, SPECTRUM INPUT 
+
+regression_pipeline(source='MAXI_J1535-571', 
+                    models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor(), XGBRegressor()], 
+                    model_names=['Linear', 'DT', 'RF', 'ET', 'XGBoost'], 
+                    qpo_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_QPO_regression.csv', 
+                    context_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_Rebin-Spectra.csv', 
+                    qpo_preprocess_dict={'frequency':'normalize','width':'normalize','normalization':'normalize'}, 
+                    context_preprocess_dict=maxi_spectrum_context_preprocess, 
+                    model_hyperparameter_dictionaries=model_hyperparameter_dictionaries,
+                    spectrum=True,
+                    repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
+
+# ROUND FOUR: MAXI CLASSIFICATION, SCALAR INPUT, BINARY
+
+classification_pipeline(source='MAXI_J1535-571', 
                         models=[RandomForestClassifier(), LogisticRegression()], 
                         model_names=['Random Forest', 'Logistic Regression'], 
-                        scalar_context_path='final-push/data/pipeline/classification/MAXI_J1535-571_Scalar-Input.csv', 
-                        qpo_path='final-push/data/pipeline/classification/MAXI_J1535-571_QPO-Input.csv',
+                        context_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_Scalar-Input.csv', 
+                        qpo_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_QPO-Input.csv',
                         model_hyperparameter_dictionaries=[{'n_estimators':[50,100,200]}, 
                                                            {'penalty':['l2'], 'C':[1, 5]}], 
-                        context_preprocess_dictionary={'A':'normalize', 'B':'normalize', 'C':'normalize', 'D':'normalize', 'E':'normalize', 'F':'normalize', 'G':'normalize'}, 
-                        )
+                        context_preprocess_dictionary={'A':'normalize','B':'normalize','C':'normalize','D':'normalize','E':'normalize','F':'normalize'},
+                        repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
+
+# ROUND FIVE: MAXI CLASSIFICATION, SPECTRUM INPUT, BINARY
+
+classification_pipeline(source='MAXI_J1535-571', 
+                        models=[RandomForestClassifier(), LogisticRegression()], 
+                        model_names=['Random Forest', 'Logistic Regression'], 
+                        context_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_Rebin-Spectra.csv', 
+                        qpo_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_QPO-Input.csv',
+                        model_hyperparameter_dictionaries=[{'n_estimators':[50,100,200]}, 
+                                                           {'penalty':['l2'], 'C':[1, 5]}], 
+                        context_preprocess_dictionary=maxi_spectrum_context_preprocess,
+                        spectrum=True,
+                        repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
