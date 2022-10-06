@@ -9,3 +9,7 @@ figure eight: GRS feature importances
 figure nine: MAXI feture importances (2x2: left two for spectrum, right two for features, top two for reg, bottom two for class)
 figure ten: MAXI pairplot of all features (eh?)
 figure eleven: bias investigation plots (2x2: left is some visual communication of differences in accuracy for freqs vs others, right is difference in accuracy plots when the model is forced to only focus on that one feature, e.g. maybe two side by side 2d histograms or kdes or scatter plots with kdes, experiment which looks best, but left is x=errors for spec general, y=errors for spec specialized, right is x=errors for features general, y = errors for features specialized. Has three plots for freqs, widths, and amplitudes)
+
+# potential additional #
+
+figure a1: multi-class confusion matrix for Random Forest and or multinomial logistic regression?
