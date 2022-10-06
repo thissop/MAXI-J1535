@@ -9,6 +9,9 @@ from sklearn.linear_model import LogisticRegression, LinearRegression
 from xgboost import XGBRegressor
 from sklearn.tree import DecisionTreeRegressor
 
+import warnings
+warnings.filterwarnings("ignore")
+
 wh1 = True
 
 if wh1: 
@@ -43,9 +46,9 @@ def regression_pipeline(source:str, models:list, model_names:list,
     import numpy as np
     import pandas as pd
     import seaborn as sns
-    from qpoml import collection
+    from qpoml.new_main import collection
     from qpoml.plotting import plot_model_comparison
-    from qpoml.utilities import compare_models
+    from qpoml.utilities import pairwise_compare_models
 
     #plt.rcParams["mathtext.fontset"] = "dejavuserif"
     #plt.style.use('https://gist.githubusercontent.com/thissop/44b6f15f8f65533e3908c2d2cdf1c362/raw/fab353d758a3f7b8ed11891e27ae4492a3c1b559/science.mplstyle')
@@ -83,6 +86,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
         notation_string = f'[{model_name}][{source}][{spectrum}]'
 
         collec = collection()
+
         collec.load(qpo_csv=qpo_path, context_csv=context_path,
                     context_preprocess=context_preprocess_dict, qpo_preprocess=qpo_preprocess_dict, units=units, approach='regression') 
 
@@ -153,7 +157,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
     fig, ax = plt.subplots()
     print(model_names, len(fold_performances))
     plot_model_comparison(model_names=model_names, performance_lists=fold_performances, style='violin', ax=ax, cut=0)
-    temp_path = f'{repository_path}manuscript/figures/individual/figure_4/[{notation_string}][model-comparison]'
+    temp_path = f'{repository_path}manuscript/figures/individual/figure_4/[{source}][{spectrum}][model-comparison]'
     plt.savefig(f'{temp_path}.pdf') 
     plt.savefig(f'{temp_path}.png', dpi=200) 
     plt.close()
@@ -163,57 +167,23 @@ def regression_pipeline(source:str, models:list, model_names:list,
     fig, ax = plt.subplots()
     print(model_names, len(fold_performances))
     plot_model_comparison(model_names=model_names, performance_lists=fold_performances, style='violin', ax=ax)
-    temp_path = f'{repository_path}manuscript/figures/individual/figure_4/{notation_string}[model_comparison:no-cut]'
+    temp_path = f'{repository_path}manuscript/figures/individual/figure_4/[{source}][{spectrum}][model_comparison:no-cut]'
     plt.savefig(f'{temp_path}.pdf') 
     plt.savefig(f'{temp_path}.png', dpi=200) 
     plt.close()
 
     # 2.2.2: Pairwise Statistical Model Comparison # 
-    first_model_names, second_model_names = ([], []) 
-    t_values, p_values = ([], []) 
-    first_better_probabilities, second_better_probabilities = ([], []) 
 
-    for i, first_score_list in enumerate(fold_performances):
-        first_name = model_names[i]
-        for j in range(i+1, model_n):
-            print(i,j)
+    temp_path = f'{repository_path}manuscript/tables/[{source}][{spectrum}][comparison_table]'
 
-            second_score_list = fold_performances[j]
-
-            second_name = model_names[j]
-
-            first_model_names.append(first_name)
-            second_model_names.append(second_name)
-
-            t, p = compare_models(first_score_list, second_score_list, n_train=n_train, n_test=n_test, approach='frequentist')
-            first_better, second_better, _, _ = compare_models(first_score_list, second_score_list, n_train=n_train, n_test=n_test, approach='bayesian')
-        
-            t_values.append(t)
-            p_values.append(p)
-            first_better_probabilities.append(first_better)
-            second_better_probabilities.append(second_better)
-
-        temp_columns = [first_model_names, second_model_names, t_values, p_values, first_better_probabilities, second_better_probabilities]
-        temp_names = ['First Model Name', 'Second Model Name', 't', 'p', '% Chance First Better', '% Chance Second Better']
-        
-        pairwise_results_df = pd.DataFrame()
-        for i in range(len(temp_columns)): 
-            pairwise_results_df[temp_names[i]] = temp_columns[i]
-        
-        temp_path = f'{repository_path}manuscript/tables/{notation_string}[pairwise-comparison]'
-        
-        pairwise_results_df.to_csv(f'{temp_path}.csv', index=False)
-        pairwise_results_df.to_latex(f'{temp_path}.tex', index=False, float_format="%.2f")
-
-        # 2.3: Prepare for Step 3 # 
-
-        all_gridsearch_scores.append(gridsearch_scores)
+    pairwise_compare_models(model_names=model_names, model_score_arrays=fold_performances, n_train=n_train, n_test=n_test, save_dir=None, save_path=temp_path)
 
 def classification_pipeline(source:str, models:list, model_names:list,repository_path:str,
                             context_path:str, qpo_path:str, 
                             model_hyperparameter_dictionaries:list,
                             context_preprocess_dictionary:dict, wh1=wh1, fold:int=0,
-                            k:int=10, repetitions:int=2, spectrum:bool=False): 
+                            k:int=10, repetitions:int=2, spectrum:bool=False, 
+                            additional_info=None): 
     
     import os
     import matplotlib.pyplot as plt
@@ -252,6 +222,9 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
         model_name = model_names[model_index]
 
         notation_string = f'[{model_name}][{source}][{spectrum}]'
+        if additional_info is not None: 
+            for i, j in zip(list(additional_info.keys()), list(additional_info.values())):
+                notation_string+=f'[{i}:{j}]'
 
         collec = collection()
         collec.load(qpo_csv=qpo_path, context_csv=context_path, context_preprocess=context_preprocess_dictionary, approach='classification', units={'frequency':'hz'})
@@ -344,16 +317,15 @@ model_hyperparameter_dictionaries = [{'normalize':[True, False]},
                                      {'min_samples_split': [4,6], 'min_samples_leaf':[1]},
                                      {'min_samples_split':[4,6], 'min_samples_leaf':[1]}, 
                                      {'n_estimators':[500,1000], 'eta':[0.1]}]
-print('starting')
-
 # SHARE DICTIONARIES # 
 
-maxi_spectrum_context_preprocess = dict(zip([f'rebin_channel_{i}' for i in range(19)], 18*['normalize']))
+maxi_spectrum_context_preprocess = dict(zip([f'rebin_channel_{i}' for i in range(19)], 19*['normalize']))
 
 # ROUND ONE: GRS REGRESSION # 
+print('starting round one')
 
 regression_pipeline(source='GRS_1915+905', 
-                    models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor(), XGBRegressor()], 
+                    models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor()],#, XGBRegressor()], 
                     model_names=['Linear', 'DT', 'RF', 'ET', 'XGBoost'], 
                     qpo_path='final-push/data/pipeline/GRS/GRS_1915+105_QPO-Input.csv', 
                     context_path='final-push/data/pipeline/GRS/GRS_1915+105_Scalar-Input.csv', 
@@ -363,9 +335,10 @@ regression_pipeline(source='GRS_1915+905',
                     repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
 
 # ROUND TWO: MAXI REGRESSION, SCALAR INPUT 
+print('starting round two')
 
 regression_pipeline(source='MAXI_J1535-571', 
-                    models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor(), XGBRegressor()], 
+                    models=[LinearRegression(), DecisionTreeRegressor()],#, RandomForestRegressor(), ExtraTreesRegressor(), XGBRegressor()], 
                     model_names=['Linear', 'DT', 'RF', 'ET', 'XGBoost'], 
                     qpo_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_QPO_regression.csv', 
                     context_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_Scalar-Input.csv', 
@@ -375,9 +348,10 @@ regression_pipeline(source='MAXI_J1535-571',
                     repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
 
 # ROUND THREE: MAXI REGRESSION, SPECTRUM INPUT 
+print('starting round three')
 
 regression_pipeline(source='MAXI_J1535-571', 
-                    models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor(), XGBRegressor()], 
+                    models=[LinearRegression(), DecisionTreeRegressor()],#, RandomForestRegressor(), ExtraTreesRegressor(), XGBRegressor()], 
                     model_names=['Linear', 'DT', 'RF', 'ET', 'XGBoost'], 
                     qpo_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_QPO_regression.csv', 
                     context_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_Rebin-Spectra.csv', 
@@ -388,6 +362,7 @@ regression_pipeline(source='MAXI_J1535-571',
                     repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
 
 # ROUND FOUR: MAXI CLASSIFICATION, SCALAR INPUT, BINARY
+print('starting round four')
 
 classification_pipeline(source='MAXI_J1535-571', 
                         models=[RandomForestClassifier(), LogisticRegression()], 
@@ -400,6 +375,7 @@ classification_pipeline(source='MAXI_J1535-571',
                         repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
 
 # ROUND FIVE: MAXI CLASSIFICATION, SPECTRUM INPUT, BINARY
+print('starting round five')
 
 classification_pipeline(source='MAXI_J1535-571', 
                         models=[RandomForestClassifier(), LogisticRegression()], 
