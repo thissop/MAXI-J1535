@@ -268,7 +268,7 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
 
         collec.plot_confusion_matrix(fold=fold, ax=ax, labels=labels)
 
-        cm_path = f'{repository_path}manuscript/figures/individual/figure_7/{notation_string}[confusion_matrix:type={cm_type}]'
+        cm_path = f'{repository_path}manuscript/figures/individual/figure_7/{notation_string}[confusion_matrix-type={cm_type}]'
         fig.tight_layout()
         plt.savefig(f'{cm_path}.pdf')
         plt.savefig(f'{cm_path}.png', dpi=200)
