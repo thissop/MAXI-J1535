@@ -1,9 +1,8 @@
 SHARED 
 
-A:simpl_FracScat
-B:net_source_count_rate
-C:tin_before_error
-D:diskbb_norm_before_error
-E:gamma_before_error
-F:nthcomp_norm_before_error
-G:hardness_ratio 
+net_count_rate: A
+hardness: B
+gamma: C
+nthcomp_norm: D
+diskbb_tin: E
+diskbb_norm: F
