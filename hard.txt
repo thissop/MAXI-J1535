@@ -1,0 +1,9 @@
+#XSPEC version: 12.12.0
+#Build Date/Time: Mon Jan 31 20:12:49 2022
+#
+!XSPEC12> show data
+#
+# No Spectra defined.
+#
+!XSPEC12> log none
+#

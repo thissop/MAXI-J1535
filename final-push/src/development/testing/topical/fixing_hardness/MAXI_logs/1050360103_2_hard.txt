@@ -1,0 +1,21 @@
+#XSPEC version: 12.12.0
+#Build Date/Time: Mon Jan 31 20:12:49 2022
+#
+!XSPEC12> show data
+#
+#1 file 1 spectrum 
+#Spectrum 1  Spectral Data File: /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360103/jspipe/js_ni1050360103_0mpu7_silver_GTI2.jsgrp
+#Net count rate (cts/s) for Spectrum:1  1.278e+03 +/- 2.772e+00 (99.9 % total)
+# Assigned to Data Group 1 and Plot Group 1
+#  Noticed Channels:  101-254
+#  Telescope: NICER Instrument: XTI  Channel Type: PI
+#  Exposure Time: 166.5 sec
+# Using fit statistic: chi
+# Using Background File                /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/1050360103/jspipe/js_ni1050360103_0mpu7_silver_GTI2.bg
+#  Background Exposure Time: 166.5 sec
+# Using Response (RMF) File            /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/nicer_d48_51839799.rmf for Source 1
+# Using Auxiliary Response (ARF) File  /mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/nicer_d48_51839799.arf
+#
+#
+!XSPEC12> log none
+#

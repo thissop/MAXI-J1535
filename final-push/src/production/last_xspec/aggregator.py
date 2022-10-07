@@ -12,7 +12,7 @@ grs_results = '/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/src/
 
 if not os.path.exists(maxi_results):
     with open(maxi_results, 'w') as f1:
-        f1.write('observation_ID,A,B,C,D,E,F,G\n') 
+        f1.write('observation_ID,C,D,E,F\n')  # observation_ID, gamma, nthcomp_norm, Tin, diskbb_norm
 
 if not os.path.exists(grs_results):
     with open(grs_results, 'w') as f2:
@@ -73,46 +73,46 @@ with open(log_file, 'r') as f3:
         #    dof = line_list[6]
         #    red_pgstat = float(pgstat)/float(dof)
 
-if maxi: 
+#if maxi: 
     
-    id_list = observation_ID.split('_')
-    obsid = id_list[0]
-    gti = id_list[1]    
+    #id_list = observation_ID.split('_')
+    #obsid = id_list[0]
+    #gti = id_list[1]    
 
-    data_file = f'/mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/{obsid}/jspipe/js_ni{obsid}_0mpu7_silver_GTI{gti}.jsgrp'
-    bg_file = data_file.replace('.jsgrp', '.bg')
+    #data_file = f'/mnt/c/Users/Research/Documents/GitHub_LFS/Steiner/thaddaeus/{obsid}/jspipe/js_ni{obsid}_0mpu7_silver_GTI{gti}.jsgrp'
+    #bg_file = data_file.replace('.jsgrp', '.bg')
 
-    data_hdul = fits.open(data_file)
+    #data_hdul = fits.open(data_file)
     
-    counts_array = np.array(data_hdul[1].data['COUNTS'])
-    exp_time = float(data_hdul[1].header['EXPOSURE'])
-    channels_array = np.array(data_hdul[1].data['CHANNEL'])
+    #counts_array = np.array(data_hdul[1].data['COUNTS'])
+    #exp_time = float(data_hdul[1].header['EXPOSURE'])
+    #channels_array = np.array(data_hdul[1].data['CHANNEL'])
     
     # -0.5 1.5-2.3
-    soft_mask = np.logical_and(channels_array>=50, channels_array<400)
+    #soft_mask = np.logical_and(channels_array>=50, channels_array<400)
     #soft_mask_two = np.logical_or(channels_array>230, channels_array<150)
 
-    soft_counts= channels_array[soft_mask]
+    #soft_counts= channels_array[soft_mask]
 
-    hard_mask = np.logical_and(channels_array>=400, channels_array<=999)
+    #hard_mask = np.logical_and(channels_array>=400, channels_array<=999)
 
-    hard_counts = counts_array[hard_mask]
+    #hard_counts = counts_array[hard_mask]
 
-    bg_hdul = fits.open(bg_file)
-    bg_counts_array = bg_hdul[1].data['COUNTS']
-    bg_exp_time = float(bg_hdul[1].header['EXPOSURE'])
+    #bg_hdul = fits.open(bg_file)
+    #bg_counts_array = bg_hdul[1].data['COUNTS']
+    #bg_exp_time = float(bg_hdul[1].header['EXPOSURE'])
     
-    bg_hard_counts = bg_counts_array[hard_mask]
-    bg_soft_counts = bg_counts_array[soft_mask]
+    #bg_hard_counts = bg_counts_array[hard_mask]
+    #bg_soft_counts = bg_counts_array[soft_mask]
 
-    scale_factor = exp_time/bg_exp_time
+    #scale_factor = exp_time/bg_exp_time
 
-    net_soft_counts = np.sum((soft_counts-(bg_soft_counts*scale_factor))/exp_time)
-    net_hard_counts = np.sum((hard_counts-(bg_hard_counts*scale_factor))/exp_time)
+    #net_soft_counts = np.sum((soft_counts-(bg_soft_counts*scale_factor))/exp_time)
+    #net_hard_counts = np.sum((hard_counts-(bg_hard_counts*scale_factor))/exp_time)
 
-    hardness = str(net_hard_counts/(net_soft_counts+net_hard_counts))
+    #hardness = str(net_hard_counts/(net_soft_counts+net_hard_counts))
 
-elif grs: 
+if grs: 
 
     hard = None 
     soft = None 
@@ -131,7 +131,7 @@ elif grs:
     
     hardness = str(hard/(hard+soft)) 
 
-results_line = ','.join([str(i) for i in [observation_ID, net_count_rate, hardness, gamma, nthcomp_norm, kTe, Tin, diskbb_norm]])
+results_line = ','.join([str(i) for i in [observation_ID, gamma, nthcomp_norm, Tin, diskbb_norm]])
 
 if maxi: 
     with open(maxi_results, 'a') as f4:
