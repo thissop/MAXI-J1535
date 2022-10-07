@@ -168,7 +168,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
     fig, ax = plt.subplots()
     print(model_names, len(fold_performances))
     plot_model_comparison(model_names=model_names, performance_lists=fold_performances, style='violin', ax=ax)
-    temp_path = f'{repository_path}manuscript/figures/individual/figure_4/[{source}][{spectrum}][model_comparison:no-cut]'
+    temp_path = f'{repository_path}manuscript/figures/individual/figure_4/[{source}][{spectrum}][model_comparison=no-cut]'
     plt.savefig(f'{temp_path}.pdf') 
     plt.savefig(f'{temp_path}.png', dpi=200) 
     plt.close()
