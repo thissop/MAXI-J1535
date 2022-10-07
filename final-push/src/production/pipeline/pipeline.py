@@ -226,7 +226,7 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
         notation_string = f'[{model_name}][{source}][spectrum={spectrum}][multi={multiclass}][fold={fold}]'
         if additional_info is not None: 
             for i, j in zip(list(additional_info.keys()), list(additional_info.values())):
-                notation_string+=f'[{i}:{j}]'
+                notation_string+=f'[{i}={j}]'
 
         collec = collection()
         collec.load(qpo_csv=qpo_path, context_csv=context_path, context_preprocess=context_preprocess_dictionary, approach='classification', units={'frequency':'hz'})
