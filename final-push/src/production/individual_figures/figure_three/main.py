@@ -1,4 +1,4 @@
-def make_grs_hids(data_file='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/regression/GRS_1915+105_Scalar-Input.csv', cols:list=['A', 'F']):
+def make_grs_hids(data_file='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/GRS/[scalar-input][regression].csv', cols:list=['A', 'F']):
     r'''
     
     Notes
@@ -17,7 +17,7 @@ def make_grs_hids(data_file='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/f
 
     df = pd.read_csv(data_file)
 
-    df = df.merge(pd.read_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/regression/GRS_1915+105_QPO-Input.csv'), on='observation_ID')
+    df = df.merge(pd.read_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/GRS/[QPO][regression].csv'), on='observation_ID')
 
     #sns.set_style('darkgrid')
     #sns.set_style('ticks')
@@ -32,7 +32,7 @@ def make_grs_hids(data_file='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/f
 
     #fig, ax = plt.subplots(figsize=())
 
-    plt.scatter(df['F'], df['A'], c=df['frequency'], lw=0.3, edgecolors='black', cmap='viridis', s=3)
+    plt.scatter(df['B'], df['A'], c=df['frequency'], lw=0.3, edgecolors='black', cmap='viridis', s=3)
 
     plt.gca().set(xlabel='Hardness Ratio', ylabel='Net Count Rate') # 
 
@@ -53,7 +53,7 @@ def make_grs_hids(data_file='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/f
     #plt.rcParams['font.family'] = 'serif'
     #plt.rcParams["mathtext.fontset"] = "dejavuserif"
 
-    plt.scatter(df['F'], df['frequency'], c=df['A'], lw=0.3, edgecolors='black', cmap='viridis', s=3)
+    plt.scatter(df['B'], df['frequency'], c=df['A'], lw=0.3, edgecolors='black', cmap='viridis', s=3)
 
     plt.gca().set(xlabel='Hardness Ratio', ylabel='QPO Centroid Frequency') # 
 
@@ -65,6 +65,7 @@ def make_grs_hids(data_file='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/f
     plt.clf()
     plt.close()
 
+    '''
     # test for maxi 
 
     df = pd.read_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/classification/MAXI_J1535-571_Scalar-Input.csv').merge(pd.read_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/classification/MAXI_J1535-571_dates.csv'), on='observation_ID')
@@ -75,5 +76,6 @@ def make_grs_hids(data_file='/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/f
     ax.set(xscale='log')
 
     plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/individual/figure_3/maxi_temp.png', dpi=200)
+    '''
 
 make_grs_hids()
