@@ -83,7 +83,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
 
         model_name = model_names[model_index]
 
-        notation_string = f'[{model_name}][{source}][{spectrum}]'
+        notation_string = f'[{model_name}][{source}][spectrum={spectrum}]'
 
         collec = collection()
 
@@ -185,7 +185,7 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
                             model_hyperparameter_dictionaries:list,
                             context_preprocess_dictionary:dict, wh1=wh1, fold:int=0,
                             k:int=10, repetitions:int=2, spectrum:bool=False, 
-                            additional_info=None): 
+                            additional_info=None, multiclass:bool=False): 
     
     import os
     import matplotlib.pyplot as plt
@@ -223,7 +223,7 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
 
         model_name = model_names[model_index]
 
-        notation_string = f'[{model_name}][{source}][{spectrum}]'
+        notation_string = f'[{model_name}][{source}][spectrum={spectrum}][multi={multiclass}][fold={fold}]'
         if additional_info is not None: 
             for i, j in zip(list(additional_info.keys()), list(additional_info.values())):
                 notation_string+=f'[{i}:{j}]'
@@ -249,7 +249,6 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
 
         # .1 Confusion Matrix # 
 
-
         if wh1: 
             plt.style.use('/ar1/PROJ/fjuhsd/personal/thaddaeus/github/QPOML/qpoml/stylish.mplstyle')
         else: 
@@ -270,7 +269,7 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
 
         collec.plot_confusion_matrix(fold=fold, ax=ax, labels=labels)
 
-        cm_path = f'{repository_path}manuscript/figures/individual/figure_7/{notation_string}[confusion_matrix-type={cm_type}]'
+        cm_path = f'{repository_path}manuscript/figures/individual/figure_7/{notation_string}[confusion_matrix]'
         fig.tight_layout()
         plt.savefig(f'{cm_path}.pdf')
         plt.savefig(f'{cm_path}.png', dpi=200)
@@ -312,9 +311,10 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
         plt.savefig(f'{fi_path}.png', dpi=200)
 
         # save predictions, etc. 
-        statistics = pd.DataFrame(collec.get_performance_statistics())
-        if source.replace('_',' ') == 'MAXI J1535-571':
-            pd.DataFrame(statistics).to_csv(f'{repository_path}final-push/output/pipeline/MAXI_J1535-571/{notation_string}[Performance_stats].csv', index=False)
+        if multiclass != True: 
+            statistics = pd.DataFrame(collec.get_performance_statistics())
+            if source.replace('_',' ') == 'MAXI J1535-571':
+                pd.DataFrame(statistics).to_csv(f'{repository_path}final-push/output/pipeline/MAXI_J1535-571/{notation_string}[Performance_stats].csv', index=False)
 
 model_hyperparameter_dictionaries = [{'normalize':[True, False]},
                                      {'min_samples_split':[4,6], 'min_samples_leaf':[3]}, 
@@ -328,11 +328,14 @@ maxi_spectrum_context_preprocess = dict(zip([f'rebin_channel_{i}' for i in range
 # ROUND ONE: GRS REGRESSION # 
 print('starting round one')
 
+grs_qpo_path = 'final-push/data/pipeline/GRS/[QPO][regression].csv'
+grs_context_path = 'final-push/data/pipeline/GRS/[scalar-input][regression].csv'
+
 regression_pipeline(source='GRS_1915+905', 
                     models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor()],#, XGBRegressor()], 
                     model_names=['Linear', 'DT', 'RF', 'ET', 'XGBoost'], 
-                    qpo_path='final-push/data/pipeline/GRS/GRS_1915+105_QPO-Input.csv', 
-                    context_path='final-push/data/pipeline/GRS/GRS_1915+105_Scalar-Input.csv', 
+                    qpo_path=grs_qpo_path, 
+                    context_path=grs_context_path, 
                     qpo_preprocess_dict={'frequency':'normalize', 'width':'normalize', 'rms':'normalize'}, 
                     context_preprocess_dict={'A':'normalize','B':'normalize','C':'normalize','D':'normalize','E':'normalize','F':'normalize','G':'normalize'}, 
                     model_hyperparameter_dictionaries=model_hyperparameter_dictionaries,
@@ -341,11 +344,17 @@ regression_pipeline(source='GRS_1915+905',
 # ROUND TWO: MAXI REGRESSION, SCALAR INPUT 
 print('starting round two')
 
+maxi_spectrum_path = 'final-push/data/pipeline/MAXI/[energy-spectra][rebin-regression].csv'
+maxi_scalar_path = 'final-push/data/pipeline/MAXI/[scalar-input][regression].csv'
+maxi_qpo_regression_path = 'final-push/data/pipeline/MAXI/[QPO][two-feature-regression].csv'
+maxi_qpo_binary_path = 'final-push/data/pipeline/MAXI/[QPO][binary].csv'
+maxi_qpo_multi_path = 'final-push/data/pipeline/MAXI/[QPO][multiclass].csv'
+
 regression_pipeline(source='MAXI_J1535-571', 
-                    models=[LinearRegression(), DecisionTreeRegressor()],#, RandomForestRegressor(), ExtraTreesRegressor(), XGBRegressor()], 
+                    models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor()],#, XGBRegressor()], 
                     model_names=['Linear', 'DT', 'RF', 'ET', 'XGBoost'], 
-                    qpo_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_QPO_regression.csv', 
-                    context_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_Scalar-Input.csv', 
+                    qpo_path=maxi_qpo_regression_path, 
+                    context_path=maxi_scalar_path, 
                     qpo_preprocess_dict={'frequency':'normalize','width':'normalize','normalization':'normalize'}, 
                     context_preprocess_dict={'A':'normalize','B':'normalize','C':'normalize','D':'normalize','E':'normalize','F':'normalize'}, 
                     model_hyperparameter_dictionaries=model_hyperparameter_dictionaries,
@@ -355,10 +364,10 @@ regression_pipeline(source='MAXI_J1535-571',
 print('starting round three')
 
 regression_pipeline(source='MAXI_J1535-571', 
-                    models=[LinearRegression(), DecisionTreeRegressor()],#, RandomForestRegressor(), ExtraTreesRegressor(), XGBRegressor()], 
+                    models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor()],#, XGBRegressor()], 
                     model_names=['Linear', 'DT', 'RF', 'ET', 'XGBoost'], 
-                    qpo_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_QPO_regression.csv', 
-                    context_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_Rebin-Spectra.csv', 
+                    qpo_path=maxi_qpo_regression_path, 
+                    context_path=maxi_spectrum_path, 
                     qpo_preprocess_dict={'frequency':'normalize','width':'normalize','normalization':'normalize'}, 
                     context_preprocess_dict=maxi_spectrum_context_preprocess, 
                     model_hyperparameter_dictionaries=model_hyperparameter_dictionaries,
@@ -371,8 +380,8 @@ print('starting round four')
 classification_pipeline(source='MAXI_J1535-571', 
                         models=[RandomForestClassifier(), LogisticRegression()], 
                         model_names=['Random Forest', 'Logistic Regression'], 
-                        context_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_Scalar-Input.csv', 
-                        qpo_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_QPO-Input.csv',
+                        context_path=maxi_scalar_path, 
+                        qpo_path=maxi_qpo_binary_path,
                         model_hyperparameter_dictionaries=[{'n_estimators':[50,100,200]}, 
                                                            {'penalty':['l2'], 'C':[1, 5]}], 
                         context_preprocess_dictionary={'A':'normalize','B':'normalize','C':'normalize','D':'normalize','E':'normalize','F':'normalize'},
@@ -384,10 +393,38 @@ print('starting round five')
 classification_pipeline(source='MAXI_J1535-571', 
                         models=[RandomForestClassifier(), LogisticRegression()], 
                         model_names=['Random Forest', 'Logistic Regression'], 
-                        context_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_Rebin-Spectra.csv', 
-                        qpo_path='final-push/data/pipeline/MAXI/MAXI_J1535-571_QPO-Input.csv',
+                        context_path=maxi_spectrum_path, 
+                        qpo_path=maxi_qpo_binary_path,
                         model_hyperparameter_dictionaries=[{'n_estimators':[50,100,200]}, 
                                                            {'penalty':['l2'], 'C':[1, 5]}], 
                         context_preprocess_dictionary=maxi_spectrum_context_preprocess,
                         spectrum=True,
                         repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
+
+# ROUND SIX: MAXI CLASSIFICATION, SCALAR INPUT, MULTI-OUTPUT
+print('starting round six')
+
+classification_pipeline(source='MAXI_J1535-571', 
+                        models=[RandomForestClassifier(), LogisticRegression()], 
+                        model_names=['Random Forest', 'Logistic Regression'], 
+                        context_path=maxi_scalar_path, 
+                        qpo_path=maxi_qpo_multi_path,
+                        model_hyperparameter_dictionaries=[{'n_estimators':[50,100,200]}, 
+                                                           {'penalty':['l2'], 'C':[1, 5]}], 
+                        context_preprocess_dictionary={'A':'normalize','B':'normalize','C':'normalize','D':'normalize','E':'normalize','F':'normalize'},
+                        spectrum=True,
+                        repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/', multiclass=True)
+
+# ROUND SEVEN: MAXI CLASSIFICATION, SPECTRUM INPUT, MULTI-OUTPUT
+print('starting round seven')
+
+classification_pipeline(source='MAXI_J1535-571', 
+                        models=[RandomForestClassifier(), LogisticRegression()], 
+                        model_names=['Random Forest', 'Logistic Regression'], 
+                        context_path=maxi_spectrum_path, 
+                        qpo_path=maxi_qpo_multi_path,
+                        model_hyperparameter_dictionaries=[{'n_estimators':[50,100,200]}, 
+                                                           {'penalty':['l2'], 'C':[1, 5]}], 
+                        context_preprocess_dictionary=maxi_spectrum_context_preprocess,
+                        spectrum=True,
+                        repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/', multiclass=True)
