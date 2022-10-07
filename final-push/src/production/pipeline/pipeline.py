@@ -127,6 +127,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
         fold_performances.append(list(fold_performance_df[model_comparison_statistic]))
 
         # 2.1.4: Plot Results Regression from 10th Fold # 
+        sns.set_context(font_scale=1.15)
         fig, ax = plt.subplots(figsize=(4,4))
 
         collec.plot_results_regression(feature_name='frequency', which=[0], ax = ax, fold=fold)
@@ -172,6 +173,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
     plt.savefig(f'{temp_path}.png', dpi=200) 
     plt.close()
 
+    sns.set_context(font_scale=1)
     # 2.2.2: Pairwise Statistical Model Comparison # 
 
     temp_path = f'{repository_path}manuscript/tables/[{source}][{spectrum}][comparison_table]'
@@ -253,7 +255,7 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
         else: 
             plt.style.use('/mnt/c/Users/Research/Documents/GitHub/QPOML/qpoml/stylish.mplstyle')
 
-        sns.set_context('paper')
+        sns.set_context('paper', font_scale=1.4)
         fig, ax = plt.subplots(figsize=(4,4))
         y_set = list(set(np.array(collec.y_test).flatten()))
         cm_labels = None
@@ -275,6 +277,8 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
 
         plt.clf()
         plt.close()
+
+        sns.set_context(font_scale=1)
 
         # .2 ROC Curve # 
         if cm_type == 'binary':
