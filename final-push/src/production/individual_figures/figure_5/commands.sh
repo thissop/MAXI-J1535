@@ -31,7 +31,6 @@ label top
 font roman
 t off
 View 0.12 0.12
-csize 2.0
 rescale x 0.1 10
 hard  /ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/manuscript/figures/individual/figure_5/80701-01-54-02[fig-5-pds-data].ps/ps
 80701-01-54-02[pds-data]/ps
