@@ -1,2 +1,2 @@
-n_estimators
-1000
+alpha,eta,max_depth,n_estimators
+0,0.1,9,500

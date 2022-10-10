@@ -32,13 +32,15 @@ plt.rcParams["mathtext.fontset"] = "dejavuserif"
 def regression_pipeline(source:str, models:list, model_names:list,
                         qpo_path:str, context_path:str, repository_path:str,
                         qpo_preprocess_dict:dict, context_preprocess_dict:dict,
-                        model_hyperparameter_dictionaries:list,spectrum:bool=False,
+                        model_hyperparameter_dictionaries:list,hyperparams_to_use:list,spectrum:bool=False,
                         model_comparison_statistic:str='mae', k:int=10, repetitions:int=2, fold:int=9, wh1=wh1, stratify_file:str=None, 
                         units:dict={'frequency':'Hz'}):
 
     r''' 
     model_comparison_statistic : str
         either 'mae' or 'mse' 
+
+    model_hyper_parameter_dictionaries is a list than can be none (no gridsearch for all), or a list with some dictionaries, and some None entries for those models you don't want to optimize. 
 
     '''
 
@@ -92,26 +94,30 @@ def regression_pipeline(source:str, models:list, model_names:list,
                     context_preprocess=context_preprocess_dict, qpo_preprocess=qpo_preprocess_dict, units=units, approach='regression') 
 
         # 2.1.1: GridSearch # 
-
-        scores, _, _, best_params = collec.gridsearch(model=model, parameters=model_hyperparameter_dictionaries[model_index])
-
-        column_names = list(best_params.keys())
-        columns = [[i] for i in list(best_params.values())]
-
-        best_configuration_df = pd.DataFrame()
-
-        for temp_index in range(len(column_names)):
-            best_configuration_df[column_names[temp_index]] = columns[temp_index]
-
-        if source.replace('_',' ') == 'GRS 1915+905': 
-            best_configuration_df.to_csv(f'{repository_path}final-push/output/pipeline/GRS_1915+105/{notation_string}_BestParams.csv', index=False)
-        else: 
-            best_configuration_df.to_csv(f'{repository_path}final-push/output/pipeline/MAXI_J1535-571/{notation_string}_BestParams.csv', index=False)
         
+        if model_hyperparameter_dictionaries is not None and model_hyperparameter_dictionaries[model_index] is not None: 
+            scores, _, _, best_params = collec.gridsearch(model=model, parameters=model_hyperparameter_dictionaries[model_index])
+
+            column_names = list(best_params.keys())
+            columns = [[i] for i in list(best_params.values())]
+
+            best_configuration_df = pd.DataFrame()
+
+            for temp_index in range(len(column_names)):
+                best_configuration_df[column_names[temp_index]] = columns[temp_index]
+
+            if source.replace('_',' ') == 'GRS 1915+905': 
+                best_configuration_df.to_csv(f'{repository_path}final-push/output/pipeline/GRS_1915+105/{notation_string}_BestParams.csv', index=False)
+            else: 
+                best_configuration_df.to_csv(f'{repository_path}final-push/output/pipeline/MAXI_J1535-571/{notation_string}_BestParams.csv', index=False)
+        
+        else: 
+            best_params = hyperparams_to_use[model_index] 
+
         # 2.1.2: k-fold on Best Configuration # 
 
         if stratify_file is not None: 
-            stratify_dictionary = pd.read_csv(stratify_file).to_dict(orient='list')
+            stratify_dictionary = pd.read_csv(stratify_file).to_dict(orient='list') 
             collec.evaluate(model=model, evaluation_approach='k-fold', folds=k, repetitions=repetitions, hyperparameter_dictionary=best_params, stratify=stratify_dictionary) # evaluate-approach???
 
         else: 
@@ -189,8 +195,8 @@ def regression_pipeline(source:str, models:list, model_names:list,
 def classification_pipeline(source:str, models:list, model_names:list,repository_path:str,
                             context_path:str, qpo_path:str, 
                             model_hyperparameter_dictionaries:list,
-                            context_preprocess_dictionary:dict, wh1=wh1, fold:int=9,
-                            k:int=10, repetitions:int=2, spectrum:bool=False, 
+                            context_preprocess_dictionary:dict, hyperparams_to_use:list, wh1=wh1, fold:int=9,
+                            k:int=10, repetitions:int=2, spectrum:bool=False,
                             additional_info=None, multiclass:bool=False): 
     
     import os
@@ -234,20 +240,24 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
         collec = collection()
         collec.load(qpo_csv=qpo_path, context_csv=context_path, context_preprocess=context_preprocess_dictionary, approach='classification', units={'frequency':'hz'})
         
-        scores, _, _, best_params = collec.gridsearch(model=model, parameters=model_hyperparameter_dictionaries[model_index])
+        if model_hyperparameter_dictionaries is not None and model_hyperparameter_dictionaries[model_index] is not None: 
+            scores, _, _, best_params = collec.gridsearch(model=model, parameters=model_hyperparameter_dictionaries[model_index])
 
-        column_names = list(best_params.keys())
-        columns = [[i] for i in list(best_params.values())]
+            column_names = list(best_params.keys())
+            columns = [[i] for i in list(best_params.values())]
 
-        best_configuration_df = pd.DataFrame()
+            best_configuration_df = pd.DataFrame()
 
-        for temp_index in range(len(column_names)):
-            best_configuration_df[column_names[temp_index]] = columns[temp_index]
+            for temp_index in range(len(column_names)):
+                best_configuration_df[column_names[temp_index]] = columns[temp_index]
 
-        if source.replace('_',' ') == 'MAXI J1535-571':
-            best_configuration_df.to_csv(f'{repository_path}final-push/output/pipeline/MAXI_J1535-571/{notation_string}[BestParams].csv', index=False)
-        gridsearch_scores.append(scores)
-        
+            if source.replace('_',' ') == 'MAXI J1535-571':
+                best_configuration_df.to_csv(f'{repository_path}final-push/output/pipeline/MAXI_J1535-571/{notation_string}[BestParams].csv', index=False)
+            gridsearch_scores.append(scores)
+
+        else: 
+            best_params = hyperparams_to_use[model_index]
+
         collec.evaluate(model=model, evaluation_approach='k-fold', folds=k, stratify=True, repetitions=repetitions, hyperparameter_dictionary=best_params)
 
         # .1 Confusion Matrix # 
@@ -319,11 +329,20 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
             if source.replace('_',' ') == 'MAXI J1535-571':
                 pd.DataFrame(statistics).to_csv(f'{repository_path}final-push/output/pipeline/MAXI_J1535-571/{notation_string}[Performance_stats].csv', index=False)
 
-model_hyperparameter_dictionaries = [{'normalize':[True, False]},
-                                     {'min_samples_split':[2,4,6,8], 'min_samples_leaf':[1,3], 'max_features':['auto','sqrt']}, 
-                                     {'min_samples_split': [2,4,6,8], 'min_samples_leaf':[1,3], 'max_features':['auto','sqrt'], 'n_estimators':[50,100,150,200,500]},
-                                     {'min_samples_split':[2,4,6,8], 'min_samples_leaf':[1,3], 'max_features':['auto','sqrt'], 'n_estimators':[50,100,150,200,500], 'bootstrap':[True,False]}, 
-                                     {'n_estimators':[500,1000]}]#, 'eta':[0.1, 0.5, 0.9], 'max_depth':[3, 6 ,9], 'alpha': [0,0.25,0.5,0.75]}]#,'rounds':[50, 100, 150, 200], 'lamba':[0,0.25,0.5,0.75]}]
+
+# WHAT WAS TUNED DURING TUNING #
+'''
+{'normalize':[True]},
+{'min_samples_split':[2,4,6,8], 'min_samples_leaf':[1,3], 'max_features':['auto','sqrt']}, 
+{'min_samples_split': [2,4,6,8], 'min_samples_leaf':[1,3], 'max_features':['auto','sqrt'], 'n_estimators':[50,100,150,200,500]},
+{'min_samples_split':[2,4,6,8], 'min_samples_leaf':[1,3], 'max_features':['auto','sqrt'], 'n_estimators':[50,100,150,200,500], 'bootstrap':[True,False]}, 
+{'n_estimators':[500,1000], 'eta':[0.1, 0.5, 0.9], 'max_depth':[3, 6 ,9], 'alpha': [0,0.25,0.5,0.75]}]
+'''
+
+maxi_model_hyperparameter_dictionaries = None 
+
+grs_model_hyperparameter_dictionaries = None
+
 # SHARE DICTIONARIES # 
 
 maxi_spectrum_context_preprocess = dict(zip([f'{i}' for i in range(19)], 19*['normalize']))
@@ -336,16 +355,21 @@ grs_context_path = 'final-push/data/pipeline/GRS/[scalar-input][regression].csv'
 
 regression_pipeline(source='GRS_1915+905', 
                     models=[LinearRegression(), 
-                            DecisionTreeRegressor(), #min_samples_split=2,min_samples_leaf=3,max_features='auto'
-                            RandomForestRegressor(), # 
-                            ExtraTreesRegressor(), # bootstrap=False,max_features='auto',min_samples_leaf=1,min_samples_split=2,n_estimators=200
+                            DecisionTreeRegressor(),
+                            RandomForestRegressor(),  
+                            ExtraTreesRegressor(),
                             XGBRegressor()], 
                     model_names=['Linear', 'DT', 'RF', 'ET', 'XGBoost'], 
                     qpo_path=grs_qpo_path, 
                     context_path=grs_context_path, 
+                    hyperparams_to_use = [{'normalize':True}, 
+                                                {'min_samples_split':6,'min_samples_leaf':3,'max_features':'auto'}, 
+                                                {'max_features':'auto', 'min_samples_leaf':1, 'min_samples_split':2, 'n_estimators':500},
+                                                {'bootstrap':False,'max_features':'auto','min_samples_leaf':1,'min_samples_split':2,'n_estimators':200},
+                                                {'alpha':0, 'eta':0.1, 'max_depth':9, 'n_estimators':500}], 
                     qpo_preprocess_dict={'frequency':'normalize', 'width':'normalize', 'rms':'normalize'}, 
                     context_preprocess_dict={'A':'normalize','B':'normalize','C':'normalize','D':'normalize','E':'normalize','F':'normalize','G':'normalize'}, 
-                    model_hyperparameter_dictionaries=model_hyperparameter_dictionaries,
+                    model_hyperparameter_dictionaries=grs_model_hyperparameter_dictionaries,
                     repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
 
 # ROUND TWO: MAXI REGRESSION, SCALAR INPUT 
@@ -364,7 +388,12 @@ regression_pipeline(source='MAXI_J1535-571',
                     context_path=maxi_scalar_path, 
                     qpo_preprocess_dict={'frequency':'normalize','width':'normalize','normalization':'normalize'}, 
                     context_preprocess_dict={'A':'normalize','B':'normalize','C':'normalize','D':'normalize','E':'normalize','F':'normalize'}, 
-                    model_hyperparameter_dictionaries=model_hyperparameter_dictionaries,
+                    model_hyperparameter_dictionaries=maxi_model_hyperparameter_dictionaries,
+                    hyperparams_to_use=[{'normalize':True}, 
+                                        {'max_features':'auto','min_samples_leaf':1,'min_samples_split':2},
+                                        {'max_features':'auto','min_samples_leaf':1,'min_samples_split':2,'n_estimators':500},
+                                        {'bootstrap':False,'max_features':'auto','min_samples_leaf':1,'min_samples_split':2,'n_estimators':200}, 
+                                        {'alpha':0,'eta':0.1,'max_depth':6,'n_estimators':500}],
                     repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/', stratify_file=maxi_qpo_binary_path)
 
 # ROUND THREE: MAXI REGRESSION, SPECTRUM INPUT 
@@ -377,35 +406,46 @@ regression_pipeline(source='MAXI_J1535-571',
                     context_path=maxi_spectrum_path, 
                     qpo_preprocess_dict={'frequency':'normalize','width':'normalize','normalization':'normalize'}, 
                     context_preprocess_dict=maxi_spectrum_context_preprocess, 
-                    model_hyperparameter_dictionaries=model_hyperparameter_dictionaries,
+                    model_hyperparameter_dictionaries=maxi_model_hyperparameter_dictionaries,
                     spectrum=True,
+                    hyperparams_to_use=[{'normalize':True},
+                                        {'max_features':'auto','min_samples_leaf':1,'min_samples_split':4},
+                                        {'max_features':'auto','min_samples_leaf':1,'min_samples_split':2,'n_estimators':50},
+                                        {'bootstrap':False,'max_features':'auto','min_samples_leaf':1,'min_samples_split':2,'n_estimators':500}, 
+                                        {'alpha':0,'eta':0.1,'max_depth':6,'n_estimators':1000}],
                     repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/', stratify_file=maxi_qpo_binary_path)
 
 # ROUND FOUR: MAXI CLASSIFICATION, SCALAR INPUT, BINARY=
 print('starting round four')
+
+# WHAT WAS TUNED FOR RF AND LOGISTIC
+'''
+{'n_estimators':[50,100,200]}, 
+{'penalty':['l2'], 'C':[1, 5]}
+'''
 
 classification_pipeline(source='MAXI_J1535-571', 
                         models=[RandomForestClassifier(), LogisticRegression()], 
                         model_names=['Random Forest', 'Logistic Regression'], 
                         context_path=maxi_scalar_path, 
                         qpo_path=maxi_qpo_binary_path,
-                        model_hyperparameter_dictionaries=[{'n_estimators':[50,100,200]}, 
-                                                           {'penalty':['l2'], 'C':[1, 5]}], 
+                        model_hyperparameter_dictionaries=None, 
+                        hyperparams_to_use=[{'n_estimators':100}, {'C':5, 'penalty':'l2'}],
                         context_preprocess_dictionary={'A':'normalize','B':'normalize','C':'normalize','D':'normalize','E':'normalize','F':'normalize'},
                         repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
 
 # ROUND FIVE: MAXI CLASSIFICATION, SPECTRUM INPUT, BINARY
 print('starting round five')
 
+
 classification_pipeline(source='MAXI_J1535-571', 
                         models=[RandomForestClassifier(), LogisticRegression()], 
                         model_names=['Random Forest', 'Logistic Regression'], 
                         context_path=maxi_spectrum_path, 
                         qpo_path=maxi_qpo_binary_path,
-                        model_hyperparameter_dictionaries=[{'n_estimators':[50,100,200]}, 
-                                                           {'penalty':['l2'], 'C':[1, 5]}], 
+                        model_hyperparameter_dictionaries=None, 
                         context_preprocess_dictionary=maxi_spectrum_context_preprocess,
-                        spectrum=True,
+                        spectrum=True, hyperparams_to_use=[{'n_estimators':50}, {'C':5, 'penalty':'l2'}],
                         repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
 
 # ROUND SIX: MAXI CLASSIFICATION, SCALAR INPUT, MULTI-OUTPUT
@@ -416,10 +456,9 @@ classification_pipeline(source='MAXI_J1535-571',
                         model_names=['Random Forest', 'Logistic Regression'], 
                         context_path=maxi_scalar_path, 
                         qpo_path=maxi_qpo_multi_path,
-                        model_hyperparameter_dictionaries=[{'n_estimators':[50,100,200]}, 
-                                                           {'penalty':['l2'], 'C':[1, 5]}], 
+                        model_hyperparameter_dictionaries=None, 
                         context_preprocess_dictionary={'A':'normalize','B':'normalize','C':'normalize','D':'normalize','E':'normalize','F':'normalize'},
-                        spectrum=True,
+                        spectrum=False,hyperparams_to_use=[{'n_estimators':50}, {'C':1, 'penalty':'l2'}],#[{'n_estimators':}, {'C':, 'penalty':}] 
                         repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/', multiclass=True)
 
 # ROUND SEVEN: MAXI CLASSIFICATION, SPECTRUM INPUT, MULTI-OUTPUT
@@ -430,8 +469,7 @@ classification_pipeline(source='MAXI_J1535-571',
                         model_names=['Random Forest', 'Logistic Regression'], 
                         context_path=maxi_spectrum_path, 
                         qpo_path=maxi_qpo_multi_path,
-                        model_hyperparameter_dictionaries=[{'n_estimators':[50,100,200]}, 
-                                                           {'penalty':['l2'], 'C':[1, 5]}], 
+                        model_hyperparameter_dictionaries=None, 
                         context_preprocess_dictionary=maxi_spectrum_context_preprocess,
-                        spectrum=True,
+                        spectrum=True,hyperparams_to_use=[{'n_estimators':50}, {'C':1, 'penalty':'l2'}],
                         repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/', multiclass=True)

@@ -1,2 +1,2 @@
-min_samples_leaf,min_samples_split
-1,4
+bootstrap,max_features,min_samples_leaf,min_samples_split,n_estimators
+False,auto,1,2,200
