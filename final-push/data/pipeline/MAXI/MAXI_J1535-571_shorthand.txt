@@ -6,3 +6,8 @@ gamma: C
 nthcomp_norm: D
 diskbb_tin: E
 diskbb_norm: F
+
+# rebin channel 
+rebin_channel_0,rebin_channel_1,rebin_channel_2,rebin_channel_3,rebin_channel_4,rebin_channel_5,rebin_channel_6,rebin_channel_7,rebin_channel_8,rebin_channel_9,rebin_channel_10,rebin_channel_11,rebin_channel_12,rebin_channel_13,rebin_channel_14,rebin_channel_15,rebin_channel_16,rebin_channel_17,rebin_channel_18
+
+19 0.5 keV bins

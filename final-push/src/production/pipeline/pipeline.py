@@ -1,3 +1,4 @@
+from ensurepip import bootstrap
 import os
 import numpy as np
 import pandas as pd
@@ -32,7 +33,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
                         qpo_path:str, context_path:str, repository_path:str,
                         qpo_preprocess_dict:dict, context_preprocess_dict:dict,
                         model_hyperparameter_dictionaries:list,spectrum:bool=False,
-                        model_comparison_statistic:str='mae', k:int=10, repetitions:int=2, fold:int=0, wh1=wh1,
+                        model_comparison_statistic:str='mae', k:int=10, repetitions:int=2, fold:int=9, wh1=wh1, stratify_file:str=None, 
                         units:dict={'frequency':'Hz'}):
 
     r''' 
@@ -46,7 +47,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
     import numpy as np
     import pandas as pd
     import seaborn as sns
-    from qpoml.new_main import collection
+    from qpoml.main import collection
     from qpoml.plotting import plot_model_comparison
     from qpoml.utilities import pairwise_compare_models
 
@@ -109,7 +110,14 @@ def regression_pipeline(source:str, models:list, model_names:list,
         
         # 2.1.2: k-fold on Best Configuration # 
 
-        collec.evaluate(model=model, evaluation_approach='k-fold', folds=k, repetitions=repetitions, hyperparameter_dictionary=best_params) # evaluate-approach???
+        if stratify_file is not None: 
+            stratify_dictionary = pd.read_csv(stratify_file).to_dict(orient='list')
+            collec.evaluate(model=model, evaluation_approach='k-fold', folds=k, repetitions=repetitions, hyperparameter_dictionary=best_params, stratify=stratify_dictionary) # evaluate-approach???
+
+        else: 
+            collec.evaluate(model=model, evaluation_approach='k-fold', folds=k, repetitions=repetitions, hyperparameter_dictionary=best_params) # evaluate-approach???
+
+        # ADD STRATIFY REGRESSION # 
 
         # 2.1.3: Save and Plot Performance Across Folds # 
 
@@ -156,7 +164,6 @@ def regression_pipeline(source:str, models:list, model_names:list,
 
     # 2.2.1: Plot Performances for all Models #
     fig, ax = plt.subplots()
-    print(model_names, len(fold_performances))
     plot_model_comparison(model_names=model_names, performance_lists=fold_performances, style='violin', ax=ax, cut=0)
     temp_path = f'{repository_path}manuscript/figures/individual/figure_4/[{source}][{spectrum}][model-comparison]'
     plt.savefig(f'{temp_path}.pdf') 
@@ -166,7 +173,6 @@ def regression_pipeline(source:str, models:list, model_names:list,
     # ignore
     sns.set_context(font_scale=0.7)
     fig, ax = plt.subplots()
-    print(model_names, len(fold_performances))
     plot_model_comparison(model_names=model_names, performance_lists=fold_performances, style='violin', ax=ax)
     temp_path = f'{repository_path}manuscript/figures/individual/figure_4/[{source}][{spectrum}][model_comparison=no-cut]'
     plt.savefig(f'{temp_path}.pdf') 
@@ -183,7 +189,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
 def classification_pipeline(source:str, models:list, model_names:list,repository_path:str,
                             context_path:str, qpo_path:str, 
                             model_hyperparameter_dictionaries:list,
-                            context_preprocess_dictionary:dict, wh1=wh1, fold:int=0,
+                            context_preprocess_dictionary:dict, wh1=wh1, fold:int=9,
                             k:int=10, repetitions:int=2, spectrum:bool=False, 
                             additional_info=None, multiclass:bool=False): 
     
@@ -193,7 +199,6 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
     import pandas as pd
     import seaborn as sns
     from qpoml import collection
-    from qpoml.utilities import roc_and_auc
     from qpoml.plotting import plot_roc
 
     # 1. Preparation for Pipeline #
@@ -210,14 +215,12 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
     # 2: Source-wise Machine Learning #
 
     n_total_qpos = len(pd.read_csv(qpo_path).index)
-    print('Number of QPOs:', n_total_qpos)
 
     gridsearch_scores = []
 
     # MAKE GRID SEARCH SCORES PLOT? # 
 
     source_observation_counts.append(len(pd.read_csv(context_path).index))
-    print('Source Observation Counts', source_observation_counts)
 
     for model_index, model in enumerate(models):
 
@@ -317,13 +320,13 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
                 pd.DataFrame(statistics).to_csv(f'{repository_path}final-push/output/pipeline/MAXI_J1535-571/{notation_string}[Performance_stats].csv', index=False)
 
 model_hyperparameter_dictionaries = [{'normalize':[True, False]},
-                                     {'min_samples_split':[4,6], 'min_samples_leaf':[3]}, 
-                                     {'min_samples_split': [4,6], 'min_samples_leaf':[1]},
-                                     {'min_samples_split':[4,6], 'min_samples_leaf':[1]}, 
-                                     {'n_estimators':[500,1000], 'eta':[0.1]}]
+                                     {'min_samples_split':[2,4,6,8], 'min_samples_leaf':[1,3], 'max_features':['auto','sqrt']}, 
+                                     {'min_samples_split': [2,4,6,8], 'min_samples_leaf':[1,3], 'max_features':['auto','sqrt'], 'n_estimators':[50,100,150,200,500]},
+                                     {'min_samples_split':[2,4,6,8], 'min_samples_leaf':[1,3], 'max_features':['auto','sqrt'], 'n_estimators':[50,100,150,200,500], 'bootstrap':[True,False]}, 
+                                     {'n_estimators':[500,1000]}]#, 'eta':[0.1, 0.5, 0.9], 'max_depth':[3, 6 ,9], 'alpha': [0,0.25,0.5,0.75]}]#,'rounds':[50, 100, 150, 200], 'lamba':[0,0.25,0.5,0.75]}]
 # SHARE DICTIONARIES # 
 
-maxi_spectrum_context_preprocess = dict(zip([f'rebin_channel_{i}' for i in range(19)], 19*['normalize']))
+maxi_spectrum_context_preprocess = dict(zip([f'{i}' for i in range(19)], 19*['normalize']))
 
 # ROUND ONE: GRS REGRESSION # 
 print('starting round one')
@@ -332,7 +335,11 @@ grs_qpo_path = 'final-push/data/pipeline/GRS/[QPO][regression].csv'
 grs_context_path = 'final-push/data/pipeline/GRS/[scalar-input][regression].csv'
 
 regression_pipeline(source='GRS_1915+905', 
-                    models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor()],#, XGBRegressor()], 
+                    models=[LinearRegression(), 
+                            DecisionTreeRegressor(), #min_samples_split=2,min_samples_leaf=3,max_features='auto'
+                            RandomForestRegressor(), # 
+                            ExtraTreesRegressor(), # bootstrap=False,max_features='auto',min_samples_leaf=1,min_samples_split=2,n_estimators=200
+                            XGBRegressor()], 
                     model_names=['Linear', 'DT', 'RF', 'ET', 'XGBoost'], 
                     qpo_path=grs_qpo_path, 
                     context_path=grs_context_path, 
@@ -351,20 +358,20 @@ maxi_qpo_binary_path = 'final-push/data/pipeline/MAXI/[QPO][binary].csv'
 maxi_qpo_multi_path = 'final-push/data/pipeline/MAXI/[QPO][multiclass].csv'
 
 regression_pipeline(source='MAXI_J1535-571', 
-                    models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor()],#, XGBRegressor()], 
+                    models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor(), XGBRegressor()], 
                     model_names=['Linear', 'DT', 'RF', 'ET', 'XGBoost'], 
                     qpo_path=maxi_qpo_regression_path, 
                     context_path=maxi_scalar_path, 
                     qpo_preprocess_dict={'frequency':'normalize','width':'normalize','normalization':'normalize'}, 
                     context_preprocess_dict={'A':'normalize','B':'normalize','C':'normalize','D':'normalize','E':'normalize','F':'normalize'}, 
                     model_hyperparameter_dictionaries=model_hyperparameter_dictionaries,
-                    repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
+                    repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/', stratify_file=maxi_qpo_binary_path)
 
 # ROUND THREE: MAXI REGRESSION, SPECTRUM INPUT 
 print('starting round three')
 
 regression_pipeline(source='MAXI_J1535-571', 
-                    models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor()],#, XGBRegressor()], 
+                    models=[LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor(), XGBRegressor()], 
                     model_names=['Linear', 'DT', 'RF', 'ET', 'XGBoost'], 
                     qpo_path=maxi_qpo_regression_path, 
                     context_path=maxi_spectrum_path, 
@@ -372,9 +379,9 @@ regression_pipeline(source='MAXI_J1535-571',
                     context_preprocess_dict=maxi_spectrum_context_preprocess, 
                     model_hyperparameter_dictionaries=model_hyperparameter_dictionaries,
                     spectrum=True,
-                    repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
+                    repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/', stratify_file=maxi_qpo_binary_path)
 
-# ROUND FOUR: MAXI CLASSIFICATION, SCALAR INPUT, BINARY
+# ROUND FOUR: MAXI CLASSIFICATION, SCALAR INPUT, BINARY=
 print('starting round four')
 
 classification_pipeline(source='MAXI_J1535-571', 

@@ -17,7 +17,9 @@ ax = sns.pairplot(df, corner=True)
 fig.tight_layout()
 
 plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/individual/figure_10/GRS_qpo_pairplot.png', dpi=250)
+plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/individual/figure_10/GRS_qpo_pairplot.pdf', dpi=250)
 
+'''
 df = pd.read_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/MAXI/[QPO][two-feature-regression].csv')
 df = df.merge(pd.read_csv('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/final-push/data/pipeline/MAXI/[scalar-input][regression].csv'), on='observation_ID')
 df = df.drop(columns=['observation_ID'])
@@ -29,3 +31,4 @@ ax = sns.pairplot(df, corner=True)
 fig.tight_layout()
 
 plt.savefig('/mnt/c/Users/Research/Documents/GitHub/MAXI-J1535/manuscript/figures/individual/figure_10/maxi_qpo_pairplot.png', dpi=250)
+'''

@@ -1,4 +1,3 @@
-from random import Random
 import numpy as np 
 import pandas as pd 
 from qpoml import collection 
@@ -31,7 +30,6 @@ i,j,k = [np.abs(unprocess1d(predictions[i], qpo_preprocess1d_tuples[keys[i]])-un
 diffs = [i,j,k]
 
 names = ['freq', 'width', 'amps']
-
 
 fig, axs = plt.subplots(1,2, figsize=(6,3))
 
