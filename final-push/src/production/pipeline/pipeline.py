@@ -153,7 +153,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
         # 2.1.5: Plot Feature Importances from fold-th Fold # 
         fig, ax = plt.subplots(figsize=(6,6))
         
-        collec.plot_feature_importances(model=model, fold=fold, kind='tree-shap', style='box', ax=ax)
+        collec.plot_feature_importances(model=model, fold=fold, kind='tree-shap', style='bar', ax=ax)
         
         temp_path = None 
 
@@ -317,7 +317,7 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
             plt.style.use('/mnt/c/Users/Research/Documents/GitHub/QPOML/qpoml/stylish.mplstyle')
         
         sns.set_context('paper')
-        collec.plot_feature_importances(model, fold=fold, style='box', ax=ax, kind='tree-shap')
+        collec.plot_feature_importances(model, fold=fold, style='bar', ax=ax, kind='tree-shap')
         fi_path = f'{repository_path}manuscript/figures/individual/figure_9/{notation_string}[Feature-Importances]'
         fig.tight_layout()
         plt.savefig(f'{fi_path}.pdf')
