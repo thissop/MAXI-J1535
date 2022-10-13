@@ -22,7 +22,7 @@ plt.style.use('/ar1/PROJ/fjuhsd/personal/thaddaeus/github/QPOML/qpoml/stylish.mp
 fig, ax = plt.subplots(figsize=(4,4))
 
 sns.set_context('paper')
-collec.plot_feature_importances(RandomForestRegressor(), fold=9, style='bar', ax=ax, kind='tree-shap', median_hline=True)
+collec.plot_feature_importances(RandomForestRegressor(), fold=9, style='bar', ax=ax, kind='tree-shap', hline=True)
 fig.tight_layout()
 
 plt.savefig('/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/final-push/src/development/testing/topical/rando/test_hline.png', dpi=200) 
