@@ -34,7 +34,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
                         qpo_preprocess_dict:dict, context_preprocess_dict:dict,
                         model_hyperparameter_dictionaries:list,hyperparams_to_use:list,spectrum:bool=False,
                         model_comparison_statistic:str='mae', k:int=10, repetitions:int=2, fold:int=9, wh1=wh1, stratify_file:str=None, 
-                        units:dict={'frequency':'Hz'}):
+                        units:dict={'frequency':'Hz'}, median_hline:bool=False):
 
     r''' 
     model_comparison_statistic : str
@@ -153,7 +153,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
         # 2.1.5: Plot Feature Importances from fold-th Fold # 
         fig, ax = plt.subplots(figsize=(6,6))
         
-        collec.plot_feature_importances(model=model, fold=fold, kind='tree-shap', style='bar', ax=ax)
+        collec.plot_feature_importances(model=model, fold=fold, kind='tree-shap', style='bar', ax=ax, median_hline=median_hline)
         
         temp_path = None 
 
@@ -197,7 +197,7 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
                             model_hyperparameter_dictionaries:list,
                             context_preprocess_dictionary:dict, hyperparams_to_use:list, wh1=wh1, fold:int=9,
                             k:int=10, repetitions:int=2, spectrum:bool=False,
-                            additional_info=None, multiclass:bool=False): 
+                            additional_info=None, multiclass:bool=False, median_hline:bool=False): 
     
     import os
     import matplotlib.pyplot as plt
@@ -317,7 +317,7 @@ def classification_pipeline(source:str, models:list, model_names:list,repository
             plt.style.use('/mnt/c/Users/Research/Documents/GitHub/QPOML/qpoml/stylish.mplstyle')
         
         sns.set_context('paper')
-        collec.plot_feature_importances(model, fold=fold, style='bar', ax=ax, kind='tree-shap')
+        collec.plot_feature_importances(model, fold=fold, style='bar', ax=ax, kind='tree-shap', median_hline=median_hline)
         fi_path = f'{repository_path}manuscript/figures/individual/figure_9/{notation_string}[Feature-Importances]'
         fig.tight_layout()
         plt.savefig(f'{fi_path}.pdf')
@@ -413,7 +413,7 @@ regression_pipeline(source='MAXI_J1535-571',
                                         {'max_features':'auto','min_samples_leaf':1,'min_samples_split':2,'n_estimators':50},
                                         {'bootstrap':False,'max_features':'auto','min_samples_leaf':1,'min_samples_split':2,'n_estimators':500}, 
                                         {'alpha':0,'eta':0.1,'max_depth':6,'n_estimators':1000}],
-                    repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/', stratify_file=maxi_qpo_binary_path)
+                    repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/', stratify_file=maxi_qpo_binary_path, median_hline=True)
 
 # ROUND FOUR: MAXI CLASSIFICATION, SCALAR INPUT, BINARY=
 print('starting round four')
@@ -446,7 +446,7 @@ classification_pipeline(source='MAXI_J1535-571',
                         model_hyperparameter_dictionaries=None, 
                         context_preprocess_dictionary=maxi_spectrum_context_preprocess,
                         spectrum=True, hyperparams_to_use=[{'n_estimators':50}, {'C':5, 'penalty':'l2'}],
-                        repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/')
+                        repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/', median_hline=True)
 
 # ROUND SIX: MAXI CLASSIFICATION, SCALAR INPUT, MULTI-OUTPUT
 print('starting round six')
@@ -472,4 +472,4 @@ classification_pipeline(source='MAXI_J1535-571',
                         model_hyperparameter_dictionaries=None, 
                         context_preprocess_dictionary=maxi_spectrum_context_preprocess,
                         spectrum=True,hyperparams_to_use=[{'n_estimators':50}, {'C':1, 'penalty':'l2'}],
-                        repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/', multiclass=True)
+                        repository_path='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/', multiclass=True, median_hline=True)
