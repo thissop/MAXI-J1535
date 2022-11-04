@@ -20,7 +20,7 @@ def get_count(rootdir, types=['py','sh', 'tcl', 'ipynb', 'md', 'MD']):
         for filepath in glob.iglob(rootdir+f'**/*.{t}', recursive=True): 
             try: 
                 files += 1
-                if t!='ipynb':
+                if t!='ipynb' and t!='sh':
                     with open(filepath, 'r') as f: 
                         for line in f: 
                             lines+= 1
