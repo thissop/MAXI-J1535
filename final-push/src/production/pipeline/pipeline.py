@@ -1,4 +1,3 @@
-from ensurepip import bootstrap
 import os
 import numpy as np
 import pandas as pd
@@ -50,7 +49,7 @@ def regression_pipeline(source:str, models:list, model_names:list,
     import pandas as pd
     import seaborn as sns
     from qpoml.main import collection
-    from qpoml.plotting import plot_model_comparison
+    from qpoml.plotting import plot_model_comparison, bias_report
     from qpoml.utilities import pairwise_compare_models
 
     #plt.rcParams["mathtext.fontset"] = "dejavuserif"
@@ -166,6 +165,24 @@ def regression_pipeline(source:str, models:list, model_names:list,
         plt.savefig(f'{temp_path}.png', dpi=200)
         plt.close()
 
+        # bias report 
+
+        fig, ax = plt.subplots()
+        ks_df = bias_report(collec.predictions, collec.y_test, feature_names=collec.qpo_features, ax=ax, fold=fold)
+
+        fig.tight_layout()
+        temp_path = f'{repository_path}manuscript/figures/individual/figure_999/{notation_string}[prediction-bias]'
+        plt.savefig(f'{temp_path}.png', dpi=250)
+        plt.savefig(f'{temp_path}.pdf')
+
+        if source.replace('_',' ') == 'GRS 1915+905': 
+            temp_path = f'{repository_path}final-push/output/pipeline/GRS_1915+105/{notation_string}[ks-results].csv'
+        else: 
+            temp_path = f'{repository_path}final-push/output/pipeline/MAXI_J1535-571/{notation_string}[ks-results].csv'
+
+        ks_df.to_csv(temp_path, index=False)
+
+
     # 2.2: All-Models One Source Results # 
 
     # 2.2.1: Plot Performances for all Models #
@@ -184,6 +201,8 @@ def regression_pipeline(source:str, models:list, model_names:list,
     plt.savefig(f'{temp_path}.pdf') 
     plt.savefig(f'{temp_path}.png', dpi=200) 
     plt.close()
+
+    # Bias Report
 
     sns.set_context(font_scale=1)
     # 2.2.2: Pairwise Statistical Model Comparison # 

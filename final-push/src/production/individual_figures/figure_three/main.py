@@ -36,9 +36,9 @@ def make_grs_hids(data_file='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J15
 
     plt.scatter(df['B'], df['A'], c=df['frequency'], lw=0.3, edgecolors='black', cmap='viridis', s=3)
 
-    plt.gca().set(xlabel='Hardness Ratio', ylabel='Net Count Rate', yscale='log') # 
+    plt.gca().set(xlabel='Hardness Ratio', ylabel='Net Count Rate (c/s)', yscale='log') # 
 
-    plt.colorbar(orientation='vertical', shrink=0.8, label='QPO Centroid Frequency')
+    plt.colorbar(orientation='vertical', shrink=0.8, label='QPO Centroid Frequency (Hz)')
 
     plt.savefig('/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/manuscript/figures/individual/figure_3/[GRS][hardness vs net count rate].png', dpi=250)
     plt.savefig('/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/manuscript/figures/individual/figure_3/[GRS][hardness vs net count rate].pdf')
@@ -57,7 +57,7 @@ def make_grs_hids(data_file='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J15
 
     plt.scatter(df['B'], df['frequency'], c=np.log10(df['A']), lw=0.3, edgecolors='black', cmap='viridis', s=3)
 
-    plt.gca().set(xlabel='Hardness Ratio', ylabel='QPO Centroid Frequency') # 
+    plt.gca().set(xlabel='Hardness Ratio', ylabel='QPO Centroid Frequency (Hz)') # 
 
     plt.colorbar(orientation='vertical', shrink=0.8, label='log(Net Count Rate)')
 
