@@ -32,3 +32,7 @@ fig.tight_layout()
 
 plt.savefig('/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/manuscript/figures/individual/figure_10/maxi_qpo_pairplot.png', dpi=250)
 '''
+
+
+
+
