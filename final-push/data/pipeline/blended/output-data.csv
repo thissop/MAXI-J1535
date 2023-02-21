@@ -1,4 +1,4 @@
-observation_ID,frequency,width,rms
+observation_ID,frequency,width,norm
 10258-01-02-00,0.696,0.091,10.59
 10258-01-02-00,0,0,0
 10408-01-42-00,4.888,0.79,6.333
