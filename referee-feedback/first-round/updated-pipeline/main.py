@@ -1,6 +1,7 @@
 def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/referee-feedback/first-round/updated-pipeline/output'): 
 
     import os
+    import time 
     import numpy as np
     import pandas as pd
     import matplotlib.pyplot as plt 
@@ -66,7 +67,7 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
                         context_preprocess=context_preprocess, 
                         approach='classification', units={'frequency':'Hz'})
 
-            collec.evaluate(model=model, folds=10, repetitions=5, gridsearch_dictionary=model_gridsearch_dictionary, stratify=True, multiclass=multiclass)
+            collec.evaluate(model=model, folds=10, repetitions=1, gridsearch_dictionary=model_gridsearch_dictionary, stratify=True, multiclass=multiclass)
 
             # PLOTTING 
 
@@ -100,24 +101,28 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
         from qpoml.plotting import plot_model_comparison
         from qpoml.utilities import pairwise_compare_models
         
-        regression_models = [LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), ExtraTreesRegressor()]#, XGBRegressor()]
-        regression_model_names = ['LinearRegression', 'DecisionTreeRegressor', 'RandomForestRegressor', 'ExtraTreesRegressor']#, 'XGBRegressor']
-        reg_model_names_short = ['Linear', 'DT', 'RF', 'ET']#, 'XGBoost']
+        regression_models = [ExtraTreesRegressor(), LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor(), XGBRegressor()]
+        regression_model_names = ['ExtraTreesRegressor','LinearRegression', 'DecisionTreeRegressor', 'RandomForestRegressor', 'XGBRegressor']
+        reg_model_names_short = ['ET', 'Linear', 'DT', 'RF', 'XGBoost']
         
-        '''
-        regression_gridsearch_dictionaries = [{'fit_intercept':[True]},
+        #'''
+        regression_gridsearch_dictionaries = [
+                                            {'n_estimators': [50,100,150,200], 'min_samples_split': [2,4,6,8], 'min_samples_leaf': [1,3]},
+                                            {'fit_intercept':[True]},
                                             {'min_samples_split': [2,4,6,8], 'min_samples_leaf': [1,3]}, 
                                             {'n_estimators': [50,100,150,200], 'min_samples_split': [2,4,6,8], 'min_samples_leaf': [1,3]},
-                                            {'n_estimators': [50,100,150,200], 'min_samples_split': [2,4,6,8], 'min_samples_leaf': [1,3]}, 
                                             {'alpha':[0,0.25,0.5,0.75],'eta':[0.1, 0.5, 0.9],'max_depth':[3, 6 ,9],'n_estimators':[100]}
                                             ]
+        #'''
+        
         '''
         regression_gridsearch_dictionaries = [{'fit_intercept':[True]},
                                             {'min_samples_split': [2,4,6,8], 'min_samples_leaf': [1,3]}, 
                                             {'n_estimators': [50,100], 'min_samples_split': [2], 'min_samples_leaf': [3]},
                                             {'n_estimators': [50,100], 'min_samples_split': [2], 'min_samples_leaf': [3]}, 
-                                            #{'alpha':[0,0.25],'eta':[0.1],'max_depth':[3],'n_estimators':[100]}
+                                            {'alpha':[0,0.25],'eta':[0.1],'max_depth':[3],'n_estimators':[100]}
                                             ]
+        '''
 
         plot_dir = os.path.join(output_dir, 'plots')
         if not os.path.exists(plot_dir):
@@ -146,13 +151,21 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
                         qpo_preprocess={'frequency':'normalize','width':'normalize','norm':'normalize'}, 
                         approach='regression', units={'frequency':'Hz'})
 
-            collec.evaluate(model=model, folds=10, repetitions=5, gridsearch_dictionary=model_gridsearch_dictionary, stratify=True)
+            collec.evaluate(model=model, folds=10, repetitions=1, gridsearch_dictionary=model_gridsearch_dictionary, stratify=True)
 
             gridsearch_scores.append(collec.gridsearch_scores)
             fold_performances.append(collec.fold_performances)
 
             test_n = len(collec.test_observation_IDs)
             train_n = len(collec.train_observation_IDs)
+
+            best_params_df = pd.DataFrame()
+
+            best_params = collec.best_params 
+            for param, param_val in zip(best_params.keys(), best_params.values()): 
+                best_params_df[param] = [param_val]
+
+            best_params_df.to_csv(os.path.join(analysis_dir, f'[{model_name}][best-params].csv'), index=False)
 
             # PLOTTING 
 
@@ -166,11 +179,16 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
 
             # 2. Feature Importances 
 
-            fig, ax = plt.subplots(figsize=(4,4))
+            try: 
+                fig, ax = plt.subplots(figsize=(4,4))
 
-            collec.plot_feature_importances(model=model, ax=ax, hline=True)
-            plt.savefig(os.path.join(plot_dir, f'[feature-importances][{model_name}].pdf'))
-            plt.close()
+                collec.plot_feature_importances(model=model, ax=ax, hline=True)
+                plt.savefig(os.path.join(plot_dir, f'[feature-importances][{model_name}].pdf'))
+                plt.close()
+                raise KeyError 
+            except: 
+                pass 
+                print('continueing ')
 
         # 3. Model Comparison
 
@@ -212,7 +230,6 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
     output_data_csv =  '/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/final-push/data/pipeline/MAXI/[QPO][two-feature-regression].csv'
     output_dir = output_dirs[1]
     run_regression('features', input_data_csv, output_data_csv=output_data_csv, output_dir=output_dir)
-    '''
 
     # 1.c. SPECTRUM INPUT BINARY CLASSIFICATION 
 
@@ -242,7 +259,7 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
     output_dir = output_dirs[5]
     run_classification('features', input_data_csv=input_data_csv, output_data_csv=output_data_csv, output_dir=output_dir, multiclass=True)
 
-    '''
+    #'''
     # 2. GRS SOLO 
     
     # 2.a. FEATURES INPUT REGRESSION 
@@ -255,11 +272,11 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
     # 3. MIXED 
 
     # 3.a. FEATURES INPUT REGRESSION
-
+    '''
     output_dir = output_dirs[-1]
     input_data_csv = '/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/final-push/data/pipeline/blended/input-data.csv'
     output_data_csv = '/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/final-push/data/pipeline/blended/output-data.csv'
     run_regression('features', input_data_csv, output_data_csv=output_data_csv, output_dir=output_dir)
-    '''
+    #'''
 
 run_pipeline()
