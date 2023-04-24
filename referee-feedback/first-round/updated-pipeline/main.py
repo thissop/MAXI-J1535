@@ -21,7 +21,7 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
     if wh1: 
         plt.style.use('/ar1/PROJ/fjuhsd/personal/thaddaeus/github/QPOML/qpoml/stylish.mplstyle')
 
-    sns.set_context("paper") #font_scale=
+    sns.set_context("paper", font_scale=1.5) #font_scale=
     sns.set_palette('deep')
     seaborn_colors = sns.color_palette('deep')
 
@@ -44,6 +44,7 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
             os.mkdir(output_dir)
 
     def run_classification(input_type:str, input_data_csv, output_data_csv, output_dir, multiclass:bool): 
+        print('running classification')
         from qpoml.plotting import plot_roc
 
         classification_models = [RandomForestClassifier(), LogisticRegression()]
@@ -61,7 +62,7 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
             context_preprocess = {'A':'normalize','B':'normalize','C':'normalize','D':'normalize','E':'normalize','F':'normalize'}
 
         for model, model_name, model_gridsearch_dictionary in zip(classification_models, classification_model_names, class_gridsearch_dictionaries):
-            
+            print(f'model: {model_name}')
             collec = collection(random_state=21)
             collec.load(context_csv=input_data_csv, qpo_csv=output_data_csv,
                         context_preprocess=context_preprocess, 
@@ -101,19 +102,20 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
         from qpoml.plotting import plot_model_comparison
         from qpoml.utilities import pairwise_compare_models
         
-        regression_models = [ExtraTreesRegressor(), LinearRegression(), DecisionTreeRegressor(), RandomForestRegressor()]#, XGBRegressor()]
-        regression_model_names = ['ExtraTreesRegressor','LinearRegression', 'DecisionTreeRegressor', 'RandomForestRegressor']#, 'XGBRegressor']
-        reg_model_names_short = ['ET', 'Linear', 'DT', 'RF']#, 'XGBoost']
+        print('running regression')
+
+        regression_models = [RandomForestRegressor(), ExtraTreesRegressor(), LinearRegression(), DecisionTreeRegressor()]#, XGBRegressor()]
+        regression_model_names = ['RandomForestRegressor', 'ExtraTreesRegressor','LinearRegression', 'DecisionTreeRegressor']#, 'XGBRegressor']
+        reg_model_names_short = ['RF', 'ET', 'Linear', 'DT']#, 'XGBoost']
         
-        #'''
+        
         regression_gridsearch_dictionaries = [
                                             {'n_estimators': [50,100,150,200,250,500], 'min_samples_split': [2,4,6,8], 'min_samples_leaf': [1,3,5]},
+                                            {'warm_start':[True, False], 'n_estimators': [50,100,150,200,250,500], 'min_samples_split': [2,4,6,8], 'min_samples_leaf': [1,3,5]},
                                             {'fit_intercept':[True]},
                                             {'min_samples_split': [2,4,6,8], 'min_samples_leaf': [1,3]}, 
-                                            {'warm_start':[True, False], 'n_estimators': [50,100,150,200,250,500], 'min_samples_split': [2,4,6,8], 'min_samples_leaf': [1,3,5]},
                                             #{'alpha':[0,0.25,0.5,0.75],'eta':[0.1, 0.5, 0.9],'max_depth':[3, 6 ,9],'n_estimators':[100]}
                                             ]
-        #'''
         
         '''
         regression_gridsearch_dictionaries = [{'fit_intercept':[True]},
@@ -147,7 +149,7 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
         train_ids = []
 
         for model, model_name, model_gridsearch_dictionary in zip(regression_models, regression_model_names, regression_gridsearch_dictionaries):
-            
+            print(f'model: {model_name}')
             collec = collection(random_state=21)
             collec.load(context_csv=input_data_csv, qpo_csv=output_data_csv,
                         context_preprocess=context_preprocess, 
@@ -172,7 +174,6 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
 
             train_ids = collec.train_observation_IDs
             test_ids = collec.test_observation_IDs
-
 
             # PLOTTING 
 
@@ -231,7 +232,6 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
 
     # 1. MAXI SOLO  
     
-    '''
     # 1.a. SPECTRUM INPUT REGRESSION
     print('1.a')
     input_data_csv = '/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/final-push/data/pipeline/MAXI/[energy-spectra][rebin-regression].csv'
@@ -287,7 +287,6 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
     # 3. MIXED 
 
     # 3.a. FEATURES INPUT REGRESSION
-    '''
     print('3.a.')
     output_dir = output_dirs[-1]
     input_data_csv = '/ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/final-push/data/pipeline/blended/input-data.csv'
@@ -295,4 +294,10 @@ def run_pipeline(pipeline_output_dir:str='/ar1/PROJ/fjuhsd/personal/thaddaeus/gi
     run_regression('features', input_data_csv, output_data_csv=output_data_csv, output_dir=output_dir)
     #'''
 
+print('begin')
 run_pipeline()
+
+#  pts/141  S+     0:00 grep main.py
+# nohup python /ar1/PROJ/fjuhsd/personal/thaddaeus/github/MAXI-J1535/referee-feedback/first-round/updated-pipeline/main.py > nohup_log.txt & 
+
+# 1314052
