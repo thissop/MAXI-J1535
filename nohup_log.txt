@@ -1,0 +1,41 @@
+begin
+1.a
+running regression
+model: RandomForestRegressor
+model: ExtraTreesRegressor
+model: LinearRegression
+model: DecisionTreeRegressor
+1.b.
+running regression
+model: RandomForestRegressor
+model: ExtraTreesRegressor
+model: LinearRegression
+model: DecisionTreeRegressor
+1.c.
+running classification
+model: RandomForest
+model: LogisticRegression
+1.d.
+running classification
+model: RandomForest
+model: LogisticRegression
+1.e
+running classification
+model: RandomForest
+model: LogisticRegression
+1.f.
+running classification
+model: RandomForest
+model: LogisticRegression
+2.a.
+running regression
+model: RandomForestRegressor
+model: ExtraTreesRegressor
+model: LinearRegression
+model: DecisionTreeRegressor
+3.a.
+running regression
+model: RandomForestRegressor
+ 47%|=========           | 234/498 [00:11<00:12]        51%|==========          | 255/498 [00:12<00:11]        56%|===========         | 278/498 [00:13<00:10]        61%|============        | 302/498 [00:14<00:09]        65%|=============       | 325/498 [00:15<00:07]        70%|==============      | 347/498 [00:16<00:06]        74%|===============     | 370/498 [00:17<00:05]        80%|================    | 396/498 [00:18<00:04]        84%|=================   | 417/498 [00:19<00:03]        88%|==================  | 439/498 [00:20<00:02]        93%|=================== | 464/498 [00:21<00:01]        98%|===================| 488/498 [00:22<00:00]        40%|========            | 201/498 [00:11<00:16]        44%|=========           | 221/498 [00:12<00:15]        48%|==========          | 240/498 [00:13<00:13]        52%|==========          | 258/498 [00:14<00:13]        55%|===========         | 276/498 [00:15<00:12]        59%|============        | 296/498 [00:16<00:10]        63%|=============       | 315/498 [00:17<00:09]        67%|=============       | 334/498 [00:18<00:08]        70%|==============      | 351/498 [00:19<00:07]        74%|===============     | 370/498 [00:20<00:06]        78%|================    | 389/498 [00:21<00:05]        82%|================    | 408/498 [00:22<00:04]        86%|=================   | 426/498 [00:23<00:03]        89%|==================  | 445/498 [00:24<00:02]        93%|=================== | 465/498 [00:25<00:01]        97%|=================== | 484/498 [00:26<00:00]       model: ExtraTreesRegressor
+model: LinearRegression
+model: DecisionTreeRegressor

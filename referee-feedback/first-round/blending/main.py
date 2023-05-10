@@ -26,12 +26,17 @@ plot_dir = 'referee-feedback/first-round/blending/plots'
 for fold in range(10):
     fold_performances = []
 
+
+
+
+
+
     for model, model_name in zip(models, model_names): 
 
         collec = collection()
 
-        qpo_path = '/Users/yaroslav/Documents/GitHub/MAXI-J1535/referee-feedback/first-round/blending/output-data.csv'
-        context_path = '/Users/yaroslav/Documents/GitHub/MAXI-J1535/referee-feedback/first-round/blending/input-data.csv'
+        qpo_path = 'Documents/GitHub/MAXI-J1535/referee-feedback/first-round/blending/output-data.csv'
+        context_path = 'Documents/GitHub/MAXI-J1535/referee-feedback/first-round/blending/input-data.csv'
 
         context_preprocess_dict = {'A':'normalize','B':'normalize','C':'normalize','D':'normalize','E':'normalize','F':'normalize','G':'normalize'}
         qpo_preprocess_dict = {'frequency':'normalize', 'width':'normalize', 'rms':'normalize'}
@@ -41,6 +46,13 @@ for fold in range(10):
                             context_preprocess=context_preprocess_dict, qpo_preprocess=qpo_preprocess_dict, units=units, approach='regression') 
 
         collec.evaluate(model=model, evaluation_approach='k-fold', folds=10)
+
+
+
+
+
+
+
 
         statistics = collec.get_performance_statistics()
 

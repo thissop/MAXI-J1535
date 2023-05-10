@@ -1,0 +1,7 @@
+First Model Name,Second Model Name,t,p,% Chance First Better,% Chance Second Better
+ExtraTreesRegressor,RandomForestRegressor,0.53,0.2989775690400963,70.27,29.730000000000004
+ExtraTreesRegressor,DecisionTreeRegressor,0.61,0.2729092330883395,72.9,27.099999999999994
+ExtraTreesRegressor,LinearRegression,9.38,3.9519045681785633e-10,100.0,0.0
+RandomForestRegressor,DecisionTreeRegressor,0.15,0.440173826504045,56.03,43.97
+RandomForestRegressor,LinearRegression,8.57,2.3503259834127263e-09,100.0,0.0
+DecisionTreeRegressor,LinearRegression,7.11,7.543867073282101e-08,100.0,0.0
